@@ -1,14 +1,18 @@
 ---
-title: "Schedule system refresh"
-description: "Schedule the time when the system should be refreshed"
-ms.date: 02/12/2024
+title: Schedule system refresh
+description: Schedule system refresh in Customer Insights to automatically update ingested data sources daily or weekly. Learn how to set your refresh schedule.
+ms.date: 08/11/2026
 ms.topic: how-to
-author: NimrodMagen
-ms.author: nimagen
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 searchScope: 
   - ci-system-schedule
   - customerInsights
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # Schedule system refresh
@@ -19,9 +23,9 @@ Schedule automatic refreshes of all your [ingested data sources](data-sources.md
 
 1. Go to **Settings** > **System** and select the **Schedule** tab.
 
-   :::image type="content" source="media/schedule_refresh.svg" alt-text="Schedule refresh tab from System page.":::
+   :::image type="content" source="media/schedule_refresh.png" alt-text="Screenshot of the Schedule refresh tab from the System page.":::
 
-1. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
+1. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the **Refresh schedule** toggle to **On**.
 
 1. Choose between **Weekly** and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
 
