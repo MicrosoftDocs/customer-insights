@@ -15,7 +15,7 @@ ms.custom:
 
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
 
-To create a measure with Customer Insights - Journeys interaction data, go to [Use Customer Insights - Journeys interaction data in segments and measures (preview)](journeys-interaction-data-segments-measures.md).
+To create a measure by using Customer Insights - Journeys interaction data, see [Use Customer Insights - Journeys interaction data in segments and measures](journeys-interaction-data-segments-measures.md).
 
 ## Measure types
 

@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 Define complex filters around the unified customer and its related tables. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
-To create a segment with Customer Insights - Journeys interaction data, go to [Use Customer Insights - Journeys interaction data in segments and measures (preview)](journeys-interaction-data-segments-measures.md).
+To create a segment with Customer Insights - Journeys interaction data, go to [Use Customer Insights - Journeys interaction data in segments and measures](journeys-interaction-data-segments-measures.md).
 
 ## Create a new segment with segment builder
 
