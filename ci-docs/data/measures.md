@@ -20,7 +20,7 @@ Choose how to create a measure.
 
 - From scratch with measure builder: [Build your own](measure-builder.md).
 - From commonly used measures: [Use predefined templates](measure-templates.md).
-- Using Customer Insights - Journeys interaction data: [Use Customer Insights - Journeys interaction data in measures (preview)](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-measure).
+- Using Customer Insights - Journeys interaction data: [Use Customer Insights - Journeys interaction data in measures](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-measure).
 
 ## Manage existing measures
 
