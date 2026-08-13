@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
-description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 08/04/2026
+description: 'Consent management in Customer Insights – Journeys: Learn how to configure compliance profiles, purposes, and topics to capture and enforce user consent.'
+ms.date: 08/13/2026
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -15,17 +15,11 @@ ms.custom:
   - ai-seo-date:06/20/2025
 ---
 
-# Stay compliant with privacy regulations
+# Configuring consent controls
 
-Regional privacy laws like the GDPR (EU), CAN-SPAM (US), CCPA (California), HIPAA (US healthcare), and others govern sending commercial communications. These regulations protect privacy and ensure that people only receive relevant and expected communications.
+Dynamics 365 Customer Insights - Journeys provides controls your organization can configure to support its consent program. Your organization determines applicable requirements.
 
-**Why does compliance matter?**
-
-Following these regulations helps you avoid legal penalties, improves user experience, and increases email engagement and deliverability. If you don't comply, your messages can be blocked or sent to spam.
-
-**How do I stay compliant?**
-
-Use a consent management system to track and honor user preferences. To stay compliant, you can:
+Customer Insights - Journeys offers a consent management system to help track and honor your user preferences. You can:
 
 - Use the built-in consent center in Customer Insights - Journeys, which supports real-time consent capture and enforcement.
 - Integrate your existing consent management system using the extensibility features of Customer Insights – Journeys.
@@ -35,7 +29,7 @@ Use a consent management system to track and honor user preferences. To stay com
 Consent is captured and stored at the contact point level. A contact point is the destination for a message, such as an email address or phone number. Contact point consent has many benefits.
 
 - **Channel-specific consent**: Consent is stored per channel and per destination. For example, the email address somebody@contoso.com can consent to receive commercial communications about upcoming events, while another email address or phone number might not.
-- **Greater flexibility and control**: Contact point consent lets customers control where they receive communications from your organization.
+- **Greater flexibility and control**: Your organization configures where recipients receive communications. Recipients can then use the configured preference center to review or change available communication and tracking choices.
 - **Entity-agnostic orchestration**: One of the main benefits of contact point consent is that it lets real-time journeys orchestrate across any entity—including contacts, leads, Customer Insights - Data profiles, and more. This approach ensures consistent consent enforcement regardless of the data source.
 
 The Customer Insights - Journeys consent model uses a flexible hierarchy that you can tailor to meet your business and compliance requirements.
@@ -74,7 +68,7 @@ The type of compliance profile (preference center versus external link) affects 
 Organizations often create multiple compliance profiles to support:
 
 - **Brand or line-of-business (LOB) separation**: For example, separate compliance profiles for different brands or business units let you tailor consent settings and messaging strategies. Each compliance profile can have its own company address.
-- **Regional compliance requirements**: Different regions can require different enforcement models. For example, in the United States, a commercial purpose might use a nonrestrictive model, letting messages be sent unless someone opts out. In France, the same purpose might use a restrictive model, requiring explicit opt-in because of the GDPR.
+- **Regional compliance requirements**: Organizations can create separate regional compliance profiles and select different enforcement models based on their own assessment of applicable requirements. For example, an organization might choose a **Restrictive** model where it determines that prior opt-in is required.
 - **Localized preference centers**: Each compliance profile can have its own preference center design, supporting localization and regulatory alignment.
 
 > [!NOTE]
@@ -99,7 +93,7 @@ There are two types of compliance profiles:
 
 When you create a new compliance profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing compliance profile so that the new profile inherits its existing **purposes** instead of creating new ones. The new profile is linked to all the purposes of the profile you reference, and the referenced profile keeps its links too.
 
-If you don't enable the toggle, the system creates new default commercial, transactional, and tracking purposes for the profile.
+If you don't enable the toggle, the system creates new default commercial, transactional, and tracking purposes for the profile. These are product defaults, not legal recommendations. Review and change them based on your organization's requirements before use.
 
 > [!IMPORTANT]
 > This toggle is the only way to share a **tracking** purpose between compliance profiles. You can link an existing commercial or transactional purpose to another compliance profile at any time, but you can't do that with a tracking purpose. There's also no standard way to unlink a tracking purpose from a compliance profile, so decide whether you want to share tracking consent before you create the profile.
@@ -156,7 +150,7 @@ You can define your own parameter name, such as `userid` in the previous example
 
 ## Purposes
 
-A **data use purpose consent** (called a **purpose**) defines the specific reason for collecting consent. It's usually tied to a legal basis or justification, like getting consent to contact someone for commercial marketing.
+A **purpose** is a customer-configured label that the service uses to apply consent rules. Your organization is responsible for defining its processing purposes and mapping each configured purpose to an appropriate legal basis or other justification.
 
 The three standard types of purposes are:
 
@@ -182,6 +176,9 @@ The enforcement model settings on a purpose control how consent is checked befor
 - **Restrictive**: Messages are sent only to contact points with opted-in consent records for the purpose (or topic).
 - **Non-restrictive**: Messages are sent to all contact points unless they have an opted-out consent record for the purpose (or topic).
 - **Disabled**: Messages are sent to all contact points. Consent records aren't checked before sending messages to the purpose (or topic).
+
+> [!WARNING]
+> The **Disabled** enforcement model bypasses Customer Insights - Journeys consent evaluation entirely. Messages are sent and interactions are tracked even for contact points that opted out. Use this model only if your organization determines that it's appropriate for the purpose.
 
 > [!IMPORTANT]
 > The enforcement model is a setting on the purpose, not on the compliance profile. If you share a purpose across compliance profiles, changing its enforcement model affects every profile that uses it. To apply a stricter enforcement model to one region or brand only, make sure that profile uses its own purposes. For tracking, create the compliance profile without the **Use previously captured consent** option so the profile gets its own tracking purpose.
