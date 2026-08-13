@@ -40,7 +40,7 @@ If the message is marked as *Commercial purpose*, then it must also include the 
 
 If the message is marked as *Transactional purpose*, then the *Unsubscribe link* and *Company address* content are not required but can be included. The validation check still looks for them and provides a warning if missing. Warnings don't block you from making these messages **Ready to send**.
 
-For more information on compliance settings, see [Stay compliant with privacy regulations](real-time-marketing-compliance-settings.md).
+For more information on compliance settings, see [Configuring consent controls](real-time-marketing-compliance-settings.md).
 
 The following steps also occur in the validation check:
 

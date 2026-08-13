@@ -133,7 +133,7 @@ Use the **Ignore empty values** toggle to control whether empty form fields over
 
 ## Manage consent in forms
 
-You can add **purposes** and **topics** to your form to let users subscribe to specific types of communication. Each form can only be linked to one compliance profile, so you can't include purposes from multiple compliance profiles in the same form. Learn more: [Stay compliant with privacy regulations](real-time-marketing-compliance-settings.md).
+You can add **purposes** and **topics** to your form to let users subscribe to specific types of communication. Each form can only be linked to one compliance profile, so you can't include purposes from multiple compliance profiles in the same form. Learn more: [Configuring consent controls](real-time-marketing-compliance-settings.md).
 
 If you need to include purposes from different compliance profiles in one form, you can create a new compliance profile that [reuses existing purposes](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile) from those profiles.
 
