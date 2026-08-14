@@ -1,23 +1,26 @@
 ---
-title: "Work with tags and columns"
-description: "How to work with tags and columns to organize list views"
-ms.date: 05/03/2024
+title: Work with tags and columns
+description: Tags and columns help you organize list views for segments and measures. Learn how to add, filter, and customize columns to find your data faster.
+ms.date: 08/13/2026
 ms.topic: overview
-author: JimsonChalissery
+author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
-ms.custom: bap-template
+ms.reviewer: v-wendysmith
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 08/13/2026
+ai-usage: ai-assisted
 ---
 
 # Work with tags and columns
 
-Organize lists using tags and columns to find data quickly and easily and view the data the way you want.
+Organize lists using tags and columns to find data quickly and easily. Use this approach to view the data the way you want.
 
-Tags and columns are currently supported with **[Segments](segments.md)** and **[Measures](measures.md)**.
+**[Segments](segments.md)** and **[Measures](measures.md)** currently support tags and columns.
 
 ## Manage tags
 
-A tag is a label that’s used to categorize and organize items such as segments or measures. For example, add a tag to segments that are part of a specific campaign. Then, you can filter by that tag to identify the segments for the campaign quickly and easily.
+Use a tag as a label to categorize and organize items such as segments or measures. For example, add a tag to segments that are part of a specific campaign. Then, filter by that tag to identify the segments for the campaign quickly and easily.
 
 You can view, add, and remove tags from items. Add tags as you create an item. After creation, manage tags from the list view. An item can have up to 20 tags.
 
@@ -25,15 +28,15 @@ You can view, add, and remove tags from items. Add tags as you create an item. A
 
 1. Select one or more items whose tags you want to manage and select **Tag**.
 
-   :::image type="content" source="media/segments_list_tag.png" alt-text="Selected segment with Tags highlighted in the command bar."lightbox="media/segments_list_tag.png":::
+   :::image type="content" source="media/segments_list_tag.png" alt-text="Screenshot of a selected segment with Tags highlighted in the command bar." lightbox="media/segments_list_tag.png":::
 
-1. From the **Edit tags** pane, choose any of the following:
+1. From the **Edit tags** pane, choose any of the following actions:
 
    - To add existing tags to the items, type a portion of the name in the **Tags** box until you see the tag you want. Select the tag.
    - To create a tag, type the name in the **Tags** box and select **Create new tag** or press **Enter**. The new tag is added to the items.
    - To remove tags, select **X** next to the tag names.
 
-   :::image type="content" source="media/edit_tags.png" alt-text="Edit tags dialog box to add or remove tags.":::
+   :::image type="content" source="media/edit_tags.png" alt-text="Screenshot of the Edit tags dialog box to add or remove tags.":::
 
 1. Select **Apply**.
 
@@ -47,7 +50,7 @@ Use tags to filter your list of items.
 
 1. Search and select the tags you want to filter by.
 
-1. Select **Apply**. Only records that match the filter tags display. Your filter selection is saved until you log out of this session or switch browsers.
+1. Select **Apply**. Only records that match the filter tags display. The portal saves your filter selection until you sign out of this session or switch browsers.
 
 1. To clear the filter, select **Filter** and **Clear all**.
 
@@ -59,8 +62,10 @@ Customize columns to arrange your list of items. You can add or remove columns a
 
 1. Select **Columns** on the top right of the page.
 
-   :::image type="content" source="media/edit_columns.png" alt-text="Edit columns dialog box to add, remove, or move columns.":::
+   :::image type="content" source="media/edit_columns.png" alt-text="Screenshot of the Edit columns dialog box to add, remove, or move columns.":::
 
 1. Add, remove, or move the columns.
 
 1. Select **Apply**.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

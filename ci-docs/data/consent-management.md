@@ -1,8 +1,8 @@
 ---
 title: Use customer consent
-description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 06/19/2024
-ms.reviewer: mhart
+description: Honor you customers' consent preferences in Customer Insights by importing consent data.
+ms.date: 08/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert 
 ms.author: sstabbert
@@ -11,16 +11,16 @@ ms.author: sstabbert
 
 Dynamics 365 Customer Insights helps you honor your customers’ consent requests by importing and storing their preferences as part of the unified customer profiles.
 
-If consent data is stored separately from your customer profiles, [add your consent data as a new data source](#import-and-unify-consent-data). The data source that contains the consent data is added to the data unification process. Successful unification of consent data and customer profiles then leads to unified customer profiles that contain the consent information. For customer profiles that already contain consent information, go directly to the [use consent data](#use-consent-data) section.
+If you store consent data separately from your customer profiles, [add your consent data as a new data source](#import-and-unify-consent-data). Add the data source that contains the consent data to the data unification process. When you successfully unify consent data and customer profiles, you create unified customer profiles that contain the consent information. For customer profiles that already contain consent information, go directly to the [use consent data](#use-consent-data) section.
 
 ## Prerequisites
 
-The following information must be available in your source data to unify consent data with other customer profiles:
+To unify consent data with other customer profiles, your source data must include the following information:
 
 - A key to match the consent information to user profiles in Customer Insights - Data. For example, an email address or a phone number.
 - Consent value to determine the status of the customer's consent.
 
-Consent data can be unified from a single table or multiple tables as long as a customer is represented as a single row in each table.
+You can unify consent data from a single table or multiple tables as long as each table represents a customer as a single row.
 
 ## Example 1 - Consent data in a single table
 
