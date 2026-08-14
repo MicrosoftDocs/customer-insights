@@ -460,6 +460,8 @@
       href: real-time-marketing-personalize-lists.md
     - name: Preview personalized content
       href: real-time-marketing-preview-personalized-content.md
+    - name: How record ownership and business units affect personalization
+      href: personalization-ownership-business-units.md
   - name: Privacy and compliance
     items:
     - name: Consent management overview
