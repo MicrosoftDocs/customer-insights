@@ -1,11 +1,11 @@
 ---
 title: Securely access customer data with Customer Lockbox (Preview)
-description: Set up to approve data access request.
-ms.date: 05/03/2024
+description: Customer Lockbox (preview) gives you control over who accesses your customer data in Customer Insights - Data during support cases. 
+ms.date: 08/13/2026
 ms.topic: how-to
-author: brndkfr
-ms.author: bkief
-ms.reviewer: mhart
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
