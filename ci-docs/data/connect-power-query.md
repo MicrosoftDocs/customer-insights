@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 05/07/2026
+ms.date: 08/17/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -127,6 +127,16 @@ You must be the owner of the dataflow to edit it.
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+
+## Validation errors when saving changes
+
+When you save a new or edited Power Query data source, Customer Insights - Data validates the changes before applying them. If validation fails, review these common causes:
+
+- Ensure every table name begins with a letter and contains only letters, numbers, and underscores. Table names must also be unique, including names that differ only in capitalization.
+- Ensure column names within each table are unique, including names that differ only in capitalization.
+- If you deleted a table or column, [remove any downstream dependencies](data-unification-remove-dependencies.md#remove-dependencies-blocking-unification) that use it and then save the data source again.
+- If you configured incremental refresh for a table, select exactly one primary key.
+- Remove columns that use unsupported complex types, such as table, record, list, binary, or function.
 
 ## Transfer Power Query data source ownership
 
