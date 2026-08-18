@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 05/07/2026
+ms.date: 08/17/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -20,6 +20,10 @@ Power Query has data size and performance limitations. It makes copies of data i
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef3f2af9-7a02-44e6-9465-5ae4bebab382]
+
+## Prerequisites
+
+You must have the **Admin** role in Customer Insights - Data (Dataverse System Administrator) or be a Power Platform, Dynamics 365, or Global administrator. For more information, see [User roles](user-roles.md). Creating or editing a Power Query data source configures access to the environment's Dataverse managed data lake.
 
 ## Create a new data source
 
@@ -113,7 +117,7 @@ Because an on-premises data gateway is in organization's network, Microsoft can'
 
 ## Edit Power Query data sources
 
-You must be the owner of the dataflow to edit it.
+You must have administrator permissions and be the owner of the dataflow to edit it.
 
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (segmentation or data unification for example).
@@ -127,6 +131,16 @@ You must be the owner of the dataflow to edit it.
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+
+## Validation errors when saving changes
+
+When you save a new or edited Power Query data source, Customer Insights - Data validates the changes before applying them. If validation fails, review these common causes:
+
+- Ensure every table name begins with a letter and contains only letters, numbers, and underscores. Table names must also be unique, including names that differ only in capitalization.
+- Ensure column names within each table are unique, including names that differ only in capitalization.
+- If you deleted a table or column, [remove any downstream dependencies](data-unification-remove-dependencies.md#remove-dependencies-blocking-unification) that use it and then save the data source again.
+- If you configured incremental refresh for a table, select exactly one primary key.
+- Remove columns that use unsupported complex types, such as table, record, list, binary, or function.
 
 ## Transfer Power Query data source ownership
 
