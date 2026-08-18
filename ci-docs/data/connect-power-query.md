@@ -21,6 +21,10 @@ To securely connect data in a private network, Power Query supports the use of [
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef3f2af9-7a02-44e6-9465-5ae4bebab382]
 
+## Prerequisites
+
+You must have the **Admin** role in Customer Insights - Data (Dataverse System Administrator) or be a Power Platform, Dynamics 365, or Global administrator. For more information, see [User roles](user-roles.md). Creating or editing a Power Query data source configures access to the environment's Dataverse managed data lake.
+
 ## Create a new data source
 
 [!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
@@ -113,7 +117,7 @@ Because an on-premises data gateway is in organization's network, Microsoft can'
 
 ## Edit Power Query data sources
 
-You must be the owner of the dataflow to edit it.
+You must have administrator permissions and be the owner of the dataflow to edit it.
 
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (segmentation or data unification for example).
