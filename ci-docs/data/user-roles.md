@@ -28,9 +28,9 @@ The table provides an overview of the different roles. For  details, see each in
 | Access, explore and configure segments      |        | x                       | x           | x             | x                                 |
 | Access, explore and configure measures      |        | x                       | x           | x             | x                                 |
 | Access, explore and configure predictions   |        |                         | x           | x             | x                                 |
-| Access, explore and configure data sources  |        |                         | x           | x             | x                                 |
+| Access, explore and configure data sources\*\* |        |                         | x           | x             | x                                 |
 | Access, explore and configure Unification   |        |                         | x           | x             | x                                 |
-| Accees, explore and configure Activities    |        |                         | x           | x             | x                                 |
+| Access, explore and configure Activities    |        |                         | x           | x             | x                                 |
 | Access, explore and configure Relationships |        |                         | x           | x             | x                                 |
 | Access, explore and configure Enrichments   |        |                         | x           | x             | x                                 |
 | Access, explore and configure Exports       |        | x                       | x           | x             | x                                 |
@@ -42,6 +42,8 @@ The table provides an overview of the different roles. For  details, see each in
 | Delete environment                          |        |                         |             |               | x                                 |
 
 *The Marketing Contributor role is only available in [business unit enabled environments](business-units-data-separation.md). All actions and views for the Marketing Contributor are limited to the business unit(s) they have access to.
+
+\*\*Creating or editing a Microsoft Power Query data source requires administrator permissions, because it configures access to the environment's Dataverse managed data lake. The user who creates or edits the data source must have the **Admin** role (Dataverse System Administrator) or be a Power Platform, Dynamics 365, or Global administrator. Contributors can still view existing data sources and refresh the data sources they own. For more information, see [Connect to a Power Query data source](connect-power-query.md).
 
 > [!NOTE]
 > Customer Insights roles are mapped to Dataverse security roles. To ensure correct system behavior, do not remove or modify the assigned Dataverse role mappings.
@@ -90,8 +92,8 @@ An organization owns two different lines of businesses Automobile and Luxury ret
 ## Contributor
 
 - All permissions available to the Viewer.
-- Load and transform data using the **Data sources** page.
-- Complete **Data Unification that results in the unified customer profile table.
+- Load and transform data by using the **Data sources** page. Creating or editing a Microsoft Power Query data source requires the **Admin** role, because it configures access to the environment's Dataverse managed data lake. Contributors can view existing data sources and refresh the data sources they own.
+- Complete **Data Unification** that results in the unified customer profile table.
 - Define **Relationships** and **Activities**.
 - Create segments using the **Segments** page.
 - Create measures using the **Measures** page.
@@ -101,6 +103,7 @@ An organization owns two different lines of businesses Automobile and Luxury ret
 ## Admin
 
 - All permissions available to the Contributor.
+- Create and edit **Microsoft Power Query** data sources on the **Data sources** page. This action configures access to the environment's Dataverse managed data lake, so it requires the **Admin** role. Contributors can refresh and view existing data sources, but only an administrator can create or edit them.
 - Change settings on the **System** page, including the working language, refresh schedules for your system processes, giving consent for Copilot, and exporting diagnostic logs.
 - Change settings on the **Permissions** page, including users, API keys, private links, and key vault.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
