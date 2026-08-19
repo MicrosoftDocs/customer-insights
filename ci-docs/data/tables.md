@@ -83,9 +83,15 @@ Other tables available in Dataverse are [measures](dataverse-measures.md) and [r
 > [!NOTE]
 > The timing and order of table updates from Customer Insights - Data to Dataverse varies and can't be predicted. If you intend to use this data in other applications, we recommend waiting until the ongoing system refresh completes. Using the data before the refresh is complete might result in incomplete or inconsistent information.
 
+> [!IMPORTANT]
+> Each system refresh rewrites the records in these Dataverse tables. As part of this process, existing rows can be deleted and then recreated instead of updated in place. When a profile is recreated, its **Created On** (`createdon`) value is reset to the time of the refresh, and the operation raises delete and create events on the table, even though the profile isn't a new customer. As a result, the number of records with a recent **Created On** date can be much higher than the number of profiles that actually changed. The **CustomerId** of a profile is preserved across refreshes, except when profiles merge or split. For more information, see [Customer ID](data-unification.md#customer-id).
+>
+> Don't build integrations that rely on the **Created On** date, the row `createdon`, or individual row create and delete events to identify new or changed customers. Instead, key your logic on **CustomerId**, use upserts to reconcile changes, and start downstream processing only after the refresh completes rather than reacting to individual row changes. To start automation when a refresh finishes, use the [Power Automate connector](export-power-automate.md).
+
+
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process.
+This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. Use the CustomerId column as the stable identifier for a unified profile; it's preserved across refreshes except when profiles merge or split.
 
 ### AlternateKey
 
