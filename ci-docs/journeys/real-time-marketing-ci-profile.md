@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
 description: Learn how to use Customer Insights - Data profiles and segments in Customer Insights - Journeys.
-ms.date: 07/08/2025
+ms.date: 08/24/2026
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -25,6 +25,9 @@ To target visitors with abandoned carts, you first need to define a [custom trig
 > ![Cart custom event screenshot.](media/real-time-marketing-ci-profile-cart-event.png)
 
 Alternately, you can create a scheduled journey targeting the customers in an abandoned cart segment. When creating your journey, you're able to see segments from both Customer Insights - Journeys and Customer Insights - Data in the **Audience** dropdown list.
+
+> [!IMPORTANT]
+> When journeys use Customer Insights - Data profiles, measures, or segments, [align journey quiet times with the Customer Insights - Data refresh](coordinate-ci-data-refresh-with-quiet-times.md) so that journey processing uses fully updated data.
 
 ## Set up your Customer Insights - Data environment for use with Customer Insights - Journeys
 
