@@ -2,7 +2,7 @@
 title: Migrate dataflows for Power Query-based data sources.
 description: Learn how to upgrade dataflows when your Power Query data sources are upgraded.
 ms.date: 09/09/2025
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

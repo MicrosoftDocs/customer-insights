@@ -3,8 +3,8 @@ title: Customer Insights - Journeys overview
 description: Learn general information about features in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/13/2024
 ms.topic: overview
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

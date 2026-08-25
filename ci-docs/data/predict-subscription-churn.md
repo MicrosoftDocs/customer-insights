@@ -3,7 +3,7 @@ title: "Predict subscription churn"
 description: "Predict subscription churn in Customer Insights - Data by configuring a model that uses subscription and activity data to flag at-risk customers."
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

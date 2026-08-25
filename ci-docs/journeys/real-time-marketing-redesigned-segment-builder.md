@@ -3,7 +3,7 @@ title: Improve targeting using interaction data in segments
 description: Learn how to improve targeting by using interaction data in segments in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/11/2025
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

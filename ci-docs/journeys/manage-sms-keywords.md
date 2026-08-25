@@ -3,8 +3,8 @@ title: Manage SMS (text message) keywords used in customer journeys
 description: Add, update, and delete SMS keywords used in customer journeys from the SMS keywords page in Customer Insights - Journeys.
 ms.date: 07/29/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

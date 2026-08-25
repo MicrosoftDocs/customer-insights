@@ -3,8 +3,8 @@ title: Monitor your monthly quotas
 description: View your remaining monthly credits for sending marketing email messages and other metered services in Dynamics 365 Customer Insights - Journeys.
 ms.date: 04/20/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

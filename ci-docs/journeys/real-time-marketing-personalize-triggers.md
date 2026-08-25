@@ -3,8 +3,8 @@ title: Personalize triggers using conditions
 description: Learn how to personalize triggers using attributes from tables one hop away in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

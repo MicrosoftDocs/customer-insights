@@ -3,8 +3,8 @@ title: Customize the Customer Insights - Journeys forms interface
 description: Customize Customer Insights - Journeys forms with a managed solution layer to receive automatic updates, or fork a copy for full control and manual maintenance.
 ms.date: 07/10/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - developer
 ---

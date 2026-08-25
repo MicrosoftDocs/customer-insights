@@ -3,8 +3,8 @@ title: Best practices for email marketing
 description: How to design and send marketing email messages that avoid spam filters and get opened by customers in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/01/2026
 ms.topic: best-practice
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

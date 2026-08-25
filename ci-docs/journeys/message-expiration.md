@@ -4,7 +4,7 @@ description: Learn how to set a message expiration for real-time journeys in Dyn
 ms.date: 06/02/2026
 ms.topic: article
 author: Joni-M
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

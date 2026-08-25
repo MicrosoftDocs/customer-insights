@@ -4,7 +4,7 @@ description: Get an overview of forms in Dynamics 365 Customer Insights - Journe
 ms.date: 08/11/2026
 ms.topic: article
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

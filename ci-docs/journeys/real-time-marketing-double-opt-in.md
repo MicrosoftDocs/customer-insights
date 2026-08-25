@@ -4,7 +4,7 @@ description: Learn how to use double opt-in in Dynamics 365 Customer Insights - 
 ms.date: 05/29/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

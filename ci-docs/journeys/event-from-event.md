@@ -3,8 +3,8 @@ title: Create an event from another event
 description: Use the Save as command to copy an existing event's sessions, speakers, and sponsorships into a new event in Customer Insights - Journeys.
 ms.date: 07/23/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

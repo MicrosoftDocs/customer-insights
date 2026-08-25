@@ -4,7 +4,7 @@ description: 'Customer Insights - Journeys forms: Filter city options by country
 ms.date: 07/09/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

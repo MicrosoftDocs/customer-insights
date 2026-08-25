@@ -4,7 +4,7 @@ description: Learn how to configure tracking consent in Dynamics 365 Customer In
 ms.date: 08/14/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

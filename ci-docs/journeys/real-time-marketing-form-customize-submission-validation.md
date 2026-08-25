@@ -4,7 +4,7 @@ description: Learn how to extend the back-end validation of form submission in D
 ms.date: 04/22/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

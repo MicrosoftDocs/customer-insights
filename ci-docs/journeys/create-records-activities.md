@@ -4,8 +4,8 @@ description: Dynamics 365 Customer Insights journeys let you create any record o
 ms.date: 06/30/2026
 ms.topic: article
 author: cmenesatti-m
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

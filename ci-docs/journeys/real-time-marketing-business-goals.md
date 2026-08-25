@@ -3,8 +3,8 @@ title: Set a business goal and measure progress through a journey
 description: Learn how to create a business goal for a journey, set a target, and measure progress using count or percentage metrics.
 ms.date: 08/04/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

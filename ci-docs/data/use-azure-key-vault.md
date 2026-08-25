@@ -2,7 +2,7 @@
 title: Bring your own Azure key vault (preview)
 description: Bring your own Azure key vault in Dynamics 365 Customer Insights - Data to store connection secrets securely. Learn how to link a key vault.
 ms.date: 07/30/2026
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

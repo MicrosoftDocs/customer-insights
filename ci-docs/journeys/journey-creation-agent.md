@@ -6,8 +6,8 @@ ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: cmenesatti-m
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 ---
 
 # Journey Creation Agent in Customer Insights - Journeys (preview)

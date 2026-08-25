@@ -3,8 +3,8 @@ title: Email accessibility checker
 description: Use the built-in accessibility checker in Customer Insights - Journeys to find and fix accessibility issues in your email messages.
 ms.date: 07/22/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

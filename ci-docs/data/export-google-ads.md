@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ---
 
 # Export segments to Google Ads

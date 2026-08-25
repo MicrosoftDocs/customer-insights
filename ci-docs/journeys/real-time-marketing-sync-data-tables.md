@@ -3,8 +3,8 @@ title: Sync data tables into the segment builder
 description: Learn how to sync data tables into the segment builder in the Customer Insights - Journeys.
 ms.date: 01/29/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

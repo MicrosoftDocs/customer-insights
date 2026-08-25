@@ -4,8 +4,8 @@ description: Learn how to quickly sign up for and start a free Dynamics 365 Cust
 ms.date: 09/09/2025
 ms.topic: get-started
 ms.custom: template-trial-setup
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

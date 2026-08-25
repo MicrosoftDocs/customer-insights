@@ -3,8 +3,8 @@ title: Google Postmaster Tools - What it is and how it can help you
 description: Set up Google Postmaster Tools and understand its dashboards for spam rate, reputation, authentication, and delivery errors.
 ms.date: 07/23/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

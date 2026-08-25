@@ -3,8 +3,8 @@ title: Open a Power Apps customization window
 description: "Learn how to open the Power Apps customization window in Dynamics 365 Customer Insights - Journeys to customize model-driven apps like forms and views."
 ms.date: 07/22/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

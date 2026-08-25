@@ -6,8 +6,8 @@ ms.custom:
   - dyn365-admin
   - dyn365-marketing
 ms.topic: best-practice
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

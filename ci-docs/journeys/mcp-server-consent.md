@@ -6,8 +6,8 @@ ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: PetrJantac
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 ---
 
 # Use consent tools in the Customer Insights MCP Server (preview)

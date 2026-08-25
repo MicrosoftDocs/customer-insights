@@ -3,8 +3,8 @@ title: Get started with Customer Insights - Journeys app setup
 description: Learn how to get up and running quickly in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/23/2023
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

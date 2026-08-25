@@ -4,9 +4,9 @@ description: Segment-based journeys in Dynamics 365 Customer Insights - Journeys
 ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

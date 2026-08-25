@@ -4,7 +4,7 @@ description: 'Consent management in Customer Insights – Journeys: Learn how to
 ms.date: 08/13/2026
 ms.topic: concept-article
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

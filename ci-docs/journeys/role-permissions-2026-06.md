@@ -4,8 +4,8 @@ description: The June 2026 release changed permissions for 9 out-of-the-box role
 ms.date: 08/05/2026
 ms.topic: article
 author: vinayd
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

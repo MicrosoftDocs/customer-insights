@@ -3,8 +3,8 @@ title: Improve email deliverability to China
 description: Learn how Chinese ISPs filter email and follow best practices for content, HTML, and sending limits to improve deliverability.
 ms.date: 07/23/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,7 +3,7 @@ title: "Exports overview"
 description: "Overview on exports in Dynamics 365 Customer Insights - Data."
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.date: 02/17/2026
 ms.topic: overview
 ms.custom: bap-template

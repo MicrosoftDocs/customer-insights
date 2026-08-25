@@ -4,7 +4,7 @@ description: Learn about link tracking mechanics in Dynamics 365 Customer Insigh
 ms.date: 07/22/2026
 ms.topic: article
 author: Joni-M
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

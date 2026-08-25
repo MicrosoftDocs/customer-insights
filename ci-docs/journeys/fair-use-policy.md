@@ -3,8 +3,8 @@ title: Service limits and fair use policy
 description: Check the maximum usage limits for Customer Insights - Journeys features such as interactions, data sync rows, segments, and journey throughput.
 ms.date: 07/13/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

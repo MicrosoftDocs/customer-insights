@@ -3,8 +3,8 @@ title: Set the sender, receiver, language and legal designation for a message
 description: Learn how to use the email settings provided on the Summary tab, including to and from options, language, and the legal designation in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/28/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

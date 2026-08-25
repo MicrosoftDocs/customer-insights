@@ -3,8 +3,8 @@ title: Extend and customize consent
 description: Learn how to extend and customize consent capabilities in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/10/2024
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - developer
 ---

@@ -3,8 +3,8 @@ title: Create and deploy Excel templates
 description: Create, customize, and upload Excel templates to export and analyze data from Dynamics 365 Customer Insights - Journeys records.
 ms.date: 07/29/2026
 ms.topic: install-set-up-deploy
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

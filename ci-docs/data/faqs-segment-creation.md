@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: faq
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.collection: bap-ai-copilot 
 ---
 

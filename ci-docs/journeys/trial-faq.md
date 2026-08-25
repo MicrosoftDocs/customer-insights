@@ -4,7 +4,7 @@ description: Solutions to common questions related to Dynamics 365 Customer Insi
 ms.date: 09/09/2025
 ms.topic: get-started
 ms.custom: template-trial-faq
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

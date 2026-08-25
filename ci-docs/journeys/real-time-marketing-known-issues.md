@@ -3,8 +3,8 @@ title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
 ms.date: 07/14/2026
 ms.topic: troubleshooting-known-issue
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

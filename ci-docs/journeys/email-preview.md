@@ -3,8 +3,8 @@ title: Check your work using previews and test sends
 description: Test and preview your email designs in Dynamics 365 Customer Insights - Journeys to ensure they look great across devices and email clients.
 ms.date: 03/26/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: When to use attribute versus if/then branches
 description: Learn the difference between attribute branches and if/then branches, and see use cases for choosing the right one in your journey.
 ms.date: 08/04/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

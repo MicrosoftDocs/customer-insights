@@ -3,8 +3,8 @@ title: User account management in Customer Insights - Journeys
 description: View a list of users licensed for Dynamics 365 Customer Insights - Journeys, then search, sort, and edit their basic details.
 ms.date: 07/29/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

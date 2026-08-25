@@ -3,8 +3,8 @@ title: Install optional add-ons in Dynamics 365 Customer Insights
 description: Install optional add-ons in Dynamics 365 Customer Insights - Journeys to extend or improve the default functionality of a specific area.
 ms.date: 07/16/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

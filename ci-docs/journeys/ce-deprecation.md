@@ -3,7 +3,7 @@ title: "Deprecation: Dynamics 365 for Customer Engagement"
 description: Learn about the Dynamics 365 for Customer Engagement deprecation and next steps.
 ms.date: 07/08/2025
 ms.topic: article
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

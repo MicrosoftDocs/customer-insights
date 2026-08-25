@@ -1,8 +1,8 @@
 ---
 title: Use Copilot's form fill assistance feature in Dynamics 365 Customer Insights - Journeys
 description: Learn how to use AI-generated optional suggestions for fields in a form in Dynamics 365 Customer Insights - Journeys.
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.topic: overview
 ms.date: 04/21/2026
 ---

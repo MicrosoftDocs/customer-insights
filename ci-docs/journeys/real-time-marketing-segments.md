@@ -3,8 +3,8 @@ title: Segmentation overview
 description: Learn how to work with segments in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/11/2023
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

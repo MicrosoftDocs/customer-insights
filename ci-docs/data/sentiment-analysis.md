@@ -3,7 +3,7 @@ title: Analyze sentiment for customer feedback (preview)
 description: Sentiment analysis in Customer Insights - Data assigns sentiment scores and business aspects to customer feedback for deeper insight.
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: wmelewong 
 ms.author: wameng

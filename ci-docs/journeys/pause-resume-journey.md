@@ -3,8 +3,8 @@ title: Pause and resume a journey
 description: Learn how to pause and resume a journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/26/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

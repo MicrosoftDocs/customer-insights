@@ -3,9 +3,9 @@ title: Push notification user mapping for application developers
 description: Push notification user mapping connects Customer Insights - Journeys records to mobile app users so notifications reach the correct person.
 ms.date: 07/16/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
-ms.reviewer: alfergus
+author: udag
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

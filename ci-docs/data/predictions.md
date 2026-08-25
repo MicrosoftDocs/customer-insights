@@ -3,7 +3,7 @@ title: Create and manage predictions
 description: Create, refresh, and manage AI-powered predictions in Dynamics 365 Customer Insights - Data using out-of-box models like churn and lifetime value.
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: radsay01
 ms.author: sstabbert

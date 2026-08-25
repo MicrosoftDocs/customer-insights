@@ -3,7 +3,7 @@ title: Predict transaction churn
 description: "Transactional churn prediction identifies customers likely to stop purchasing your products or services within a defined time window."
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: radsay01
 ms.author: sstabbert 
