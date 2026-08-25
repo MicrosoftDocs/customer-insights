@@ -3,8 +3,8 @@ title: Use your own Azure Data Lake Storage account for segments
 description: Learn about the requirements to use your own Azure Data Lake Storage account for segments in Customer Insights - Journeys.
 ms.date: 11/19/2024
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

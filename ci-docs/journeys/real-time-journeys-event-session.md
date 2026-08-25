@@ -4,7 +4,7 @@ description: Learn how to set up session-level registration in Dynamics 365 Cust
 ms.date: 05/14/2026
 ms.topic: article
 author: terezakirk
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - enduser

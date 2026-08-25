@@ -4,8 +4,8 @@ description: Receiving push notifications on mobile devices is easy with Custome
 ms.date: 05/29/2026
 ms.topic: how-to
 author: Joni-M
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

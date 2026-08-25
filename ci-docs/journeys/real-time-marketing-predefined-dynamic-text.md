@@ -4,7 +4,7 @@ description: Learn how to personalize content using predefined dynamic text in D
 ms.date: 05/07/2026
 ms.topic: how-to
 author: vinayd-msft
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

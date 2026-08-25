@@ -3,8 +3,8 @@ title: Customer Insights - Journeys administrator settings
 description: Learn about administrator settings required for Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/19/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.reviewer: colinbirkett
 search.audienceType: 
   - admin

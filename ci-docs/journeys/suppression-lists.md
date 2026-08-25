@@ -3,8 +3,8 @@ title: How Customer Insights - Journeys uses suppression lists for email deliver
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations and improve deliverability.
 ms.date: 02/03/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

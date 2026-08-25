@@ -4,7 +4,7 @@ description: An overview of the journey end configuration in Dynamics 365 Custom
 ms.date: 04/03/2026
 ms.topic: article
 author: cmenesatti
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

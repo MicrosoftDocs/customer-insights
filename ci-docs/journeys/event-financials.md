@@ -3,8 +3,8 @@ title: View and record financial information for events
 description: Learn how to record and track speaker costs, venue costs, sponsorship revenue, and event pass prices in Customer Insights - Journeys.
 ms.date: 07/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

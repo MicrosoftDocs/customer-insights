@@ -3,8 +3,8 @@ title: Use frequency capping in your journey to limit the number of messages sen
 description: Frequency cap lets you limit messages in your journey to prevent customer fatigue. Learn how to set caps and bypass them when needed.
 ms.date: 08/29/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

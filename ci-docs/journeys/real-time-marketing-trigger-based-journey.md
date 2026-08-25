@@ -3,8 +3,8 @@ title: Create a trigger-based journey
 description: Learn how to build a trigger-based journey in Dynamics 365 Customer Insights. Set up real-time responses to customer actions and drive engagement.
 ms.date: 07/11/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

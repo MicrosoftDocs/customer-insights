@@ -3,8 +3,8 @@ title: Export data to Word or Excel files
 description: Export Customer Insights - Journeys data to Word documents or Excel workbooks using built-in templates for records and record lists.
 ms.date: 07/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

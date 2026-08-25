@@ -4,7 +4,7 @@ description: Learn how to use the event API to access date from events, sessions
 ms.date: 05/14/2026
 ms.topic: overview
 author: terezakirk
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - developer
 ms.custom: sfi-image-nochange

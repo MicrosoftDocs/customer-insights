@@ -3,8 +3,8 @@ title: Push notification device registration setup for application developers
 description: Learn developer settings for registering push notification devices in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/25/2024
 ms.topic: install-set-up-deploy
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

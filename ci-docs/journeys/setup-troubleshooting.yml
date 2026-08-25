@@ -4,8 +4,8 @@ metadata:
   description: Solutions to common questions and issues that can occur during the initial setup and ongoing administration of Dynamics 365 Customer Insights - Journeys.
   ms.date: 09/15/2023
   ms.topic: faq
-  author: alfergus
-  ms.author: alfergus
+  author: udag
+  ms.author: udag
   search.audienceType: 
     - admin
     - customizer

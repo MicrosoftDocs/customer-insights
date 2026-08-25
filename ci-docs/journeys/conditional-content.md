@@ -3,8 +3,8 @@ title: How to use conditional content
 description: Learn how to use conditional content features in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/20/2023
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

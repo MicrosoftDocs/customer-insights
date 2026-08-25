@@ -4,7 +4,7 @@ description: Extend Customer Insights - Journeys marketing forms with JavaScript
 ms.date: 08/03/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
 - developer
 ---

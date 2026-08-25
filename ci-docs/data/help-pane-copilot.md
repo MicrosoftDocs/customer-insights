@@ -3,7 +3,7 @@ title: Get answers to questions about capabilities from Copilot (preview)
 description: Copilot in Customer Insights - Data answers your questions about app capabilities in natural language. Learn how to get help and explore features.
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

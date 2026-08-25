@@ -4,8 +4,8 @@ description: Authenticate your domains in Dynamics 365 Customer Insights - Journ
 ms.date: 05/29/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

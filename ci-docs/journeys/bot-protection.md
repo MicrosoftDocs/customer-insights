@@ -4,8 +4,8 @@ description: Exclude bot interactions in Dynamics 365 Customer Insights - Journe
 ms.date: 07/14/2026
 ms.topic: article
 author: Joni-M
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

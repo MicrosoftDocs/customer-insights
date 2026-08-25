@@ -3,8 +3,8 @@ title: A/B tests in Customer Insights - Journeys
 description: A/B tests in Customer Insights - Journeys help you compare content and channels to find the best way to reach your customers. Learn how to set up and analyze tests.
 ms.date: 01/22/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

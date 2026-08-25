@@ -3,8 +3,8 @@ title: Use binding IDs to correlate across triggers
 description: Binding IDs let you correlate custom triggers to specific instances of a repeatable journey in Customer Insights - Journeys.
 ms.date: 08/05/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -4,8 +4,8 @@ description: Enhanced journey reminders let you send message series that stop wh
 ms.date: 06/01/2026
 ms.topic: get-started
 author: cmenesatti-m
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

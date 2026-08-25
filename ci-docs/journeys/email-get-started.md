@@ -3,8 +3,8 @@ title: Get started with email
 description: Learn how to get up and running quickly with email features in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/25/2026
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: Add protected fields in segment criteria
 description: Learn how to use protected fields and columns to restrict segment access to certain Dataverse columns in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/24/2024
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

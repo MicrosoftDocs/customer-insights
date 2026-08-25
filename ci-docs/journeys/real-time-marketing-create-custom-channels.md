@@ -3,8 +3,8 @@ title: Create custom channels in Customer Insights - Journeys
 description: Learn how to create and use custom channels in Customer Insights - Journeys, from installing the app to sending messages.
 ms.date: 08/04/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: Create Customer Insights - Journeys emails
 description: Discover how to use the Customer Insights - Journeys email editor to create dynamic, personalized emails with advanced features like AI image suggestions.
 ms.date: 04/16/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

@@ -4,7 +4,7 @@ description: 'Prerequisites for conversational journeys: Discover the required p
 ms.date: 05/13/2026
 ms.topic: article
 author: Joni-M
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

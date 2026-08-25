@@ -3,8 +3,8 @@ title: Data subject request (DSR) handling
 description: Learn how to view, create, and delete data subject requests in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/13/2023
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

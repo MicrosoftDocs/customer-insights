@@ -3,8 +3,8 @@ title: Create segments using unified profiles and customer measures from Custome
 description: Learn how to create segments using unified profiles and customer measures from Customer Insights - Data in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/07/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

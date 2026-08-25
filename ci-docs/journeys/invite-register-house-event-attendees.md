@@ -4,7 +4,7 @@ description: After your event is set up, learn how to invite attendees, register
 ms.date: 05/14/2026
 ms.topic: article
 author: terezakirk
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

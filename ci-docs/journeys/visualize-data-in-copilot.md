@@ -1,8 +1,8 @@
 ---
 title: Visualize data in a view with Copilot in Dynamics 365 Customer Insights - Journeys (preview)
 description: Learn how to visualize your data in a view using Copilot in Dynamics 365 Customer Insights - Journeys.
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.topic: overview
 ms.date: 04/21/2026
 ---

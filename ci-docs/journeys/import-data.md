@@ -3,8 +3,8 @@ title: Import data and control how duplicate records are identified
 description: Import data into Customer Insights - Journeys from .csv or Excel files and configure how duplicate records are detected.
 ms.date: 07/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

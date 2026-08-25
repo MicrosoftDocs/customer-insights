@@ -3,8 +3,8 @@ title: Browser and system requirements
 description: Find the supported desktop and tablet browsers, screen readers, and email clients for Dynamics 365 Customer Insights - Journeys, plus browser setup steps.
 ms.date: 07/22/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

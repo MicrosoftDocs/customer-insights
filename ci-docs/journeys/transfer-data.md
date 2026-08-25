@@ -3,7 +3,7 @@ title: Transfer data with the Configuration Migration tool
 description: Transfer Customer Insights - Journeys data between environments using the Configuration Migration tool, and understand its capabilities and limitations.
 ms.date: 07/13/2026
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType:
   - admin

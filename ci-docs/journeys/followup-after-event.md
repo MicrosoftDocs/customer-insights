@@ -3,8 +3,8 @@ title: Evaluate your event and follow up with attendees
 description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/10/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

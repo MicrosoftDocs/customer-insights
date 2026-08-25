@@ -3,8 +3,8 @@ title: FAQs for Customer Insights - Journeys
 description: Find answers to frequently asked questions about channel A/B testing, channel optimization, and engagement rate in Customer Insights - Journeys.
 ms.date: 08/04/2026
 ms.topic: faq
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

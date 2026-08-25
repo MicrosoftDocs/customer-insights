@@ -4,8 +4,8 @@ description: Get answers to frequently asked questions about Dynamics 365 Custom
 ms.date: 03/25/2026
 ms.collection: article
 ms.topic: overview
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

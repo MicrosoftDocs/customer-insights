@@ -4,7 +4,7 @@ description: Learn how to customize the form entity in Dynamics 365 Customer Ins
 ms.date: 1/26/2024
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

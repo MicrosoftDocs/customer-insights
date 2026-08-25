@@ -3,8 +3,8 @@ title: Manage attendee logistics and accommodation availability
 description: Manage event logistics in Dynamics 365 Customer Insights - Journeys, including vendors, hotels, room allocations, and reservations for attendees.
 ms.date: 07/29/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -1,12 +1,12 @@
 ---
 title: Copilot features in Customer Insights - Data
 ms.date: 07/10/2026
-ms.reviewer: alfergus
+ms.reviewer: udag
 description: Copilot in Customer Insights - Data helps you dialog with your data, get answers to capability questions, and create segments using natural language.
 ms.update-cycle: 180-days
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

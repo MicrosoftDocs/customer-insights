@@ -3,8 +3,8 @@ title: Warm-up process for marketing senders
 description: Learn the domain warm-up process for marketing email senders in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/08/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

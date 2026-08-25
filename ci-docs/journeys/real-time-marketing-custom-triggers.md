@@ -4,8 +4,8 @@ description: Learn how to create, integrate, and finalize a custom trigger to st
 ms.date: 08/04/2026
 ms.topic: how-to
 author: cmenesatti-m
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

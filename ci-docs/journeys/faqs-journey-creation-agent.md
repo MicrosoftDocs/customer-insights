@@ -5,8 +5,8 @@ ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 ms.collection: bap-ai-copilot
 ms.custom:
   - transparency-note

@@ -1,12 +1,12 @@
 ---
 title: Boost event engagement with journeys
-ms.reviewer: alfergus
+ms.reviewer: udag
 description: Learn how to use Dynamics 365 Customer Insights - Journeys to automate event engagement. From registration to post-event follow-ups, streamline your process.
 ms.date: 12/03/2025
 ms.custom: 
   - dyn365-marketing
 ms.topic: get-started
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

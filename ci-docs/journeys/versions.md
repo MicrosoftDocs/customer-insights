@@ -3,8 +3,8 @@ title: Use the versions page to check and update the current solution version
 description: Learn how to check and update the current solution version in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/18/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

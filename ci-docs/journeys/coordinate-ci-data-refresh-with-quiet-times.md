@@ -4,8 +4,8 @@ description: Align journey quiet times with Customer Insights - Data refresh win
 ms.date: 05/13/2026
 ms.topic: how-to
 author: svejdo1
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

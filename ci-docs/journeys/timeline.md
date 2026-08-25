@@ -3,7 +3,7 @@ title: Customer interactions timeline
 description: View historical customer interactions in Dynamics 365 Customer Insights - Journeys. Learn how to configure the timeline for a unified view of activities.
 ms.date: 06/17/2026
 ms.topic: article
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType:
   - admin

@@ -4,7 +4,7 @@ description: Discover how to manage and style forms in Dynamics 365 Customer Ins
 ms.date: 07/09/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

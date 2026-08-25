@@ -3,8 +3,8 @@ title: Removed or deprecated features in Dynamics 365 Customer Insights - Journe
 description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
 ms.date: 04/03/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

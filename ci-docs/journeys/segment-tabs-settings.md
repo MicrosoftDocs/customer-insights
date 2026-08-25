@@ -3,8 +3,8 @@ title: Tabs and settings for segments
 description: Learn to navigate tabs and settings for segments in Dynamics 365 Customer Insights - Journeys to optimize your customer targeting.
 ms.date: 09/19/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: Define the message parts
 description: Learn how to create and configure message parts for a custom channel, including required fields and supported types.
 ms.date: 08/04/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

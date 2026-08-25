@@ -3,8 +3,8 @@ title: Customize the journey designer in Customer Insights - Journeys
 description: Learn how to customize the journey designer in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/10/2024
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

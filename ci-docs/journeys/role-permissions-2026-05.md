@@ -4,8 +4,8 @@ description: Out-of-the-box role permissions in Customer Insights - Journeys wer
 ms.date: 08/05/2026
 ms.topic: article
 author: vinayd
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

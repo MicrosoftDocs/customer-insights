@@ -4,8 +4,8 @@ description: Channel optimization in Customer Insights - Journeys continuously m
 ms.date: 08/05/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

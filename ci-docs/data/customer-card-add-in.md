@@ -2,7 +2,7 @@
 title: "Customer Card Add-in for Dynamics 365 apps (preview)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
 ms.date: 06/22/2026
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

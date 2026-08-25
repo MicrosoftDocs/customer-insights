@@ -3,8 +3,8 @@ title: Asset library add-on file migration
 description: Files from the retired asset library add-on were automatically migrated to the unified asset library in Customer Insights - Journeys.
 ms.date: 07/30/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - enduser

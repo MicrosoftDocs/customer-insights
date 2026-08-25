@@ -3,8 +3,8 @@ title: Dynamics 365 Customer Insights - Journeys public IP addresses
 description: 'Dynamics 365 Customer Insights - Journeys public IP addresses: Find the latest public IPs by region to help you manage network access and email delivery. Check your region now.'
 ms.date: 08/15/2025
 ms.topic: overview
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

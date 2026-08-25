@@ -4,7 +4,7 @@ description: How to mark up the HTML in your email and page templates to enable 
 ms.date: 04/10/2026
 ms.topic: how-to
 author: vinayd
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

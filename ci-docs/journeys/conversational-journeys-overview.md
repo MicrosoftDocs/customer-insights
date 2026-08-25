@@ -4,7 +4,7 @@ description: Learn how conversational journeys in Dynamics 365 Customer Insights
 ms.date: 05/07/2026
 ms.topic: article
 author: vinayd-msft
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

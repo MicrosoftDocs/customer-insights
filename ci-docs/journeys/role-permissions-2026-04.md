@@ -4,8 +4,8 @@ description: The April 2026 release of Customer Insights - Journeys added new ta
 ms.date: 08/05/2026
 ms.topic: article
 author: vinayd
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

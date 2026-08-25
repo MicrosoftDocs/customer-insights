@@ -4,7 +4,7 @@ description: Build a seamless event registration experience using Customer Insig
 ms.date: 03/27/2026
 ms.topic: article
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

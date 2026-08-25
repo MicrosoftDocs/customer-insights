@@ -3,8 +3,8 @@ title: Customer Insights - Journeys triggers
 description: Learn about triggers in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/04/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

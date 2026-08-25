@@ -3,8 +3,8 @@ title: Raise triggers from a journey to run another journey or Power Automate fl
 description: Learn how to trigger an action outside of a journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/06/2024
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

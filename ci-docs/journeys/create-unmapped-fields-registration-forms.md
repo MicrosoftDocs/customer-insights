@@ -4,7 +4,7 @@ description: Learn how create unmapped fields for registration forms in Dynamics
 ms.date: 10/23/2025
 ms.topic: article
 author: colinbirkett
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

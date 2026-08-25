@@ -4,7 +4,7 @@ description: How to access and interpret Customer Insights - Journeys analytics 
 ms.date: 05/29/2026
 ms.topic: article
 author: cmenesatti-m
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

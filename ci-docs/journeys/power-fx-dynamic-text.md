@@ -3,9 +3,9 @@ title: Transform dynamic text with Power Fx formulas
 description: Apply Power Fx formulas to dynamic text in Customer Insights - Journeys to capitalize names, format numbers for a locale, and localize dates before sending.
 ms.date: 08/08/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
-ms.reviewer: alfergus
+author: udag
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer
