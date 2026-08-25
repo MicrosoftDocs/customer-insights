@@ -3,7 +3,7 @@ title: Predict customer lifetime value (CLV)
 description: "Configure a CLV prediction model to estimate future customer revenue, define active customers, and identify high-value segments."
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

@@ -3,8 +3,8 @@ title: Define an extended configuration entity for the channel instance
 description: Learn how to define an extended configuration entity for a custom channel instance in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/26/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

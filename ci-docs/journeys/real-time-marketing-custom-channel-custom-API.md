@@ -4,8 +4,8 @@ description: Learn how to implement outbound, delivery report, and inbound custo
 ms.date: 08/04/2026
 ms.topic: how-to
 author: Joni-M
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

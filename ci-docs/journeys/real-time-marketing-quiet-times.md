@@ -3,8 +3,8 @@ title: Set up quiet times to prevent messages from being sent during unwanted ho
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
 ms.date: 01/09/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

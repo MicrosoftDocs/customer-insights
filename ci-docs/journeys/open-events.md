@@ -4,7 +4,7 @@ description: Explains how to access event-management features in Dynamics 365 Cu
 ms.date: 05/18/2026
 ms.topic: how-to
 author: terezakirk
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

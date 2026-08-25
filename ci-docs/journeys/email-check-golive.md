@@ -3,8 +3,8 @@ title: Check your message for errors and prepare it for delivery
 description: Learn how to finalize your email message, check it for errors, go live, and schedule it for delivery using a customer journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/25/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

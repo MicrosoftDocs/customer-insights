@@ -3,8 +3,8 @@ title: Administer users, teams, and templates
 description: Configure organization settings for users, teams, Word and Excel templates, and fiscal year in Customer Insights - Journeys.
 ms.date: 07/30/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

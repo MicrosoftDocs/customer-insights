@@ -3,8 +3,8 @@ title: Impact of disabling Azure CDN
 description: Impact of disabling Azure CDN in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/04/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

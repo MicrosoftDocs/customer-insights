@@ -4,7 +4,7 @@ description: Learn how to capture forms in Dynamics 365 Customer Insights - Jour
 ms.date: 02/11/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

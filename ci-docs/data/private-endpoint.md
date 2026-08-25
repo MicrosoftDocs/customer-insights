@@ -5,7 +5,7 @@ ms.date: 09/16/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

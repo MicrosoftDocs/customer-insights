@@ -3,8 +3,8 @@ title: Identify and resolve errors with real-time customer care journeys
 description: Learn how to identify and resolve errors with real-time customer care journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/18/2026
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

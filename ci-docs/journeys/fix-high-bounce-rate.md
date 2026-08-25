@@ -3,8 +3,8 @@ title: Fix a high email bounce rate
 description: Learn the acceptable email bounce rate threshold and how to diagnose and fix a high bounce rate in Customer Insights - Journeys.
 ms.date: 07/23/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

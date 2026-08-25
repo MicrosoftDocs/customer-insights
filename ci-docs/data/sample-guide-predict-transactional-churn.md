@@ -3,7 +3,7 @@ title: Transactional churn prediction sample guide
 description: This sample guide demonstrates transactional churn prediction end to end, covering data ingestion, unification, model setup, and segment creation.
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert

@@ -3,8 +3,8 @@ title: Set up event management to work with Microsoft Entra ID
 description: Provides information about how you can set up event management web application to work with Microsoft Entra ID.
 ms.date: 03/25/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - developer
 ---

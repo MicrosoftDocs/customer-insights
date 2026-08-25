@@ -3,7 +3,7 @@ title: Create a segment based on a prediction model
 description: "Create segments from prediction model output tables to personalize recommendations for specific customer subsets in Customer Insights - Data."
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: radsay01
 ms.author: sstabbert 

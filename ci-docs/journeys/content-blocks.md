@@ -4,8 +4,8 @@ description: Reusable content blocks in Dynamics 365 Customer Insights - Journey
 ms.date: 08/04/2026
 ms.topic: how-to
 author: vinayd-msft
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

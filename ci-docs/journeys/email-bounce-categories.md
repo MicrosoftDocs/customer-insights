@@ -3,8 +3,8 @@ title: Email bounce categories
 description: A comprehensive list of email bounce categories and definitions for Customer Insights - Journeys, including hard bounces and reputation issues.
 ms.date: 07/22/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

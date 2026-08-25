@@ -4,9 +4,9 @@ description: Query Assist copilot in Dynamics 365 Customer Insights - Journeys t
 ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: article
-author: alfergus
-ms.author: alfergus
-ms.reviewer: alfergus
+author: udag
+ms.author: udag
+ms.reviewer: udag
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

@@ -3,9 +3,9 @@ title: Build segments in Customer Insights - Journeys
 description: Customer Insights - Journeys segment builder helps you create dynamic and static segments using attributes, related tables, and manual selections.
 ms.date: 07/13/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
-ms.reviewer: alfergus
+author: udag
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

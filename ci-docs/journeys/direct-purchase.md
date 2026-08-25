@@ -3,8 +3,8 @@ title: Purchase a license directly from a trial
 description: Learn how to a license to purchase a paid license directly within a Dynamics 365 Customer Insights trial.
 ms.date: 07/23/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

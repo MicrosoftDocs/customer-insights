@@ -3,7 +3,7 @@ title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/09/2025
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

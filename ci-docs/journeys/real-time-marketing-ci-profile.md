@@ -3,7 +3,7 @@ title: Use Customer Insights - Data profiles and segments in Customer Insights -
 description: Learn how to use Customer Insights - Data profiles and segments in Customer Insights - Journeys.
 ms.date: 07/08/2025
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType: 
   - admin

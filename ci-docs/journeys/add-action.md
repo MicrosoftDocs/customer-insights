@@ -4,7 +4,7 @@ description: Learn about the messaging, AI-powered, condition, and connector act
 ms.date: 07/14/2026
 ms.topic: article
 author: cmenesatti-m
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: Anonymized customer data human review notice
 description: Learn about Microsoft's human data review policy in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/17/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

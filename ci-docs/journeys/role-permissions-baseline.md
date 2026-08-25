@@ -4,8 +4,8 @@ description: Out-of-the-box role permissions from before March 2026 are preserve
 ms.date: 07/28/2026
 ms.topic: article
 author: vinayd
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - admin
   - customizer

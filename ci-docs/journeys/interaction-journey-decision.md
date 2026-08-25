@@ -4,8 +4,8 @@ description: Learn how to personalize messages and make journey decisions based 
 ms.date: 08/03/2026
 ms.topic: how-to
 author: Joni-M
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType:
   - admin
   - customizer

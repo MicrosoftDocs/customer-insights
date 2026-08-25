@@ -3,7 +3,7 @@ title: "Predict product recommendations (preview)"
 description: "Predict product recommendations to identify which products customers are likely to purchase or interact with next, based on past purchases."
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

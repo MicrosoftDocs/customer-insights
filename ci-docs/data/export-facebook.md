@@ -2,7 +2,7 @@
 title: "Export segments to Facebook Ads Manager"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
 ms.date: 09/29/2025
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

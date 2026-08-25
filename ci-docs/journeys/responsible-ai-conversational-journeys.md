@@ -3,8 +3,8 @@ title: Responsible AI FAQs for conversational journeys
 description: Learn how to responsibly use AI for conversational journeys in Dynamics 365 Customer Insights - Journeys. Discover key considerations and best practices.
 ms.date: 06/23/2025
 ms.topic: faq
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

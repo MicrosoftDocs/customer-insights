@@ -3,8 +3,8 @@ title: Customize Dynamics 365 Customer Insights - Journeys
 description: How to customize lists, forms, workflows, business processes, validations, and more in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/07/2023
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

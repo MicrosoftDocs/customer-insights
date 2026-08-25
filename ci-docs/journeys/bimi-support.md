@@ -3,8 +3,8 @@ title: BIMI support
 description: Understand BIMI support in Dynamics 365 Customer Insights - Journeys, including logo requirements, DNS setup, and email authentication protocols.
 ms.date: 07/22/2026
 ms.topic: reference
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

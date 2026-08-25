@@ -4,7 +4,7 @@ description: Learn how to build segments using consent‑based criteria in Dynam
 ms.date: 03/12/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

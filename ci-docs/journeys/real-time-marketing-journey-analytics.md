@@ -3,8 +3,8 @@ title: Real-time tile analytics in journeys
 description: Real-time journey analytics help you track customer movement at every step, showing who enters, exits, and why. Start analyzing your journeys now.
 ms.date: 07/11/2025
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - enduser

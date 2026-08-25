@@ -3,8 +3,8 @@ title: Create and deploy Word templates
 description: Create Word templates that export, format, and share Dynamics 365 record data as branded documents in Customer Insights - Journeys.
 ms.date: 07/30/2026
 ms.topic: install-set-up-deploy
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

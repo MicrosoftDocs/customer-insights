@@ -3,8 +3,8 @@ title: Email security and connection encryption
 description: Learn how Customer Insights - Journeys uses SSL and TLS connection encryption, including opportunistic TLS, to secure outgoing email delivery.
 ms.date: 07/22/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

@@ -3,8 +3,8 @@ title: Recurring activity bulk deletion
 description: "For administrators: Recurring bulk deletion system jobs for Dynamics 365 Customer Insights - Journeys."
 ms.date: 08/23/2023
 ms.topic: concept-article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

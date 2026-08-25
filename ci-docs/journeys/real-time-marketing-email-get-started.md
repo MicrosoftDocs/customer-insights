@@ -3,8 +3,8 @@ title: Send a targeted email blast in Customer Insights - Journeys
 description: Learn how to create and send a targeted email message in the Customer Insights - Journeys
 ms.date: 05/18/2026
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

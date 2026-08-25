@@ -3,8 +3,8 @@ title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/25/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

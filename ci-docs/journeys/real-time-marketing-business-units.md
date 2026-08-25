@@ -3,8 +3,8 @@ title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/18/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.reviewer: colinbirkett
 search.audienceType: 
   - admin

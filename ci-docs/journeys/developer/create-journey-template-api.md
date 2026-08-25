@@ -4,7 +4,7 @@ description: The Create Journey From Template API in Dynamics 365 Customer Insig
 ms.date: 11/19/2025
 ms.topic: how-to
 author: tovyhnal
-ms.author: alfergus
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

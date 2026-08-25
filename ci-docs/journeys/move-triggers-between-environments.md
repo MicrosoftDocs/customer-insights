@@ -3,8 +3,8 @@ title: Move triggers between environments – ALM process for triggers
 description: Migrate triggers between Dynamics 365 environments with Power Platform solutions, including export, import, and solution upgrade steps.
 ms.date: 07/30/2026
 ms.topic: get-started
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

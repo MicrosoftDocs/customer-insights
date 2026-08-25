@@ -4,7 +4,7 @@ description: Learn how to set up authentication and permissions for Teams webina
 ms.date: 07/30/2026
 ms.topic: article
 author: terezakirk
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
 ---

@@ -1,8 +1,8 @@
 ---
 title: Timeline highlights with generative AI in Dynamics 365 Customer Insights - Journeys
 description: Learn how generative AI enhances timeline highlights, helping you analyze data efficiently and make informed decisions in Dynamics 365 Customer Insights - Journeys.
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 ms.topic: overview
 ms.date: 04/02/2026
 ---

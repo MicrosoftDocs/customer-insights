@@ -3,8 +3,8 @@ title: Security roles for lead scoring and qualification in Dynamics 365 Custome
 description: Security roles for lead scoring and qualification in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/14/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

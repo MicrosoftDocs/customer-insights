@@ -3,8 +3,8 @@ title: Support for modernized business units
 description: Support for modernized business units in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/22/2023
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

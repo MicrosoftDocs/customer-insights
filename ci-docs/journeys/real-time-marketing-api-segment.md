@@ -3,8 +3,8 @@ title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
 ms.date: 04/21/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

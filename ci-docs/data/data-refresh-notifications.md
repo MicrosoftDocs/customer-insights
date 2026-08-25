@@ -5,7 +5,7 @@ ms.date: 04/23/2026
 ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.service: dynamics-365-customer-insights
 ms.subservice: dynamics-365-customer-insights-data
 ms.custom: bap-template

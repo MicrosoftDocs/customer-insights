@@ -3,8 +3,8 @@ title: Manage fiscal year settings
 description: Configure the fiscal year period, start date, and display format used for financial reporting in Customer Insights - Journeys.
 ms.date: 07/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

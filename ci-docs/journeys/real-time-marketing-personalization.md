@@ -3,8 +3,8 @@ title: Personalize content
 description: Learn how to personalize content in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/31/2024
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

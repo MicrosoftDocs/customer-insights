@@ -3,7 +3,7 @@ title: How real-time journeys uses cookies
 description: Understand the deployment and management of cookies in real-time journeys for personalized customer interactions.
 ms.date: 05/14/2025
 ms.topic: article
-author: alfergus
+author: udag
 ms.author: colinbirkett
 search.audienceType:
   - admin

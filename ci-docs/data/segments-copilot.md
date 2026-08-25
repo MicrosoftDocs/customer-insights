@@ -3,7 +3,7 @@ title: Create segments with Copilot for Customer Insights - Data (preview)
 description: Use Copilot to create customer segments in Customer Insights - Data with natural language prompts and improve results with feedback.
 ms.date: 07/10/2026
 ms.update-cycle: 180-days
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert

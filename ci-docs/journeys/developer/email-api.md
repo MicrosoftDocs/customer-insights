@@ -4,8 +4,8 @@ description: Learn how to use the email API to export copies of sent emails for 
 ms.date: 03/27/2026
 ms.topic: how-to
 author: Joni-M
-ms.author: alfergus
-ms.reviewer: alfergus
+ms.author: udag
+ms.reviewer: udag
 search.audienceType: 
   - developer
 ---

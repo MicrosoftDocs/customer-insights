@@ -4,7 +4,7 @@ description: Learn about security and privacy protections for Customer Insights 
 ms.date: 08/11/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 ---
 
 # Security and privacy for Customer Insights - Journeys forms

@@ -4,7 +4,7 @@ description: Create custom matching rules to avoid creating duplicate records in
 ms.date: 08/28/2025
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

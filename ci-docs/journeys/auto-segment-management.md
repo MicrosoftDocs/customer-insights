@@ -3,8 +3,8 @@ title: Optimize segment refresh
 description: Optimize segment refresh in Dynamics 365 Customer Insights – Journeys for accurate, up-to-date audience data and improved system performance.
 ms.date: 04/21/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType:
   - admin
   - customizer

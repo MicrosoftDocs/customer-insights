@@ -3,9 +3,9 @@ title: Style your emails with themes
 description: Style your emails with themes in Dynamics 365. Learn how to use themes to customize email elements like fields, buttons, and text.
 ms.date: 07/09/2026
 ms.topic: how-to
-author: alfergus
+author: udag
 ms.author: colinbirkett
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

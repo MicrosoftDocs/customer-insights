@@ -6,7 +6,7 @@ ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: alfergus
+ms.reviewer: udag
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---

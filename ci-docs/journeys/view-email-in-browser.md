@@ -3,8 +3,8 @@ title: Enhance email engagement by allowing browser viewing
 description: Learn how to enhance email engagement by allowing browser viewing in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/05/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer

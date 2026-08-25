@@ -3,8 +3,8 @@ title: Email sending data access and privileges
 description: Learn how to grant email sending data access in Customer Insights - Journeys, including record-level and Service Reader role permissions for Dataverse entities.
 ms.date: 07/23/2026
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: udag
+ms.author: udag
 search.audienceType: 
   - admin
   - customizer
