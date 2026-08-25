@@ -1,9 +1,9 @@
 ---
 title: "Use unified profiles in Dynamics 365 Customer Insights - Journeys"
 description: "Learn how to integrate unified profiles and segments with Dynamics 365 Customer Insights - Journeys."
-ms.date: 02/17/2026
+ms.date: 08/24/2026
 ms.topic: article
-author: JimsonChalissery
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ---
@@ -26,6 +26,8 @@ To use both Customer Insights apps together, use the [integration through Micros
 Real-time journeys allow you to create [custom triggers](/dynamics365/marketing/real-time-marketing-custom-triggers) that launch customer journeys based on any customer action. The more personalized your data, the more relevant and personalized your journeys are. You can [unify data](data-unification.md) from any source, then use it to fuel hyper-personalized customer journeys.
 
 Learn more: [Use Customer Insights - Data profiles and segments in real-time journeys](/dynamics365/marketing/real-time-marketing-ci-profile).
+
+When journeys use Customer Insights - Data profiles, measures, or segments, review how to [align journey quiet times with the Customer Insights - Data refresh](../journeys/coordinate-ci-data-refresh-with-quiet-times.md) so that journey processing uses fully updated data.
 
 ## Pull data from your own Azure Data Lake Storage
 
