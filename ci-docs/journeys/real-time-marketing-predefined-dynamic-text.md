@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/07/2026
+ms.date: 08/26/2026
 ms.topic: how-to
 author: vinayd-msft
 ms.author: udag
