@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 03/11/2026
+ms.date: 08/27/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,20 +19,23 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 ## Supported Databricks features and versions
 
-Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or higher aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
+Customer Insights - Data supports Databricks features with a `minReaderVersion` of 3 or earlier. Databricks features that require reader protocol versions greater than 3 aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
 
 The table shows the supported and unsupported Databricks features.
 
 | Supported features  | Unsupported features |
 | ------------------- | -------------------- |
-| Basic functionality | Deletion vectors     |
-| Change data feed    | Liquid clustering    |
-| Check constraints   | Table features write |
-| Column mapping      | TimestampNTZ         |
-| Generate columns    | Type widening        |
-| Identity columns    | Variant              |
+| Basic functionality | TimestampNTZ         |
+| Change data feed    | Type widening        |
+| Check constraints   | Variant              |
+| Column mapping      |                      |
+| Deletion vectors    |                      |
+| Generate columns    |                      |
+| Identity columns    |                      |
+| Liquid clustering   |                      |
 | Row tracking        |                      |
 | Table features read |                      |
+| Table features write |                     |
 | UniForm             |                      |
 
  Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
