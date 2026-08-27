@@ -19,7 +19,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 ## Supported Databricks features and versions
 
-Customer Insights - Data supports Databricks features with a `minReaderVersion` of 3 or earlier. Databricks features that require reader protocol versions greater than 3 aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
+Customer Insights - Data supports Delta tables with a `minReaderVersion` of 3 or earlier, subject to the feature support listed below. Tables that use unsupported reader features aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
 
 The table shows the supported and unsupported Databricks features.
 
