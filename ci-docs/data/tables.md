@@ -1,11 +1,15 @@
 ---
-title: "View tables in Customer Insights - Data"
-description: "Learn how to view data on the Tables page in Customer Insights - Data."
-ms.date: 02/16/2026
-ms.reviewer: mhart
+title: View tables in Customer Insights - Data
+description: View tables in Customer Insights - Data to evaluate data quality after ingestion. Explore fields, records, row filters, and Dataverse table schemas.
+ms.date: 08/25/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
+ms.custom: 
+    - ai-gen-docs-bap
+    - ai-seo-date: 08/26/2026
+ai-usage: ai-assisted
 ---
 
 # View tables in Customer Insights - Data
@@ -38,9 +42,9 @@ For more information about the **Relationships** tab, see [Relationships](relati
 1. Select a table to open the details page.  
 1. Explore the different fields and records included for that table.
 
-- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
+- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which the system either auto-identifies or users [manually map](data-unification-map-tables.md). These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
-  :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
+  :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Screenshot of the Attributes tab showing the fields table with field names, data types, and types.":::
 
   > [!NOTE]
   > This page shows only a sample of your table's data. To view the full data set, go to the **Data sources** page, select a table, select **Edit**, and then view this table's data with the Power Query editor as explained in [Data sources](data-sources.md).
@@ -58,13 +62,13 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Edited**: Date and time of the table modification.
     
 **Common issues:**
-- If the data source uses the AttachCDM (Delta format) or AttachCDS connection type, issues may occur during data loading.
-- Customer Insights – Data stores the Delta table version that was used at the time of ingestion. If maintenance operations such as VACUUM, delete, or cleanup are performed on the Delta tables and the referenced version is removed, the affected tables will no longer display any data.
+- If the data source uses the AttachCDM (Delta format) or AttachCDS connection type, issues might occur during data loading.
+- Customer Insights – Data stores the Delta table version that was used at the time of ingestion. If maintenance operations occur such as VACUUM, delete, or cleanup on the Delta tables and remove the referenced version, the affected tables no longer display any data.
 - To resolve this issue, trigger a data source refresh to ingest the latest available version of the data.
 
 ## View Customer Insights - Data tables in Dataverse
 
-Some Customer Insights - Data tables are available in Dataverse. The following sections describe the expected schema of these tables. The logical name of the tables is prepended with the string `msdynci`.
+You can access some Customer Insights - Data tables in Dataverse. The following sections describe the expected schema of these tables. The logical name of the tables includes the `msdynci` prefix.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -81,15 +85,20 @@ Other tables available in Dataverse are [measures](dataverse-measures.md) and [r
 1. Select **Tables** on the left navigation and set the filter to show **All** tables. The default filter is set to **Recommended**, which doesn't include Customer Insights - Data tables. In the search field, enter `msdynci`. Learn more: [View tables in Dataverse](/power-apps/maker/data-platform/create-edit-entities-portal#view-tables).
 
 > [!NOTE]
-> The timing and order of table updates from Customer Insights - Data to Dataverse varies and can't be predicted. If you intend to use this data in other applications, we recommend waiting until the ongoing system refresh completes. Using the data before the refresh is complete might result in incomplete or inconsistent information.
+> The timing and order of table updates from Customer Insights - Data to Dataverse varies and can't be predicted. If you intend to use this data in other applications, wait until the ongoing system refresh finishes. Using the data before the refresh finishes might result in incomplete or inconsistent information.
+
+> [!IMPORTANT]
+> During a system refresh, Customer Insights - Data might rewrite records in these Dataverse tables. As part of this process, it might delete and then recreate existing rows instead of updating them in place. When Customer Insights - Data recreates a profile, it resets the **Created On** (`createdon`) value to the time of the refresh, and the operation raises delete and create events on the table, even though the profile isn't a new customer. As a result, the number of records with a recent **Created On** date can be much higher than the number of profiles that actually changed. The **CustomerId** of a profile is preserved across refreshes, except when profiles merge or split. For more information, see [Customer ID](data-unification.md#customer-id).
+>
+> Don't build integrations that rely on the **Created On** date, the row `createdon`, or individual row create and delete events to identify new or changed customers. Instead, key your logic on **CustomerId**, use upserts to reconcile changes, and start downstream processing only after the refresh completes rather than reacting to individual row changes. To start automation when a refresh finishes, use the [Power Automate connector](export-power-automate.md).
 
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process.
+This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. Use the **CustomerId** column as the stable identifier for a unified profile; it's preserved across refreshes except when profiles merge or split.
 
 ### AlternateKey
 
-The AlternateKey table contains keys of the tables, which participated in the unify process.
+The AlternateKey table contains keys of the tables that participate in the unify process.
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
@@ -159,7 +168,7 @@ This table contains the output of the model predictions.
 
 ### Segment membership
 
-This table contains segment membership information of the customer profiles.
+This table contains segment membership information for customer profiles.
 
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
@@ -172,13 +181,13 @@ This table contains segment membership information of the customer profiles.
 
 ### Real-time web personalization tables (preview)
 
-The following four tables are created when real-time personalization is set up.
+The following four tables are created when you set up real-time personalization.
 
-- PersonalizationUser: This table contains data that associates unknown users to known users when the setUser API is used.
+- PersonalizationUser: This table contains data that associates unknown users to known users when you use the setUser API.
 - PersonalizationCookie: This table contains the personalization cookie values.
 - PersonalizationView: This table contains data tracking on what pages were viewed.
 - PersonalizationAction: This table contains data tracking on what actions were performed such as links clicked.
 
-While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, measures, segment memberships, and activity data.
+While you can view and query these tables, use the [web personalization API](dv-odata.md#web-personalization) to understand a customer in real time. This API pulls data from multiple tables including the unified profile for known users, measures, segment memberships, and activity data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
