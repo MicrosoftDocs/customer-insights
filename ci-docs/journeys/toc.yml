@@ -220,7 +220,7 @@
         href: export-segment-membership.md
     - name: Enhance your segments
       items:
-      - name: Automatic segment management
+      - name: Understand automated segment refresh and data freshness
         href: auto-segment-management.md
       - name: Add protected fields in segment criteria
         href: protected-fields.md   
