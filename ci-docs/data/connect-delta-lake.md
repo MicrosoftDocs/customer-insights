@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 03/11/2026
+ms.date: 08/28/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,34 +19,39 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 ## Supported Databricks features and versions
 
-Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or higher aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
+Customer Insights - Data supports Delta tables with a `minReaderVersion` of 3 or earlier, subject to the list of supported features. Tables that use unsupported reader features aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
 
-The table shows the supported and unsupported Databricks features.
+All features that require a `minReaderVersion` of 1 or 2 are supported.
+
+The following table shows the supported and unsupported Databricks features that require a `minReaderVersion` of 3.
 
 | Supported features  | Unsupported features |
 | ------------------- | -------------------- |
-| Basic functionality | Deletion vectors     |
-| Change data feed    | Liquid clustering    |
-| Check constraints   | Table features write |
-| Column mapping      | TimestampNTZ         |
-| Generate columns    | Type widening        |
-| Identity columns    | Variant              |
+| Basic functionality | TimestampNTZ         |
+| Change data feed    | Type widening        |
+| Check constraints   | Variant              |
+| Column mapping      |                      |
+| Deletion vectors    |                      |
+| Generate columns    |                      |
+| Identity columns    |                      |
+| Liquid clustering   |                      |
 | Row tracking        |                      |
 | Table features read |                      |
+| Table features write|                     |
 | UniForm             |                      |
 
- Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
+ Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/delta/feature-compatibility.html#features-by-protocol-version)
 
 > [!TIP] 
-> If you're using a recent Databricks runtime and need compatibility with Dynamics 365 Customer Insights, you can lower the Delta table protocol version and disable specific features. This can be configured at the workspace level in Databricks to apply by default to any newly created tables. (It's also possible to manually drop features from existing tables if needed, but that’s beyond the scope of this tip.)
+> If you're using a recent Databricks runtime and need compatibility with Dynamics 365 Customer Insights, you can lower the Delta table protocol version and disable specific features. Make this change at the workspace level in Databricks to apply by default to any newly created tables. You can also manually drop features from existing tables if needed.
 >
-> :::image type="content" source="media/auto-enable-deletion-vectors.png" alt-text="Screenshot showing the Auto-Enable Deletion Vectors setting.":::
+> :::image type="content" source="media/auto-enable-deletion-vectors.png" alt-text="Screenshot of the Auto-Enable Deletion Vectors setting.":::
 >
-> After applying the setting and re-running the notebook, the table was reverted to a lower reader/writer protocol:
-> :::image type="content" source="media/lower-protocol.png" alt-text="Screenshot showing a lower reader/writer protocol.":::
+> After applying the setting and re-running the notebook, the table reverts to a lower reader/writer protocol:
+> :::image type="content" source="media/lower-protocol.png" alt-text="Screenshot of a lower reader/writer protocol.":::
 > 
-> This allowed the table to be successfully read and ingested by Customer Insights:
-> :::image type="content" source="media/successful-read-ingest.png" alt-text="Screenshot showing successful read and ingest.":::
+> This change allows Customer Insights to successfully read and ingest the table:
+> :::image type="content" source="media/successful-read-ingest.png" alt-text="Screenshot of successful read and ingest.":::
 >
 > Learn more: [Delta Lake feature compatibility and protocols - Lowest possible protocol](https://docs.databricks.com/aws/en/delta/feature-compatibility#-lowest-possible-protocol).
 
@@ -57,7 +62,7 @@ The table shows the supported and unsupported Databricks features.
 - Customer Insights - Data relies on the version property in the Delta table's history to identify the latest changes for incremental processing.
 
 > [!IMPORTANT]
-> You can't add tables to an existing Delta Lake data source after it is saved. To add additional tables, create a new data source. Plan your table selection carefully before saving.
+> You can't add tables to an existing Delta Lake data source after it is saved. To add more tables, create a new data source. Plan your table selection carefully before saving.
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -69,9 +74,9 @@ The table shows the supported and unsupported Databricks features.
 
 1. Select **Azure Data Lake Delta tables**.
 
-   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/delta-lake-new.svg":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Screenshot of the dialog box to enter connection details for Delta Lake." lightbox="media/delta-lake-new.svg":::
 
-1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
+1. Enter a **Data source name** and an optional **Description**. Downstream processes reference the name, and you can't change it after creating the data source.
 
 1. Choose one of the following options for **Connect your storage using**.
 
@@ -91,11 +96,11 @@ The table shows the supported and unsupported Databricks features.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
 
-   :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
+   :::image type="content" source="media/delta-edit-table.png" alt-text="Screenshot of the dialog box showing Required for Primary key.":::
 
 1. To enable [data profiling](data-sources.md#data-profiling) on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
-   :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Dialog box to select data profiling.":::
+   :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Screenshot of the dialog box to select data profiling.":::
 
    1. Select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
    1. Select **Done**.
@@ -104,15 +109,15 @@ The table shows the supported and unsupported Databricks features.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
+Loading data can take time. After a successful refresh, you can review the ingested data from the [**Tables**](tables.md) page.
 
-Once you've saved the data source, you can't go back and add more tables. To add other tables, create another data source to bring the tables into Customer Insights - Data.
+Once you save the data source, you can't go back and add more tables. To add other tables, create another data source to bring the tables into Customer Insights - Data.
 
 ## Manage schema changes
 
-If a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
+If you add or remove a column from the schema of a Delta folder data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
-If the schema of the source data is changed after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. The error "The columns in the source data have changed" shows in the task details. Schema changes include updates to columns, column names, and column data types.
+If you change the schema of the source data after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. The error "The columns in the source data have changed" shows in the task details. Schema changes include updates to columns, column names, and column data types.
 
 ### Update a data source when the schema changes
 
@@ -130,7 +135,7 @@ If the schema of the source data is changed after creating the data source conne
 
 ### Add a column for unification
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If unification is already configured for the table, the new column must be added to the unification process.
+When you add a column to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If unification is already configured for the table, you must add the new column to the unification process.
 
 1. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column.
 
@@ -140,7 +145,7 @@ When a column is added to the data source, the information automatically appends
 
 ### Change or remove a column
 
-When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency on the columns, the system stops the refresh and provides an error indicating the [dependencies must be removed](data-unification-remove-dependencies.md#remove-dependencies-blocking-unification). These dependencies display in a notification to help you locate and remove them.
+When you remove a column from a data source, the system checks for dependencies in other processes. If there's a dependency on the columns, the system stops the refresh and provides an error indicating that you must [remove dependencies](data-unification-remove-dependencies.md#remove-dependencies-blocking-unification). These dependencies display in a notification to help you locate and remove them.
 
 ### Validate a schema change
 
@@ -148,11 +153,11 @@ After the data source refreshes, go to the **Data** > **Tables** page. Select th
 
 ## Delta lake time travel and data refreshes
 
-Delta lake time travel is the ability to query through table versions based on a timestamp or version number. Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. In a regular delta table refresh, data is pulled from all the data table versions since the last refresh. As long as all versions are present, Customer Insights - Data can process just the changed elements and deliver faster results. [Learn more about time travel](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html).
+Delta Lake time travel is the ability to query through table versions based on a timestamp or version number. Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. In a regular delta table refresh, data is pulled from all the data table versions since the last refresh. As long as all versions are present, Customer Insights - Data can process just the changed elements and deliver faster results. [Learn more about time travel](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html).
 
 For example, if Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, data synchronization fails and requires a [manual full data refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder). Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced.
 
-To avoid the need for a full data refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+To avoid the need for a full data refresh, maintain a reasonable history backlog, such as 15 days.
 
 ### Manually run a full data refresh on a Delta table folder
 
@@ -164,7 +169,7 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 
-   :::image type="content" source="media/delta-refresh-table.png" alt-text="Edit table pane to select one-time full refresh.":::
+   :::image type="content" source="media/delta-refresh-table.png" alt-text="Screenshot of the Edit table pane to select one-time full refresh.":::
 
 1. Select **Run one-time full refresh**.
 
@@ -174,7 +179,7 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 ### Data synchronization failure
 
-Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog.
+Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, maintain a reasonable history backlog.
 
 > [!IMPORTANT]
 > Maintain at least **15 days** of Delta version history to avoid synchronization failures. Ensure that both the `delta.logRetentionDuration` and
@@ -187,12 +192,12 @@ Customer Insights - Data supports incremental data updates through Delta Lake ti
 
 - Data must be in **Delta format** (not CSV or Parquet).
 - The Delta table must maintain a **version history** (at least 15 days is recommended).
-- Each upsert must create a **new Delta version**—overwriting files in place will trigger a full refresh instead of an incremental update.
+- Each upsert must create a **new Delta version**—overwriting files in place triggers a full refresh instead of an incremental update.
 - The primary key column must be present and consistent across versions.
 
 **Common issues:**
-- If you overwrite Delta files instead of appending versions, Customer Insights - Data treats this as a schema change and runs a full refresh
-- If Delta versions are missing (for example, due to cleanup/VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings.
+- If you overwrite Delta files instead of appending versions, Customer Insights - Data treats this as a schema change and runs a full refresh.
+- If Delta versions are missing (for example, due to cleanup or VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings.
 
 ## Next steps
 
