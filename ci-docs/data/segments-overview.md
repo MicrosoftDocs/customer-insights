@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: article
-ms.date: 06/01/2026
+ms.date: 08/31/2026
 ms.custom: bap-template
 ---
 
@@ -21,6 +21,7 @@ Choose how to create a segment based on your target audience.
 
 - Simple segments with one operator: [Quick segment](segment-quick.md)
 - Create complex segments using rules and conditions: [Segment builder](#segment-builder-overview)
+- Create segments with Copilot: [Copilot segments](segments-copilot.md)
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
 - AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures)
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity)
@@ -28,7 +29,7 @@ Choose how to create a segment based on your target audience.
 
 ## Segment builder overview
 
-Segment builder lets you use logic to create segments. It uses the following components:
+Use the segment builder to create segments with logic. It uses the following components:
 
 - Rule: A rule consists of one or more conditions that define a set of customers. For example, one rule identifies customers who purchased coffee beans or tea bags.
 
@@ -38,11 +39,11 @@ Segment builder lets you use logic to create segments. It uses the following com
 
 - Attributes and tables: Fields from the customer table or related tables that contain the attributes you need to define your rules. For example, to identify customers who purchased coffee beans or tea bags, you need the purchases and customer tables.
 
-- Relationship path: The mapping between a selected table and the unified customer table that controls which attributes can be used in a rule and can change results.
+- Relationship path: The mapping between a selected table and the unified customer table that controls which attributes you can use in a rule and can change results.
 
 The following image illustrates the various parts of the segment builder. It shows a segment that's a group of customers who ordered goods in a specific time frame and gathered reward points or spent a certain amount of money.
 
-:::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::
+:::image type="content" source="media/segment-builder-overview.png" alt-text="Screenshot of the various elements of the segment builder." lightbox="media/segment-builder-overview.png":::
 
 1. Organize your segment with rules and subrules.
 
@@ -66,14 +67,14 @@ The example illustrates the segmentation capability. We defined a segment for cu
 
 ## Segment builder tips
 
-When creating a segment using the segment builder, keep in mind the following tips:
+When you create a segment by using the segment builder, keep in mind the following tips:
 
 - When you select a field to filter on, the system tries to show a list of valid values to choose from, based on the type of column.
   - Dataverse Choice columns display a list of names and values. For example, Shipping Method might show the choices FedEx (1), UPS (2), and USPS (3).
-  - String and numeric columns with < 200 distinct values display the distinct values. For performance, the system scans the first 10,000 rows to determine the list of distinct values so it’s possible with large data sets that not all distinct values are displayed. These fields allow you to manually enter other values.
+  - String and numeric columns with fewer than 200 distinct values display the distinct values. For performance, the system scans the first 10,000 rows to determine the list of distinct values, so large data sets might not display all distinct values. These fields allow you to manually enter other values.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
-- The **Undo** and **Redo** controls in the command bar let you roll back changes.
+- Use the **Undo** and **Redo** controls in the command bar to roll back changes.
 - After you create a segment, some segments allow you to [track the usage of the segment](segments-track-usage.md).
 
 ## Known limitations
