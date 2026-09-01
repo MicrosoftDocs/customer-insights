@@ -1,12 +1,15 @@
 ---
 title: Manage Customer Insights - Data APIs
-description: Manage the Customer Insights - Data API keys and view API usage.
-ms.date: 03/15/2024
+description: Manage API keys in Dynamics 365 Customer Insights - Data to enable or block environment access. Review API calls, data transfer, and operations.
+ms.date: 08/31/2026
 ms.topic: how-to
-author: srivas15
-ms.author: shsri
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
-ms.custom: bap-template
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 08/31/2026
+ai-usage: ai-assisted
 ---
 
 # Manage Customer Insights - Data APIs
@@ -21,7 +24,7 @@ View and manage the keys to use the [Customer Insights - Data APIs](apis.md) wit
 
 1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
-1. If API access to the environment hasn't been set up, select **Enable**. Or, to block API access to the environment, select **Disable**, and confirm.
+1. To set up API access to the environment, select **Enable**. To block API access to the environment, select **Disable**, and confirm.
 
 1. Manage the primary and secondary API keys:
 

@@ -8,10 +8,10 @@ metadata:
   title: Dynamics 365 Customer Insights - Data documentation
   description: Learn how to deliver personalized customer experiences with a 360-degree view of your customers.
   ms.topic: hub-page 
-  author: m-hartmann
-  ms.author: mhart
-  ms.reviewer: mhart
-  ms.date: 04/29/2024 
+  author: Scott-Stabbert
+  ms.author: sstabbert
+  ms.reviewer: v-wendysmith
+  ms.date: 08/31/2026 
   ms.custom: bap-template
   hide_bc: true
 
@@ -68,6 +68,8 @@ additionalContent:
       links:
       - url: data-sources.md
         text: Data sources overview
+      - url: connect-fabric-onelake.md
+        text: Connect to Fabric OneLake
       - url: connect-common-data-model.md
         text: Connect to Azure Data Lake Storage
       - url: connect-power-query.md
@@ -78,12 +80,16 @@ additionalContent:
         text: Data unification overview
       - url: tables.md
         text: Review data tables
+      - url: data-unification-best-practices.md
+        text: Unification best practices
       - url: customer-profiles.md
         text: Review unified profiles
     - title: Build on your data
       links:
       - url: enrichment-hub.md
         text: Data enrichment overview
+      - url: tables-filters.md
+        text: Filter out unwanted data
       - url: relationships.md
         text: Build relationships between tables
       - url: activities.md
@@ -92,7 +98,7 @@ additionalContent:
     items:
     - title: Get insights
       links:
-      - url: segments.md
+      - url: segments-overview.md
         text: Create segments
       - url: measures.md
         text: Create measures

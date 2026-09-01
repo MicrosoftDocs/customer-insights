@@ -1,16 +1,16 @@
 ---
 title: Service limits in Dynamics 365 Customer Insights - Data
 description: Understand limits and restrictions in the Customer Insights - Data application.
-ms.date: 04/30/2024
+ms.date: 09/01/2026
 ms.topic: article
-author: JimsonChalissery
+author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ---
 
 # Service limits in Dynamics 365 Customer Insights - Data
 
- Customer Insights has built-in limits designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
+ Customer Insights has built-in limits designed to ensure the reliability and stability of the service. To request changes to these limits, use the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## Customer Insights - Data
 
@@ -23,6 +23,6 @@ ms.reviewer: mhart
 
 ## Fair scheduling of jobs
 
-Customer Insights - Data is a SaaS service that uses shared Azure resources. Customers tend to have workloads of variable intensity and on different schedules. To ensure fair access to the underlying resources, we make sure system processes are executed in fair order. Examples of system processes are jobs related to data unification, segment updates, or measure calculation. The fair scheduling protects you from queuing for resources if there's a spike of requested jobs. At the same time, Customer Insights - Data doesn't guarantee all jobs you queue are processed in parallel.
+Customer Insights - Data is a SaaS service that uses shared Azure resources. Customers tend to have workloads of variable intensity and on different schedules. To ensure fair access to the underlying resources, the system executes processes in fair order. Examples of system processes are jobs related to data unification, segment updates, or measure calculation. The fair scheduling protects you from queuing for resources if there's a spike of requested jobs. At the same time, Customer Insights - Data doesn't guarantee all jobs you queue are processed in parallel.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

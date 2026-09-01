@@ -1,29 +1,32 @@
 ---
-title: "OData query examples"
-description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights - Data APIs to review data."
-ms.date: 03/20/2024
+title: OData query examples
+description: OData query examples for Customer Insights - Data APIs show how to filter customers, activities, measures, and segments. Explore ready-to-use samples now.
+ms.date: 08/31/2026
 ms.topic: reference
-author: srivas15
-ms.author: shsri
-ms.reviewer: mhart
-ms.custom: bap-template
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 08/31/2026
+ai-usage: ai-assisted
 ---
 
 # OData query examples
 
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
-The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. There are various kinds of libraries and tools that can be used to consume OData services.
+The Open Data Protocol (OData) is a data access protocol built on core protocols like HTTP. It uses commonly accepted methodologies like REST for the web. You can use various kinds of libraries and tools to consume OData services.
 
 To help you build your own implementations based on the [Dynamics 365 Customer Insights - Data APIs](apis.md), review some frequently requested example queries.
 
 Modify the query samples to make them work on the target environments:
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` where {instanceId} is the GUID of the Customer Insights - Data environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
-- {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
-- {AlternateKey}: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`
-- {DSname}: String with the table name of a data source that gets ingested to Customer Insights - Data. Example: `Website_contacts`.
-- {SegmentName}: String with the output table name of a segment in Customer Insights - Data. Example: `Male_under_40`.
+- `{serviceRoot}`: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` where `{instanceId}` is the GUID of the Customer Insights - Data environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) helps you find the `{InstanceId}` you have access to.
+- `{CID}`: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
+- `{AlternateKey}`: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`.
+- `{DSname}`: String with the table name of a data source that gets ingested to Customer Insights - Data. Example: `Website_contacts`.
+- `{SegmentName}`: String with the output table name of a segment in Customer Insights - Data. Example: `Male_under_40`.
 
 ## Customer
 
@@ -53,15 +56,15 @@ Sample queries for the *UnifiedActivity* table.
 |Activity sorting    | `{serviceRoot}/data/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
 |All activities and measures for a customer  |   `{serviceRoot}/data/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     | Activities and measures are additional key/value pairs on the returned customer profile       |
 
-### Manage Workflows
+### Manage workflows
 
 Sample queries related to processes in Customer Insights - Data such as refresh a data source, unify data, or get the status of a unification job.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get data source IDs| `{serviceRoot}/manage/datasources/v2` | Returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use its 'dataSourceId'.  |
-|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true` | Use the 'dataSourceId' from the above response to refresh a data source. This is a POST request. |
-|Run a full refresh| `{serviceRoot}/manage/workflows/main/jobs?operationType=all&forceRunRequested=true` | Refreshes all processes on your environment. This is a POST request. |
+|Get data source IDs| `{serviceRoot}/manage/datasources/v2` | Returns all data sources on your environment. From the response, you can check the `friendlyName` for a specific data source and then use its `dataSourceId`.  |
+|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true` | Use the `dataSourceId` from the preceding response to refresh a data source. This request uses the POST method. |
+|Run a full refresh| `{serviceRoot}/manage/workflows/main/jobs?operationType=all&forceRunRequested=true` | Refreshes all processes on your environment. This request uses the POST method. |
 |Get status of processes| `{serviceRoot}/manage/workflows/main/jobs` |  |
 
 
