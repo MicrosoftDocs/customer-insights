@@ -1,7 +1,7 @@
 ---
-title: Exclude bot interactions
-description: Exclude bot interactions in Dynamics 365 Customer Insights - Journeys to filter nonhuman clicks. Learn how to enable bot protection for reliable analytics.
-ms.date: 07/14/2026
+title: Exclude bot interactions for reliable analytics
+description: Exclude bot interactions in Dynamics 365 Customer Insights - Journeys to filter nonhuman clicks. Learn how bot protection improves analytics reliability.
+ms.date: 09/02/2026
 ms.topic: article
 author: Joni-M
 ms.author: udag
@@ -12,19 +12,18 @@ search.audienceType:
   - enduser
 ---
 
-# Exclude bot interactions
+# Exclude bot interactions for reliable analytics
 
-Teams rely on channel analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails, text messages, push notifications, and custom channels. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
+Exclude bot interactions from channel analytics by using bot protection in Customer Insights - Journeys. The feature filters nonhuman clicks on emails, text messages, push notifications, and custom channels to provide more reliable analytics and prevent inflated metrics, incorrect journeys, and fraudulent double opt-ins.
 
 ## Enable bot protection
 
 > [!IMPORTANT]
-> - Organizations created after July 22, 2024, have advanced bot protection enabled by default.
-> - Bot protection doesn't apply to email opens. Learn more about the challenges of relying solely on email opens to measure campaign performance: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).
+> Bot protection doesn't apply to email opens. To learn more about the challenges of relying solely on email opens to measure campaign performance, see [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).
 
 ## Impact of bot protection
 
-Bot protection filters out suspected bot clicks. It doesn't impact any historical data. Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" might be affected. Bot protection doesn't impact email or push notification open rates.
+Bot protection filters out suspected bot clicks. It doesn't impact any historical data. Because bot protection filters out nonhuman link clicks, it might affect some journey triggers and branching conditions that use "email clicked." Bot protection doesn't impact email or push notification open rates.
 
 ## How bots are detected
 
@@ -34,9 +33,8 @@ Any time a link is selected, it goes through an intermediate page. Customer Insi
 
 | Question                      | Answer               |
 |:-----------------------------------|:------------------------------|
-| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. |
-| I’ve noticed an inflated email open rate recently. What’s happening? | Because bot protection doesn't apply to email opens, nonhuman traffic can increase the open rate. Learn more about improving engagement measurement: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).|
-| Why are no or limited email opens being recorded? | Many modern email clients block image loading by default to protect user privacy. Because email open tracking relies on images being loaded, this may limit the app's ability to accurately capture email open interactions. Learn more: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/). |
-| Why are there no email opens or clicks recorded? | Ensure compliance profiles are correctly configured, and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. Learn more: [Consent management overview](real-time-marketing-compliance-settings.md). | 
+| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This condition could be due to bot-related activity, resulting in multiple open interactions. |
+| I noticed an inflated email open rate recently. What's happening? | Because bot protection doesn't apply to email opens, nonhuman traffic can increase the open rate. To learn more about improving engagement measurement, see [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).|
+| Why are no or limited email opens being recorded? | Many modern email clients block image loading by default to protect user privacy. Because email open tracking relies on images being loaded, this condition might limit the app's ability to accurately capture email open interactions. To learn more, see [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/). |
+| Why are there no email opens or clicks recorded? | Ensure compliance profiles are correctly configured, and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. To learn more, see [Consent management overview](real-time-marketing-compliance-settings.md). | 
 
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
