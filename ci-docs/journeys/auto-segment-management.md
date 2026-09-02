@@ -1,7 +1,7 @@
 ---
 title: Understand automated segment refresh and data freshness
 description: Learn how automated segment management, refresh intervals, and data sync affect audience freshness, and optimize results in Customer Insights - Journeys.
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -18,7 +18,7 @@ ms.custom:
 
 # Understand automated segment refresh and data freshness
 
-Automated segment management in Dynamics 365 Customer Insights – Journeys adjusts segment refresh intervals based on usage to keep active campaign audiences accurate while improving processing speed. This article explains the intervals introduced on February 17, 2025, how data sync affects audience freshness, and how to get fresher results.
+Automated segment management in Dynamics 365 Customer Insights – Journeys adjusts segment refresh intervals based on usage to keep active campaign audiences accurate while improving processing speed. This article explains the segment refresh and how data sync affects audience freshness.
 
 ## Refresh intervals
 
