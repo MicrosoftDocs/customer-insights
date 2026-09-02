@@ -50,7 +50,7 @@ The table provides an overview of the different roles. For  details, see each in
 
 | Customer Insights Role | Mapped Dataverse Roles |
 |------------------------|------------------------|
-| **Admin** | - Administrator<br>- Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **Admin** | -System Administrator<br>- Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
 | **Contributor** | - Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
 | **Marketing Contributor** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
 | **Viewer** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
