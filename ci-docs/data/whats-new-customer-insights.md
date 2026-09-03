@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 08/07/2026
+ms.date: 09/02/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -16,6 +16,17 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## August 2026
+
+### General availability
+
+#### Data enrichments reach general availability
+
+The following data enrichments reached general availability in August 2026:
+
+- [Microsoft Brands and Interests enrichment](enrichment-microsoft.md)
+- [Microsoft Enhanced addresses](enrichment-enhanced-addresses.md)
 
 ## July 2026
 
