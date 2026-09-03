@@ -1,7 +1,7 @@
 ---
-title: Enrich unified data (preview)
+title: Enrich unified data
 description: Enrich unified customer data in Dynamics 365 Customer Insights with Microsoft and third-party enrichments. Learn how to create, run, and review enrichment results.
-ms.date: 07/30/2026
+ms.date: 09/02/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -10,15 +10,11 @@ ms.collection: get-started
 ms.custom: sfi-image-nochange
 ---
 
-# Enrich unified data (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Enrich unified data
 
 Use enrichments to enhance your unified customer data. Create the connections for the specific enrichments so that administrators and contributors can configure the enrichments.
 
 To help increase the quality of a data match, [enrich data sources before unification](data-sources-enrichment.md).
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Create an enrichment
 
@@ -28,13 +24,13 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Screenshot of the Enrichment hub page showing the Discover tab.":::
 
-- [AbiliTec Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
+- [AbiliTec Identity (preview)](enrichment-liveramp.md) provided by LiveRamp AbiliTec
 - [Brands](enrichment-microsoft.md) provided by Microsoft
-- [Demographics](enrichment-experian.md) provided by Experian
+- [Demographics (preview)](enrichment-experian.md) provided by Experian
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
-- [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
+- [Location data (preview)](enrichment-azure-maps.md) provided by Microsoft Azure Maps
+- [SFTP custom data (preview)](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
 ## Manage existing enrichments
 
@@ -47,7 +43,7 @@ Select the enrichment to view available actions.
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.
 - [**Run**](#run-or-refresh-enrichments) the enrichment to update customer profiles with the latest data. Run multiple enrichments at once by selecting them in the list.
-- **Activate** or **Deactivate** an enrichment. Inactive enrichments won't get refreshed during a [scheduled refresh](schedule-refresh.md).
+- **Activate** or **Deactivate** an enrichment. Inactive enrichments don't get refreshed during a [scheduled refresh](schedule-refresh.md).
 - **Delete** the enrichment.
 
 You can also create [segments](segments.md) or [measures](measures.md) from enrichments.
