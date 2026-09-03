@@ -1,7 +1,7 @@
 ---
 title: Enrich customer profiles with enhanced addresses
 description: Enrich customer profiles with enhanced addresses using Microsoft's AI models to normalize, correct, and standardize address data.
-ms.date: 07/08/2026
+ms.date: 09/02/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -14,9 +14,7 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich customer profiles with enhanced addresses (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Enrich customer profiles with enhanced addresses
 
 Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 

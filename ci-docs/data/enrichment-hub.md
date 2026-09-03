@@ -1,7 +1,7 @@
 ---
-title: Data enrichment (preview) overview
+title: Data enrichment overview
 description: Data enrichment in Dynamics 365 Customer Insights - Data cleans addresses and augments customer profiles with interests, brands, demographics, and more.
-ms.date: 08/11/2026
+ms.date: 09/02/2026
 ms.reviewer: v-wendysmith
 ms.topic: concept-article
 author: Scott-Stabbert
@@ -13,11 +13,7 @@ ms.custom:
 ai-usage: ai-assisted
 ---
 
-# Data enrichment (preview) overview
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+# Data enrichment overview
 
 Dynamics 365 Customer Insights - Data enrichments improve unified customer profiles by standardizing address data and adding attributes such as predicted interests, brand affinities, and demographics. Enriched data can improve data matching, support more precise customer segments, and help personalize customer engagement.
 

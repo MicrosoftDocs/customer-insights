@@ -1,7 +1,7 @@
 ---
-title: Enrich customer profiles with brands and interests data from Microsoft (preview)
+title: Enrich customer profiles with brands and interests data from Microsoft
 description: Discover how Microsoft's proprietary data enriches customer profiles with brand affinities and share of voice.
-ms.date: 07/08/2026
+ms.date: 09/02/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -13,9 +13,7 @@ searchScope:
 ms.custom: sfi-image-nochange
 ---
 
-# Enrich customer profiles with brands and interests data from Microsoft (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Enrich customer profiles with brands and interests data from Microsoft
 
 Use Microsoft's proprietary data to enrich your customer data with brand affinities, interest affinities, and share of voice (SoV). These affinities and SoV come from data about people with demographics similar to your customers. This information helps you better understand and segment your customers based on their affinities or SoV to specific brands and interests.
 
@@ -58,8 +56,7 @@ Currently, the solution supports the following countries and regions: Australia,
 
    - To configure interest affinities and SoV enrichment, select **Enrich my data** on the **Interests** tile.
 
-   > [!div class="mx-imgBorder"]
-   > ![Brands and Interests tiles.](media/BrandsInterest-tile-Hub.png "Brands and Interest tiles")
+   :::image type="content" source="media/BrandsInterest-tile-Hub.png" alt-text="Screenshot of the Brands and Interests tiles.":::
 
 1. Review the overview and then select **Next**.
 
@@ -92,7 +89,7 @@ Currently, the solution supports the following countries and regions: Australia,
 
 1. Provide a name for the enrichment. The **Output table name** is automatically selected.
 
-   :::image type="content" source="media/enrichment-interests-summary.png" alt-text="Interests review and naming page.":::
+   :::image type="content" source="media/enrichment-interests-summary.png" alt-text="Screenshot of the Interests review and naming page.":::
 
 1. Select **Save enrichment** after reviewing your choices.
 
@@ -104,7 +101,7 @@ Currently, the solution supports the following countries and regions: Australia,
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Preview of results after running the enrichment process.":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Screenshot of the preview of results after running the enrichment process.":::
 
 The results include **Affinity Level** or **Share of Voice** charts.
 
@@ -114,7 +111,7 @@ The tables created from the enrichments appear under the **Enrichment** group in
 
 You can also view brand and interest SoV on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you find charts for the brand or interest SoV based on people in that customer's demographic profile.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Customer card with enriched data.":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Screenshot of the customer card with enriched data.":::
 
 ## Next steps
 
