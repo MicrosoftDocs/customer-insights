@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys
 description: Customer Insights - Journeys segment builder helps you create dynamic and static segments using attributes, related tables, and manual selections.
-ms.date: 07/13/2026
+ms.date: 09/08/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -70,7 +70,9 @@ When you're satisfied with your segment definition, select **Refresh** on the bo
 To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This action gives you an estimate of who is in the segment.
 
 > [!IMPORTANT]
-> The segment size estimate and member sample are a best-effort preview. Customer Insights - Journeys tries to return an estimate quickly, but for some segments - especially large or complex ones - a preview might not be available. This condition is expected and doesn't mean anything is wrong with your segment. To see the exact member count and the full list of members, mark your segment as **Ready to use** and go live with it in a customer journey.
+>
+> - The segment size estimate and member sample are a best-effort preview. Customer Insights - Journeys tries to return an estimate quickly, but for some segments - especially large or complex ones - a preview might not be available. This condition is expected and doesn't mean anything is wrong with your segment. To see the exact member count and the full list of members, mark your segment as **Ready to use** and go live with it in a customer journey.  
+> - If a segment returns a different member count than expected, review the filtering rules, fix condition conflicts, check consent and data sync, and confirm the results. For more information, see [Understand and verify segment member counts](understand-verify-segment-member-counts.md)
 
 :::image type="content" source="media/real-time-marketing-build-segment-members.png" alt-text="Screenshot of the segment builder showing a sample list of included segment members." lightbox="media/real-time-marketing-build-segment-members.png":::
 
