@@ -222,6 +222,8 @@
       items:
       - name: Understand automated segment refresh and data freshness
         href: auto-segment-management.md
+      - name: Understand and verify segment member counts
+        href: understand-verify-segment-member-counts.md    
       - name: Add protected fields in segment criteria
         href: protected-fields.md   
     - name: Use your own Azure Data Lake Storage account for segments
