@@ -1,11 +1,11 @@
 ---
 title: Respond to Data Subject Rights (DSR) requests
-description: Learn how to respond to Data Subject Requests with Dynamics 365 Customer Insights - Data.
-ms.date: 05/03/2024
+description: Manage Data Subject Rights (DSR) requests in Customer Insights - Data by deleting customer records, removing users, and exporting data. 
+ms.date: 09/04/2026
 ms.topic: how-to
-author: srivas15
-ms.author: shsri
-ms.reviewer: mhart
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
@@ -38,7 +38,7 @@ As an admin, remove customer data that you deleted in the data source. Verify th
    1. Select the data source and then select **Refresh**.
    1. Check the status of the data source under **Status**.
 
-   :::image type="content" source="media/data-sources.png" alt-text="Screenshot of the Data sources page showing the status of data sources for handling data delete requests for customer data.":::
+   :::image type="content" source="media/dsr-data-sources.png" alt-text="Screenshot of the Data sources page showing the status of data sources for handling data delete requests for customer data.":::
 
 1. After a successful data source refresh, run the downstream refreshes too, especially if you don't have a recurring full refresh scheduled.
 

@@ -1,7 +1,7 @@
 ---
-title: "Review data unification"
-description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 12/11/2024
+title: Review data unification
+description: Review data unification steps in Dynamics 365 Customer Insights before you create unified customer profiles. Learn how to check results and refine match rules.
+ms.date: 09/09/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -33,19 +33,19 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ## View the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Customer data** shows the number of mapped columns and **Deduplication rules** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles. Each tile displays the results of each step in the unification process. For example, **Customer data** shows the number of mapped columns and **Deduplication rules** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
 > [!TIP]
-> The **Matching rules** tile displays only if multiple tables were selected.
+> The **Matching rules** tile displays only if you select multiple tables.
 
-We recommend you review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules) and refine them if necessary.
+Review the results, particularly the quality of your [match rules](data-unification-update.md#manage-match-rules), and refine them if necessary.
 
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
 > [!IMPORTANT]
-> If data unification is not behaving as expected, please validate the results using this [troubleshooting guide](/troubleshoot/dynamics-365/customer-insights/data/profile-unification/troubleshoot-unification-results).
+> If data unification isn't behaving as expected, validate the results by using this [troubleshooting guide](/troubleshoot/dynamics-365/customer-insights/data/profile-unification/troubleshoot-unification-results).
 
 ## Next steps
 
