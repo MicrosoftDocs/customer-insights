@@ -81,7 +81,6 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> - Real-time marketing activities from the past 90 days are shown in the timeline for the selected contact or lead.
-> - The timeline doesn't display interactions for customer profiles.
+> The timeline shows real-time marketing activities from the past year for the selected contact or lead.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
