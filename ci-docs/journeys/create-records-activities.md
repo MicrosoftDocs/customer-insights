@@ -1,7 +1,7 @@
 ---
-title: Create records and activities from journeys (preview)
+title: Create records and activities from journeys
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 06/30/2026
+ms.date: 09/11/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -12,9 +12,8 @@ search.audienceType:
   - enduser
 ---
 
-# Create records and activities from journeys (preview)
+# Create records and activities from journeys
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Use journeys in Dynamics 365 Customer Insights - Journeys to automatically create Dataverse records in response to customer actions and engagement signals. Create any type of record or activity, including phone calls, tasks, leads, opportunities, and custom entities, directly from the journey canvas to drive timely follow-up and improve conversion rates.
 
@@ -27,17 +26,13 @@ For example, when a high-value lead downloads a whitepaper, you can automaticall
 >
 > Records related to event planning aren't supported.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Enable creating records and activities from journeys
 
 To turn this feature on or off:
 
 1. Go to **Settings** > **Overview** > **Feature switches**.
-1. Enable or disable the **Record creation (preview)** toggle inside the **Journey** section.
-
-> [!NOTE]
-> Like any preview feature, this feature is disabled by default. However, given that this is a change to an existing feature, if you previously had the **Lead and opportunity creation (preview)** toggle enabled, that is still respected.
+1. Enable or disable the **Record creation** toggle inside the **Journey** section.
 
 > [!IMPORTANT]
 > A new dedicated service role — **Create Record Role Extensible** — is now available for the **Create a record** tile. This role provides more granular control. The entity picker only shows tables and fields where both you (the journey publisher) and this role have the required permissions, so configuration issues surface at setup rather than at runtime.
