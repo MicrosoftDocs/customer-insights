@@ -1,8 +1,8 @@
 ---
-title: "Export data to Azure Synapse Analytics (preview)"
-description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 11/07/2024
-ms.reviewer: mhart
+title: Export data to Azure Synapse Analytics (preview)
+description: Export data from Dynamics 365 Customer Insights - Data to Azure Synapse Analytics. Learn the prerequisites, permissions, and steps to set up and manage the export.
+ms.date: 09/04/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -21,7 +21,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 ## Prerequisites
 
 > [!NOTE]
-> Make sure to set all **role assignments** as described.
+> Ensure you set all **role assignments** as described.
 
 - In Customer Insights - Data, your Microsoft Entra ID account must have an [Administrator role](user-roles.md#admin).
 
@@ -29,11 +29,11 @@ In Azure:
 
 - An active Azure subscription.
 
-- A user with an **Administrator** role in Customer Insights - Data needs the **User Access Administrator** role in the Azure subscription to grant the *service principal* access to Azure resources in the Customer Insights - Data UI. Otherwise, a user in Azure who has the **User Access Administrator** role must set following permissions. Learn more about the [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role and how to choose between [Owner vs User Access Administrator](/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role). The **Owner** implicitly has the **User Access Administrator** role.
+- A user with an **Administrator** role in Customer Insights - Data needs the **User Access Administrator** role in the Azure subscription to grant the *service principal* access to Azure resources in the Customer Insights - Data UI. Otherwise, a user in Azure who has the **User Access Administrator** role must set the following permissions. Learn more about the [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) role and how to choose between [Owner vs User Access Administrator](/azure/role-based-access-control/role-assignments-steps#step-2-select-the-appropriate-role). The **Owner** implicitly has the **User Access Administrator** role.
 
 - If using a new Azure Data Lake Storage Gen2 account, the [service principal for Customer Insights - Data](connect-service-principal.md) has **Storage Blob Data Contributor** permissions. The Data Lake Storage Gen2 **must have** [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 
-- On the resource group with the Azure Synapse workspace, the *service principal* and the *user with admin permissions in Customer Insights - Data* needs at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
+- On the resource group with the Azure Synapse workspace, the *service principal* and the *user with admin permissions in Customer Insights - Data* need at least **Reader** [permissions](/azure/role-based-access-control/role-assignments-portal).
 
 - The *user with admin permissions in Customer Insights - Data* has **Storage Blob Data Contributor** permissions on the Azure Data Lake Storage Gen2 account where the data is located and linked to the Azure Synapse workspace. Learn more about [using the Azure portal to assign an Azure role for access to blob and queue data](/azure/storage/common/storage-auth-aad-rbac-portal) and [Storage Blob Data Contributor permissions](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
@@ -47,7 +47,7 @@ In Azure:
 
 - Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
 - [Power Query data sources](connect-power-query.md) as input tables are only supported if your environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md).
-- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) doesn't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 - This export works only for CSV formatted files.
 
 ## Set up connection to Azure Synapse
@@ -58,7 +58,7 @@ In Azure:
 
 1. Select **Add connection** and choose **Azure Synapse Analytics**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describes this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describes this connection. Choose a name that explains the purpose and target of the connection.
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
@@ -80,9 +80,9 @@ In Azure:
 
 1. In the **Connection for export** field, choose a connection from the Azure Synapse Analytics section. Contact an administrator if no connection is available.
 
-1. Provide a recognizable **Display name** for your export and a **Database name**. The export will create a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
+1. Enter a recognizable **Display name** for your export and a **Database name**. The export creates a new [Azure Synapse lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) in the workspace defined in the connection.
 
-1. Select which tables you want to export to Azure Synapse Analytics.
+1. Select the tables you want to export to Azure Synapse Analytics.
    > [!NOTE]
    > Data sources based on a [Common Data Model folder](connect-common-data-model.md) aren't supported.
 
@@ -98,8 +98,8 @@ To query data in Synapse Analytics, you need **Storage Blob Data Reader** access
 
 1. Select **Edit** on the export you want to update.
 
-   - **Add** or **Remove** tables from the selection. If you remove tables from the selection, they stay in the Synapse Analytics database. However, future data refreshes won't update the removed tables in that database.
+   - **Add** or **Remove** tables from the selection. If you remove tables from the selection, they stay in the Synapse Analytics database. However, future data refreshes don't update the removed tables in that database.
 
-   - **Changing the Database Name** creates a new Synapse Analytics database. The old database won't receive any updates in future refreshes.
+   - **Changing the Database Name** creates a new Synapse Analytics database. The old database doesn't receive any updates in future refreshes.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
