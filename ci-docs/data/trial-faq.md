@@ -1,12 +1,12 @@
----  
-title: "Dynamics 365 Customer Insights trial FAQ"
-description: "Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues."
-author: JimsonChalissery
+---
+title: Dynamics 365 Customer Insights trial FAQ
+description: Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
+author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 10/25/2024
+ms.date: 09/09/2026
 ms.topic: get-started
 ms.custom: template-trial-faq
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ---
 
 # Dynamics 365 Customer Insights trial FAQ
@@ -19,24 +19,24 @@ This app is a cloud-based service that doesn't require special software other th
 
 ### How do I sign up for the trial without a Microsoft 365 tenant?
 
-You can enter a non-work email address and we will create an account and tenant for you.
+Enter a non-work email address and the service creates an account and tenant for you.
 
 ### Can I sign up for multiple Dynamics 365 apps such as Sales and Customer Service?
 
-Yes, you can. To view all available trials, [visit the trial hub page](https://www.microsoft.com/dynamics-365/free-trial). You can use the same email account to sign up for different trials. However, it is not possible to have multiple apps on the same trial site. Each trial will be on a different org and URL. The trial data won’t be shared across apps.
+Yes, you can. To view all available trials, [visit the trial hub page](https://www.microsoft.com/dynamics-365/free-trial). You can use the same email account to sign up for different trials. However, you can't have multiple apps on the same trial site. Each trial is on a different org and URL. The trial data doesn't share across apps.
 
 ## Trial app
 
 ### I didn't receive the trial details email after signing up, what should I do?
 
-When you sign up for the trial, you'll receive an email with the trial details. If you don't see the email in your inbox, check your spam folder. Alternatively, use the following steps to access your app:
+When you sign up for the trial, you receive an email with the trial details. If you don't see the email in your inbox, check your spam folder. Alternatively, use the following steps to access your app:
 
 1. Go to the trial site and select **Try for free**.
-1. Enter the email ID that you used to sign up for the trial. You'll be redirected to your trial app.
+1. Enter the email ID that you used to sign up for the trial. You're redirected to your trial app.
 
 ### How do I add more users to a trial?
 
-To add users, go to the [Microsoft 365 admin center](https://admin.microsoft.com) using the trial admin account. Follow the [admin center guidance](/microsoft-365/admin/add-users/add-users) to add users up to the trial license limit. If the user you are adding already has a Microsoft 365 account, assign them an appropriate security role in the trial org. For more information, see [Assign a security role to a user](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+To add users, go to the [Microsoft 365 admin center](https://admin.microsoft.com) by using the trial admin account. Follow the [admin center guidance](/microsoft-365/admin/add-users/add-users) to add users up to the trial license limit. If the user you're adding already has a Microsoft 365 account, assign them an appropriate security role in the trial org. For more information, see [Assign a security role to a user](/power-platform/admin/create-users#assign-a-security-role).
 
 ### How many users can I add to my trial environment?
 
@@ -58,29 +58,29 @@ Once you have a paid license, you can't convert your trial instance of Customer 
 
 To copy the trial settings to a production instance, you must begin with a **Production** type Power Platform environment. You can create a production environment once you have a paid Dynamics 365 Customer Insights license on your tenant: 
 1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type (production, sandbox, or subscription-based trial).
-1. To install Dynamics 365 applications, you must activate the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps.
+1. To install Dynamics 365 applications, you must activate the **Enable Dataverse** and **Enable D365 Apps** toggles for the environment to allow apps.
 
 Back in Customer Insights - Data, you can create a new instance and associate it with the new production environment you just created and copy the settings and configuration you created in the trial: 
 1. In Customer Insights - Data, in the upper right corner open the environment chooser and select **+ New**. 
-1. Choose the "Copy from existing environment" checkbox and select your trial environment from the dropdown to copy data from.
+1. Choose the **Copy from existing environment** checkbox and select your trial environment from the dropdown to copy data from.
 1. When it asks you which Dataverse environment to associate with, choose the new production environment you created. 
 
-After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
+After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned earlier, the trial environment appears in this list. For more information, see [Copy the environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
 
 ### What are the trial limits and quotas?
 
 - You can't use your own Azure Data Lake Storage account to store output data during a trial of Customer Insights. However, you can ingest data from a Data Lake Storage account.
-- You can store a up to 3 GB of data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
+- You can store up to 3 GB of data in the Dataverse environment that gets provisioned automatically when you start a Customer Insights trial.
 
 ## Customer Insights-specific questions
 
 ### How do I start using the trial?
 
-After you sign up for the trial, you will arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [What to try](trial-signup.md#what-to-try) on the trial sign-up page.
+After you sign up for the trial, you arrive on the app's main screen. The main screen provides links to user guides and tutorials. To learn more, visit the links in the [What to try](trial-signup.md#what-to-try) section on the trial sign-up page.
 
 ### What features are available in the trial?
 
-Most features of the Customer Insights capabilities are available in the trial.
+The trial provides most features of the Customer Insights capabilities.
 
 The following features are **not available**:
 
