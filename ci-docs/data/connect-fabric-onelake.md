@@ -1,7 +1,7 @@
 ---
 title: Connect to Microsoft Fabric OneLake
 description: Connect to Delta tables in a Microsoft Fabric OneLake Lakehouse and ingest the data into Dynamics 365 Customer Insights - Data.
-ms.date: 08/05/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -62,7 +62,7 @@ A Fabric tenant administrator must enable external access to OneLake data *once*
 
 ## Add Customer Insights - Data service principal to the Fabric workspace
 
-Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace with at least the **Contributor** role so it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
+Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace connected to Customer Insights - Data with at least the **Contributor** role so it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
 
 ### Enable the service principal in the Fabric tenant
 
@@ -72,11 +72,22 @@ Add the Customer Insights - Data service principal (**Dynamics 365 AI for Custom
 
 ### Add the service principal or security group to the Fabric workspace
 
-1. Open your Fabric workspace.
+1. Open the Fabric workspace connected to Customer Insights - Data.
 1. Select **Manage access**.
 1. Select **Add people or groups**.
 1. Search for the service principal name or the security group that contains it.
 1. Assign the **Contributor** role.
+
+### Grant access to OneLake shortcut targets
+
+If a OneLake shortcut uses **passthrough authentication** to access a lakehouse in another workspace in the same tenant, grant the **Dynamics 365 AI for Customer Insights** service principal access to the target by using either option:
+
+- **Workspace access:** Add the service principal to the **target workspace** with the **Contributor** role. This grants broader read and write access across that workspace.
+- **Lakehouse-only read access:** Share the **target lakehouse** with the service principal, granting **Read** and **Read all with Apache Spark**. This grants read-only access to that lakehouse without workspace membership. **Read all with Apache Spark** also allows reads through OneLake APIs; **Read all with SQL analytics endpoint** alone doesn't. For more information, see [Lakehouse sharing and permissions](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions).
+
+These options apply only to the shortcut target. Keep the **Contributor** role on the workspace connected to Customer Insights - Data, which contains the shortcut.
+
+Shortcuts that use **delegated authentication**, including external shortcuts, access the target through their configured connection identity instead. For more information, see [Shortcut authentication models](/fabric/onelake/onelake-shortcut-security#shortcut-auth-models).
 
 ## Connect to data in Fabric OneLake
 
