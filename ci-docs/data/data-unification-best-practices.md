@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 01/06/2025
+ms.date: 09/17/2026
 ms.reviewer: v-wendysmith
 ms.topic: best-practice
 author: Scott-Stabbert
@@ -29,9 +29,9 @@ When you set up rules to unify your data into a customer profile, consider these
 
 ## Unification performance
 
-Each rule takes time to run. Patterns such as comparing every table to every other table or trying to capture every possible record match can lead to long unification processing times. It also returns few if any more matches over a plan that compares each table to a base table.  
+Each rule takes time to run. Patterns such as comparing every table to every other table or trying to capture every possible record match can lead to long unification processing times. This approach also returns few, if any, more matches over a plan that compares each table to a base table.  
 
-The best approach is to start with a basic set of rules you know are needed, such as comparing each table to your primary table. Your primary table should be the table with the most complete and accurate data. This table should be ordered at the top in the Matching rules unification step.  
+The best approach is to start with a basic set of rules you know are needed, such as comparing each table to your primary table. Your primary table should be the table with the most complete and accurate data. Order this table at the top in the **Matching rules** unification step.  
 
 Progressively add several rules and see how long the changes take to run and if your results improve. Go to **Settings** > **System** > **Status** and select **Match** to see how long deduplication and matching took for each unification run.
 
@@ -49,7 +49,7 @@ In the **Customer data** step:
 
 - Review column descriptions selected by intelligent mapping.
 
-- Not all columns need to be mapped. Mapping common columns such as email and address fields allows Customer Insights to make downstream processes easier, but columns with a unique ID or purpose to your business can be left unmapped.
+- Not all columns need to be mapped. Map common columns such as email and address fields to make downstream processes easier. However, you can leave unmapped columns with a unique ID or purpose to your business.
 
 ## Deduplication
 
@@ -64,7 +64,7 @@ In this simple example, records 1, 2, and 3 share either an email or phone numbe
 |3 |Person 1 |(425) 555-2222 |BBB@B.com |
 |4 |Person 2 |(206) 555-9999 |Person2@contoso.com|
 
-We don’t want to match on just name as that would match different people with the same name.
+Don’t match on just name because that rule matches different people with the same name.
 
 - Create Rule 1 using Name and Phone, which matches records 1 and 2.
 
@@ -76,27 +76,27 @@ You decide the number of rules and conditions that uniquely identify your custom
 
 ## Normalization
 
-Use normalization to standardize data for better matching. Normalization performs well on large sets of data.
+Use normalization to standardize data for better matching. Normalization works well on large sets of data.
 
-The normalized data is only used for comparison purposes to match customer records more effectively. It doesn't change the data in the final unified customer profile output.
+The system uses the normalized data only for comparison purposes to match customer records more effectively. It doesn't change the data in the final unified customer profile output.
 
 ## Exact match
 
 Use precision to determine how close two strings should be to be considered a match. The default precision setting requires an exact match. Any other value enables fuzzy matching for that condition.
 
-Precision can be set to low (30% match), medium (60% match), and high (80% match). Or you can customize and set the precision in 1% increments.
+Set precision to low (30% match), medium (60% match), or high (80% match). Or you can customize and set the precision in 1% increments.
 
 ### Exact match conditions
 
-The exact match conditions are run first to obtain a smaller set of values for fuzzy matches. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country/region, then having an exact match on the country/region wouldn't help narrow the scope.
+The exact match conditions run first to obtain a smaller set of values for fuzzy matches. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country/region, then having an exact match on the country/region wouldn't help narrow the scope.
 
 Columns like full name, email, phone, or address fields have good uniqueness and are great columns to use as an exact match. 
 
-Ensure the column you use for an exact match condition doesn’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. The data profile is run when the data source is next refreshed. For more information, go to [Data profiling](data-sources.md#data-profiling).
+Ensure the column you use for an exact match condition doesn’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer Insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. The data profile runs when the data source is next refreshed. For more information, see [Data profiling](data-sources.md#data-profiling).
 
 ## Fuzzy matching
 
-Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it's slower than exact matches. Make sure at least one exact match condition in any rule that has fuzzy conditions.  
+Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it's slower than exact matches. Make sure at least one exact match condition is in any rule that has fuzzy conditions.  
 
 Fuzzy matching isn't intended to capture name variations like Suzzie and Suzanne. These variations are better captured with the Normalization pattern **Type: Name** or the custom **Alias matching** where customers can enter their list of name variations they want to consider as matches.
 
@@ -111,7 +111,7 @@ Fuzzy matches are determined by computing the edit distance score between two st
 
 The edit distance is the number of edits required to turn one string into another, by adding, deleting, or changing a character.
 
-For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when we remove the e and o characters. To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
+For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when you remove the `e` and `o` characters. To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
 
 |Base string |Comparison string |Score |
 |----|-----|------|

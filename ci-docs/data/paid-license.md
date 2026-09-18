@@ -1,10 +1,10 @@
 ---
 title: Purchase a license of Dynamics 365 Customer Insights
-author: JimsonChalissery
-description: Purchase a license of Dynamics 365 Customer Insights, sign in, and get familiar with the app.
+author: Scott-Stabbert
+description: Dynamics 365 Customer Insights licensing options help you buy, try, and sign in to the app. 
 ms.author: sstabbert
-ms.reviewer: mhart
-ms.date: 04/29/2024
+ms.reviewer: v-wendysmith
+ms.date: 09/17/2026
 ms.topic: how-to
 ms.collection: get-started
 ---
@@ -13,7 +13,7 @@ ms.collection: get-started
 
 To purchase Dynamics 365 Customer Insights, see the contact options on the [Dynamics 365 Customer Insights website](https://www.microsoft.com/dynamics-365/products/customer-insights).
 
-If you want to try the service and the features, see [Set up a trial environment](trial-signup.md).
+To try the service and the features, see [Set up a trial environment](trial-signup.md).
 
 Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase more capacity and licenses to increase the default quota.
 
@@ -26,6 +26,6 @@ Customer Insights is licensed per tenant and includes multiple capabilities. You
 1. Sign in with your school or work account.
 1. Agree to the terms of service and set the content preferences for your environment.
 
-After your first sign-in, you see an environment with sample data. Use that data to explore features and get familiar with the app. To use your own data, [create an environment](create-environment.md).
+After you sign in for the first time, you see an environment with sample data. Use that data to explore features and get familiar with the app. To use your own data, [create an environment](create-environment.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

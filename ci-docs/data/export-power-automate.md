@@ -1,10 +1,10 @@
 ---
-title: "Power Automate connector (preview) | Microsoft Docs"
-description: "Create flows in Microsoft Power Automate from Dynamics 365 Customer Insights - Data."
-ms.date: 12/11/2024
-ms.reviewer: mhart
+title: Power Automate connector (preview) | Microsoft Docs
+description: Power Automate connector lets you trigger Customer Insights - Data flows from data changes, refresh events, and thresholds. 
+ms.date: 09/17/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: JimsonChalissery
+author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
@@ -15,12 +15,11 @@ ms.author: sstabbert
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Microsoft Power Automate](https://flow.microsoft.com/).
 
 > [!TIP]
-> We recommend using the default option [to use Power Automate with Dataverse data](/power-automate/dataverse/overview). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
-
+> Use the default option [to use Power Automate with Dataverse data](/power-automate/dataverse/overview). It ensures you benefit from the [integration into Dataverse](integrate-d365-apps.md).
 
 ## Known limitations
 
-- A maximum of 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-a-table) to call the API endpoint multiple times.
+- You can make up to 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-a-table) to call the API endpoint multiple times.
 
 ## Power Automate triggers
 
@@ -37,7 +36,7 @@ Use triggers to create cloud flows and automate repetitive tasks, such as notifi
 
 ## Power Automate actions
 
-The Power Automate connector provides other actions than the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
+The Power Automate connector provides actions in addition to the available triggers. For more information, see the [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## Create a Power Automate flow
 
