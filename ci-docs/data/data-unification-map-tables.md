@@ -1,7 +1,7 @@
 ---
-title: "Describe customer data for data unification"
-description: "The first step in the unification process is selecting tables, columns, primary keys, and data types to map data to the unified customer profile."
-ms.date: 12/19/2024
+title: Describe customer data for data unification
+description: Data unification starts with selecting customer tables, columns, primary keys, and types. Learn how to map data to unified profiles.
+ms.date: 09/17/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -39,14 +39,14 @@ The first step in unification is selecting the tables and columns within your da
 
 ## Select primary key
 
-For each table, perform the following steps.
+For each table, perform the following steps:
 
-1. Choose the **Primary key**. The primary key value uniquely identifies a row. Primary keys shouldn't have any duplicate, missing, or null values. String, integer, and GUID data type columns are supported as primary keys.
+1. Choose the **Primary key**. The primary key value uniquely identifies a row. Primary keys shouldn't have any duplicate, missing, or null values. You can use string, integer, and GUID data type columns as primary keys.
 
-1. Choose a **Type** that describes each column, such as Person.FullName, Location.City, or Identity.Service.Email. Mapping columns to types allows Customer Insights - Data to understand what columns represent and recommend rules, merge redundant data, and configure predictive models.
+1. Choose a **Type** that describes each column, such as Person.FullName, Location.City, or Identity.Service.Email. When you map columns to types, Customer Insights - Data understands what columns represent and can recommend rules, merge redundant data, and configure predictive models.
 
    > [!NOTE]
-   > One column should map to the type *Person.FullName* to populate the customer name in the customer card.
+   > To populate the customer name in the customer card, map one column to the type *Person.FullName*.
 
    1. To create a custom type, select the **Type** field for the column and enter your custom type name.
 
@@ -54,7 +54,7 @@ For each table, perform the following steps.
 
 1. Review the recommended types to ensure intelligent mapping correctly identified the type for each column.
 
-1. For columns that aren't automatically mapped to a type, select a type field, enter a custom type, or leave them unmapped. These columns are listed under **Define the data in the unmapped columns**. You don't need to map every column. However, columns with key demographic data (such as names and addresses) are important to map. Columns without a clear demographic type don't need to be mapped.
+1. For columns that aren't automatically mapped to a type, select a type field, enter a custom type, or leave them unmapped. These columns are listed under **Define the data in the unmapped columns**. You don't need to map every column. However, it's important to map columns with key demographic data, such as names and addresses. Columns without a clear demographic type don't need to be mapped.
 
 1. After completing the steps for each table, select **Save source columns**.
 
