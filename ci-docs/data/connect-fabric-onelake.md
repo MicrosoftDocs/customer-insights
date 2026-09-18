@@ -48,8 +48,6 @@ This feature has the following limitations:
 - Only **one Fabric OneLake data source per workspace**. To ingest data from another workspace, create another data source or use a Fabric shortcut to expose the remote table in the workspace.
 - Fabric **Data Warehouse** tables aren't supported.
 - Tables configured with Delta features that require `minReaderVersion` greater than 2, such as deletion vectors aren't supported. For more information, see [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
-- The option to **upgrade in place** an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source will be released by October 2026.
-
 
 ## Enable external access to OneLake data
 
@@ -198,6 +196,7 @@ Customer Insights - Data can't read the list of tables in the workspace. One or 
 
 - [Data sources overview](data-sources.md)
 - [Connect to Delta tables in Azure Data Lake Storage](connect-delta-lake.md)
+- [Convert an existing data source to Microsoft Fabric OneLake](convert-data-source-to-fabric-onelake.md)
 - [Microsoft Fabric OneLake overview](/fabric/onelake/onelake-overview)
 - [Create OneLake shortcuts](/fabric/onelake/onelake-shortcuts)
 
