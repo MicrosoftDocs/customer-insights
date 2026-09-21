@@ -1,7 +1,7 @@
 ---
 title: Tracking consent in Customer Insights - Journeys
 description: Learn how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to support privacy requirements for tracking pixels in email.
-ms.date: 08/14/2026
+ms.date: 09/21/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -13,9 +13,9 @@ search.audienceType:
 
 # Tracking consent in Dynamics 365 Customer Insights - Journeys
 
-In 2026, privacy regulators issued additional guidance regarding the use of tracking pixels in email. They apply to private and public organizations that use tracking pixels, and to their technical service providers.
+This article explains how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to help meet privacy requirements for email tracking pixels.
 
-For Customer Insights - Journeys, the practical effect is that using tracking pixels for certain purposes may require the recipient's prior consent.
+For Customer Insights - Journeys, the practical effect is that using tracking pixels for certain purposes might require the recipient's prior consent.
 
 As described in this article, Customer Insights - Journeys offers configuration options that you can use to help meet these requirements.
 
@@ -49,9 +49,9 @@ As described in this article, Customer Insights - Journeys offers configuration 
 
     For recipients who opt out before you send a message, the system doesn't insert a tracking pixel or tracking links, so it doesn't record opens or clicks. It also doesn't record website visits or link clicks.  
 
-    For recipients who opt in before you send a message but opt out before selecting a link, the system records their interactions without a customer profile reference, so you can't later associate their interactions with a recipient. Because the system caches tracking consent for 24 hours, an interaction can still be recorded with a customer profile reference within 24 hours of opting out.
+    For recipients who opt in before you send a message but opt out before selecting a link, the system records their interactions without a customer profile reference, so you can't later associate their interactions with a recipient. In rare cases, an interaction can still be recorded with a customer profile reference shortly after a recipient opts out—for example, if the consent check finished before the interaction was submitted and that submission was delayed.
 
-- Consent changes aren't instant. After someone revokes consent, link and open tracking can remain non-anonymous for up to 24 hours, and form prefill can continue for up to 15 minutes.
+- Tracking consent changes apply to new checks right away. Form prefill can continue for up to 15 minutes after someone revokes consent.
 
 ## Related consent and tracking resources
 
