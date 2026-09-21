@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys link tracking mechanics
 description: Learn how link tracking mechanics work in Dynamics 365 Customer Insights - Journeys, including trackable links, consent, and anonymous interactions.
-ms.date: 09/02/2026
+ms.date: 09/21/2026
 ms.topic: article
 author: Joni-M
 ms.author: udag
@@ -21,7 +21,7 @@ As of June 10, 2026, replaced links use the following format:
 
 The application replaces links when the following conditions are met:
 
-- The links aren't marked as **non-trackable** inside the message editor.
+- You don't mark the links as **non-trackable** in the message editor.
 - The recipient customer profile shows that the customer consents to tracking.
 
 When the recipient selects a link or opens a message with a tracking pixel, two things happen:
@@ -29,10 +29,12 @@ When the recipient selects a link or opens a message with a tracking pixel, two 
 1. The recipient is redirected to the original URL.
 1. The application records the link click interaction.
 
-If the recipient previously opted out of tracking, the system generates the interaction as anonymous. When the recipient opts out, the interaction doesn't store a customer profile reference. The system caches the consent for tracking for 24 hours, which means the interaction can be stored as non-anonymous even if the customer opted out in the past 24 hours.
+If the recipient previously opted out of tracking, the system generates the interaction as anonymous. When the recipient opts out, the interaction doesn't store a customer profile reference.
 
 > [!NOTE]
-> All links generated in the [text message channel](real-time-marketing-outbound-text-messaging.md) are shortened, regardless of whether the application replaces them with tracking links.
+>
+> - The system checks tracking consent when it processes the interaction, so it uses the current consent state. In rare cases, an interaction can still be recorded with a customer profile reference shortly after a recipient opts out—for example, if the consent check finished before the interaction was submitted and that submission was delayed.  
+> - All links generated in the [text message channel](real-time-marketing-outbound-text-messaging.md) are shortened, regardless of whether the application replaces them with tracking links.
 
 ## See also
 
