@@ -1,7 +1,7 @@
 ---
 title: Segmentation overview
 description: Learn how to work with segments in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/11/2023
+ms.date: 09/22/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -23,6 +23,16 @@ This will take you directly to the segment builder, where you can create and sav
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of selecting the +New segment option.](media/real-time-marketing-segment-from-journey.png "Screenshot of selecting the +New segment option")
+
+## Create a segment using Copilot 
+
+You can use the Query Assist feature in Copilot to help you build segments more efficiently. Query Assist provides intelligent suggestions and automates parts of the segment creation process, making it easier to define complex segment criteria without manually configuring every condition. The key benefits of using Query Assist are:  
+
+- Speeds up segment creation.
+- Reduces the need to understand complex relationships between tables and entities.
+- Makes segmentation more accessible to business users and marketers.
+
+For more information, see [Create segments with Query Assist copilot in Customer Insights - Journeys](real-time-marketing-natural-language-segments.md)
 
 ## Edit your segment
 
