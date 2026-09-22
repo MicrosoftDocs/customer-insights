@@ -120,10 +120,6 @@
         items:
         - name: Create a new email and design its content
           href: email-design.md
-        - name: Copilot - Use AI to kickstart email creation
-          href: content-ideas.md
-        - name: "Copilot - Refresh and perfect your message (preview)"
-          href: content-rewrite.md
         - name: Style your emails with themes
           href: email-theme.md
         - name: Use brand profiles in email
@@ -204,8 +200,6 @@
         href: real-time-marketing-build-segments.md
       - name: Improve targeting with the redesigned segment builder
         href: real-time-marketing-redesigned-segment-builder.md
-      - name: Copilot - Target the right customers using query assist
-        href: real-time-marketing-natural-language-segments.md
       - name: Create a consent‑based segment
         href: real-time-marketing-consent-segments.md  
       - name: Tabs and settings for segments
@@ -720,6 +714,12 @@
       href: journey-creation-agent.md
     - name: Outreach Optimization Agent (preview)
       href: outreach-optimization-agent.md
+  - name: Copilot - Target the right customers using query assist
+    href: real-time-marketing-natural-language-segments.md    
+  - name: Copilot - Use AI to kickstart email creation
+    href: content-ideas.md
+  - name: Copilot - Refresh and perfect your message
+    href: content-rewrite.md
   - name: Use consent tools in the Customer Insights MCP server (preview)
     href: mcp-server-consent.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
