@@ -1,7 +1,7 @@
 ---
 title: Create records and activities from journeys
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 09/11/2026
+ms.date: 09/22/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -14,7 +14,6 @@ search.audienceType:
 
 # Create records and activities from journeys
 
-
 Use journeys in Dynamics 365 Customer Insights - Journeys to automatically create Dataverse records in response to customer actions and engagement signals. Create any type of record or activity, including phone calls, tasks, leads, opportunities, and custom entities, directly from the journey canvas to drive timely follow-up and improve conversion rates.
 
 For example, when a high-value lead downloads a whitepaper, you can automatically create a phone call activity assigned to a sales representative with all relevant context. This process ensures sales can follow up while the lead's interest is at its peak.
@@ -22,10 +21,11 @@ For example, when a high-value lead downloads a whitepaper, you can automaticall
 > [!NOTE]
 > This feature currently works when orchestrating journeys on contacts and leads. It doesn't support Customer Insights - Data profiles.
 >
-> Users can only create records that have a relationship to lead or contact and that they have Create privileges to.
+> Users can only create records that have a relationship to lead or contact.
 >
-> Records related to event planning aren't supported.
-
+> Records related to event planning (prefix `msevtmgt_`) and records with prefix `msdyncrm_` aren't supported.
+> 
+> To use the **Create a record** tile, both the journey publisher and the **Create Record Role Extensible** service role must have the required Dataverse privileges on the target table. The entity picker only shows tables and fields where both permission checks pass.
 
 ## Enable creating records and activities from journeys
 
@@ -55,9 +55,9 @@ To add the capability to create records to your journey:
 After adding the **Create a record** tile, search for or scroll through the list of available entities and select the record type you want to create (for example, Phone Call, Task, Lead, Opportunity, or any custom entity). Records related to event planning aren't supported.
 
 > [!TIP]
-> The system only displays entities where both you (the journey publisher) and the **Create Record Role Extensible** service role have *Create* permission at business unit level or higher. If an entity or field is missing from the list, a message indicates that this is due to missing privileges and links to the documentation.
+> The system only displays entities where both you (the journey publisher) and the **Create Record Role Extensible** service role have *Create* permission at business unit level or higher. If an entity or field is missing from the list, a message indicates that this condition is due to missing privileges and links to the documentation.
 >
-> If you don’t see the entity you need, ask your administrator to grant *Create* permission on that entity to both your security role and the **Create Record Role Extensible** role. To learn more, see [Why can’t I see a table in the list of tables for Create Record?](#why-cant-i-see-a-table-in-the-list-of-tables-for-create-record) below.
+> If you don’t see the entity you need, ask your administrator to grant *Create* permission on that entity to both your security role and the **Create Record Role Extensible** role. To learn more, see [Why can’t I see a table in the list of tables for Create Record?](#why-cant-i-see-a-table-in-the-list-of-tables-for-create-record)
 
 ### Configure the required fields
 
@@ -92,33 +92,31 @@ The optional fields list includes all writable fields from the entity, including
 > If the system can't resolve a dynamic content field at runtime (for example, if a contact doesn't have a phone number), the field is left empty.
 
 > [!IMPORTANT]
-> During the preview, when choosing a lead record type, a number of standard attributes such as `First Name` and `Last Name`, `Email`, `Address`, and more are pre-filled from the journey audience. These fields show as pre-filled in the Create a record side pane according to their settings (required versus more info).
+> During the preview, when choosing a lead record type, a number of standard attributes such as `First Name` and `Last Name`, `Email`, `Address`, and more are prefilled from the journey audience. These fields show as prefilled in the **Create a record** side pane according to their settings (required versus more info).
 
 ### Configure record ownership and assignment
 
-For entities that support ownership (such as phone calls, tasks, leads, and opportunities), specify who should own the created record.
+For entities that support ownership, such as phone calls, tasks, leads, and opportunities, specify who should own the created record.
 
-- **Contact/Lead owner**: The owner of the contact or lead flowing through the journey is assigned as an owner of the created entity.
-- **Parent account owner**: If the contact or lead flowing through the journey has a relationship with the parent account, the owner of the parent account is assigned as an owner of the created entity. If this option is selected and the value can’t be resolved, the contact or lead owner is assigned instead. 
-- **Specific user**: Select a specific static user or team to be assigned as an owner of the created entity.
-- **Dynamic value**: Select a dynamic binding to resolve an owner to be assigned to the created entity. If this option is selected and the value can’t be resolved, the contact or lead owner is assigned.
+- **Contact/Lead owner**: Assign the owner of the contact or lead that flows through the journey as the owner of the created entity.
+- **Parent account owner**: Assign the owner of the parent account if the contact or lead that flows through the journey has a relationship with the parent account. If you select this option and the value can't be resolved, assign the contact or lead owner instead. 
+- **Specific user**: Select a specific static user or team to assign as the owner of the created entity.
+- **Dynamic value**: Select a dynamic binding to resolve an owner to assign to the created entity. If you select this option and the value can't be resolved, assign the contact or lead owner.
 
 For leads and opportunities, Dynamics 365 Sales assignment rules take precedence over the owner specified in the journey. This precedence ensures that the system routes leads and opportunities according to your sales team's territory assignments and distribution rules.
 
 ## Roles and permissions
 
-To create records from a journey using the new **Create Record Role Extensible** role, Dataverse requires permissions from two principals:
+To create records from a journey by using the new **Create Record Role Extensible** role, Dataverse requires permissions from two principals:
 
 - **Journey publisher**: The user who publishes the journey. Their security role must include the required privileges on the target table.
-- **Create Record Role Extensible**: The dedicated service role used by the Workflow service when the journey runs. This role must also hold the required privileges.
+- **Create Record Role Extensible**: The dedicated service role that the Workflow service uses when the journey runs. This role must also hold the required privileges.
 
-Record creation only succeeds if *both* principals pass all required permission checks.
+Record creation succeeds only if *both* principals pass all required permission checks.
 
 ### Built-in tables (Lead, Task, Opportunity, Phone Call)
 
-For built-in tables, the **Create Record Role Extensible** role already includes the required privileges. No action is needed for the service role.
-
-The journey publisher must have the following privileges on the target table:
+For built-in tables, the **Create Record Role Extensible** role already includes the required privileges. No action is needed for the service role. The journey publisher must have the following privileges on the target table:
 
 | Privilege | Why it's needed |
 |---|---|
@@ -144,13 +142,59 @@ For both the journey publisher’s security role and the **Create Record Role Ex
 
 ### Adding a custom lookup field to a built-in table
 
-If you add a custom lookup field that references a table not already covered by the default role (for example, a new custom entity new_project), you must add **AppendTo** on that referenced entity to both the journey publisher’s security role and the **Create Record Role Extensible** role.
+If you add a custom lookup field that references a table not already covered by the default role (for example, a new custom entity `new_project`), you must add **AppendTo** on that referenced entity to both the journey publisher’s security role and the **Create Record Role Extensible** role.
 
 No changes are needed if the lookup field points to a standard entity already covered by the default role (such as account, contact, transactioncurrency, lead, task, opportunity, or phone call).
 
+## Configure default settings for record creation
+
+Default record creation settings let you define field mappings that are automatically applied when a journey creates a record. By configuring these settings in advance, journey authors don't need to recreate the same mappings each time they add a **Create record** action.
+
+Each default setting is associated with a specific combination of target table and target audience.
+
+To view or manage default settings, go to **Settings** > **Customer engagement** > **Create record settings**.
+
+### Default settings provided out of the box
+
+The **Lead** table includes two default settings:
+
+- Lead table for the **Contact** target audience
+- Lead table for the **Lead** target audience
+
+For all other tables, you must create default settings manually.
+
+### Create a default setting
+
+1. Go to **Settings** > **Customer engagement** > **Create record settings**.
+1. Select **+ New setting**.
+1. Enter a name for the setting.
+1. Select the target **Table**.
+1. Select the **Target audience** (**Contact** or **Lead**).
+1. If business units are enabled, select a **Business unit**.
+1. Configure the field mappings for the record.
+1. Select **Save & Close**.
+
+### Edit an existing setting
+
+After you create a default setting:
+
+- You can modify the setting name and field mappings.
+- You can't change the **Table** or **Target audience**. To use a different table or target audience, create a new setting.
+
+### Default setting limits
+
+Each business unit can have only one enabled default setting for a specific table and target audience combination.
+
+For example, a business unit can have:
+
+- One setting for the **Lead** table and **Contact** target audience.
+- One setting for the **Lead** table and **Lead** target audience.
+
+However, a business unit can't have multiple enabled settings for the same table and target audience combination.
+
 ## Example use cases for creating records and activities
 
-### Hand-off high value leads to sales
+### Hand off high-value leads to sales
 
 Create phone call activities for leads who perform high-value actions:
 
@@ -165,16 +209,16 @@ Create phone call activities for leads who perform high-value actions:
 After the journey is live and begins creating records, you can track its effectiveness through analytics that show created records and allow you to open them directly. If a record creation fails, you can also view details about the failure.
 
 > [!IMPORTANT]
-> Journey validation checks many common configuration issues, but it can’t validate all runtime business rules or customer specific customizations. As a result, a journey may publish successfully, but some create record actions can still fail when the journey runs. Publishing a journey doesn’t guarantee that all records will be created. You should test the journey with a sample audience and review execution results before using it with live data.
+> Journey validation checks many common configuration issues, but it can’t validate all runtime business rules or customer specific customizations. As a result, a journey might publish successfully, but some create record actions can still fail when the journey runs. Publishing a journey doesn’t guarantee that all records will be created. You should test the journey with a sample audience and review execution results before using it with live data.
 
 ## Troubleshooting
 
 ### The entity I need doesn't appear in the entity list
 
-This can happen for one of the following reasons:
+This issue can happen for one of the following reasons:
 
 - The entity doesn’t have a relationship with the contact or lead.
-- The entity is related to event planning (not supported).
+- The entity is an event planning entity (prefix `msevtmgt_`) or an entity with the prefix `msdyncrm_`. Neither type is supported.
 - You don’t have permission to create records for that entity.
 
 **Resolution**:
@@ -182,7 +226,7 @@ This can happen for one of the following reasons:
 - Confirm the entity has a relationship with the contact or lead. If not, ask your administrator to create the required relationship and try again.
 -	Verify that both your security role and the **Create Record Role Extensible** role have **Create** permission on the entity at business unit level or higher. The entity picker only shows entities where both permission checks pass.
 -	If your organization restricts the entity to specific roles, ask your administrator to update both roles accordingly. See [Roles and permissions](#roles-and-permissions) for step-by-step instructions.
--	Confirm that the entity isn't an event planning entity (prefix `msevtmgt`). Event planning entities aren't supported.
+- Confirm the entity isn’t an event planning entity (prefix `msevtmgt_`) or an entity with the prefix `msdyncrm_`. Neither type is supported.
 
 ### Why can’t I see a table in the list of tables for Create Record?
 
@@ -190,9 +234,9 @@ To use a table in the **Create Record** tile, both you (the journey publisher) a
 
 **Resolution**:
 
-1. Open your `Dataverse environment` > **Settings** > **Security** > **Security Roles**.
+1. Open your *Dataverse environment* > **Settings** > **Security** > **Security Roles**.
 1. Find the security role assigned to your user account.
-1. Locate the table row. It may be under **Core Records**, **Custom Entities**, or another tab.
+1. Locate the table row. It might be under **Core Records**, **Custom Entities**, or another tab.
 1. Set the **Create** column to at least the **Business Unit** level (the second filled circle).
 1. Repeat the same steps for the **Create Record Role Extensible** role.
 
@@ -207,7 +251,7 @@ If either permission is missing, the lookup field is hidden from the field picke
 
 **Resolution**
 
-1. Open your `Dataverse environment` > **Settings** > **Security** > **Security Roles**.
+1. Open your *Dataverse environment* > **Settings** > **Security** > **Security Roles**.
 1. For both your security role and the **Create Record Role Extensible** role:
     - Find the source table row > set the **Append** column to at least **Business Unit** level.
     - Find the target table row > set the **AppendTo** column to at least **Business Unit** level.
@@ -236,24 +280,14 @@ Because of this, a journey can publish successfully and appear valid, but some r
 
 ### Dynamic content fields are empty in created records
 
-This can happen when the selected dynamic content path is incorrect or when the underlying data is blank for some contacts or leads.
+This condition can occur when the selected dynamic content path is incorrect or when the underlying data is blank for some contacts or leads.
 
 **Resolution**:
 
 - Re-check the selected dynamic content field and relationship path to ensure it points to the intended attribute.
-- Test with a contact or lead where you know the field has a value, then compare results.
+- Test with a contact or lead where you know the field has a value, and then compare results.
 - Add default values or branches to handle contacts and leads with missing data.
 
-## What changed from the *Create sales activities from lead signals* preview
-
-Previously, this capability was limited to four predefined entity types with restricted fields. The enhanced feature provides access to any entity type related to contacts or leads, with full access to all required, optional, and custom fields. This flexibility unlocks countless scenarios that previously required custom development or third-party integrations.
-
-If you previously used the *Create sales activities from lead signals* preview feature, be aware of the following changes:
-
-- **Unified tile**: The four separate tiles (Phone Call, Task, Lead, Opportunity) are replaced by a single **Create a record** tile that supports any entity type.
-- **Existing journeys**: Journeys that use the previous tiles continue to run. If you edit them, you must replace the old tiles with the new unified tile.
-- **Templates**: Task templates aren't supported anymore. Use journey templates to preserve commonly used field configurations.
-- **Branching**: Hardcoded status updates for phone calls and tasks are removed. Use standard if/then branches with Dataverse change detection instead.
 
 ## Related information
 

@@ -1,7 +1,7 @@
 ---
-title: 'Copilot - Refresh and perfect your message (preview)'
+title: 'Copilot - Refresh and perfect your message'
 description: Content rewrite Copilot in Dynamics 365 Customer Insights - Journeys rephrases email, form, SMS, and push notification text. Learn how to enable it and refine content.
-ms.date: 07/09/2026
+ms.date: 09/22/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: udag
@@ -14,21 +14,19 @@ ms.custom:
   - ai-seo-date:11/22/2024
 ---
 
-# Copilot - Refresh and perfect your message (preview)
-
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Copilot - Refresh and perfect your message
 
 Content rewrite Copilot is an AI-assisted editing feature in Dynamics 365 Customer Insights - Journeys. It helps you rephrase, shorten, lengthen, and adjust the tone of email, form, text message, and push notification content.
 
 > [!NOTE]
-> Editing text with the content rewrite copilot is available for the following types of content:
-> - Emails, email templates
-> - Forms
-> - Text messages
-> - Push notifications
-
-> [!NOTE]
-> The content rewrite copilot is currently available only in English in the United States.
+>
+> - Editing text by using the content rewrite Copilot is available for the following types of content:
+>     - Emails and email templates
+>     - Forms
+>     - Text messages
+>     - Push notifications
+>
+> - The content rewrite Copilot is currently available only in English in the United States.
 
 > [!Tip]
 > Learn about using the content ideas copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
@@ -39,7 +37,8 @@ Content rewrite Copilot is an AI-assisted editing feature in Dynamics 365 Custom
 
 The content rewrite copilot helps you rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy.
 
-Select any text and use the content rewrite copilot to:
+Select any text and use the content rewrite copilot to:  
+
 - Rewrite the text and choose from different variations
 - Change tone of voice to be more engaging, formal, casual, luxurious, or adventurous  
 - Shorten or lengthen copy
@@ -49,7 +48,8 @@ Select any text and use the content rewrite copilot to:
 > [!NOTE]
 > The content rewrite copilot and other Copilot features are enabled by default and visible in the email, push notification, SMS, and form editors in the United States.
 
-To turn on or off the content rewrite copilot feature switch:
+To turn on or off the content rewrite copilot feature switch:  
+
 1. Go to **Settings** > **Overview** > **Feature switches**.
 1. Enable or disable the **Global Opt-in consent** toggle.
 
@@ -68,10 +68,9 @@ To turn on or off the content rewrite copilot feature switch:
 1. To generate more ideas for the same key points, select **Get more ideas**.
 
 > [!NOTE]
-> AI-generated content might be incorrect. Review and edit generated content so your final copy is accurate and appropriate.
-
-> [!NOTE]
-> The content rewrite copilot is available only for text with at least 10 words. If the text snippet is shorter or empty, the content rewrite copilot feature is unavailable.
+>
+> - AI-generated content might be incorrect. Review and edit generated content so your final copy is accurate and appropriate.
+> - The content rewrite copilot is available only for text with at least 10 words. If the text snippet is shorter or empty, the content rewrite copilot feature is unavailable.
 
 > [!Tip]
 > You can refresh only part of a paragraph instead of changing the entire paragraph:

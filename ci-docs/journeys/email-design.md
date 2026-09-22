@@ -1,7 +1,7 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 09/22/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -13,22 +13,33 @@ search.audienceType:
 
 # Create and design a marketing email message
 
-Read this article to learn how to create an email message and design its content. See also the [email marketing overview](real-time-marketing-email.md) for a summary of the full message creation, delivery, and analysis process for email marketing.
+To learn how to create an email message and design its content, read this article. For a summary of the full message creation, delivery, and analysis process for email marketing, see the [email marketing overview](real-time-marketing-email.md).
 
-For a step-by-step tutorial on how to create and send your first marketing email message, see also [Create and design a marketing email message](email-design.md)
+For a step-by-step tutorial on how to create and send your first marketing email message, see [Create and design a marketing email message](email-design.md).
 
 > [!IMPORTANT]
-> As of April 2023, the following fields have been relocated from the right pane to the canvas: From Name, From Address, Subject, and Pre-header. This change allows for easier access and editing of these fields.
+> As of April 2023, the following fields moved from the right pane to the canvas: From Name, From Address, Subject, and Pre-header. This change makes it easier to access and edit these fields.
 >
-> If you have customized these fields on the "Email Properties" form, you should copy the customization to the new "Email Header" form (Customer Insights - Journeys form ID: 08732368-3f74-426e-9f96-595fbd6867e9). Customizations may include handlers that control the visibility of these fields or react to changes in these fields.
+> If you customize these fields on the **Email Properties** form, copy the customization to the new **Email Header** form (Customer Insights - Journeys form ID: 08732368-3f74-426e-9f96-595fbd6867e9). Customizations might include handlers that control the visibility of these fields or react to changes in these fields.
 >
-> Customizations made to the main form or customizations adding new fields to the Email Property form *do not* require any action.
+> Customizations that you made to the main form or customizations that add new fields to the **Email Property** form don't require any action.
 
 ## Create a new email marketing message
 
 To create a new email marketing message, go to **Customer Insights - Journeys** > **Channels** > **Emails** and select **New** on the command bar.
 
 :::image type="content" source="media/new-email-button-location4.png" alt-text="Location of the new-email button." lightbox="media/new-email-button-location4.png":::
+
+## Use Copilot to create email content
+
+Use Copilot in email to:
+
+- Generate email drafts from natural language prompts.
+- Tailor drafts to your audience and message.
+- Review and refine drafts before sending.
+- Customize drafts for your business and communication needs.
+
+For more information, see [Copilot - Use AI to kickstart email creation](content-ideas.md).
 
 ## Establish your basic layout by choosing the right template
 
@@ -152,6 +163,19 @@ For more information about assist edit, content settings, and the message object
 
 Dynamic content is content that gets resolved just before a message is sent to a specific individual. You'll typically use dynamic content to merge information from the recipient's contact record (such as first and last name), to place special links, and to place information and links from the content settings. If you're comfortable working in code, you can also create custom logic that includes conditional statements, while loops, and more. You can use dynamic content in your message body and in the message header fields (subject, from address, and from name).
 
-For complete details about these and other dynamic-content features, see [Personalize content using predefined dynamic text](real-time-marketing-predefined-dynamic-text.md)
+For complete details about these and other dynamic content features, see [Personalize content using predefined dynamic text](real-time-marketing-predefined-dynamic-text.md).
 
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+## Use Copilot to refine email content
+
+Use Copilot to refine email content:
+
+- Generate alternatives to existing content.
+- Adjust the tone for different communication needs.
+- Shorten or expand content without changing the intended message.
+- Refine selected text without rewriting the entire email.
+
+> [!NOTE] 
+> AI-generated content might be inaccurate or inappropriate. Review and edit all generated content before publishing.
+
+For more information, see [Copilot - Refresh and perfect your message](content-rewrite.md).
+
