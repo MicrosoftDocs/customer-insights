@@ -1,8 +1,8 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to configure compliance profiles, purposes, and topics to capture and enforce user consent.'
-ms.date: 08/13/2026
-ms.topic: concept-article
+ms.date: 09/23/2026
+ms.topic: how-to
 author: petrjantac
 ms.author: udag
 search.audienceType:
@@ -15,14 +15,14 @@ ms.custom:
   - ai-seo-date:06/20/2025
 ---
 
-# Configuring consent controls
+# Configure consent management controls
 
 Dynamics 365 Customer Insights - Journeys provides controls your organization can configure to support its consent program. Your organization determines applicable requirements.
 
 Customer Insights - Journeys offers a consent management system to help track and honor your user preferences. You can:
 
 - Use the built-in consent center in Customer Insights - Journeys, which supports real-time consent capture and enforcement.
-- Integrate your existing consent management system using the extensibility features of Customer Insights – Journeys.
+- Integrate your existing consent management system by using the extensibility features of Customer Insights – Journeys.
 
 ## Manage user compliance settings and consent data
 
@@ -34,7 +34,7 @@ Consent is captured and stored at the contact point level. A contact point is th
 
 The Customer Insights - Journeys consent model uses a flexible hierarchy that you can tailor to meet your business and compliance requirements.
 
-:::image type="content" source="media/real-time-marketing-consent-hierarchy.png" alt-text="Customer Insights - Journeys consent model." lightbox="media/real-time-marketing-consent-hierarchy.png":::
+:::image type="content" source="media/real-time-marketing-consent-hierarchy.png" alt-text="Screenshot of the Customer Insights - Journeys consent management hierarchy.":::
 
 - At the top of the hierarchy are [compliance profiles](#compliance-profiles).
 - Each compliance profile can include multiple purposes.
@@ -79,7 +79,7 @@ Organizations often create multiple compliance profiles to support:
 
 ### Set up a compliance profile
 
-To create or set up a compliance profile, go to **Settings** > **Customer engagement** > **Compliance profiles**. Define the consent model, company address, and customize the preference center page for your users.
+To create a compliance profile, go to **Settings** > **Customer engagement** > **Compliance profiles**. Define the consent model, company address, and customize the preference center page for your users.
 
 > [!NOTE]
 > When you create a new compliance profile, you can use previously captured consent. This option helps you move from a legacy *compliance profile with a preference page* to a compliance profile with a preference center. This way, any previously captured consent applies to the new compliance profile.
@@ -93,7 +93,7 @@ There are two types of compliance profiles:
 
 When you create a new compliance profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing compliance profile so that the new profile inherits its existing **purposes** instead of creating new ones. The new profile is linked to all the purposes of the profile you reference, and the referenced profile keeps its links too.
 
-If you don't enable the toggle, the system creates new default commercial, transactional, and tracking purposes for the profile. These are product defaults, not legal recommendations. Review and change them based on your organization's requirements before use.
+If you don't enable the toggle, the system creates new default commercial, transactional, and tracking purposes for the profile. These purposes are product defaults, not legal recommendations. Review and change them based on your organization's requirements before use.
 
 > [!IMPORTANT]
 > This toggle is the only way to share a **tracking** purpose between compliance profiles. You can link an existing commercial or transactional purpose to another compliance profile at any time, but you can't do that with a tracking purpose. There's also no standard way to unlink a tracking purpose from a compliance profile, so decide whether you want to share tracking consent before you create the profile.
@@ -121,26 +121,37 @@ Learn more: [Create Customer Insights - Journeys preference centers](real-time-m
 
 A compliance profile can include an external link that directs users to an external consent management page or a page containing a marketing form. Messages sent using the compliance profile automatically include the specified website URL as the **Unsubscribe** link.
 
-To include a link to an external consent management system’s preference page, enter the URL in the **External link** section of the Compliance profile. This adds user identification to the link so the external system can recognize and manage the user’s preferences.
+To include a link to an external consent management system’s preference page, enter the URL in the **External link** section of the Compliance profile. This section adds user identification to the link so the external system can recognize and manage the user’s preferences.
+
+The **External link** section has three fields:
+
+- **Unsubscribe URL for contacts** (required)
+- **Unsubscribe URL for leads**
+- **Unsubscribe URL for customer profile**
+
+:::image type="content" source="media/real-time-marketing-external-compliance-profile-settings.png" alt-text="Screenshot of external link settings for a compliance profile with unsubscribe URL fields.":::
 
 ##### Unsubscribe URL customization in Customer Insights - Journeys
 
-To customize the link for Customer Insights - Journeys journey scenarios, use link personalization to append contact or lead attributes to the URL. Learn more: [Personalize your content](real-time-marketing-personalization.md).
+> [!IMPORTANT]
+> Customer Insights - Journeys always uses **Unsubscribe URL for contacts**, no matter which entity a journey targets. A journey that runs on leads, Customer Insights - Data profiles, or any other entity still gets the contacts URL. The **Unsubscribe URL for leads** and **Unsubscribe URL for customer profile** fields are ignored in journeys.
+
+Because a single URL serves every audience, don't rely on the entity-specific fields to tell your consent system who the user is. Instead, use link personalization on the message to append the attributes you need to the URL. Learn more: [Personalize your content](real-time-marketing-personalization.md).
 
 > [!CAUTION]
-> A compliance profile with an external link generates an unsubscribe link that can have tracking elements like `contextId` and `msdynmkt_trackingcontext`. However, these are only for internal use in Customer Insights - Journeys. You should include user identification for external consent management systems.
+> A compliance profile with an external link generates an unsubscribe link that can have tracking elements like `contextId` and `msdynmkt_trackingcontext`. However, these elements are only for internal use in Customer Insights - Journeys. You should include user identification for external consent management systems.
 
 > [!TIP]
-> You can also use a page with an embedded **Marketing form** as the unsubscribe URL for the compliance profile with an external link. In this case, you don’t need to add extra user identification because the marketing form uses `msdynmkt_trackingcontext`, which is automatically included in all email links when tracking is enabled.
+> You can also use a page with an embedded **Marketing form** as the unsubscribe URL for the compliance profile with an external link. In this case, you don't need to add extra user identification because the marketing form uses `msdynmkt_trackingcontext`, which is automatically included in all email links when tracking is enabled.
 
 ##### Unsubscribe URL customization in shared consent (doesn't apply to Customer Insights - Journeys)
 
 > [!CAUTION]
-> These URL customizations are meant specifically for shared consent scenarios, where an external consent management system handles the user's preferences. They don't work in Customer Insights - Journeys journeys.
+> These URL customizations are meant specifically for shared consent scenarios, where an external consent management system handles the user's preferences. They don't work in Customer Insights - Journeys.
 
-Here is an example Unsubscribe URL where the contact email is used as the `userid`: `http://www.contoso.com/consent?userid={{contact.emailaddress1}}&emailid={{messageid}}&purpose={{purposeid}}&topic={{topicid}}`
+The **Unsubscribe URL for leads** and **Unsubscribe URL for customer profile** fields apply only to shared consent. The `{{contact.*}}` and `{{lead.*}}` tokens you put in any of the URL fields also apply only to shared consent. Shared consent resolves these tokens per entity, but journeys don't.
 
-:::image type="content" source="media/real-time-marketing-external-compliance-profile-settings.png" alt-text="Customer Insights - Journeys consent hierarchy." lightbox="media/real-time-marketing-external-compliance-profile-settings.png":::
+Here's an example unsubscribe URL where the contact email is used as the `userid`: `http://www.contoso.com/consent?userid={{contact.emailaddress1}}&emailid={{messageid}}&purpose={{purposeid}}&topic={{topicid}}`
 
 You can define your own parameter name, such as `userid` in the previous example. You can append any lead or contact attribute to the URL to identify the user for your consent system. In addition, you can use the following tokens:
 
@@ -215,7 +226,7 @@ If the parent purpose uses a restrictive enforcement model, the contact point ne
 
 ## Why you can’t delete a compliance profile, purpose, or topic
 
-You can’t delete compliance profile, purpose, or topic records. This helps protect data integrity and prevents system issues.
+You can’t delete compliance profile, purpose, or topic records. This restriction helps protect data integrity and prevents system issues.
 
 Instead, you can set an unwanted record to **Inactive**. Inactive records are hidden from all relevant experiences, including:
 
@@ -223,7 +234,7 @@ Instead, you can set an unwanted record to **Inactive**. Inactive records are hi
 - The **Communication** tab on contacts and leads
 - The consent picker in the email editor
 
-## Using `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields in real-time journeys
+## Use `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields in real-time journeys
 
 By default, real-time journeys don't evaluate the contact's `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields.
 
@@ -236,7 +247,7 @@ To enable these checks:
 > The preference center doesn't update the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. As a result, users can't manage these specific consent preferences through the preference center.
 
 > [!NOTE]
-> If you plan to manage consent using contact point consent, don't rely on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. Instead, use contact point consent records as the single source of truth for consent evaluation.
+> If you plan to manage consent by using contact point consent, don't rely on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. Instead, use contact point consent records as the single source of truth for consent evaluation.
 
 ### Results of enabling the "Check contact consent in real-time journeys" feature switch
 
