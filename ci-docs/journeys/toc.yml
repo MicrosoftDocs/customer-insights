@@ -714,6 +714,8 @@
       href: journey-creation-agent.md
     - name: Outreach Optimization Agent (preview)
       href: outreach-optimization-agent.md
+  - name: Use Dynamics 365 Customer Insights skills in Copilot Cowork
+    href: use-customer-insights-copilot-cowork-skills.md      
   - name: Copilot - Target the right customers using query assist
     href: real-time-marketing-natural-language-segments.md    
   - name: Copilot - Use AI to kickstart email creation
