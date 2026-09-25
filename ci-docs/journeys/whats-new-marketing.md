@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 09/11/2026
+ms.date: 09/25/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -32,9 +32,9 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **Automatically update emails with the latest content**
-	- Dynamic content blocks eliminate manual work and the risk of sending emails with outdated content. When a dynamic content block is updated, all emails using that block automatically refresh to ensure recipients always receive the most current content.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+- **Transform customer journeys into action with record creation**  
+	- You can now create any record or activity directly from a journey with full control over fields and dynamic values. Instead of rigid workflows or manual data entry, you can automate actions for any scenario, including handing off high-value leads and opportunities or creating tasks for prompt follow-up, without leaving the journey builder. This means faster processes, fewer errors, and more flexibility to adapt customer journeys to your unique business needs without custom development.  
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)  
 	- [Docs](create-records-activities.md)
 
 
