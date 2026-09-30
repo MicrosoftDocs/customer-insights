@@ -3613,9 +3613,14 @@
     },
     {
       "source_path": "ci-docs/journeys/ci-mcp-server.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/mcp-server-consent",
+      "redirect_url": "/dynamics365/customer-insights/journeys/mcp-server-tools-reference",
       "redirect_document_id": false 
     }, 
+    {
+      "source_path": "ci-docs/journeys/mcp-server-consent.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/mcp-server-tools-reference",
+      "redirect_document_id": false
+    },
     {
       "source_path": "ci-docs/data/system#environment-status-summary-preview",
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights#environment-status-summary",
