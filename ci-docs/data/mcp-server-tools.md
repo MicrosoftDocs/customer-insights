@@ -1,5 +1,5 @@
 ---
-title: Use tools in the Customer Insights MCP Server (preview)
+title: Use tools in the Customer Insights MCP Server
 description: Customer Insights MCP Server tools help Copilot Studio agents unify customer profiles and access predictive insights such as Customer Lifetime Value (CLV) and churn risk.
 ms.date: 08/10/2026
 ms.topic: how-to
@@ -12,9 +12,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Use tools in the Customer Insights MCP Server (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use tools in the Customer Insights MCP Server
 
 The Customer Insights [Model Context Protocol (MCP) server](https://modelcontextprotocol.io) exposes Dynamics 365 **Customer Insights - Data** and select **Customer Insights - Journeys** capabilities as callable tools for LLM agents.
 
@@ -29,8 +27,6 @@ Quickly get key insights such as:
 - Segment membership and duplicate contact resolution
 
 - Predictive insights such as CLV and churn risk
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Example scenario: Unifying duplicate lead and contact records
 
@@ -71,11 +67,11 @@ Learn more in [Add tools and resources from an MCP server to your agent](/micros
 
 1. Open Copilot Studio and go to the **Tools** tab for your agent.
 
-1. Select the Customer Insights MCP Server to view the available tools. For a tool reference, see [Customer Insights MCP Server tools reference (preview)](mcp-server-tools-reference.md).
+1. Select the Customer Insights MCP Server to view the available tools. For a tool reference, see [MCP Server tools reference for Customer Insights - Data](mcp-server-tools-reference.md).
 
 ## Next steps
 
-- [Customer Insights MCP Server tools reference (preview)](mcp-server-tools-reference.md)
-- [Use consent tools in the Customer Insights MCP Server (preview)](../journeys/mcp-server-consent.md)
+- [MCP Server tools reference for Customer Insights - Data](mcp-server-tools-reference.md)
+- [Connect Customer Insights - Data through Agent 365 Tooling Gateway](mcp-server-agent365-tooling-gateway.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

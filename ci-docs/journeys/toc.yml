@@ -722,8 +722,12 @@
     href: content-ideas.md
   - name: Copilot - Refresh and perfect your message
     href: content-rewrite.md
-  - name: Use consent tools in the Customer Insights MCP server (preview)
-    href: mcp-server-consent.md
+  - name: Customer Insights MCP Server
+    items:
+      - name: Connect through Agent 365 Tooling Gateway
+        href: mcp-server-agent365-tooling-gateway.md
+      - name: Tools reference
+        href: mcp-server-tools-reference.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
     href: form-fill-assistance.md
   - name: Find data in a view with AI
