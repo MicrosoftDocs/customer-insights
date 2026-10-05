@@ -1,7 +1,7 @@
 ---
 title: Connect Customer Insights - Journeys through Agent 365 Tooling Gateway
 description: Connect Customer Insights - Journeys to Copilot Studio agents and other MCP clients through the Agent 365 Tooling Gateway.
-ms.date: 09/29/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.service: dynamics-365-customer-insights

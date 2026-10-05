@@ -7,7 +7,7 @@ This article helps you:
 - Connect supported external MCP clients, such as Visual Studio Code, GitHub Copilot CLI, Cursor, ChatGPT, and Claude Code
 
 > [!IMPORTANT]
-> Enabling connections between Dynamics 365 and non-Dynamics 365 services, including Microsoft or external services, allows data to egress outside of the Dynamics 365 FedRAMP High boundary. Data flowing from Dynamics 365 to other services is processed and stored according to the terms, compliance commitments, and data residency and handling requirements of the destination service.
+> Enabling connections between Dynamics 365 and non-Dynamics 365 services, including Microsoft or external services, allows data to leave the Dynamics 365 FedRAMP High boundary. Data flowing from Dynamics 365 to other services is processed and stored according to the terms, compliance commitments, and data residency and handling requirements of the destination service.
 >
 > This data might include queries and other data that users in your organization submit to agents. Before you enable MCP server connections for your organization, your tenant administrator should confirm that these connections meet your data security, compliance, residency, and governance requirements.
 
@@ -45,16 +45,22 @@ The MCP client requests a token for the Agent 365 Tooling Gateway resource. The 
 ### Key considerations
 
 - The token audience is the tooling gateway, not the Dynamics 365 CX MCP Server - Customer Insights directly.
-- The OAuth scope uses the Agent 365 Tooling Gateway resource URL and ends with `/.default`.
-- The `/.default` scope doesn't support incremental or dynamic user consent, so admin consent must be granted in advance in the customer tenant.
-- The scope is specific to the environment and the server, so each environment needs its own connector configuration.
-- Discovery-capable clients read the OAuth metadata automatically. Copilot Studio custom connector setup might require you to enter OAuth values manually.
+- The OAuth scope targets the Agent 365 Tooling Gateway resource. You can request either the `/.default` scope or the named `McpServers.D365CustomerInsights.All` delegated permission.
+- The `/.default` scope doesn't support incremental or dynamic user consent, so admin consent must be granted in advance in the customer tenant. The named permission is user-consentable, so each person can consent for themselves if your tenant allows user consent.
+- Add `offline_access` to the requested scopes so the client can refresh the token when it expires. Without it, Microsoft Entra doesn't issue a refresh token, and the connection stops working when the access token expires.
+- A `/.default` request never fails because a permission is missing. Microsoft Entra quietly issues a token that carries only the permissions the client already holds, so a client can have a valid gateway token and still get `403 Forbidden` from the MCP server. If calls are denied, decode the token and check that the `scp` claim contains `McpServers.D365CustomerInsights.All`.
+- The server URL is specific to the environment, so each environment needs its own connector configuration. The delegated permission is the same for every environment, and both the app ID form and the resource URL form of the scope return the same token.
+- Discovery-capable clients read the OAuth metadata automatically. If you add the server from the Copilot Studio tools catalog, the connection is configured for you. You only enter OAuth values by hand when you set the server up manually.
 
 ## Prerequisites
 
 - The System Administrator role, to configure the MCP server
 - The Dataverse environment ID, which the Agent 365 Tooling Gateway server URL requires
-- Tenant admin or delegated admin-consent permissions
+- The customer tenant ID, which the authorization, token, and admin-consent URLs require
+- Tenant admin or delegated admin-consent permissions, to set up the server manually or to connect an external MCP client
+
+> [!NOTE]
+> The environment ID and the tenant ID aren't interchangeable. Use the environment ID only in the MCP server URL and the discovery URL. Use the tenant ID in every `login.microsoftonline.com` URL.
 
 ## Agent 365 Tooling Gateway app ID
 
@@ -72,21 +78,11 @@ https://agent365.svc.cloud.microsoft/mcp/environments/<environment-id>/servers/m
 
 The `/mcp/environments/` path segment is required. If you leave it out, the request returns `404 RouteNotFound`.
 
-## Provision the service principal and grant admin consent
+## Provision the Agent 365 Tooling Gateway service principal
 
-The Agent 365 Tooling Gateway app is a Microsoft first-party app registration. Before a client app can request a token for it, the gateway service principal must exist in the customer tenant, and the delegated permission must have admin consent.
+The Agent 365 Tooling Gateway app is a Microsoft first-party app registration. Before a client app can request a token for it, the gateway service principal must exist in the customer tenant.
 
-1. As a tenant admin, open the following admin-consent URL. Replace `<customer-tenant-id>` with the customer tenant ID and `<ATG-app-id>` with the app ID.
-
-    ```http
-    https://login.microsoftonline.com/<customer-tenant-id>/adminconsent?client_id=<ATG-app-id>
-    ```
-
-1. Sign in as a tenant admin and approve the request.
-
-Microsoft Entra creates the Agent 365 Tooling Gateway resource service principal under **Enterprise applications** in the customer tenant.
-
-You can also provision the service principal manually.
+As a tenant admin, run one of the following commands.
 
 ```azurecli
 az ad sp create --id <ATG-app-id>
@@ -96,9 +92,43 @@ az ad sp create --id <ATG-app-id>
 New-MgServicePrincipal -AppId "<ATG-app-id>"
 ```
 
-## Create a client Microsoft Entra app for Copilot Studio
+Microsoft Entra creates the Agent 365 Tooling Gateway service principal under **Enterprise applications** in the customer tenant.
 
-To configure a custom connector in Copilot Studio, create your own confidential client app in Microsoft Entra ID. This app isn't the Dynamics 365 first-party app, and it only needs permission to access the Agent 365 Tooling Gateway resource scope.
+> [!IMPORTANT]
+> Don't try to provision the gateway with an admin-consent URL such as `https://login.microsoftonline.com/<customer-tenant-id>/adminconsent?client_id=<ATG-app-id>`. That URL treats the gateway as a *client* and tries to consent every permission the gateway itself declares, including Microsoft-only APIs. Microsoft Entra blocks consent between two Microsoft first-party apps, so the request fails with an error like `AADSTS65002: Consent between first party application 'ea9ffc3e-8a23-4a7d-836d-234d7c7565c1' and first party resource '00000002-0000-0000-c000-000000000000' must be configured via preauthorization`. The error appears whichever tenant ID you use. Run the commands in this section instead. If you set the server up manually, grant admin consent on your own client app, as described later in this article.
+
+## Add the MCP server to a Copilot Studio agent
+
+There are two ways to add the server to an agent. Check the tools catalog first, because it configures the connection for you.
+
+### Add the server from the tools catalog
+
+When you register the Customer Insights MCP server in your tenant, it appears in the Copilot Studio tools catalog. Adding the server from the catalog sets up the server URL and the OAuth configuration for you, so you don't need to register a Microsoft Entra app, create a client secret, or enter any OAuth values.
+
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com), and then open or create an agent.
+
+1. Go to the **Tools** page for your agent, and then select **Add a tool**.
+
+1. Select the **MCP** filter.
+
+1. Search for `Dynamics 365 CX Customer Insights`.
+
+1. Select the Customer Insights MCP server in the results, and then select **Add**.
+
+1. When prompted, create a connection and sign in with an account that has access to the target Customer Insights environment.
+
+1. Publish the agent.
+
+> [!NOTE]
+> A tenant admin can check whether the server is available, or block it, in the Microsoft 365 admin center under **Agents** > **Tools** > **Registry**. To learn more, see [Overview of the Tools page](/microsoft-365/admin/manage/agent-tools-overview). If the server isn't in the catalog, add it manually instead.
+
+### Add the server manually
+
+Use this section only if the Customer Insights MCP server doesn't appear in the catalog. Manual setup uses the Copilot Studio MCP onboarding wizard, and it needs your own Microsoft Entra app to hold the gateway permission.
+
+#### Create a client Microsoft Entra app
+
+Create your own confidential client app in Microsoft Entra ID. This app isn't the Dynamics 365 first-party app, and it only needs permission to access the Agent 365 Tooling Gateway resource scope.
 
 In the [Microsoft Entra admin center](https://entra.microsoft.com), do the following:
 
@@ -118,11 +148,22 @@ In the [Microsoft Entra admin center](https://entra.microsoft.com), do the follo
 
 Leave the web redirect URI empty until Copilot Studio generates the callback URL during connector setup.
 
-## Add the MCP server to a Copilot Studio agent
+Granting admin consent here is what puts `McpServers.D365CustomerInsights.All` into the tokens your client requests. If you prefer a consent URL to the portal, use the v2.0 admin-consent endpoint and point it at *your* client app, not at the gateway app.
+
+```http
+https://login.microsoftonline.com/<customer-tenant-id>/v2.0/adminconsent?client_id=<your-client-app-id>&scope=<ATG-app-id>/.default&redirect_uri=<redirect-uri-registered-on-your-app>
+```
+
+> [!TIP]
+> `McpServers.D365CustomerInsights.All` is user-consentable. If your client requests that named permission instead of `/.default`, each person can consent for themselves the first time they sign in, as long as your tenant allows user consent for apps. Tenant-wide admin consent is required only for the `/.default` scope.
+
+#### Configure the MCP server in Copilot Studio
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com), and then open or create an agent.
 
-1. Follow the steps in [Add tools and resources from an MCP server to your agent](/microsoft-copilot-studio/mcp-add-components-to-agent) and provide these details:
+1. Go to the **Tools** page for your agent, select **Add a tool**, select **New tool**, and then select **Model Context Protocol**. Learn more in [Connect your agent to an existing MCP server](/microsoft-copilot-studio/mcp-add-existing-server-to-agent).
+
+1. Provide these details:
 
     | Field | Value |
     | --- | --- |
@@ -140,13 +181,13 @@ Leave the web redirect URI empty until Copilot Studio generates the callback URL
     | Authorization URL | `https://login.microsoftonline.com/<customer-tenant-id>/oauth2/v2.0/authorize` |
     | Token URL | `https://login.microsoftonline.com/<customer-tenant-id>/oauth2/v2.0/token` |
     | Refresh URL | Same as the token URL. |
-    | Scope | `<ATG-app-id>/.default`, for example, `ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/.default` |
+    | Scope | `<ATG-app-id>/.default offline_access`, for example, `ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/.default offline_access`. To skip tenant-wide admin consent, request the named permission instead: `ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.D365CustomerInsights.All offline_access`. Separate scopes with a space. |
 
 After you create the OAuth configuration, Copilot Studio shows a callback URL. Copy it and add it as a **Web** redirect URI on the Microsoft Entra app you created for Copilot Studio.
 
-### Create the connection and add the tool
+#### Create the connection and add the tool
 
-In your Copilot Studio agent, do the following:
+In your Copilot Studio agent, complete the following steps:
 
 1. In the **Add tool** dialog, select **Create a new connection**.
 
@@ -158,10 +199,12 @@ In your Copilot Studio agent, do the following:
 
 ## Configure discovery-capable MCP clients
 
-Discovery-capable MCP clients, such as Visual Studio Code, GitHub Copilot CLI, Cursor, ChatGPT, and Claude Code, retrieve the tooling gateway OAuth metadata automatically. For these clients, configure the MCP server URL and let the client handle sign-in.
+Discovery-capable MCP clients, such as Visual Studio Code, GitHub Copilot CLI, Cursor, ChatGPT, and Claude Code, automatically retrieve the tooling gateway OAuth metadata. For these clients, configure the MCP server URL and let the client handle sign-in.
 
 > [!NOTE]
 > Clients that support OAuth discovery for MCP servers don't need a manual OAuth endpoint, client ID, scope, or secret.
+
+Each of these clients signs in with its own Microsoft Entra client app, so a tenant admin still needs to allow that client to call the gateway. If sign-in succeeds but tool calls return `403 Forbidden`, the client's app doesn't have the `McpServers.D365CustomerInsights.All` permission. Grant admin consent for that client app, or point the client at a client app you registered yourself.
 
 In every example that follows, replace `<environment-id>` with the Dataverse environment ID for the target environment.
 
@@ -264,6 +307,11 @@ Configure the MCP server in Claude Code.
 | Symptom | Likely cause | What to do |
 |---|---|---|
 | `404 RouteNotFound` | The server URL is missing the `/mcp/environments/` path segment | Use the full server URL format. |
-| `401 Unauthorized` | The token audience is wrong, or admin consent is missing | Confirm the scope ends with `/.default` and that a tenant admin granted consent for the Agent 365 Tooling Gateway app. |
-| Consent prompt fails for a non-admin user | The `/.default` scope doesn't support dynamic user consent | Have a tenant admin grant admin consent in advance. |
+| `400 EndpointInvalid`, with the message `Environment id ... is invalid.` | The `/environments/` segment holds a tenant ID or a malformed GUID | Use the Dataverse environment ID, not the tenant ID. |
+| `401 Unauthorized` | The request has no bearer token, or the token audience isn't the Agent 365 Tooling Gateway | Confirm the scope resolves to the gateway app ID. The `WWW-Authenticate` response header points to the discovery metadata for the server. |
+| `403 Forbidden`, with the message `Access denied: Scope 'McpServers.D365CustomerInsights.All' is not present in the request.` | The token is valid for the gateway, but it doesn't carry the Customer Insights permission | Add the `McpServers.D365CustomerInsights.All` delegated permission to the client app and grant admin consent. Decode the token and confirm the permission shows up in the `scp` claim. |
+| `AADSTS65002: Consent between first party application ... must be configured via preauthorization` | You ran an admin-consent URL against the gateway app ID, or a Microsoft first-party client asked for a gateway permission it isn't preauthorized for | Provision the gateway service principal with `az ad sp create` or `New-MgServicePrincipal`, and request the permission from a client app you registered yourself. |
+| Consent prompt fails for a non-admin user | The `/.default` scope doesn't support dynamic user consent | Have a tenant admin grant admin consent in advance, or request the named `McpServers.D365CustomerInsights.All` permission, which users can consent to themselves. |
+| The connection works at first, and then stops | The client has no refresh token, so it can't renew the expired access token | Add `offline_access` to the requested scopes, and create the connection again. |
 | Tools are missing from the agent | The calling user lacks privileges for the underlying Dataverse tables | Check the user's security role privileges. |
+| The server isn't in the Copilot Studio tools catalog | The server isn't registered or is blocked in the tenant tools registry | Ask a tenant admin to check **Agents** > **Tools** > **Registry** in the Microsoft 365 admin center, or add the server manually. |
