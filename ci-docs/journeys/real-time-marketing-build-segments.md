@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys
-description: Customer Insights - Journeys segment builder helps you create dynamic and static segments using attributes, related tables, and manual selections.
-ms.date: 09/22/2026
+description: Use the Customer Insights - Journeys segment builder to create dynamic and static segments with attributes, related tables, and manual selections. Start building targeted audiences.
+ms.date: 10/05/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -47,7 +47,7 @@ In addition to having a segment return its targeting entity (such as contacts or
 
 When adding an attribute that relates to a different table, you can search for the attribute and then define how the two tables are related based on your segment definition. To add an attribute from a related table, you must enable **Track changes** in the related table. For new or existing tables, check **Track changes** from the table properties.
 
->[!TIP]
+> [!TIP]
 > Virtual tables aren't supported in real-time journeys segmentation. The real-time journeys segment designer doesn't show virtual tables in the **Add tables** dialog.
 
 > [!NOTE]
@@ -62,6 +62,20 @@ Search for "industry" in the right-side pane and select the **+** button next to
 Select **Account > Lead** for the relationship path, and then select **Next**. Next, set the path between the Lead and Account tables to be **Parent Account for lead** according to the segment definition, and then select **Set Path**.
 
 :::image type="content" source="media/real-time-marketing-build-segment-path.png" alt-text="Screenshot of the segment builder dialog for setting the relationship path between the Lead and Account tables." lightbox="media/real-time-marketing-build-segment-path.png":::
+
+## Relationship depth and returning to the target table
+
+When you add an attribute from a related table, the segment builder looks for every relationship path between that table and your target table (contact, lead, or unified profile).
+
+- **Suggested paths**: The builder finds paths up to five hops from the target table. Tables that are farther away don't appear in the **Select a relationship path** list.
+- **Custom paths**: If the path you need isn't suggested, select **Custom path** and build it one relationship at a time. A custom path has to end on the target table. If it doesn't, the builder tells you the final related table must end with your target table.
+- **Coming back to the target table**: A path can return to the table it started from. For example, contact > custom table > contact is a valid path. Tables that reference themselves, like contact > contact, work the same way.
+- **Extending a path**: When a custom path ends on the target table, select **Continue path** to add another leg. Repeat this action to build paths like contact > account > contact > account > contact.
+
+Custom paths aren't capped at five hops. The five-hop limit applies only to the paths the builder suggests for you. The same rule applies to segments you edit in the query view - hop count isn't what limits you there either.
+
+> [!TIP]
+> Deep paths cost refresh time, and very complex definitions can fail to publish. Keep paths as short as your scenario allows, and check refresh times after you add a long path. Learn more: [Understand automated segment refresh and data freshness](auto-segment-management.md)
 
 ## Previewing segment members and size estimate
 
@@ -100,7 +114,7 @@ In the preceding example, you add the attribute to a new group (Group 2). To cre
 
 :::image type="content" source="media/real-time-marketing-select-your-operator-between-groups.png" alt-text="Screenshot of the segment builder showing the operator button selected between two groups." lightbox="media/real-time-marketing-select-your-operator-between-groups.png":::
 
-> [!Note]
+> [!NOTE]
 > Real-time journeys segmentation doesn't support calculated and formula Dataverse table fields. The segmentation backend doesn't receive an update signal when a calculated or a formula field is updated. This behavior is by design, as values of calculated and formula fields aren't persisted anywhere. They're just calculated on the fly. To address this limitation, the app shows calculated and formula fields as **disabled** in the real-time journeys segment designer with an appropriate tooltip.
 
 > [!TIP]
