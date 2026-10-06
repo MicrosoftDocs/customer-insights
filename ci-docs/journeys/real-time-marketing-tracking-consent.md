@@ -1,7 +1,7 @@
 ---
-title: Tracking consent in Customer Insights - Journeys
+title: Configure Tracking Consent in Customer Insights - Journeys
 description: Learn how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to support privacy requirements for tracking pixels in email.
-ms.date: 09/21/2026
+ms.date: 10/06/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Tracking consent in Dynamics 365 Customer Insights - Journeys
+# Configure tracking consent in Dynamics 365 Customer Insights - Journeys
 
 This article explains how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to help meet privacy requirements for email tracking pixels.
 
@@ -52,6 +52,21 @@ As described in this article, Customer Insights - Journeys offers configuration 
     For recipients who opt in before you send a message but opt out before selecting a link, the system records their interactions without a customer profile reference, so you can't later associate their interactions with a recipient. In rare cases, an interaction can still be recorded with a customer profile reference shortly after a recipient opts out—for example, if the consent check finished before the interaction was submitted and that submission was delayed.
 
 - Tracking consent changes apply to new checks right away. Form prefill can continue for up to 15 minutes after someone revokes consent.
+
+## Channels covered by tracking consent
+
+Although this article focuses on email tracking pixels, the **Tracking** purpose isn't email-only. Each compliance profile has a single tracking purpose, and the system checks it for every message sent under that profile—email, text (SMS), push notification, and custom channel—as well as for website interactions and form prefill.
+
+What differs between channels is the tracking technique, not the consent check:
+
+- **Email**: the system detects opens through a tracking pixel and clicks through trackable links.
+- **Text (SMS)**: the system detects clicks through trackable links. All text message links are shortened whether or not the system replaces them with tracking links, so a shortened link on its own doesn't mean the recipient is tracked.
+- **Push notifications**: your mobile app reports opens and clicks back to Customer Insights - Journeys. To track them, you need to collect tracking consent. See [Implement push notification interaction tracking](developer-push-interactions.md).
+- **Custom channels**: the system detects clicks through trackable links when your custom channel uses them.
+
+[UTM parameters](real-time-marketing-utm.md) follow the same consent check and are added to URLs in both email and text messages.
+
+So when you set the **Tracking** purpose to **Restrictive**, expect the drop in identified opens, clicks, and engagement data described earlier to apply across every channel you use, not just email.
 
 ## Related consent and tracking resources
 
