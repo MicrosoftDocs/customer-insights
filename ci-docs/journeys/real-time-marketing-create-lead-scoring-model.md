@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create lead scoring models
 
-To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity that meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, browsing your website, or attending an event) will get a high score, provided you've set up your scoring model correctly.  
+To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity that meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, or attending an event) will get a high score, provided you've set up your scoring model correctly.  
 
 This article covers the experience of creating a scoring model.
 
