@@ -342,6 +342,8 @@
         href: real-time-journeys-event-passes.md
       - name: Create an event from another event
         href: event-from-event.md
+    - name: Manage your event registrations
+      href: event-registration-count-pending-registrations.md
     - name: Host a streamed event with Microsoft Teams
       items:
       - name: Overview of Teams meeting types 
