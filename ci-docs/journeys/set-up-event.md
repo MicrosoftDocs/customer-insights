@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/11/2026
+ms.date: 10/07/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -80,7 +80,8 @@ Under the registration form options, you can edit an existing event registration
 ### The Registration and attendance tab
 
 Use the **Registration and attendance** tab to see who registered for the event and who attended. You can also create registrations and check-ins here. The following sections are available:
-- **Event registration**: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you're using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
+
+- **Event registration**: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you're using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.  
 - **Event check-ins**: Here, you can see who attended the event and enter attendance records. When a check-in record is created, the status of the registration in the registration table changes to "Checked in" and the check-in record is visible in this table together with the time and date.
 
 ### The Additional information tab
@@ -94,6 +95,11 @@ Use the **Additional information** tab to set up your event team and record gene
 ### The Room reservations tab
 
 The **Room reservations** tab provides a calendar that shows the rooms assigned to the currently displayed event and its sessions. Unreserved rooms aren't shown, nor are events or sessions without assigned rooms. This calendar is read-only, so you can't create sessions or reservations here. More information: [Work with marketing calendars](marketing-calendar.md).
+
+### The Pending registrations tab
+
+The **Pending registrations** tab lists all registrations that are still processing or encountered issues. You can review and take action on these registrations as needed. For more information, see [Pending registration metric and the Pending registration tab](event-registration-count-pending-registrations.md#pending-registration-metric-and-the-pending-registration-tab).
+
 
 ### The Recovery items tab
 
