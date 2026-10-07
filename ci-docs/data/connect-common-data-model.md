@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 09/02/2025
+ms.date: 10/07/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -30,7 +30,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 - When connecting to your Azure storage using the *Azure subscription* option, the user that sets up the data source connection needs at least the Storage Blob Data Contributor permissions on the storage account.
 - When connecting to your Azure storage using the *Azure resource* option, the user that sets up the data source connection needs at least the permission for the **Microsoft.Storage/storageAccounts/read** action on the storage account. An [Azure built-in role](/azure/role-based-access-control/built-in-roles) that includes this action is the **Reader** role. To limit access to just the necessary action, [create an Azure custom role](/azure/role-based-access-control/custom-roles) that includes only this action.
-- For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+- For optimal performance, keep the size of each partition to 1 GB or less and the number of partition files in a folder to 1,000 or fewer. Exceeding these values increases refresh time, and a large number of partition files can cause a refresh to fail or to stop progressing without completing. For the supported maximum, see [Limitations](#limitations).
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the Common Data Model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest isn't present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
@@ -39,6 +39,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 ## Limitations
 
 - Customer Insights - Data doesn't support columns of decimal type with precision greater than 16.
+- Customer Insights - Data supports a maximum of 100,000 partition files per data source, counted across all tables in that data source. A data source that exceeds this maximum isn't supported. Its refresh might fail, or remain in **Refreshing** status without completing, which blocks dependent processes such as unification, segments, and exports. To stay within the maximum, compact your partition files or use Delta Lake tables, which track data files in a transaction log instead of enumerating them individually. For more information, see [Prevent partition fragments in Data Lake ingestion](#prevent-partition-fragments-in-data-lake-ingestion).
 
 ## Connect to Azure Data Lake Storage
 
@@ -214,7 +215,8 @@ Hundreds of thousands of small partitions can cause the following symptoms:
 - Performance degradation during data ingestion and query execution.
 - Increased metadata overhead and latency.
 - Higher operational costs due to inefficient storage and compute usage.
-- Errors when the number of partitions exceeds a service's limitations.
+- Errors when the number of partition files exceeds the [supported maximum](#limitations).
 - Out-of-memory errors when the system attempts to create a graph to every partition.
+- Refreshes that remain in **Refreshing** status without completing. A refresh in this state doesn't stop on its own. If a refresh doesn't progress, contact Microsoft Support.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
