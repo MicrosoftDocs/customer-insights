@@ -148,6 +148,7 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 Here are some advanced resources for this topic:
 
 - [Custom reporting with Microsoft Fabric](fabric-integration.md)
+- [Exclude bot interactions for reliable analytics](bot-protection.md)
 
 ## Related information
 

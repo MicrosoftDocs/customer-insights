@@ -117,6 +117,7 @@ This means execution time is rarely why a segment looks out of date. If membersh
 ## Related information
 
 - [Segmentation overview](real-time-marketing-segments.md)
+- [Edit live segments used in live journeys](edit-live-segments.md)
 - [Build segments in Customer Insights - Journeys](real-time-marketing-build-segments.md)
 - [Improve targeting using interaction data in segments](real-time-marketing-redesigned-segment-builder.md)
 - [Start a journey](journey-start.md)

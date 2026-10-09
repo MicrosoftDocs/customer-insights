@@ -1,7 +1,7 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Feature switches for Dynamics 365 Customer Insights - Journeys are listed by category, with preview or production status and links for more details.
-ms.date: 07/09/2026
+ms.date: 10/09/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -28,6 +28,7 @@ The following tables list each available feature switch, organized by area, alon
 |---|---|---|
 | Use protected fields in segments | Production | Let segments use protected columns/fields in criteria for real-time marketing. Use with caution. [Learn about protected fields in segments](protected-fields.md). |
 | Use system command bar | Preview | Use the system command bar to improve the segmentation experience. This feature lets you customize the ribbon and use default customer relationship management (CRM) actions. |
+| Edit live segments used in live journeys | Preview | Let users change a segment that's used by a live journey, without stopping the journey or creating a new journey version. [Learn about editing live segments](edit-live-segments.md). |
 
 ## Business unit feature switches
 

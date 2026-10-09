@@ -40,6 +40,8 @@ To edit your segment, select any segment name from the segments list. This will 
 
 You can determine the source of a segment by looking at the **Source** column in the segments list.
 
+If the segment is used by a live journey, you can still change it without stopping the journey. Learn more: [Edit live segments used in live journeys](edit-live-segments.md)
+
 ## Segments created in Customer Insights - Data
 
 If you've connected your [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/index) instance to Dynamics 365 Customer Insights - Journeys, segments from Customer Insights - Data will also be available to you in Customer Insights - Journeys.
