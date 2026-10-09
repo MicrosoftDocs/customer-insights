@@ -55,6 +55,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - You can now include each member's contact or lead ID when you export segment members in Customer Insights - Journeys. On the segment's **Members and Insights** tab, select **More options** (⋮) above the member list and then **Show Contact ID** or **Show Lead ID**. The ID column is added to the member list and to the exported CSV file, so you can match exported members with records in Dataverse or other systems.  
     - [Docs](export-segment-membership.md#include-contact-or-lead-ids-in-the-export)
 
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
+
+- [Understand automated segment refresh and data freshness](auto-segment-management.md)
 
 ### September 2026 update
 
