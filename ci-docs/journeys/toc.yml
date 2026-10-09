@@ -134,8 +134,6 @@
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
-        - name: Exclude bot interactions
-          href: bot-protection.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
@@ -216,6 +214,8 @@
       items:
       - name: Understand automated segment refresh and data freshness
         href: auto-segment-management.md
+      - name: Edit live segments used in live journeys
+        href: edit-live-segments.md
       - name: Understand and verify segment member counts
         href: understand-verify-segment-member-counts.md    
       - name: Add protected fields in segment criteria
@@ -426,6 +426,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: Use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: Exclude bot interactions
+      href: bot-protection.md
     - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
     - name: Use email insights

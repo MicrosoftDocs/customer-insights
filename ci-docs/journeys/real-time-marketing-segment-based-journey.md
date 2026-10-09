@@ -88,6 +88,8 @@ Use the plus sign (**+**) on the journey canvas to add the individual steps in y
 
 After adding all the steps to the journey canvas, the journey is ready to go live and message real customers. Before you publish the journey, make sure all related content (email, text messages, and push notifications) is in the **Ready to send** state. After publishing, you can't modify the journey, so verify that each step is set up the way you want.
 
+You can, however, still change the *segment* the journey uses without stopping the journey or creating a new version of it. Learn more: [Edit live segments used in live journeys](edit-live-segments.md)
+
 Once the journey is published and live, you can look at the journey [analytics page](real-time-marketing-analytics.md) to understand how it's performing.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
