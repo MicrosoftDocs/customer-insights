@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 09/25/2026
+ms.date: 10/09/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -23,6 +23,34 @@ This article lists monthly release notes for Dynamics 365 Customer Insights - Jo
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### October 2026 update
+
+| App              | GA release      |
+|------------------|------------------|
+| Customer Insights - Journeys | 1.3.1162.80  |
+
+#### General availability
+
+- **Manage event registrations with accurate counts and pending registration insights**  
+    - Get a more accurate view of event capacity and greater visibility into registrations that require attention. Registration counts now reflect successfully created registrations, while the pending registration metric helps you track registrations that are still processing or aren't finalized. You can review pending registration details, identify processing issues, and take actions such as editing, retrying, or deleting registration tickets.
+    - [Docs](event-registration-count-pending-registrations.md)
+
+#### Public preview
+
+- **Update live segments to correct mistakes, apply campaign insights, or meet updated needs**  
+    - Campaigns often require adjustments after launch, such as refining target audiences based on analytics or changing business needs. Now you can make quick updates to segments without having to remake or republish journeys.  
+        - Edit segments, even those used in live journeys or in other segments, at any time.  
+        - Changes will apply to future recurrences in recurring journeys.  
+        - New members are picked up in real time for ongoing journeys.  
+    - [Docs](edit-live-segments.md)
+
+#### Monthly enhancements
+
+- **Export segment members including contact or lead ID**  
+    - You can now include each member's contact or lead ID when you export segment members in Customer Insights - Journeys. On the segment's **Members and Insights** tab, select **More options** (⋮) above the member list and then **Show Contact ID** or **Show Lead ID**. The ID column is added to the member list and to the exported CSV file, so you can match exported members with records in Dataverse or other systems.  
+    - [Docs](export-segment-membership.md#include-contact-or-lead-ids-in-the-export)
+
 
 ### September 2026 update
 

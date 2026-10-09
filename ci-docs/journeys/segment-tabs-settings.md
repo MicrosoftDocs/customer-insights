@@ -1,7 +1,7 @@
 ---
 title: Tabs and settings for segments
 description: Learn to navigate tabs and settings for segments in Dynamics 365 Customer Insights - Journeys to optimize your customer targeting.
-ms.date: 09/19/2025
+ms.date: 10/09/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -42,6 +42,8 @@ The **General** tab provides a few basic settings and general information about 
 ## The Insights tab
 
 The **Insights** tab shows segment members over time.
+
+The members chart also includes two lines, **Previous edit** and **Current edit**, that mark when the segment definition was last changed and saved. **Current edit** is the most recent change and **Previous edit** is the one before it. Comparing them with the membership line helps you see whether a change in the number of members followed an edit to the segment. The side pane also shows the exact date and time of the most recent edit and the user who made it. To learn more, see [Edit live segments used in live journeys](edit-live-segments.md).
 
 ## The Related tab
 
