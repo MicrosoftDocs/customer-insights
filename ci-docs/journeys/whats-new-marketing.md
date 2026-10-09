@@ -32,6 +32,10 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
+- **Marketing tools, skills, and plugin are now available in Copilot Cowork**
+    - Use Dynamics 365 Customer Insights skills in Copilot Cowork to work with customer and marketing data using natural language. You can retrieve Customer Insights data, check consent, review and draft marketing emails, validate content for publishing, and create customer journeys. The plugin uses your existing permissions and asks for confirmation before creating or changing records.  
+    - [Docs](use-customer-insights-copilot-cowork-skills.md)
+
 - **Manage event registrations with accurate counts and pending registration insights**  
     - Get a more accurate view of event capacity and greater visibility into registrations that require attention. Registration counts now reflect successfully created registrations, while the pending registration metric helps you track registrations that are still processing or aren't finalized. You can review pending registration details, identify processing issues, and take actions such as editing, retrying, or deleting registration tickets.
     - [Docs](event-registration-count-pending-registrations.md)
