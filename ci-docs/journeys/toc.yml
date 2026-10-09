@@ -134,8 +134,6 @@
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
-        - name: Exclude bot interactions
-          href: bot-protection.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
@@ -426,6 +424,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: Use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: Exclude bot interactions
+      href: bot-protection.md
     - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
     - name: Use email insights
