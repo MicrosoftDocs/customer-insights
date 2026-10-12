@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 09/02/2026
+ms.date: 10/09/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,6 +17,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## September 2026
+
+### General availability
+
+#### Convert a data source to Microsoft Fabric OneLake
+
+Convert an existing Azure Data Lake Delta tables data source to a Microsoft Fabric OneLake data source and keep the tables, mappings, and downstream dependencies in place.
+
+- [Docs](convert-data-source-to-fabric-onelake.md)
+
 ## August 2026
 
 ### General availability
@@ -27,6 +37,13 @@ The following data enrichments reached general availability in August 2026:
 
 - [Microsoft Brands and Interests enrichment](enrichment-microsoft.md)
 - [Microsoft Enhanced addresses](enrichment-enhanced-addresses.md)
+
+#### Target right audience based on signals from earlier campaigns
+
+Access the interaction data captured by Customer Insights - Journeys and use it in Customer Insights - Data segments to include how customers responded to your campaign. This capability enables customer experience teams to combine the power of unified profiles with insights from Customer Insights - Journeys.
+
+- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/generate-insights-marketing-interactions)
+- [Docs](journeys-interaction-data-segments-measures.md)
 
 ## July 2026
 
