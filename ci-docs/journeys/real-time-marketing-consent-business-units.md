@@ -66,6 +66,6 @@ In the case where a consent record has to be updated because the end user modifi
 - There are no restrictions on adding existing purposes from a different business unit into a compliance profile.
 - Newly created topics are created as owned by their purpose’s owning user and assigned the business unit of their parent purpose.  
 
-### See also
+### Related information
 
 [Business unit scoping in Customer Insights - Journeys](real-time-marketing-business-units.md)
