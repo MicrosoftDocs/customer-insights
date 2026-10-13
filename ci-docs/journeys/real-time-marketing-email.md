@@ -110,6 +110,6 @@ Send the preview email to yourself or another test email address to verify how i
 
 Emails are stored as HTML and are limited to a maximum size of 1 MB. To ensure consistent rendering across popular email clients, the HTML includes additional client‑specific markup, which contributes to the size. As a result, the available space for your actual content and formatting will be less than 1 MB.
 
-### See also
+### Related information
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)

@@ -126,7 +126,7 @@ When you change a consent record, the contactability column and the communicatio
 
 Track all consent-related changes for each contact record, including who made the changes and when. The **Audit history** is available under a consent record's **Related** tab.
 
-### See also
+### Related information
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)

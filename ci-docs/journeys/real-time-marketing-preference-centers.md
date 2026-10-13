@@ -61,7 +61,7 @@ To replace your preference page with a preference center, first create a new com
 
 Once configured, you can start using the new preference center compliance profile in messages. All existing and future messages should update their **Compliance profile** to reference the new preference center compliance profile.
 
-### See also
+### Related information
 
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)

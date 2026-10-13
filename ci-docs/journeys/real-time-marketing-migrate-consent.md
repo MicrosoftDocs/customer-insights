@@ -110,7 +110,7 @@ If you have set up a subscription list to track individuals who don't wish to be
 > 
 > For more information on security roles, visit [Security roles and privileges]/dynamics365/customerengagement/on-premises/admin/security-roles-privileges?view=op-9-1#security-roles)
 
-### See also
+### Related information
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
