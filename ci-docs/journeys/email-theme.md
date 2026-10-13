@@ -1,7 +1,7 @@
 ---
 title: Style your emails with themes
 description: Style your emails with themes in Dynamics 365. Learn how to use themes to customize email elements like fields, buttons, and text.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -27,7 +27,4 @@ Theme allows you to control the style of your email elements such as fields, but
 
 To edit the style of email elements, select the theme (brush) icon in the right pane, then select the element type from the theme section. Choose from input fields, buttons, text, labels, or error messages. Once you select an element type, customize its properties such as font, color, size, border, and background. You can preview the changes in the email editor.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the theme functionality area.](media/email-theme-button.png "Screenshot of the theme functionality area")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+:::image type="content" source="media/email-theme-button.png" alt-text="Screenshot of the theme functionality area.":::

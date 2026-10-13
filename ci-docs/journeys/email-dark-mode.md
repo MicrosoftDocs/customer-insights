@@ -1,7 +1,7 @@
 ---
 title: Improve email accessibility for light and dark modes
 description: 'Email accessibility: Improve Customer Insights – Journeys emails for light and dark modes. Learn design, testing, and analytics tips to boost readability and engagement.'
-ms.date: 06/18/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -58,5 +58,3 @@ Use analytics and editing tools to improve performance:
 
 - Use [heatmap analytics](email-insights.md#click-map) to see how users interact with your emails. This helps identify areas where layout, contrast, or design can affect engagement or readability.
 - If you discover rendering issues or underperforming sections, take advantage of the ability to [edit emails in live journeys](edit-email-in-live-journey.md). Adjust layout, colors, or content without disrupting the customer experience. This is ideal for fixing issues that only become apparent after the email is sent.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

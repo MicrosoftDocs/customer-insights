@@ -1,7 +1,7 @@
 ---
 title: Event invitations, registrations, and hotel bookings
 description: After your event is set up, learn how to invite attendees, register attendees, and enter hotel bookings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: terezakirk
 ms.author: udag
@@ -52,5 +52,3 @@ To create segments that find contacts associated with event entities, your syste
 If your organization has set up hotels and room allocations for your event in Customer Insights - Journeys, you can view and create room bookings by going to **Events** > **Logistics** > **Hotel Room Reservations**. Each room booking links an event-registration record (and its associated contact) to a hotel room allocation set up in Customer Insights - Journeys. Each room allocation represents a block of rooms of a specific type (single, double, or suite) at a specific hotel during a specific event. After all the rooms in an allocation are booked, that allocation is considered sold out unless you can request more from that hotel. Room bookings don't specify a room number, just a room type (based on allocation) and a unique reservation number.
 
 More information: [Manage attendee logistics and accommodation availability](manage-event-logistic.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

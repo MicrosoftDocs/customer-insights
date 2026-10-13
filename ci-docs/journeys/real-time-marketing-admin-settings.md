@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys administrator settings
 description: Learn about administrator settings required for Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/19/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -29,5 +29,3 @@ The **Business** categorization allows business data to be shared with Power Aut
 > The Customer Insights - Journeys connector is only available to be used directly by the Customer Insights - Journeys product and can't be used by any user or service outside of the product. The connector is visible in the data policy connectors list to allow you to enable Customer Insights - Journeys to work when you have explicit data policies configured.
 
 Learn more about connector settings and data policies: [Connector classification](/power-platform/admin/dlp-connector-classification).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

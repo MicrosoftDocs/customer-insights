@@ -1,7 +1,7 @@
 ---
 title: Create segments with Query Assist copilot in Customer Insights - Journeys
 description: Query Assist copilot in Dynamics 365 Customer Insights - Journeys turns plain-language segment descriptions into segment logic to help you build audience segments.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -40,5 +40,3 @@ Add more details to your segment by entering additional searches in the Query As
 When you run another search and select **Use**, Query Assist adds the result as a new group at the bottom of the existing canvas. 
 
 :::image type="content" source="media/real-time-marketing-use-canvas-built-by-copilot.png" alt-text="Screenshot of the segment canvas with attributes added after applying a Query Assist result." lightbox="media/real-time-marketing-use-canvas-built-by-copilot.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

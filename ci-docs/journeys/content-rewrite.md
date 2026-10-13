@@ -1,7 +1,7 @@
 ---
 title: 'Copilot - Refresh and perfect your message'
 description: Content rewrite Copilot in Dynamics 365 Customer Insights - Journeys rephrases email, form, SMS, and push notification text. Learn how to enable it and refine content.
-ms.date: 09/22/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: udag
@@ -102,5 +102,3 @@ Copilot generates original content, but it isn't always factual. In addition, be
 > If you encounter inappropriate content being generated, report it to Microsoft using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/marketing/overview/). It will help improve the functionality moving forward.
 >
 > Microsoft may disable the content rewrite copilot feature for selected customers if abuse of the functionality is detected.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

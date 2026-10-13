@@ -1,7 +1,7 @@
 ---
 title: Transform dynamic text with Power Fx formulas
 description: Apply Power Fx formulas to dynamic text in Customer Insights - Journeys to capitalize names, format numbers for a locale, and localize dates before sending.
-ms.date: 08/08/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -72,5 +72,3 @@ Formula mode supports any [Power Fx function](/power-platform/power-fx/formula-
 - Formulas run when you send the message, not earlier in the journey.
 - Custom or imported functions aren't supported. Only built-in Power Fx functions that work on a single value are available.
 - The formula box accepts up to 500 characters, with a maximum nesting depth of five levels.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for the segment copilot
 description: Segment copilot responsible AI FAQs explain how natural language prompts generate segments, plus capabilities, limitations, and operational controls.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: udag
@@ -46,5 +46,3 @@ The segment copilot feature is currently only available in North America and Eur
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
 Segment copilot doesn't share data across environments. It can't be used to create or generate content that could lead to harm. Opt-in consent for the data prep report is available on the **Settings** page and is managed by the Admin role for Customer Insights - Data. Consent can be revoked at any time to turn off the feature.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

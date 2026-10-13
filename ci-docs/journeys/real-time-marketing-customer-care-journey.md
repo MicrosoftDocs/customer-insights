@@ -1,7 +1,7 @@
 ---
 title: Identify and resolve errors with real-time customer care journeys
 description: Learn how to identify and resolve errors with real-time customer care journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: get-started
 author: udag
 ms.author: udag
@@ -39,20 +39,17 @@ The first thing you need to do is to create a journey. This assists you in ident
 
 1. It’s a good idea to test your trigger before using it in a customer scenario. You can test the trigger within the Customer Insights - Journeys app, which avoids the need to create any proxy website or Python script. To test the critical error trigger, go to **Triggers** and select the **IoT device malfunctioned** trigger. In the **Test send** section, select a **contact**, enter the **Error Code** and **Device ID** and run the test against it by selecting **Test send**. If the trigger functions as intended, you can move onto the next step to create your journey.
 
-    > [!div class="mx-imgBorder"]
-    > ![test error code](media/real-time-marketing-test-error-code.png "test error code")
+    :::image type="content" source="media/real-time-marketing-test-error-code.png" alt-text="test error code":::
 
 1. Go to **Customer Insights - Journeys > Journeys** and select **+ New Journey** in the top toolbar.
 1. Give the journey a name, select **Trigger-based** as the journey type, and search for the **IoT device malfunctioned** trigger. 
 **Note**: This is a custom trigger, not an out-of-the-box trigger included with the Customer Insights - Journeys app. The trigger starts the journey each time a new device error code is added to a Dataverse table. Learn more: [Create custom triggers in Customer Insights - Journeys](real-time-marketing-custom-triggers.md).
 
-    > [!div class="mx-imgBorder"]
-    > ![choose trigger](media/real-time-marketing-choose-trigger.png "choose trigger")
+    :::image type="content" source="media/real-time-marketing-choose-trigger.png" alt-text="choose trigger":::
 
 1. Next, select the **+ Add condition** as your **attribute** which will help in determining when a text message can be sent to a customer whose machine has a critical error. You can select a value range that determines when a text message notification should be sent out. 
 
-    > [!div class="mx-imgBorder"]
-    > ![add condition](media/real-time-marketing-add-condition.png "add condition")
+    :::image type="content" source="media/real-time-marketing-add-condition.png" alt-text="add condition":::
 
     In this case, if the selected Error Code is larger than 10, an SMS message is delivered. Because the error code is more than the specified value, the customer has opened a case. The consumer wouldn't be able to begin the journey if the error code was less than the stated value.
 
@@ -67,23 +64,19 @@ After the customer has started the journey, a case must be created. Customer Ins
 
 1. Next, select the + sign below the IoT Device Malfunctioned trigger on the journey designer canvas to add another tile to the journey. Select the **Activate a custom trigger** tile. Now, you can select a custom trigger **PA Create Case (CX)** from the right pane under **Select a custom trigger**.
 
-    > [!div class="mx-imgBorder"]
-    > ![select custom trigger](media/real-time-marketing-select-custom-trigger.png "select custom trigger")
+    :::image type="content" source="media/real-time-marketing-select-custom-trigger.png" alt-text="select custom trigger":::
 
 1. Now, in the right pane under **Map attributes**, you can see several sections where you can map the attributes with different values. Select the Device ID and Error Code and map the attributes as **Attribute>IoT Device Malfunctioned>Device ID** and **Attribute>IoT Device Malfunctioned>Error Code**. We're doing this because the custom trigger activated has to know where to receive the customer information that it carries when a customer reaches this step of the journey. 
 
-    > [!div class="mx-imgBorder"]
-    > ![map attributes](media/real-time-marketing-map-attributes.png "map attributes")
+    :::image type="content" source="media/real-time-marketing-map-attributes.png" alt-text="map attributes":::
 
 1. When the Power Automate flow is triggered, this goes through a priority and assist you in evaluating if a journey **with critical errors** is triggered. Select **Priority**, and then **Value** to define that when a case is created, it has a critical value flag.
 
-    > [!div class="mx-imgBorder"]
-    > ![set trigger fields](media/real-time-marketing-set-trigger-fields.png "set trigger fields")
+    :::image type="content" source="media/real-time-marketing-set-trigger-fields.png" alt-text="set trigger fields":::
 
 1. Next, select the + sign below the PA Create Case (CX) trigger on the journey designer canvas to add another tile to the journey. Select the **Send a text message** tile.
 
-    > [!div class="mx-imgBorder"]
-    > ![send text message](media/real-time-marketing-send-text-message.png "send text message")
+    :::image type="content" source="media/real-time-marketing-send-text-message.png" alt-text="send text message":::
 
     In this situation, an SMS is sent to the customer informing them that an error has been identified and that a support ticket has been generated. Also, with this text message, the customer gets a link wherein they can easily track their support ticket status.
 
@@ -92,8 +85,7 @@ After the customer has started the journey, a case must be created. Customer Ins
 
     You can go to the **Consent Center** and select your desired contact point to find out why the text message wasn't sent or bounced under the **Consent status**.
 
-    > [!div class="mx-imgBorder"]
-    > ![consent status](media/real-time-marketing-consent-status.png "consent status")
+    :::image type="content" source="media/real-time-marketing-consent-status.png" alt-text="consent status":::
 
 ## Step 3: Send an email when there’s a status change in the support ticket
 
@@ -101,15 +93,13 @@ For the support ticket status changes, you need to create a [**Dataverse trigger
 
 1. Go to **Customer Insights - Journeys > Triggers** and select **+ New trigger**. In this instance, name your trigger as **Support Case Status Changed** and the action as **When a record related to a customer is created or updated**.
 
-    > [!div class="mx-imgBorder"]
-    > ![select new trigger](media/real-time-marketing-select-new-trigger.png "select new trigger")
+    :::image type="content" source="media/real-time-marketing-select-new-trigger.png" alt-text="select new trigger":::
 
 1. Next, select the table from Dataverse that contains the information related to a support case. Here, the "Case" table is selected.
 1. Because a Dataverse table can have more than one audience attribute, the next step ("Which attribute contains the audience?") allows you to select the attribute that contains the intended audience.
 1. In the final step, you can select the action that activates the Dataverse trigger. This includes selecting which columns need to be part of the update or change.
 
-    > [!div class="mx-imgBorder"]
-    > ![ready to use journey](media/real-time-marketing-ready-to-use-journey.png "ready to use journey")
+    :::image type="content" source="media/real-time-marketing-ready-to-use-journey.png" alt-text="ready to use journey":::
 
 1. Once created, you can publish the trigger by selecting the **Ready to use** button. This enables the trigger to be used as part of a live journey.
 1. Now, you can use this Dataverse trigger into a journey and for that, you create a new journey using this trigger ([Trigger a journey based on a Dataverse record change](real-time-marketing-dataverse-trigger.md#using-a-dataverse-trigger-inside-a-journey)).
@@ -120,5 +110,3 @@ For the support ticket status changes, you need to create a [**Dataverse trigger
 ## Customer care journey key takeaways
 
 Your customers are likely to engage with various departments and services throughout the lifetime. Each of these interactions, such as a completed application, or the closing of a support problem, provides a chance to connect your customers more intimately. Notifying customers about critical errors with their devices via the appropriate notification channel, and customizable tracking of the status of the support request, gives them a wonderful heads-up in this case. This Customer Insights - Journeys journey won't only assist you in building a case and following its status, but it will also assist customers in tracking how their salespeople may utilize analytics data. The data can be to track useful insights such as reasons why their messages were undelivered or bounced and so on.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

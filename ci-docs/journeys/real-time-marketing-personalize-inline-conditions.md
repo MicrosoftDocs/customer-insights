@@ -1,7 +1,7 @@
 ---
 title: How to use inline conditions 
 description: Learn how to use inline conditions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -38,8 +38,7 @@ If you're adding code to HTML, make sure to put comments around the code:
 
 In the code, you only specify the placeholder name. To set up the condition, go to the **Personalize** tab in the Customer Insights - Journeys email designer:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the personalize tab with placeholders.](media/real-time-marketing-inline-condition.png)
+:::image type="content" source="media/real-time-marketing-inline-condition.png" alt-text="Screenshot showing the personalize tab with placeholders.":::
 
 For example, you can add code to personalize a greeting based on country/region:
 
@@ -55,23 +54,19 @@ For example, you can add code to personalize a greeting based on country/region:
 
 Then, select the placeholder name to configure. Next, select a field and the condition to compare. In this example, the first placeholder will activate the condition if the contact's address is in Spain:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing placeholder configuration.](media/real-time-marketing-inline-spain.png)
+:::image type="content" source="media/real-time-marketing-inline-spain.png" alt-text="Screenshot showing placeholder configuration.":::
 
 Next, configure another condition to check the contact’s address for Denmark:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing contact address configuration for Denmark.](media/real-time-marketing-inline-denmark.png)
+:::image type="content" source="media/real-time-marketing-inline-denmark.png" alt-text="Screenshot showing contact address configuration for Denmark.":::
 
 You can preview the effect of the conditions in **Preview and test** by changing the sample data for the conditions to true. Placeholder one true:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing conditions set to true.](media/real-time-marketing-personalization-condition-denmark-true.png)
+:::image type="content" source="media/real-time-marketing-personalization-condition-denmark-true.png" alt-text="Screenshot showing conditions set to true.":::
 
 Placeholder two true:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing conditions set to false.](media/real-time-marketing-personalization-condition-denmark-false.png)
+:::image type="content" source="media/real-time-marketing-personalization-condition-denmark-false.png" alt-text="Screenshot showing conditions set to false.":::
 
 ### Partial and relative dates in conditional content
 
@@ -85,14 +80,10 @@ Partial dates allow you to define conditions such as "Birthday is Today" or "Bir
 - Month can be checked for any month, this month, or a specific month (such as February).
 - Year can be checked for any year, this year, or a specific year (1922-2027).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing partial date settings.](media/real-time-marketing-partial.png)
+:::image type="content" source="media/real-time-marketing-partial.png" alt-text="Screenshot showing partial date settings.":::
 
 #### Relative dates
 
 Relative dates allow you to define conditions such as "Birthday is next month" or "Birthday was 2 days before today." Options here include the ability to specify the number of days, months, or years "from today" or "before today."
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing relative date settings.](media/real-time-marketing-relative.png)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+:::image type="content" source="media/real-time-marketing-relative.png" alt-text="Screenshot showing relative date settings.":::

@@ -1,7 +1,7 @@
 ---
 title: Create unmapped fields for registration forms
 description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 10/23/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: udag
@@ -72,5 +72,3 @@ The form submission response records responses to the custom unmapped fields. Na
 > It can take up to two minutes for the new system view to be created after a first submission is received.  
 
 :::image type="content" source="media/registration-and-attendance-overview.png" alt-text="An overview of customer registration and attendance in the form." lightbox="media/registration-and-attendance-overview.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

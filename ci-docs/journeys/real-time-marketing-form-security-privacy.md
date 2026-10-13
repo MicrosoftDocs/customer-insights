@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys forms security and privacy
 description: Learn about security and privacy protections for Customer Insights - Journeys forms, including reCAPTCHA setup and error troubleshooting.
-ms.date: 08/11/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -50,5 +50,3 @@ For common reCAPTCHA configuration errors and how to resolve them, see [Troubles
 
 - Marketing and event registration forms don't use any cookies by default. Form visit and form submit interactions use a [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
 - The system uses cookies for tracking end users only when you turn on the **Web tracking** feature in Form settings. If you disable **Web tracking**, the system doesn't set any tracking cookies.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Create consistent branding with brand profiles
 description: Create a brand profile in Customer Insights - Journeys to define default senders, social links, and a theme for your emails.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -53,5 +53,3 @@ And that's it! Your profile is created and is ready to use in your emails. Learn
 
 > [!IMPORTANT]
 > The brand profile table is editable, so you can add new fields to it. For example, you could add fields to store URL links for more social platforms.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

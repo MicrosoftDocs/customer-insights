@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
 description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/09/2025
+ms.date: 10/13/2026
 ms.topic: overview
 author: udag
 ms.author: udag
@@ -62,5 +62,3 @@ The following table shows additional details about journey states and the transi
 ## Journey audit history
 
 To enable journey audit history, go to the Power Apps [maker portal](https://make.powerapps.com) using CRMToolbox and enable the **Audit History Extractor**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

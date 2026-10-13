@@ -1,7 +1,7 @@
 ---
 title: Fix a high email bounce rate
 description: Learn the acceptable email bounce rate threshold and how to diagnose and fix a high bounce rate in Customer Insights - Journeys.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -44,5 +44,3 @@ From a deliverability perspective, sending emails regularly to approximately the
 Finally, always monitor your delivery results. Check your bounce rates and engagement rates (opens and clicks) regularly so that you don't miss any potential slow growth of bounces across your campaigns. Monitoring these rates helps you prevent damage to your sending reputation and keep your contact data up to date.
 
 Bounce rate is a key indicator of your contact list health. There will always be a few bounces in every campaign. It is expected and normal. But preventing a large number of bounces is key to maintaining your sender reputation and is achievable with consistent monitoring.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Send a targeted email blast in Customer Insights - Journeys
 description: Learn how to create and send a targeted email message in the Customer Insights - Journeys
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: get-started
 author: udag
 ms.author: udag
@@ -29,8 +29,7 @@ For this example, we’ll use a segment with all active contacts. We can define 
 
 Learn more: [Build segments in Customer Insights - Journeys](real-time-marketing-build-segments.md).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a segment of active contacts.](media/real-time-marketing-email-start-segment.png "Screenshot of a segment of active contacts")
+:::image type="content" source="media/real-time-marketing-email-start-segment.png" alt-text="Screenshot of a segment of active contacts.":::
 
 > [!NOTE]
 > This example assumes that you are using sample contacts or have already added your own.
@@ -43,20 +42,17 @@ To create an email, go to **Channels** > **Emails** and start by selecting a tem
 
 Learn more: [Create an email in Customer Insights - Journeys](real-time-marketing-email.md).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of an email in Customer Insights - Journeys.](media/real-time-marketing-start-email.png "Screenshot of an email in Customer Insights - Journeys")
+:::image type="content" source="media/real-time-marketing-start-email.png" alt-text="Screenshot of an email in Customer Insights - Journeys.":::
 
 ## Create a journey
 
 Once you have a segment and an email that are both ready to go, the next step is to create a journey to pull them together. When creating the journey, go to **Engagement** > **Journeys**,  choose a segment-based journey, and choose the segment that you made earlier. Then choose a start time and select “Create.”
 
-> [!div class="mx-imgBorder"]
-> ![Creating a segment-based journey.](media/real-time-marketing-email-start-journey.png "Creating a segment-based journey")
+:::image type="content" source="media/real-time-marketing-email-start-journey.png" alt-text="Creating a segment-based journey.":::
 
 Below the start of the journey, add the email that you created by selecting the “+” button, choosing “Send an email”, and selecting your email.
 
-> [!div class="mx-imgBorder"]
-> ![Add the email to the journey.](media/real-time-marketing-start-send-email.png "Add the email to the journey")
+:::image type="content" source="media/real-time-marketing-start-send-email.png" alt-text="Add the email to the journey.":::
 
 Finally, review and save your journey. You can optionally add additional steps or a goal to your journey. Once you’re happy with your journey, select **Publish** to go live.
 
@@ -69,5 +65,3 @@ Learn more: [Create a segment-based journey](real-time-marketing-segment-based-j
 After your journey has been running for a while, you’ll start to receive analytics reports that you can use to measure the effectiveness of your journey. Learn more: [Access and interpret analytics](real-time-marketing-analytics.md).
 
 Once you’re ready to take your customer interactions to the next level, you can learn how to use triggers to reach customers in the moments that matter. Learn more: [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

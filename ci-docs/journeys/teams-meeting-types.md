@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the streamed event provider.
-ms.date: 02/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -61,5 +61,3 @@ The new generation of meeting types delivers the latest Microsoft Teams enhancem
 1. **Teams meeting v2**: New version of the Teams meeting event that allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. For more information, see [Use Microsoft Teams meetings v2 to create online meetings in Customer Insights - Journeys](teams-meeting-version-2.md)
 1. **Teams webinar v2**: New version of Teams webinars that's useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. For more information, see [Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys](teams-web-version-2.md)
 1. **Teams town hall**: Teams town hall is a new feature designed to help organizations host large-scale, interactive virtual events directly within Microsoft Teams. For more information, see [Use Microsoft Teams town halls to host large-scale online events](teams-town-hall.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

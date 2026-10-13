@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: Learn about the messaging, AI-powered, condition, and connector actions you can add to a Customer Insights - Journeys real-time journey.
-ms.date: 07/14/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -166,5 +166,3 @@ Create any type of record or activity, including phone calls, tasks, leads, oppo
 To learn more about creating records and activities, see [Create records and activities from journeys (preview)](create-records-activities.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Create push notifications
 description: Push notifications in Customer Insights - Journeys let you create, personalize, and send mobile app messages, add images, and track engagement results.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: udag
@@ -127,5 +127,3 @@ You can see how customers reacted to your push messages by checking the push not
 ## Related information
 
 [Push notifications (video)](https://youtu.be/Z-nkQFE5i8c)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

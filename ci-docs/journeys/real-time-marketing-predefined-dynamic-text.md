@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/07/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: vinayd-msft
 ms.author: udag
@@ -31,18 +31,15 @@ Select **Personalize** in the email or text message editor to see a list of pred
 
 **Email editor**:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of adding predefined dynamic text to an email message.](media/real-time-marketing-predefined-tokens-email.png "Screenshot of adding predefined dynamic text to an email message")
+:::image type="content" source="media/real-time-marketing-predefined-tokens-email.png" alt-text="Screenshot of adding predefined dynamic text to an email message.":::
 
 **Text message editor**:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of adding predefined dynamic text to a text message.](media/real-time-marketing-predefined-tokens-text.png "Screenshot of adding predefined dynamic text to a text message")
+:::image type="content" source="media/real-time-marketing-predefined-tokens-text.png" alt-text="Screenshot of adding predefined dynamic text to a text message.":::
 
 The predefined dynamic text list may be different than shown here because it's dynamic. As your admin and other users create and share more predefined dynamic text, the fragments are added to the list. The top 10 items on the list are sorted by org-wide usage. If there are more than 10 items in the list, you'll see the remaining items sorted by alphabetical order after the top 10 items.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the predefined dynamic text list.](media/real-time-marketing-predefined-tokens-list.png "Screenshot of the predefined dynamic text list")
+:::image type="content" source="media/real-time-marketing-predefined-tokens-list.png" alt-text="Screenshot of the predefined dynamic text list.":::
 
 You can hover on dynamic text in the predefined list to see its details. Alternatively, you can select the vertical ellipses next to the dynamic text's name and then select **More info**.
 
@@ -57,8 +54,7 @@ Most of the time you should be able to use predefined dynamic text as-is, but so
 
 “Update” is shown only when default value is changed (otherwise it isn't shown) and that default value is the only thing that can be changed for a predefined dynamic text. To change the global default value, select the vertical ellipses next to the predefined dynamic text's name and then select **Update predefined dynamic text**. The predefined dynamic text will be updated for the current message and globally for future usage of the dynamic text in new messages (existing messages aren't affected).
 
-  > [!div class="mx-imgBorder"]
-  > ![Screenshot of updating predefined dynamic text.](media/real-time-marketing-update-predefined-tokens.png "Screenshot of updating predefined dynamic text")
+  :::image type="content" source="media/real-time-marketing-update-predefined-tokens.png" alt-text="Screenshot of updating predefined dynamic text.":::
 
 > [!IMPORTANT]
 > The **Update predefined dynamic text** command only applies to the current message and future messages. It doesn't retroactively change previous uses of the dynamic text.
@@ -72,13 +68,11 @@ To define and share new predefined dynamic text, follow these steps:
 1. Place your cursor in an empty space in the text box and then select **Personalization** from the menu bar that pops up. This opens the predefined personalization list.
 1. Select **New dynamic text** at the bottom of the predefined dynamic text menu and complete steps to define the new dynamic text.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of creating new predefined dynamic text.](media/real-time-marketing-predefined-tokens-steps2.png "Screenshot of creating new predefined dynamic text")
+    :::image type="content" source="media/real-time-marketing-predefined-tokens-steps2.png" alt-text="Screenshot of creating new predefined dynamic text.":::
 
 1. Select the down-facing carat next to the **Save** button and choose the **Save & add to predefined list** option.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of saving and adding new predefined dynamic text.](media/real-time-marketing-predefined-tokens-save.png "Screenshot of saving and adding new predefined dynamic text")
+    :::image type="content" source="media/real-time-marketing-predefined-tokens-save.png" alt-text="Screenshot of saving and adding new predefined dynamic text.":::
 
 > [!NOTE]
 > The **Update** option is only available for predefined text if the default value changed.
@@ -91,8 +85,7 @@ To remove predefined dynamic text:
 1. Select the vertical ellipses next to the dynamic text name.
 1. Select **Remove predefined dynamic text** from the menu.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of removing predefined dynamic text.](media/real-time-marketing-predefined-tokens-remove.png "Screenshot of removing predefined dynamic text")
+    :::image type="content" source="media/real-time-marketing-predefined-tokens-remove.png" alt-text="Screenshot of removing predefined dynamic text.":::
 
 ## Communicate dates and times in various formats
 
@@ -105,8 +98,7 @@ Available formatting options offer three ways to present information: date and t
 > [!Note]
 > If the attribute is of type *Date* only, you won't see date-and-time-only options.
 
-> [!div class="mx-imgBorder"]
-> ![Date and time format](media/real-time-marketing-date-and-time-format.png "Date and time format")
+:::image type="content" source="media/real-time-marketing-date-and-time-format.png" alt-text="Date and time format":::
 
 When you select a specific display option, it's applied to that specific dynamic text only. Customer Insights - Journeys remembers the last format used (and selects it automatically for the next dynamic text to help drive consistency). You can also change the format, allowing you the flexibility to present the date and time in different formats within the same email.
 
@@ -115,8 +107,7 @@ If needed, you can change the language and region setting along with time zone b
 > [!Note]
 > The automatic time zone conversion may result in a date change.
 
-> [!div class="mx-imgBorder"]
-> ![locale and time zone](media/real-time-marketing-locale-and-time-zone.png "locale and time zone")
+:::image type="content" source="media/real-time-marketing-locale-and-time-zone.png" alt-text="locale and time zone":::
 
 ### Using data that are reached by traversing a 1-to-many relation
 
@@ -132,8 +123,7 @@ Consider a university alumni donation campaign where you would want to include n
 
 When defining 1-to-many dynamic text, the system needs to know which one out of many related records should be used for data retrieval. You can use the default condition (the first record after sorting by "Created on") or define your own condition, as appropriate. In the example below, dynamic text is being defined to include the owning team's name for service cases for the recipient. As there can be multiple cases for a recipient, you can define a condition to pick the high priority case. However, sometimes that may not be sufficient (there can be multiple high priority cases), and for such cases the system always has a default condition (most recently created record) that will be used as tiebreaker if and when needed.
 
-> [!div class="mx-imgBorder"]
-> ![1-to-many example screenshot](media/real-time-marketing-one-to-many.png "1-to-many example screenshot")
+:::image type="content" source="media/real-time-marketing-one-to-many.png" alt-text="1-to-many example screenshot":::
 
 ### Access even more data for personalization
 
@@ -146,37 +136,31 @@ You can access any Dataverse table to include information in your communications
 
 Most of the time, Dynamic text is used to personalize messages using data from an Audience (for example, Contact or Lead) or Triggers. Dynamic text can also use data from Dataverse tables that can be reached through relationships with an Audience or Triggers. However, there are times when you need to use data from tables that don't have an established or usable relationship with the Audience or Triggers. For example, you may want to include information about a company building available in the Dataverse table “Building" that has no direct or usable relationship with a Contact or Lead. In such case, your starting point for defining dynamic text will be in the “Other tables” dropdown in the **Create dynamic text** menu.
 
-> [!div class="mx-imgBorder"]
-> ![Create dynamic text](media/real-time-marketing-create-dynamic-text.png "Create dynamic text")
+:::image type="content" source="media/real-time-marketing-create-dynamic-text.png" alt-text="Create dynamic text":::
 
 The “Other tables” area includes some of the most commonly used Dataverse tables (for example, event-planning-related tables). When you search for attributes, the search includes these tables. You can define dynamic text using the other tables just like you do with Audience or Triggers. Use an attribute directly or follow relationships from these tables to other related tables until you find the needed attribute.
 
 There's one notable difference when you define dynamic text starting with “Other tables”: before the message can be made “ready to send”, you must select a specific record from the selected table. If there's an Audience or Trigger, the specific record is provided by the journey context (that is, the Contact that is actually going through the journey). With the "other tables", you need to provide the specific record information when you're designing the personalized text because the text doesn't have a direct relationship with an Audience or Triggers. For example, if you select an attribute from the Events table, you're asked to select a specific event.
 
-> [!div class="mx-imgBorder"]
-> ![Select a record](media/real-time-marketing-select-a-record.png "select a record")
+:::image type="content" source="media/real-time-marketing-select-a-record.png" alt-text="Select a record":::
 
 #### Using data from additional tables in advanced personalization
 
 Similar to dynamic text, data from additional tables can also be used to define conditions and lists in advanced personalization.
 
-> [!div class="mx-imgBorder"]
-> ![select a condition](media/real-time-marketing-select-a-condition.png "select a condition")
+:::image type="content" source="media/real-time-marketing-select-a-condition.png" alt-text="select a condition":::
 
-> [!div class="mx-imgBorder"]
-> ![enter details](media/real-time-marketing-enter-details.png "enter details")
+:::image type="content" source="media/real-time-marketing-enter-details.png" alt-text="enter details":::
 
 #### Validating and finalizing
 
 Though you can decide not to select a specific record right away, the specific record selection must be done before the message can be made “ready to send”. Leaving the record selection for later can be a useful approach to separate the content design phase from the content use (and reuse) phase. This is also how templates can be created. For example, a generic event invitation (shown below) can be created where all of the event-related dynamic text doesn't have an event selected.
 
-> [!div class="mx-imgBorder"]
-> ![enter personalization details](media/real-time-marketing-enter-personalization-details.png "enter personalization details")
+:::image type="content" source="media/real-time-marketing-enter-personalization-details.png" alt-text="enter personalization details":::
 
 The event selection step can then be completed when the message created from this template is ready to be used in a journey. If you try to make the message “Ready to send” without completing this step, the validation gives an error message. Even without running the validation step, you can see what needs to be done in the personalization tab.
 
-> [!div class="mx-imgBorder"]
-> ![select a record to personalize](media/real-time-marketing-select-a-record-to-personalize.png "select a record to personalize")
+:::image type="content" source="media/real-time-marketing-select-a-record-to-personalize.png" alt-text="select a record to personalize":::
 
 #### Managing additional tables for personalization
 
@@ -186,8 +170,7 @@ Use the predefined filters next to the search bar in the **Manage list** window 
 
 Select the tables you want to add or remove, then select **Save**.
 
-  > [!div class="mx-imgBorder"]
-  > ![Change the pick list](media/specific-record-manage-list.png "Change the pick list")
+  :::image type="content" source="media/specific-record-manage-list.png" alt-text="Change the pick list":::
 
 > [!NOTE]
 > Removing dynamic text only removes it from the predefined list, it doesn't remove it from the messages that are already using it.
@@ -233,5 +216,3 @@ Dynamic text and lists allow you to personalize content in emails and text messa
 > To see this advanced option and the checkbox for lists, go to the **List** definition interface, then select **Advanced options** under **Columns**. The interface changes to show each column as an individual card. Select the dynamic text card (for example, "AccountName"), then expand the **Advanced** dropdown in the data source definition dialog.
 >
 > :::image type="content" source="media/predefined-advanced-column-small.png" alt-text="Set quiet times based on time zone." lightbox="media/predefined-advanced-column-small.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

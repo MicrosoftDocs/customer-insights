@@ -1,7 +1,7 @@
 ---
 title: Journey Creation Agent in Customer Insights - Journeys (preview)
 description: Journey Creation Agent in Customer Insights - Journeys explains capabilities, prerequisites, prompt tips, troubleshooting, and how to review AI-generated journeys.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -235,5 +235,3 @@ If the issue persists, contact Microsoft Support with details about the error me
 - [Customer Insights - Journeys overview](real-time-marketing-overview.md)
 - [Edit a live journey](real-time-marketing-edit-journey.md)
 - [Journey analytics](real-time-marketing-analytics.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

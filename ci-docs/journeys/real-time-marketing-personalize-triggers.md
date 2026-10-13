@@ -1,7 +1,7 @@
 ---
 title: Personalize triggers using conditions
 description: Learn how to personalize triggers using attributes from tables one hop away in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -19,17 +19,12 @@ For example, letâ€™s create a journey to nurture new opportunities (using the â€
 
 In the **Choose a trigger** dialogue, select the **Opportunity created** trigger.
 
-> [!div class="mx-imgBorder"]
-> ![Choose a trigger screenshot.](media/real-time-marketing-tile-choose-trigger.png "Choose a trigger screenshot")
+:::image type="content" source="media/real-time-marketing-tile-choose-trigger.png" alt-text="Choose a trigger screenshot.":::
 
 Then, select **+Add condition** and search for the **budget** attribute from the Opportunity table.
 
-> [!div class="mx-imgBorder"]
-> ![Select the budget attribute.](media/real-time-marketing-tile-budget.png "Select the budget attribute")
+:::image type="content" source="media/real-time-marketing-tile-budget.png" alt-text="Select the budget attribute.":::
 
 This enables you to create [journey variations](real-time-marketing-edit-journey.md) for opportunities that are more likely to buy.
 
-> [!div class="mx-imgBorder"]
-> ![Create a variation based on the attribute.](media/real-time-marketing-tile-will-buy.png "Create a variation based on the attribute")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+:::image type="content" source="media/real-time-marketing-tile-will-buy.png" alt-text="Create a variation based on the attribute.":::

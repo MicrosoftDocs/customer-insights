@@ -1,7 +1,7 @@
 ---
 title: Create dynamic email content in multiple languages
 description: Create email content that adapts to your customers' country/region and language using conditional content blocks in Customer Insights - Journeys.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -141,5 +141,3 @@ With the content block ready, you can use it in your email and know that the ter
 
 - [Quickly design and deliver a marketing email with send now](email-quick-send.md)
 - [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

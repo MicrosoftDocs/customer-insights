@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate channel analytics
 description: Learn how to use and interpret aggregate channel analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -73,5 +73,3 @@ For text messages and push notifications, there's no signal to identify negative
 Here are some advanced resources for this topic:
 
 - [Custom reporting with Microsoft Fabric](fabric-integration.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

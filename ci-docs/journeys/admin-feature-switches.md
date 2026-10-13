@@ -1,7 +1,7 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Feature switches for Dynamics 365 Customer Insights - Journeys are listed by category, with preview or production status and links for more details.
-ms.date: 10/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -151,5 +151,3 @@ The following tables list each available feature switch, organized by area, alon
 > [!IMPORTANT]
 > [!INCLUDE [cc_preview_features_definition](./includes/cc-preview-features-definition.md)]
 > [!INCLUDE [cc_preview_features_no_MS_support](./includes/cc-preview-features-no-ms-support.md)]
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

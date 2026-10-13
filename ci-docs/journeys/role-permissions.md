@@ -1,7 +1,7 @@
 ---
 title: Permission changes overview
 description: Permission changes overview for out-of-the-box roles in Customer Insights - Journeys are documented by release, so you can keep custom roles up to date.
-ms.date: 08/06/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd
 ms.author: udag
@@ -72,5 +72,3 @@ This section is updated after each release to note changes, if any, to out-of-th
 - [May 2026 release (version 1.1.65002.146)](role-permissions-2026-05.md)
 - [April 2026 release (version 1.1.64196.86)](role-permissions-2026-04.md)
 - [March 2026 release (version 1.1.62960.43)](role-permissions-2026-03.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

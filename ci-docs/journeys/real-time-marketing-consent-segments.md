@@ -1,7 +1,7 @@
 ---
 title: Build segments using consent‑based criteria
 description: Learn how to build segments using consent‑based criteria in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/12/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -174,5 +174,3 @@ This allows you to explicitly include contacts who opted out of a specific topic
 - Review your compliance profiles and enforcement models.
 - Validate segment membership by comparing segment counts with expected consent behavior.
 - Use consent‑based segments in journeys to ensure consistent evaluation at send time.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Set up event passes 
 description: Discover how to create and manage event passes for paid events in Dynamics 365, including pricing, allocation, and session-level access control.
-ms.date: 02/05/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: terezakirk
 ms.author: terezakirk
@@ -64,5 +64,3 @@ If payment isn't successful before the time expires, the reservation is canceled
 To check how many passes are allocated, go to the **Passes** tab. In the "No. of passes sold" column, you see the number of sold passes. If you go to the **Registration and Attendance** tab, a new column, "Pass," shows the name and price of the pass the attendee bought.
 
 To view the attendee pass for an individual registration, select the event registration. On the **General** tab, check the "Attendee passes" section for the unique ID linked to the attendee pass for the registration.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

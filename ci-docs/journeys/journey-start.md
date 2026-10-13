@@ -1,7 +1,7 @@
 ---
 title: Start a journey
 description: An overview of the journey start configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -39,5 +39,3 @@ A segment-based journeys starts independently and target customers that share ce
   - *One time*: One-time journeys run only once with a static audience segment. This is useful for scenarios like one-time email blasts that are sent on a specific date to a fixed set of customers.
   - *One time with a dynamic audience*: One time journeys run only once with a dynamic audience segment where new members who join the segment run through the journey. You can allow members who exit the segment and re-enter it later to repeat the journey again by selecting **Allow audience members who re-join the segment to re-enter the journey**. Otherwise, members who have been through the journey won't repeat it, even if they re-enter the dynamic segment. This setting is useful for scenarios like nurture campaigns where anyone added to the audience segment can start the journey as soon as they're added to the segment.
   - *Repeating*: These journeys repeat based on the time interval specified. Every time the journey repeats, all the members of the audience segment go through the journey. If any new members get added to the segment between the repeat interval, those new members will only go through the journey the next time the journey repeats. This type of journey is useful for scenarios like renewal reminders, where you might want to send people through the journey every time they're up for a renewal.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

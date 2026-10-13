@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Manage consent for email, SMS, and custom channel messages in Customer Insights - Journeys. Learn how to set up, update, and audit consent records for compliance.
-ms.date: 08/13/2026
+ms.date: 10/13/2026
 ms.topic: reference
 author: udag
 ms.author: udag
@@ -25,8 +25,7 @@ ms.custom:
 
 When you create a new email message, choose a **Compliance Profile**, a **Purpose**, and, optionally, a **Topic** from that profile in the **Compliance** section of the **Email header** settings. To set up message designation, select the gear icon ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") in the email header. This action opens the **Email header** settings pane. Go to the **Email settings** section.
 
-> [!div class="mx-imgBorder"]
-> ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
+:::image type="content" source="media/real-time-marketing-email-compliance-settings.png" alt-text="Compliance profile and purpose screenshot.":::
 
 Customer Insights - Journeys sends an email message only if it passes the consent checks set by the **Purpose** and optional **Topic**. Immediately before sending, the service applies the purpose, optional topic, consent records, and enforcement model configured by your organization to determine the technical send result. This approach makes sure the app doesn't mistakenly send a message to someone who opted out, even if they're included in a journey segment by mistake.
 
@@ -131,5 +130,3 @@ Track all consent-related changes for each contact record, including who made th
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

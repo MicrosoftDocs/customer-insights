@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: terezakirk
 ms.author: udag
@@ -39,5 +39,3 @@ Use other parts of the **Events** work area to work with specific record types t
 > - Event Planner (BU Level)
 >
 > Learn more: [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#event-management-security-roles).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

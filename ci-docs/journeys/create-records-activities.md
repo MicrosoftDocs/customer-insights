@@ -1,7 +1,7 @@
 ---
 title: Create records and activities from journeys
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 09/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -294,5 +294,3 @@ This condition can occur when the selected dynamic content path is incorrect or 
 - [Journeys overview](journeys-overview.md)
 - [Add an action in a journey](add-action.md)
 - [Journey analytics](real-time-marketing-analytics.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

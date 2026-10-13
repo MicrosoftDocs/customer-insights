@@ -1,7 +1,7 @@
 ---
 title: Capture forms in Customer Insights - Journeys
 description: Learn how to capture forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/11/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -26,8 +26,7 @@ Form capture uses the same API as the standard forms to process submissions. The
 ## Enable form capture feature switch
 
 The form capture feature is disabled by default. You can enable the *Form capture* toggle in **Settings** > **Feature switches** > **Forms**.
-> [!div class="mx-imgBorder"]
-> ![Enable form capture in feature switches.](media/real-time-marketing-enable-form-capture.png)
+:::image type="content" source="media/real-time-marketing-enable-form-capture.png" alt-text="Enable form capture in feature switches.":::
 
 ## How form capture works
 
@@ -48,8 +47,7 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
     > The consent definition must be done in the form editor. Changes made to consent settings in the form capture code snippet will be ignored.
 1. Add a **Submit** button. The submit button is required for successful validation of the form before publishing.
 1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet in your web page with the existing form, or hand over the code snippet to your developer. The code snippet already includes a link to documentation to guide your developer.
-    > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-capture-copy-script.png)
+    :::image type="content" source="media/real-time-marketing-form-capture-copy-script.png" alt-text="Add consent element to the form.":::
 
     > [!IMPORTANT]
     > The domain name where your existing form is hosted has to be enabled for external form hosting, otherwise the form submission will not be captured. Learn more about [domain authentication](domain-authentication.md).
@@ -356,5 +354,3 @@ Make sure you've set up the respective consent fields in the form editor (see [C
 ### My form redirects to a new page after submission and the submission is inconsistently recorded or not recorded in Dynamics
 
 When a form submission triggers an immediate page redirect, the browser may cancel pending network requests including the form‑capture call—resulting in the submission not being recorded. To avoid this, ensure your code controls the navigation flow: use `event.preventDefault()` to stop the browser’s default submission behavior so your handler can run, and then initiate the redirect only after the `d365mktformcapture.submitForm()` promise has completed.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Select the audience source for journeys
 description: Learn how to select the audience source for journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/04/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -18,8 +18,7 @@ Audience configuration lets you manage your audience data sources. Customer Insi
 
 To access the **Audience configuration settings**, go to **Settings** > **Customer engagement** > **Audience configuration**.
 
-> [!div class="mx-imgBorder"]
-> ![Audience configuration settings screenshot.](media/real-time-marketing-audience-configuration.png "Audience configuration settings screenshot")
+:::image type="content" source="media/real-time-marketing-audience-configuration.png" alt-text="Audience configuration settings screenshot.":::
 
 Contacts and leads have default recipient fields set up for emails and phone numbers. The values from these fields are automatically populated in the *Send-to* field. You can modify the default settings by adding more recipient fields or changing the default field content.
 
@@ -29,8 +28,7 @@ Customer profiles have no default fields set. You can choose which fields from a
 
 To change the audience configuration, select a data source (**Contact**, **Lead**, or **Customer profile**) and review the information in the right pane.
 
-> [!div class="mx-imgBorder"]
-> ![Audience configuration edit pane screenshot.](media/real-time-marketing-audience-edit.png "Audience configuration edit pane screenshot")
+:::image type="content" source="media/real-time-marketing-audience-edit.png" alt-text="Audience configuration edit pane screenshot.":::
 
 You can change the default recipient or add more recipient fields. You can select any of the fields you added when adding an email or text message tile to a customer journey.
 
@@ -38,5 +36,3 @@ A default value is displayed in the *Send-to* field, but you can select any othe
 
 > [!Important]
 > Starting in the February 2024 release, it's possible to configure multiple email addresses for a contact's email channel. However, for any release version before February 2024, you can only select a single email address for a contact's email channel configuration.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

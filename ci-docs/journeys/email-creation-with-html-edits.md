@@ -1,7 +1,7 @@
 ---
 title: Use enhanced HTML controls and import HTML snippets
 description: Learn how to use enhanced HTML controls and import HTML code snippets into the email editor in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/26/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -45,8 +45,7 @@ To use the custom code tagging feature, follow these steps:
 1. Select the section of the email that you want to mark as custom.
 1. Select the **Mark section as custom** button on the top left corner of the HTML editor window.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of custom code tagging feature](media/custom-code-tagging.png "Screenshot of custom code tagging feature")
+    :::image type="content" source="media/custom-code-tagging.png" alt-text="Screenshot of custom code tagging feature":::
 
 1. See the selected code wrapped with the custom code tags in the code editor and the marked code highlighted with a green border in the live preview of your email and in HTML window.
 
@@ -56,8 +55,7 @@ To insert a code snippet into your email, follow these steps:
 1. Select the section where you want to import the code. 
 1. Select the **Import code snippet** button on the HTML editor window.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of importing your own code feature](media/custom-code-tagging.png "Screenshot of importing your own code feature")
+    :::image type="content" source="media/custom-code-tagging.png" alt-text="Screenshot of importing your own code feature":::
 
 1. See the code snippet added to the HTML editor and the live preview of your email highlighted with a green border in the live preview of your email and in the HTML window.
 

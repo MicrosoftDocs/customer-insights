@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys overview
 description: Learn general information about features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/13/2024
+ms.date: 10/13/2026
 ms.topic: overview
 author: udag
 ms.author: udag
@@ -30,8 +30,7 @@ Dynamics 365 Customer Insights - Journeys isn't just for marketers anymore. With
 
 ## How to engage with customers in Customer Insights - Journeys
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a Customer Insights - Journeys trigger-based journey.](media/overview-live-journey.png "Screenshot of a Customer Insights - Journeys trigger-based journey")
+:::image type="content" source="media/overview-live-journey.png" alt-text="Screenshot of a Customer Insights - Journeys trigger-based journey.":::
 
 When reaching out to your customers with Customer Insights - Journeys, there are three important things to consider: **who**, **what**, and **when**.
 
@@ -49,5 +48,3 @@ The **when** can be as straightforward as a planned time when you want to send t
 
 - [Create a segment-based journey](real-time-marketing-segment-based-journey.md)
 - [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

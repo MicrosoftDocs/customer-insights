@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: Learn how to install, uninstall, and manage Dynamics 365 Customer Insights environments with step-by-step guidance and troubleshooting tips.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: install-set-up-deploy
 author: udag
 ms.author: udag
@@ -142,5 +142,3 @@ Use the installation management area to modify, maintain, or update your install
 ### Collecting feedback data
 
 To refine and improve the experience, Microsoft might collect feedback data from users within the app. Admins can disable survey feedback by using a PowerShell command to set the **disableSurveyFeedback** flag to **true**. For more information, see the [list of tenant settings](/power-platform/admin/list-tenantsettings).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Permission changes in the June 2026 release (version 1.2.437.94)
 description: The June 2026 release changed permissions for 9 out-of-the-box roles in Customer Insights - Journeys, with breaking changes in 7 of them.
-ms.date: 08/05/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd
 ms.author: udag
@@ -674,5 +674,3 @@ No table privileges were updated for this role.
 ### Changelist-3 Updated (Privileges that have changed in the current release compared to the previous release)
 
 No table privileges were updated for this role.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

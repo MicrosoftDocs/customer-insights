@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages
 description: Learn how to create outbound text messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/08/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -31,8 +31,7 @@ Before sending text messages, you need to [enter the details for your text messa
 
 After you add a phone number, you can start authoring text messages by going to **Customer Insights - Journeys** > **Channels** > **Text messages** and selecting **+New text message** in the top ribbon. This takes you to the text messaging editor.
 
-> [!div class="mx-imgBorder"]
-> ![Text editor screenshot.](media/real-time-marketing-text-editor.png "Text editor screenshot")
+:::image type="content" source="media/real-time-marketing-text-editor.png" alt-text="Text editor screenshot.":::
 
 To create a message:
 
@@ -102,8 +101,7 @@ To add a Customer Voice survey to a text message:
 1. Select the **Customer Voice survey** button ![The Customer Voice survey button.](media/real-time-marketing-customer-voice.png "The Customer Voice survey button") in the **Message** field.
 1. Choose a Customer Voice survey in the lookup field.
 1. Select whether you want the survey to be anonymous and whether you want to track the survey link after customers click on it. If you select the **Survey is anonymous** option, no user data is saved with the answers.
-    > [!div class="mx-imgBorder"]
-    > ![Customer Voice survey options screenshot.](media/real-time-marketing-survey-options.png "Customer Voice survey options screenshot")
+    :::image type="content" source="media/real-time-marketing-survey-options.png" alt-text="Customer Voice survey options screenshot.":::
 1. Select **Save**.
 
 When you send the text message from a journey, it will automatically populate the token with the survey and options you selected.
@@ -130,5 +128,3 @@ You can see how customers react to your text messages by checking the text messa
 
 > [!NOTE]
 > Delivery reports for text messages are received from different carriers in every country or region. This might result in false positives or negatives at times, depending on the carrier. Consider this when you check the delivery reports of your text messages.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

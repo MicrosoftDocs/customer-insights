@@ -1,7 +1,7 @@
 ---
 title: Use AI-driven run-time channel optimization
 description: Channel optimization in Customer Insights - Journeys continuously monitors customer responses to recommend the most effective communication channel.
-ms.date: 08/05/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: udag
@@ -56,5 +56,3 @@ Following the launch of the customer journey, the following measures can help yo
 If you notice a *No message sent* screen for one of the channels, that means that either the AI model has not routed customers down that channel or the message was sent but your customers have not yet interacted with it by opening the message or clicking the links.
 
 In some cases, the app might be able to fetch engagement data from one channel but not the other.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

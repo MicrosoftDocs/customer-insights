@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for content ideas
 description: Content ideas in Customer Insights - Journeys helps marketers generate email draft text from key points while keeping human review central.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: udag
@@ -50,5 +50,3 @@ Follow these practices to get the most from the content ideas feature:
 1. Provide relevant key points that describe your message: use up to five descriptive key points, write each one as a phrase or full sentence, and keep them focused on the same topic.
 1. Use high-quality text in your 20 or more recent **Ready-to-send** commercial marketing emails. Those emails, together with the key points you provide, help the AI service generate personalized ideas.
 1. Always review and edit content ideas suggestions before publishing them in an email or marketing campaign.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

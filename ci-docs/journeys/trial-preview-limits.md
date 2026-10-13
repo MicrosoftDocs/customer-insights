@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys limits for trials
 description: Limitations and conditions that apply to trials of Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/02/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -34,5 +34,3 @@ The above limits apply to all users of the Customer Insights - Journeys trial an
 > You can convert a trial app to a paid subscription using the in-app purchase process. Learn more: [Purchase a license directly from a Customer Insights - Journeys trial](direct-purchase.md).
 
 More information: [Sign up for a free Customer Insights - Journeys trial](trial-signup.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

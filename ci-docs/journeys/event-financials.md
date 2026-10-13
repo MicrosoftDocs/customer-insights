@@ -1,7 +1,7 @@
 ---
 title: View and record financial information for events
 description: Learn how to record and track speaker costs, venue costs, sponsorship revenue, and event pass prices in Customer Insights - Journeys.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -115,5 +115,3 @@ Each event record provides an **Additional information** tab that includes a **F
 - **Total cost of external members**. Records the total cost of external members. This field is not calculated, so you can enter any value you want.
 - **Total cost of event activities**. Records the total cost of event activities. This field is not calculated, so you can enter any value you want.
 - **Revenue from sponsorship**. Initially tracks and adds together the revenue specified for each sponsorship associated with this event. You can edit this value if needed, but once edited it will stop automatically tracking revenues from associated sponsorship records. Delete the value to reset.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

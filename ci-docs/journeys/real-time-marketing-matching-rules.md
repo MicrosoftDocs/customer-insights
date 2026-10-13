@@ -1,7 +1,7 @@
 ---
 title: Matching rules for Customer Insights - Journeys
 description: Create custom matching rules to avoid creating duplicate records in forms and journeys.
-ms.date: 08/28/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -84,5 +84,3 @@ When an existing user submits a form and is identified through [link tracking](r
 When the form submission targets the combined audience "Lead & Contact," separate matching rules apply for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation if the existing lead meets all the conditions defined in the lead matching rule. Link tracking is also considered in the matching process.
 
 :::image type="content" source="media/real-time-marketing-matching-parent-contact.png" alt-text="Diagram that shows matching a record in a lead with parent contact scenario." lightbox="media/real-time-marketing-matching-parent-contact.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

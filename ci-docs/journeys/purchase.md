@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 11/10/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -91,5 +91,3 @@ Dynamics 365 Customer Insights is a tenant-level application that charges for in
 - To add a user license through the Microsoft 365 admin center, go to [https://admin.microsoft.com/#/catalog](https://admin.microsoft.com/#/catalog) and search for "Dynamics 365 Customer Insights User License" under the Dynamics 365 category.
 
 For more information about Customer Insights licensing, see the [Administration and setup FAQ](setup-troubleshooting.yml#licensing). For complete licensing details, including specific quotas and other conditions, see the  [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

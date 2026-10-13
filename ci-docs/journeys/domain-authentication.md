@@ -1,7 +1,7 @@
 ---
 title: Authenticate your domains
 description: Authenticate your domains in Dynamics 365 Customer Insights - Journeys to enable DKIM and SPF protection, boost deliverability, and protect your brand. Start now.
-ms.date: 05/29/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -61,43 +61,35 @@ To set up an authenticated domain in Dynamics 365 Customer Insights - Journeys, 
 To authenticate a domain:
 - Go to **Settings** > **Email marketing** > **Domain authentication**. A list of existing authenticated domains opens.
 
-> [!div class="mx-imgBorder"]
-> ![active domains](media/active-domains.png "Active domains")
+:::image type="content" source="media/active-domains.png" alt-text="active domains":::
 
 - To add a new domain, select **New** on the command bar. The wizard guides you through the domain authentication process step by step. On the first step, enter the domain name and select whether it will be used for email sending, form hosting, or both. If you only need to enable the domain for external form hosting and form prefill, and you don't need to use it for email sending, you can skip the remaining domain authentication steps. Domain authentication (DNS ownership verification) is required only for email sending.
 
-> [!div class="mx-imgBorder"]
-> ![configure new domain](media/configure-new-domain.png "Configure new domain")
+:::image type="content" source="media/configure-new-domain.png" alt-text="configure new domain":::
 
 - On the next step, you're asked to add your first DNS record, which will check and confirm the ownership of your domain. Use “Copy” buttons to accurately copy the values of TXT record to avoid typos.
 
-> [!div class="mx-imgBorder"]
-> ![verify domain ownership](media/verify-domain-ownership.png "Verify domain ownership")
+:::image type="content" source="media/verify-domain-ownership.png" alt-text="verify domain ownership":::
 
 - The next two steps guide you through the setup process of CNAME records (CNAME1 and CNAME2) that stand for DKIM protection functionality.
 
-> [!div class="mx-imgBorder"]
-> ![enable email sending](media/enable-email-sending.png "Enable email sending")
+:::image type="content" source="media/enable-email-sending.png" alt-text="enable email sending":::
 
-> [!div class="mx-imgBorder"]
-> ![configure domain](media/configure-domain.png "Configure domain")
+:::image type="content" source="media/configure-domain.png" alt-text="configure domain":::
 
 - The next step stands for the last required CNAME DNS record, which is for Envelope-From (Return-Path) domain alignment and SPF protection functionality.
 
-> [!div class="mx-imgBorder"]
-> ![envelope from](media/envelope-from.png "Envelope from")
+:::image type="content" source="media/envelope-from.png" alt-text="envelope from":::
 
 - On the last step, you're able to review and check your published DNS records. After your checkup is finished, select **Verify**. The system will check and validate all published DNS records and will show you the result summary on the dashboard. If there’s something wrong with your DNS records, you see which exact record fails on the dashboard.
 
 Here’s an example of an error message that states that TXT Ownership key wasn't found published in the DNS, which means either the record wasn't yet published, or it has some mistake/typo.
 
-> [!div class="mx-imgBorder"]
-> ![review and finish](media/review-your-configuration.png "Review and finish")
+:::image type="content" source="media/review-your-configuration.png" alt-text="review and finish":::
 
 After everything is finished, you'll see green checkmarks next to each DNS record and Confirmed status on your dashboard, which means that your domain authentication is ready.
 
-> [!div class="mx-imgBorder"]
-> ![domain authentication finished](media/domain-authentication-ready.png "Domain authentication finished")
+:::image type="content" source="media/domain-authentication-ready.png" alt-text="domain authentication finished":::
 
 > [!NOTE]
 > You can authenticate more than one domain or subdomain of your choice. `www.contoso.com` and `contoso.com` are two different domains and should be added separately. Technically, it's possible to add `www.contoso.com` to use it for sending emails, but we don't recommend doing that as the from email address would display as `markreting@www.contoso.com` instead of `marketing@contoso.com`.
@@ -129,5 +121,3 @@ To authenticate a domain for a business unit:
         1. If not selected, your domain belongs to the selected business unit only, and no other business unit can access.
     1. **Domain name**: The domain you want to authenticate.
 1. The rest of the wizard follows the usual process of domain authentication.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

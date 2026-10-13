@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate cross-journey analytics
 description: Learn how to use and interpret aggregate cross-journey analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/08/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -75,5 +75,3 @@ Here, you can see an overview of all the experiments that have been run for the 
 Here are some advanced resources for this topic:
 
 - [Custom reporting with Microsoft Fabric](fabric-integration.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

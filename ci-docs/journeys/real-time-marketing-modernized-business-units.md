@@ -1,7 +1,7 @@
 ---
 title: Support for modernized business units 
 description: Support for modernized business units in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -100,5 +100,3 @@ To modify business unit of a form:
 ## Brand profiles
 
 Given that brand profiles are selected and included in an email, Dynamics 365 Customer Insights - Journeys doesn't support changing the business unit of an existing brand profile. However, users that have permissions for more than one business unit can select the specific business unit for which they want to create the brand profile.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: Customer Insights - Journeys lets you upload images, files, and videos, manage asset details, and use stored assets in emails, forms, and pages.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: cmenesatti-m
@@ -104,5 +104,3 @@ This error is expected and occurs because unmanaged customizations are blocked. 
 ## See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Define an extended configuration entity for the channel instance
 description: Learn how to define an extended configuration entity for a custom channel instance in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -97,5 +97,3 @@ For each custom channel solution, you need to:
 
       :::image type="content" source="media/real-time-marketing-select-custom-channel1.png" alt-text="Screenshot of a form for a custom channel." lightbox="media/real-time-marketing-select-custom-channel1.png":::
     <!-- EDITOR'S NOTE: Please crop the screenshot IAW the new [screenshot guidelines](/bacx/screenshots-for-bap?branch=main).-->
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

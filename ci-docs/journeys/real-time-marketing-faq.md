@@ -1,7 +1,7 @@
 ---
 title: FAQs for Customer Insights - Journeys
 description: Find answers to frequently asked questions about channel A/B testing, channel optimization, and engagement rate in Customer Insights - Journeys.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: faq
 author: udag
 ms.author: udag
@@ -44,5 +44,3 @@ The default channel acts as a control group, so 10 percent of your audience funn
 - **Push notifications**: Number of unique people that open or clicked a link divided by total number of push notifications sent.
 - **Email**: The number of unique people that opened or clicked a link divided by total number of emails sent.
 - **SMS**: The number of unique people that clicked a link divided by the total number of SMS (text) messages sent.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

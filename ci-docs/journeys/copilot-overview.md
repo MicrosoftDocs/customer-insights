@@ -1,7 +1,7 @@
 ---
 title: Copilot features in Customer Insights - Journeys
 description: Copilot features in Customer Insights - Journeys help marketers create segments, build journeys, draft content, and refine messages with AI.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -22,5 +22,3 @@ ms.custom:
 
 - [How AI can Transform Your Marketing (video)](https://youtu.be/zk_QcHAb4cU)
 - [Create personalized content in seconds (video)](https://youtu.be/1Lgodu6A2ZM)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey
 description: Segment-based journeys in Dynamics 365 Customer Insights - Journeys let you send messages to segment members, set entry rules, and publish targeted campaigns.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: udag
@@ -91,5 +91,3 @@ After adding all the steps to the journey canvas, the journey is ready to go liv
 You can, however, still change the *segment* the journey uses without stopping the journey or creating a new version of it. Learn more: [Edit live segments used in live journeys](edit-live-segments.md)
 
 Once the journey is published and live, you can look at the journey [analytics page](real-time-marketing-analytics.md) to understand how it's performing.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

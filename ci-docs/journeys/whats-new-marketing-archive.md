@@ -1,7 +1,7 @@
 ---
 title: What's new archive
 description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -1000,8 +1000,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - New customers no longer receive the outbound marketing module. New customers need to contact support to add outbound marketing features.
 - Existing customers see the same provisioning change but can add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
 
- > [!div class="mx-imgBorder"]
- > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
+ :::image type="content" source="media/real-time-marketing-transition-graphic.png" alt-text="New dynamics 365 customer insights org":::
 
 > [!IMPORTANT]
 > New requirements from [Google](https://blog.google/products/gmail/gmail-security-authentication-spam-protection) and [Yahoo](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam) for bulk email senders will go into effect in February 2024 that require emails to support one-click unsubscribe. Dynamics 365 Customer Insights will support this requirement for outbound and real-time journeys. To make use of one-click unsubscribe, you'll need to upgrade to the December 2023 release. A feature switch will become available to enable one-click unsubscribe in January 2024. Communication to administrators in the admin center will be sent once this feature is available.
@@ -1079,8 +1078,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - New customers no longer receive the outbound marketing module. New customers need to contact support to add outbound marketing features.
 - Existing customers see the same provisioning change but can add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
 
- > [!div class="mx-imgBorder"]
- > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
+ :::image type="content" source="media/real-time-marketing-transition-graphic.png" alt-text="New dynamics 365 customer insights org":::
 
 #### General availability
 
@@ -1170,8 +1168,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - New customers no longer receive the outbound marketing module. New customers need to contact support to add outbound marketing features.
 - Existing customers see the same provisioning change but can add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
 
- > [!div class="mx-imgBorder"]
- > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
+ :::image type="content" source="media/real-time-marketing-transition-graphic.png" alt-text="New dynamics 365 customer insights org":::
 
 #### General availability
 
@@ -1242,8 +1239,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys will transition 
 - New customers will no longer receive the outbound marketing module. They will need to contact support to add outbound marketing features.
 - Existing customers will also see the same provisioning change but will be able to add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
 
- > [!div class="mx-imgBorder"]
- > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
+ :::image type="content" source="media/real-time-marketing-transition-graphic.png" alt-text="New dynamics 365 customer insights org":::
 
 #### General availability
 
@@ -1485,76 +1481,66 @@ Monthly enhancements include tracking of unique opens and clicks, attachment sup
     - The simplified email editor allows you to create engaging content within minutes, whether you are an experienced marketer or create emails occasionally to engage with your customers. Now, you can make basic content modifications and even add new elements and sections directly on canvas, and thus enjoy easy, delightful, and focused experience.
     - [Docs](real-time-marketing-email-get-started.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the new email editor.](media/whats-new-easy-email.png "Screenshot showing the new email editor")
+    :::image type="content" source="media/whats-new-easy-email.png" alt-text="Screenshot showing the new email editor.":::
 
 - **Easily find and select one of many new templates to create beautiful emails in minutes**
     - The new template gallery now features over 20 attractive templates for the most typical email types, such as: abandoned cart, event invitation, product launch, newsletter, and more. It is now possible to mark selected templates as favorites and all templates are grouped into relevant categories, making it easier than ever to find just the right template for your next email.
     - [Docs](real-time-marketing-email-get-started.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the template gallery.](media/whats-new-template-gallery.png "Screenshot showing the template gallery")
+    :::image type="content" source="media/whats-new-template-gallery.png" alt-text="Screenshot showing the template gallery.":::
 
 - **Send emails quickly without building a journey**
     - Enable anyone to easily send branded, personalized emails with interaction analytics and link tracking. This simplified sending workflow allows you to select from a new template library, make changes easily with simplifications to the email editor, and send emails to the segment members you need to reach within minutes without being a marketing technology expert.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/send-segment-based-emails-quickly-without-building-journey)
     - [Docs](email-without-journey.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing sending emails without a journey.](media/whats-new-send-email-without-building-journey.png "Screenshot showing sending emails without a journey")
+    :::image type="content" source="media/whats-new-send-email-without-building-journey.png" alt-text="Screenshot showing sending emails without a journey.":::
 
 - **Easily create modern forms using the new intuitive form experience**
     - Lead capture forms are crucial for gathering marketing information, turning visitors into leads, and turning leads into valuable customers. With the new intuitive forms experience in Customer Insights - Journeys, you can easily create modern forms with advanced capabilities without depending on developers. Effortlessly create smart forms to place on your websites and capture your customers’ attention while allowing them to input their details.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-create-modern-forms-using-new-intuitive-form-experience)
     - [Docs](real-time-marketing-form-overview.md)
  
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Customer Insights - Journeys forms.](media/whats-new-lead-capture-forms.png "Screenshot of Customer Insights - Journeys forms") 
+    :::image type="content" source="media/whats-new-lead-capture-forms.png" alt-text="Screenshot of Customer Insights - Journeys forms.":::
 
 - **Keep stakeholders in the loop by seamlessly copying them on email campaigns**
     - Improve your customer experience by keeping your sales, customer service, and finance teams in the loop by copying key recipients on email campaigns. Enable other teams to follow up on hot leads or rapidly answer customers' inquiries, speeding up your pipeline and increasing customer satisfaction.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/keep-stakeholders-loop-seamlessly-copying-them-email-campaigns)
     - [Docs](real-time-marketing-add-cc-recipients.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the recipient selection.](media/real-time-email-cc-select-recipient.png "Screenshot showing the recipient selection")
+    :::image type="content" source="media/real-time-email-cc-select-recipient.png" alt-text="Screenshot showing the recipient selection.":::
 
 - **Prevent message fatigue by limiting the messages sent to a customer in a specific period**
     - Ensure that your customers receive the right message at the right moment and at the right frequency while preventing fatigue, minimizing unsubscribes, and facilitating optimal engagement with your key messages. Some customers qualify for multiple journeys and campaigns that run simultaneously, which may result in customers receiving multiple messages through one channel in a short period of time. Customers may perceive these messages as spam, which lowers their engagement. With the frequency cap feature, you can optimize engagement by controlling how many messages are sent across multiple channels over a period.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/prevent-message-fatigue-limiting-messages-sent-customer-specific-period)
     - [Docs](real-time-marketing-frequency-cap.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
+    :::image type="content" source="media/real-time-marketing-frequency-cap-settings.png" alt-text="Frequency cap settings screenshot.":::
 
 - **Measure marketing activity, web traffic, and conversion goals using automatic UTM tagging**
     - Urchin Tracking Module (UTM) codes help you track sources of traffic for your websites and landing pages, enabling you to attribute conversions to the right source. Customer Insights - Journeys messages can be a significant contributor to this traffic, but it is hard to track them without UTM parameters. They’re often left out entirely from the links in messages due to the time-consuming process of manually adding the tags to each link. In addition to automatically tagging all your messages with UTM parameters, you now can choose to customize your parameters so that it matches an existing UTM naming convention that your business already uses in google analytics reports. For example, you can choose UTM campaign to point to a campaign ID instead of the journey name.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/measure-marketing-activity-web-traffic-conversion-goals-using-automatic-utm-tagging)
     - [Docs](real-time-marketing-utm.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Customize UTM links screenshot.](media/real-time-marketing-utm-custom.png "Customize UTM links screenshot")
+    :::image type="content" source="media/real-time-marketing-utm-custom.png" alt-text="Customize UTM links screenshot.":::
 
 - **Review engagement history and tailor marketing efforts using contact insights**
     - Use contact insights in Customer Insights - Journeys to gain a better understanding of your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their specific needs and preferences.
     - [Docs](real-time-marketing-analytics.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of contact insights.](media/whats-new-contact-insights.png "Screenshot of contact insights")
+    :::image type="content" source="media/whats-new-contact-insights.png" alt-text="Screenshot of contact insights.":::
 
 - **Drive engagement with personalized content using data with one-to-many relationships**
     - Unlock even more data for personalization with ability to define dynamic text using data that requires traversing one-to-many relations. Consider a university alumni donation campaign where you would want to include the name of the college attended by each alum for driving maximum engagement. However, an alum might have attended multiple colleges in that university, resulting in a "one-to-many" relationship between student and college records. You can now define dynamic text for such data.
     - [Docs](real-time-marketing-predefined-dynamic-text.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing one-to-many personalization.](media/whats-new-personalize-content-1-to-many.png "Screenshot showing one-to-many personalization")
+    :::image type="content" source="media/whats-new-personalize-content-1-to-many.png" alt-text="Screenshot showing one-to-many personalization.":::
 
 - **Confidently send emails after quickly previewing emails using sample audience data**
     - Personalizing content is an effective strategy for boosting engagement. However, ensuring that the personalized content is accurate for a variety of recipients can be a challenging task. Fortunately, Customer Insights - Journeys makes this easy – simply select a sample audience member record to preview the exact content that will be delivered to that recipient.  
     - [Docs](real-time-marketing-email.md#preview-and-test-send-your-email)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing email sample data.](media/whats-new-quick-email-preview.png "Screenshot showing email sample data")
+    :::image type="content" source="media/whats-new-quick-email-preview.png" alt-text="Screenshot showing email sample data.":::
 
 - **Scale your business effortlessly and define access to marketing assets**
     - Improve productivity by defining marketing asset access and visibility to match your business structure. As businesses create vast amounts of assets, organizing data according to organizational structure becomes critical. Well-organized assets are important to remaining compliant and productive. Now in Customer Insights - Journeys, you can effortlessly organize your digital assets, content, and journeys to match your organizational structure by separating business and customer data across organizational boundaries. Separating data enables you to gain comprehensive insights into a specific brand's marketing performance without losing sight of the bigger picture. Compliance risk is reduced by using out-of-the-box campaigns and data segregation capabilities across your organization.
@@ -1571,8 +1557,7 @@ Monthly enhancements include tracking of unique opens and clicks, attachment sup
     - Gain insight into the unique individuals who are engaging with your journeys, rather than simply counting the number of times an email or link has been opened or clicked. Tracking unique opens and clicks provides a more accurate picture of your campaign’s reach and engagement by eliminating duplicate interactions from the same customer.
     - [Docs](real-time-marketing-analytics.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing unique opens and clicks.](media/whats-new-unique-opens-and-clicks.png "Screenshot showing unique opens and clicks")
+    :::image type="content" source="media/whats-new-unique-opens-and-clicks.png" alt-text="Screenshot showing unique opens and clicks.":::
 
 - **Support attachments in custom channel messages**
     - You can now personalize your communications even more by attaching images or other types of files to your custom channel messages. Build new channels like MMS and include images with your WhatsApp or Viber messages, making your customer interactions even more engaging.
@@ -1610,16 +1595,14 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-static-snapshot-real-time-marketing-segment-membership)
     - [Docs](real-time-marketing-static-snapshot.md)
   
-    > [!div class="mx-imgBorder"]
-    > ![static snapshot](media/whats-new-static-snapshot.png "static snapshot")
+    :::image type="content" source="media/whats-new-static-snapshot.png" alt-text="static snapshot":::
 
 - **Fine-tune email communications with filtered lists**
     - Including an entire list in an email is a common scenario. But there are times when it's more effective to only include items from a list that meet certain conditions. For example, in a confirmation email about an order, you may need to separately list items that are back-ordered. Similarly, communication about a multi-session conference is easier to consume if the sessions are organized by topic or track. Now you can easily achieve these scenarios by simply adding a filter to your email list.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/fine-tune-email-communications-filtered-lists)
     - [Docs](real-time-marketing-personalize-lists.md)
   
-    > [!div class="mx-imgBorder"]
-    > ![personalized filtered lists](media/whats-new-personalize-lists.png "personalized filtered lists")
+    :::image type="content" source="media/whats-new-personalize-lists.png" alt-text="personalized filtered lists":::
 
 - **Seamlessly manage and embed assets into your content with an enhanced unified library**
     - Sending your customers’ rich, compelling content is key to keeping them engaged with your brand. With this release, using assets across Customer Insights - Journeys and outbound marketing got easier. With the enhanced unified library, you can now upload files once and use them where you need them. No need to copy or download assets for backup. Using additional file types, such as documents, PDFs, presentations, videos and more, you can now add asset links to your emails to create richer content for your customers.
@@ -1627,22 +1610,19 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
     > To foster the new simplified way of managing and using assets, the [Customer Insights - Journeys library add-on](upload-images-files.md) is no longer available for installation. If you previously installed it, you could continue to use the add-on.
     - [Docs](upload-images-files.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![enhanced asset library](media/whats-new-enhanced-asset-library.png "enhanced asset library")
+    :::image type="content" source="media/whats-new-enhanced-asset-library.png" alt-text="enhanced asset library":::
 
 - **Engage your customers with text messages sent using Infobip and LINK Mobility**
     - In addition to Twilio and Telesign, you can now integrate with Infobip and LINK Mobility to send text messages. Connect your existing Infobip or LINK Mobility account and use all Customer Insights - Journeys text message features to maximize customer engagement.
     - [Docs](real-time-marketing-outbound-text-messaging.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![outbound text messaging](media/whats-new-outbound-text-messaging.png "outbound text messaging")
+    :::image type="content" source="media/whats-new-outbound-text-messaging.png" alt-text="outbound text messaging":::
 
 - **Customize the real-time journey designer to better streamline your business flows**
     - Customization of your customer journeys is now available in Dynamics 365 Real-time Customer Insights - Journeys. Not only can marketers use out-of-the-box Customer Insights - Journeys capabilities to effectively engage with their customers, but they can also now create personalized, flexible, and efficient solutions through Power Apps to better tailor the app to their specific business needs. For example, you can now extend your Real-time journey canvas to add any customized fields through Dataverse to better streamline your business processes for higher efficiency. This allows you to add custom fields such as 'campaign' to your journeys to better manage your assets, collaborate amongst your team members, and gives you more flexibility to create customized analytics reports.
     - [Docs](real-time-marketing-journey-designer.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![customize journey designer](media/whats-new-journey-designer.png "customize journey designer")
+    :::image type="content" source="media/whats-new-journey-designer.png" alt-text="customize journey designer":::
 
 - **Individually manage segment members with inclusions and exclusions**
     - Adding manual inclusions or exclusions is a powerful way to augment segment-building criteria. Manually include or exclude specific people to ensure that segments always reach VIP customers. Or use inclusions and exclusions as an easy way to build test segments for journeys.
@@ -1665,24 +1645,21 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
     - The simplified email editor with the improved template gallery allows you to create engaging content within minutes, whether you are an experienced marketer or create emails occasionally to engage with your customers. Now, you can make basic content modifications directly on canvas, and enjoy easy, delightful, and focused experience. Whereas the new template gallery makes it easier than ever to find just the right template for your next email. 
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/send-segment-based-emails-quickly-without-building-journey)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of easy email editor.](media/whats-new-easy-email.png "Screenshot of easy email editor")
+    :::image type="content" source="media/whats-new-easy-email.png" alt-text="Screenshot of easy email editor.":::
 
 - **Send emails quickly without building a journey**
     - Send emails without creating a journey. This workflow allows you to select from a new template library, make changes easily with simplifications to the email editor, and send emails to the segment members you need to reach within minutes.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/send-segment-based-emails-quickly-without-building-journey)
     - [Docs](email-without-journey.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing sending emails without a journey.](media/whats-new-send-email-without-building-journey.png "Screenshot showing sending emails without a journey")
+    :::image type="content" source="media/whats-new-send-email-without-building-journey.png" alt-text="Screenshot showing sending emails without a journey.":::
 
 - **Prevent message fatigue by limiting the messages sent to a customer in a specific period**
     - Ensure that your customers receive the right message at the right moment and at the right frequency to prevent fatigue, avoid unsubscribes, and facilitate optimal engagement with your key messages. Some customers qualify for multiple journeys and campaigns that run simultaneously. This results in customers receiving multiple messages through one channel in a short period of time. Customers may perceive these messages as spam, which lowers their engagement. With the frequency cap feature, you can optimize engagement by controlling how many messages are sent across multiple channels over a period.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/prevent-message-fatigue-limiting-messages-sent-customer-specific-period)
     - [Docs](real-time-marketing-frequency-cap.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
+    :::image type="content" source="media/real-time-marketing-frequency-cap-settings.png" alt-text="Frequency cap settings screenshot.":::
 
 - **Scale your business effortlessly and define access to marketing assets**
     - Improve productivity by defining marketing asset access and visibility to match your business structure. As businesses create vast amounts of assets, organizing data according to organizational structure becomes critical. Well-organized assets are important to remaining compliant and productive. Now in Customer Insights - Journeys, you can effortlessly organize your digital assets, content, and journeys to match your organizational structure by separating business and customer data across organizational boundaries. Separating data enables you to gain comprehensive insights into a specific brand's marketing performance without losing sight of the bigger picture. Compliance risk is reduced by using out-of-the-box campaigns and data segregation capabilities across your organization.
@@ -1693,8 +1670,7 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
     - With dynamic text data that requires traversing 1-to-many relations, unlock even more data for personalization. Consider a university alumni donation campaign where you would want to include the name of the college attended by each alum for driving maximum engagement. However, an alum might have attended multiple colleges in that university, resulting in a "1-to-many" relationship between student and college records. Dynamic text can now be defined for such data.
     - [Docs](real-time-marketing-predefined-dynamic-text.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![dynamic text](media/whats-new-personalization-dynamic-text.png "dynamic text")
+    :::image type="content" source="media/whats-new-personalization-dynamic-text.png" alt-text="dynamic text":::
 
 #### Monthly enhancement
 
@@ -1726,8 +1702,7 @@ This month, the new Customer Insights - Journeys segment builder is generally av
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/target-right-audience-using-new-segment-builder)
     - [Docs](real-time-marketing-build-segments.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a new segment builder.](media/whats-new-segment-builder.png "Screenshot of a new segment builder")
+    :::image type="content" source="media/whats-new-segment-builder.png" alt-text="Screenshot of a new segment builder.":::
 
 #### Public preview
 
@@ -1736,8 +1711,7 @@ This month, the new Customer Insights - Journeys segment builder is generally av
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/measure-marketing-activity-web-traffic-conversion-goals-using-automatic-utm-tagging)
     - [Docs](real-time-marketing-utm.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Customize your UTM links screenshot.](media/real-time-marketing-utm-custom.png "Customize your UTM links screenshot")
+    :::image type="content" source="media/real-time-marketing-utm-custom.png" alt-text="Customize your UTM links screenshot.":::
 
 #### Monthly enhancements
 
@@ -1810,23 +1784,20 @@ Starting this month, we'll highlight recently published blogs and scenario docum
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/extend-outreach-custom-channels)
     - [Docs](real-time-marketing-create-custom-channels.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a message using a custom channel.](media/whats-new-custom-channel.png "Screenshot of a message using a custom channel")
+    :::image type="content" source="media/whats-new-custom-channel.png" alt-text="Screenshot of a message using a custom channel.":::
 
 - **Communicate dates and times in a variety of formats**
     - When working in multiple geographies and languages, communicating dates and times clearly requires using a format that matches the recipient's expectations. To make sure your customers always receive the correct information, Customer Insights - Journeys supports a variety of date and time formats. Whenever dynamic text is defined using a "datetime" type attribute, an additional set of options becomes available to select a date/time format that is readable and consistent with the locale (language and region) of the audience. If desired, you can also change the locale, and time zone to match the audience. The Customer Insights - Journeys app then automatically converts the stored date/time to the selected time zone.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/communicate-dates-times-variety-formats)
     - [Docs](real-time-marketing-predefined-dynamic-text.md#communicate-dates-and-times-in-various-formats)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a variety of date and time format.](media/whats-new-date-time-format.png "Screenshot of a variety of date and time format")
+    :::image type="content" source="media/whats-new-date-time-format.png" alt-text="Screenshot of a variety of date and time format.":::
 
 - **Access even more data to personalize your customer outreach**
     - You're no longer limited to accessing Dataverse tables that are directly related to an Audience or Triggers. Now, you can access any Dataverse table to include information in your communications. For example, for a product launch email, you may want to include product information, image, and SKU number. Such details may be available in a Product table, which you can now use for personalization.
     - [Docs](real-time-marketing-predefined-dynamic-text.md#access-even-more-data-for-personalization)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of personalize your customer outreach.](media/whats-new-personalize-customer-outreach.png "Screenshot of Screenshot of personalize your customer outreach")
+    :::image type="content" source="media/whats-new-personalize-customer-outreach.png" alt-text="Screenshot of personalize your customer outreach.":::
 
 #### Public preview
 
@@ -1835,15 +1806,13 @@ Starting this month, we'll highlight recently published blogs and scenario docum
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-lead-capture-forms-that-convert-visitors-customers)
     - [Docs](real-time-marketing-form-overview.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of lead capture forms.](media/whats-new-lead-capture-forms.png "Screenshot of lead capture forms")
+    :::image type="content" source="media/whats-new-lead-capture-forms.png" alt-text="Screenshot of lead capture forms.":::
 
 - **Fine-tune email communications with filtered lists**
     - Including an entire list in an email is a common scenario. But there are times when it's more effective to only include items from a list that meet certain conditions. For example, in a confirmation email about an order, you may need to separately list items that are back ordered. Similarly, communication about a multi-session conference is easier to consume if the sessions are organized by topic or track. Now you can easily achieve these scenarios by simply adding a filter to your email list.
     - [Docs](real-time-marketing-personalize-lists.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of personalize lists.](media/whats-new-personalize-lists.png "Screenshot of personalize lists")
+    :::image type="content" source="media/whats-new-personalize-lists.png" alt-text="Screenshot of personalize lists.":::
 
 #### Monthly enhancements
 
@@ -1853,8 +1822,7 @@ Starting this month, we'll highlight recently published blogs and scenario docum
 - **Real-time segment builder**
     - Create segments using more attributes that are indirectly related to the Contact or Lead. For example, you can use attributes like the event sessions a Contact has checked into in a conference or webinar they attended. Use attributes from Dataverse tables that have up to five degrees of separation from the Contact or Lead table (up from three previously).
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the real-time segment builder.](media/whats-new-five-hops.png "Screenshot of the real-time segment builder")
+    :::image type="content" source="media/whats-new-five-hops.png" alt-text="Screenshot of the real-time segment builder.":::
 
 #### New blogs and scenario docs
 
@@ -1888,8 +1856,7 @@ The Dynamics 365 Customer Insights - Journeys November 2022 update includes one 
     - When working in multiple geographies and languages, communicating dates and times clearly requires using a format that matches the recipient's expectations. To make sure your customers always receive the correct information, Customer Insights - Journeys supports a variety of date and time formats. Whenever dynamic text is defined using a "datetime" type attribute, an additional set of options becomes available to select a date/time format that is readable and consistent with the locale (language and region) of the audience. If desired, you can also change the locale and time zone to match the audience. The Customer Insights - Journeys app then automatically converts the stored date/time to the selected time zone.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/communicate-dates-times-variety-formats)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of date and time formats.](media/whats-new-date-time.jpg "Screenshot of date and time formats")
+    :::image type="content" source="media/whats-new-date-time.jpg" alt-text="Screenshot of date and time formats.":::
 
 #### Monthly enhancements
 
@@ -1921,48 +1888,42 @@ Monthly improvements include updates to personalization, segmentation, and text 
     - [Content blocks docs](content-blocks.md)
     - [Conditional content docs](conditional-content.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
+    :::image type="content" source="media/conditional-content-screenshot.png" alt-text="Screenshot of conditional dynamic content.":::
 
 - **Make incremental updates and optimize journeys while analyzing all past versions**
     - Editing journeys is now easier and more collaborative. You can now make light edits to live journeys, such as renaming elements and adjusting goal percentages without creating new versions. Also, because the Customer Insights - Journeys app automatically version-tracks each update, you can make complex and structural changes to journeys confidently and collaboratively with your team. This makes editing journeys as simple as editing documents; each change is tracked and is available for auditing.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/make-incremental-updates-optimize-journeys-while-analyzing-all-past-versions)
     - [Docs](real-time-marketing-edit-journey.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of editing a live journey.](media/whats-new-live-journey-edit.png "Screenshot of editing a live journey")
+    :::image type="content" source="media/whats-new-live-journey-edit.png" alt-text="Screenshot of editing a live journey.":::
 
 - **Easily manage content across multiple brands in the email designer**
     - Brand profiles allow you to manage different brands easily. Reduce content-related errors by defining default senders for emails and default social links. Extend your brand profile entity with custom values that you can use when creating content. Create multiple profiles for your organization as well as for each of your business units.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-consistent-content-brand-profiles)
     - [Docs](brand-profiles.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of brand profiles.](media/whats-new-brandprofile.png "Screenshot of brand profiles.")
+    :::image type="content" source="media/whats-new-brandprofile.png" alt-text="Screenshot of brand profiles.":::
 
 - **Test all paths customers take before publishing journeys**
     - Testing custom triggers before using them in a journey is the safest way to ensure that your expectations meet the customer's reality. The test send feature gives you reassurance in the quality and behavior of your custom triggers before you send them to your audience. To test your custom triggers, you can run internal users through the journey to determine if your triggers work correctly and validate the path that your customers will take.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/test-every-path-customers-will-take-before-publish-journey)
     - [Docs](real-time-marketing-test-triggers.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the test send confirmation.](media/real-time-marketing-test-send-confirmation.png "Screenshot of the test send confirmation")
+    :::image type="content" source="media/real-time-marketing-test-send-confirmation.png" alt-text="Screenshot of the test send confirmation.":::
 
 - **Increase customer engagement with QR codes in emails**
     - Increase customer engagement and promote your business using QR codes for events or coupons. QR codes allow your customers to access marketing event information or dynamic links with just a single scan! QR codes work by simply scanning the code with a mobile device that is equipped with a camera and QR code reader application. Once the QR code is scanned, it is translated into actionable information such as a webpage or event check-in.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/increase-customer-engagement-qr-codes-emails)
     - [Docs](real-time-marketing-email.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a QR code in an email.](media/whats-new-qr-code.png "Screenshot of a QR code in an email")
+    :::image type="content" source="media/whats-new-qr-code.png" alt-text="Screenshot of a QR code in an email.":::
 
 - **Create engaging email content using feature-rich text links**
     - Create engaging email content with text links to websites, events, and marketing pages. The text links can also allow recipients to join a Microsoft Teams event or create a new calendar item with a click of a button.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-engaging-email-content-using-feature-rich-text-links)
     - [Docs](real-time-marketing-email.md#link-to-documents-and-videos-stored-in-the-asset-library)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a feature-rich text link.](media/whats-new-text-link.png "Screenshot of a feature-rich text link")
+    :::image type="content" source="media/whats-new-text-link.png" alt-text="Screenshot of a feature-rich text link.":::
 
 #### Preview features
 
@@ -1971,31 +1932,27 @@ Monthly improvements include updates to personalization, segmentation, and text 
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/extend-outreach-custom-channels)
     - [Docs](real-time-marketing-create-custom-channels.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a message using a custom channel.](media/whats-new-custom-channel.png "Screenshot of a message using a custom channel")
+    :::image type="content" source="media/whats-new-custom-channel.png" alt-text="Screenshot of a message using a custom channel.":::
 
 - **Use natural language to create segments in Customer Insights - Journeys**
     - Segment creation traditionally required extensive knowledge of the complex data structures defined by your business. Now, instead of selecting specific data tables manually, you can use natural language to create segments in Customer Insights - Journeys by simply describing the segment definition in plain English. This flexible experience lets you add the results query onto the segment builder at any level of the query logic, either as a new group or as an additional condition in your existing logic. You can improve the natural language engine by giving thumbs-up or down feedback so that it can help you achieve even more accurate results in the future.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/use-natural-language-create-segments-real-time-marketing)
     - [Docs](real-time-marketing-natural-language-segments.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of segment creation using natural language.](media/whats-new-nl-segment.png "Screenshot of segment creation using natural language")
+    :::image type="content" source="media/whats-new-nl-segment.png" alt-text="Screenshot of segment creation using natural language.":::
 
 - **Create a static snapshot of segment membership**
     - Static segment lists are an important part of audience management for marketers. Use static segments in one-off campaigns or newsletters where it's essential to implement segment membership based on a specific date or time. Static segments ensure that new people that become eligible for the segment will not enter the one-off journey, even if it continues to be live. You can create static snapshots no matter how the segment is built (whether it uses query conditions or manual inclusions or exclusions). The flexibility in static segment creation separates how segments are defined from how you want to update or refresh segments.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-static-snapshot-real-time-marketing-segment-membership)
     - [Docs](real-time-marketing-static-snapshot.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a static snapshot segment.](media/whats-new-static-snapshot.png "Screenshot of segment creation using natural language")
+    :::image type="content" source="media/whats-new-static-snapshot.png" alt-text="Screenshot of a static snapshot segment.":::
 
 - **Create a segment where specific people are always included or excluded**
     - Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. Manually include or exclude specific people to ensure segments always reach VIP customers, or just as an easy way to build test segments for journeys.
     - [Docs](real-time-marketing-include-exclude.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of inclusion and exclusion selection.](media/whats-new-include-exclude.png "Screenshot of inclusion and exclusion selection")
+    :::image type="content" source="media/whats-new-include-exclude.png" alt-text="Screenshot of inclusion and exclusion selection.":::
 
 #### Monthly enhancements
 
@@ -2029,8 +1986,7 @@ Additionally, Customer Insights - Journeys features are now available in France 
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/win-customer-attention-creating-conditional-dynamic-content-easy-to-use-no-code-experiences)
     - [Docs](conditional-content.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
+    :::image type="content" source="media/conditional-content-screenshot.png" alt-text="Screenshot of conditional dynamic content.":::
 
 #### Monthly enhancements
 
@@ -2064,8 +2020,7 @@ Additionally, this update includes improvements to real-time journeys and person
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/create-emails-faster-precise-drag-and-drop-in-context-menu-easy-select-interactions)
     - [Docs](create-marketing-email.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of new email canvas.](media/whats-new-email-canvas.png "Screenshot of new email canvas")
+    :::image type="content" source="media/whats-new-email-canvas.png" alt-text="Screenshot of new email canvas.":::
 
 #### Preview feature
 
@@ -2074,8 +2029,7 @@ Additionally, this update includes improvements to real-time journeys and person
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/boost-creativity-ai-powered-email-content-ideas)
     - [Docs](content-ideas.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of content ideas feature.](media/whats-new-content-ideas.png "Screenshot of content ideas feature")
+    :::image type="content" source="media/whats-new-content-ideas.png" alt-text="Screenshot of content ideas feature.":::
 
 #### Monthly enhancements
 
@@ -2083,16 +2037,13 @@ Additionally, this update includes improvements to real-time journeys and person
     - Deliver more personalized experiences by accessing a richer set of trigger data for defining the journey entry/exit criteria, conditions/branches, and waits. When you add any of these elements to the journey, you will now be able to see data attributes not only from the trigger's core entity/table, but also from entities/tables directly related to those attributes. For example, when creating a journey to nurture new opportunities (using the "Opportunity created" trigger), you can branch the journey based on the "budget" attribute from the Opportunity table. This enables you to create journey variations for opportunities that are more likely to buy.
     - [Docs](real-time-marketing-personalize-triggers.md)
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of trigger data feature.](media/whats-new-trigger-data.png "Screenshot of trigger data feature")
+        :::image type="content" source="media/whats-new-trigger-data.png" alt-text="Screenshot of trigger data feature.":::
 
     - Multiple branch journeys now include a detailed analytics view. The detailed analytics view for the attribute branch allows you to see a preview of journey audience details such as name, ID, type, and time. This helps you gain additional insights into how the journey is executing.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot showing multiple branch analytics.](media/whats-new-branch-analytics.png "Screenshot showing multiple branch analytics")
+        :::image type="content" source="media/whats-new-branch-analytics.png" alt-text="Screenshot showing multiple branch analytics.":::
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot showing multiple branch audience.](media/whats-new-branch-audience.png "Screenshot showing multiple branch audience")
+        :::image type="content" source="media/whats-new-branch-audience.png" alt-text="Screenshot showing multiple branch audience.":::
 
 - **Personalization**
     - Conditional content (preview) enhancements: Preview and test send now remove content variations that are not possible. You can also give the default a name (like other variations) to help explain situations where the content will be used.
@@ -2121,32 +2072,28 @@ The update also includes improvements to real-time journeys, the text message ch
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/quickly-create-emails-enhanced-reusable-content-fragments)
     - [Docs](content-blocks.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of new content blocks.](media/whats-new-content-blocks.png "Screenshot of new content blocks")
+    :::image type="content" source="media/whats-new-content-blocks.png" alt-text="Screenshot of new content blocks.":::
 
 - **Continue the conversation with your customers by taking action on their text message replies**
     - Text messaging allows you to quickly communicate with customers. But it's not enough to just send messages out, you also need to act on text message responses. Now, you can interact with your customers by creating journeys based on their replies to your text messages. Create custom keywords and add them to your messages and journey branches to continue the conversation with your customers.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/continue-conversation-customers-taking-action-their-sms-replies)
     - [Docs](set-up-automated-sms-keyword-flow.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a text message reply journey.](media/whats-new-sms-keyword-response.png "Screenshot of a text message reply journey")
+    :::image type="content" source="media/whats-new-sms-keyword-response.png" alt-text="Screenshot of a text message reply journey.":::
 
 - **Create more personalized journey variations using multiple journey branches**
     - Journey branches let you create personalized journeys for customers, engaging them in different ways based on who they are and their past actions. Create more than two branches at any given step in the journey—creating more fine-grained personalization and engaging each customer differently based on their unique profile and behavioral signals. This eliminates the need to nest branches and makes analyzing journeys easier. Merge the branches back so that customers can continue the common journey steps after going through their specialized branches.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/create-more-personalized-journey-variations-using-multiple-journey-branches)
     - [Docs](real-time-marketing-multiple-branches.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of multiple branches.](media/whats-new-multiple-branches.png "Screenshot of multiple branches")
+    :::image type="content" source="media/whats-new-multiple-branches.png" alt-text="Screenshot of multiple branches.":::
 
 - **Measure campaign effectiveness with a new channel analytics dashboard**
     - To create effective campaigns, you need to continuously track asset delivery across multiple channels. You also need to review campaign engagement metrics so that you can make improvements where needed. With the new out-of-the-box aggregated channel analytics dashboard in Customer Insights - Journeys, you can track important delivery and engagement metrics at any level of aggregation—across all channels, journeys, and marketing assets. Zoom in on a particular channel or individual message. Identify trends over a specified time period to further improve your marketing efforts.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/measure-campaign-effectiveness-new-channel-analytics-dashboard)
     - [Docs](real-time-marketing-channel-analytics.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Customer Insights - Journeys aggregate channel analytics.](media/whats-new-channel-analytics.png "Screenshot of Customer Insights - Journeys aggregate channel analytics")
+    :::image type="content" source="media/whats-new-channel-analytics.png" alt-text="Screenshot of Customer Insights - Journeys aggregate channel analytics.":::
 
 #### Preview features
 
@@ -2155,16 +2102,14 @@ The update also includes improvements to real-time journeys, the text message ch
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/make-incremental-updates-optimize-journeys-while-analyzing-all-past-versions)
     - [Docs](real-time-marketing-edit-journey.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of editing a live journey.](media/whats-new-live-journey-edit.png "Screenshot of editing a live journey")
+    :::image type="content" source="media/whats-new-live-journey-edit.png" alt-text="Screenshot of editing a live journey.":::
 
 - **Create consistent content with brand profiles**
     - To ensure branding consistency, the email editor supports brand profiles, including custom sender profiles, social links, and custom fields. Create multiple brand profiles for your organization or for each of your business units.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/create-consistent-content-brand-profiles)
     - [Docs](brand-profiles.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of brand profiles.](media/whats-new-brandprofile.png "Screenshot of brand profiles.")
+    :::image type="content" source="media/whats-new-brandprofile.png" alt-text="Screenshot of brand profiles.":::
 
 #### Monthly enhancements
 
@@ -2204,24 +2149,21 @@ The update also includes an administrator digital data sharing opt-in for better
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/target-right-contacts-leads-using-reimagined-easy-use-segmentation-builder)
     - [Docs](real-time-marketing-build-segments.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Customer Insights - Journeys segment builder.](media/real-time-marketing-build-segment-attribute.png "Screenshot of the Customer Insights - Journeys segment builder")
+    :::image type="content" source="media/real-time-marketing-build-segment-attribute.png" alt-text="Screenshot of the Customer Insights - Journeys segment builder.":::
 
 - **Continue the conversation with your customers by taking action on their text message replies**
     - Text messages allow you to quickly communicate with your customers. However, it's not enough to just send messages out, you also need to act on customer responses. Now, you can interact with your customers by creating journeys based on their replies to your text messages. Create custom keywords and add them to your messages and journey branches to continue the conversation with your customers.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/continue-conversation-customers-taking-action-their-sms-replies)
     - [Docs](set-up-automated-sms-keyword-flow.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a text message reply journey.](media/whats-new-sms-keyword-response.png "Screenshot of a text message reply journey")
+    :::image type="content" source="media/whats-new-sms-keyword-response.png" alt-text="Screenshot of a text message reply journey.":::
 
 - **Create more personalized journey variations using multiple journey branches**
     - Journey branches let you create personalized journeys for customers, engaging them in different ways based on who they are and their past actions. Create more than two branches at any given step in the journey, allowing for more fine-grained personalization and engaging each customer differently based on their unique profile and behavioral signals. Multiple branches eliminate the need to nest branches and make analyzing journeys easier. Merge the branches back so that customers can continue the common journey steps after going through their specialized branches.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/create-more-personalized-journey-variations-using-multiple-journey-branches)
     - [Docs](real-time-marketing-multiple-branches.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of multiple branches.](media/whats-new-multiple-branches.png "Screenshot of multiple branches")
+    :::image type="content" source="media/whats-new-multiple-branches.png" alt-text="Screenshot of multiple branches.":::
 
 #### General availability enhancements
 
@@ -2280,8 +2222,7 @@ The update also includes improved email content blocks, the ability to manually 
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/win-customer-attention-creating-conditional-dynamic-content-easy-to-use-no-code-experiences)
     - [Docs](conditional-content.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
+    :::image type="content" source="media/conditional-content-screenshot.png" alt-text="Screenshot of conditional dynamic content.":::
 
 #### General availability enhancements
 
@@ -2290,8 +2231,7 @@ The update also includes improved email content blocks, the ability to manually 
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/use-outbound-marketing-subscription-centers-real-time-marketing-journeys)
     - [Docs](real-time-marketing-outbound-subscription.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of outbound subscription centers in Customer Insights - Journeys.](media/whats-new-outbound-subscription.png "Screenshot of outbound subscription centers in Customer Insights - Journeys")
+    :::image type="content" source="media/whats-new-outbound-subscription.png" alt-text="Screenshot of outbound subscription centers in Customer Insights - Journeys.":::
 
 #### Monthly enhancements
 
@@ -2341,16 +2281,14 @@ The update also includes monthly enhancements to journeys, domain authentication
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/personalize-interactions-using-unified-view-customer-activity-across-dynamics-365-marketing-sales-customer-service)
     - [Docs](timeline.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of new timeline view.](media/whats-new-timelineview.png "Screenshot of new timeline view")
+    :::image type="content" source="media/whats-new-timelineview.png" alt-text="Screenshot of new timeline view.":::
 
 - **Quickly create emails with enhanced reusable content blocks**
     - Content blocks are reusable pieces of content that let you easily assemble rich and consistent emails. New and enhanced content blocks are now available in outbound and Customer Insights - Journeys. The enhanced content blocks can include all standard elements such as text, images, and buttons, as well as custom layouts and personalization.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/quickly-create-emails-enhanced-reusable-content-fragments)
     - [Docs](content-blocks.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of new content blocks.](media/whats-new-content-blocks.png "Screenshot of new content blocks")
+    :::image type="content" source="media/whats-new-content-blocks.png" alt-text="Screenshot of new content blocks.":::
 
 #### General availability enhancements
 
@@ -2436,8 +2374,7 @@ The Dynamics 365 Customer Insights - Journeys March 2022 update includes many ne
     - New out-of-the-box triggers allow you to create customer journeys triggered by marketing interactions such as webinar check-ins and form submissions.
     - Learn more: [Real-time marketing triggers](real-time-marketing-triggers.md).
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of new triggers.](media/real-time-marketing-new-oob-triggers.png "Screenshot of new triggers")
+    :::image type="content" source="media/real-time-marketing-new-oob-triggers.png" alt-text="Screenshot of new triggers.":::
 
 #### Monthly enhancements
 
@@ -2449,8 +2386,7 @@ The Dynamics 365 Customer Insights - Journeys March 2022 update includes many ne
 - **Marketing emails**
     - Link buttons or images to URLs, surveys, events, marketing pages, or files. You can also create button or image links that allow recipients to join a Microsoft Teams event or that create a new calendar item. Learn more: [Create Customer Insights - Journeys emails](real-time-marketing-email.md).
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of link options for Customer Insights - Journeys email.](media/real-time-marketing-email-button2.png "Screenshot of link options for Customer Insights - Journeys email")
+    :::image type="content" source="media/real-time-marketing-email-button2.png" alt-text="Screenshot of link options for Customer Insights - Journeys email.":::
 
 - **Personalization**
     - Now, you can personalize both an email and the customer's journey relative to important milestones (such as order date or an upcoming appointment) by creating content variations and branches that use relative and partial dates when defining a condition using dates. Partial dates allow you to define conditions such as "Birthday is today" and relative dates allow you to define conditions such as "Birthday is next month." So, depending on when an email goes out and how close it is to someone's birthday, a different offer can be shown. Learn more: [Personalize content](real-time-marketing-personalize-inline-conditions.md#partial-and-relative-dates-in-conditional-content).
@@ -4225,5 +4161,3 @@ The Dynamics 365 Customer Insights - Journeys November 2019 update includes the 
 - Customer journeys: Individual marketing lists can now be reused across multiple customer journeys.
 - Websites: For website insights, the **Timeline** display has been renamed to **Visits**.
 - Customer Insights: Deleted contacts now sync correctly and more quickly.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

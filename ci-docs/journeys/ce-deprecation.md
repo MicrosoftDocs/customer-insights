@@ -1,7 +1,7 @@
 ---
 title: "Deprecation: Dynamics 365 for Customer Engagement"
 description: Learn about the Dynamics 365 for Customer Engagement deprecation and next steps.
-ms.date: 07/08/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: colinbirkett
@@ -29,5 +29,3 @@ Starting in 2022, Dynamics 365 for Customer Engagement licenses purchased before
 You can learn about migrating your data to a new Customer Insights - Journeys instance in the [Tenant to tenant migration for Dynamics 365 Customer Insights - Journeys](tenant-to-tenant.md) article.
 
 To start a free trial for the current version of Dynamics 365 Customer Insights, see [Sign up for a free Dynamics 365 Customer Insights trial](trial-signup.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

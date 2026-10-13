@@ -1,7 +1,7 @@
 ---
 title: Set up a legacy Teams webinar, meeting, or live event
 description: Learn how to create and host legacy live Microsoft Teams events in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -78,8 +78,7 @@ Learn more: [Set up for webinars in Microsoft Teams](/microsoftteams/set-up-webi
 
 The default webinar settings are configured to provide the best attendee and presenter experience. However, you can easily tweak these settings from your Customer Insights - Journeys event. To change the default settings, set the **Change meeting options** switch to **Yes**. This reveals the webinar settings, which you can adjust on a per-event basis.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Webinar settings.](./media/teams-webinar-webinar-settings.png)
+:::image type="content" source="./media/teams-webinar-webinar-settings.png" alt-text="Screenshot of Webinar settings.":::
 
 Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
@@ -135,8 +134,7 @@ The Teams meetings option allows you to create an interactive online meeting exp
 
 After selecting Teams meetings as the streaming provider for your event, you can view and edit the meeting options inside Customer Insights - Journeys, just as you would with a webinar.
 
-> [!div class="mx-imgBorder"]
-> ![Teams meeting settings.](./media/teams-webinar-meetings-settings.png)
+:::image type="content" source="./media/teams-webinar-meetings-settings.png" alt-text="Teams meeting settings.":::
 
 After you save your event, your settings will be reflected in your Teams calendar item.
 
@@ -179,15 +177,13 @@ Set-CsTeamsMeetingBroadcastPolicy -BroadcastRecordingMode UserOverride
 
 You can also apply these settings in the Teams admin center:
 
-> [!div class="mx-imgBorder"]
-> ![Teams admin center.](./media/teams-webinar-admin-center.png)
+:::image type="content" source="./media/teams-webinar-admin-center.png" alt-text="Teams admin center.":::
 
 Read more: [Set up for live events in Microsoft Teams](/microsoftteams/teams-live-events/set-up-for-teams-live-events).
 
 #### Live event settings
 
-> [!div class="mx-imgBorder"]
-> ![Teams live event settings.](./media/teams-webinar-live-event-settings2.png)
+:::image type="content" source="./media/teams-webinar-live-event-settings2.png" alt-text="Teams live event settings.":::
 
 | Setting                                         | Description                                                                                        |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -269,5 +265,3 @@ In scenarios where event record changes aren’t propagated to Teams, the Custom
 ## Viewing the event recording
 
 Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording is available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

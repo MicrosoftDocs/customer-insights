@@ -1,7 +1,7 @@
 ---
 title: Tabs and settings for segments
 description: Learn to navigate tabs and settings for segments in Dynamics 365 Customer Insights - Journeys to optimize your customer targeting.
-ms.date: 10/09/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -51,5 +51,3 @@ Almost all types of entities in Customer Insights - Journeys include a **Related
 
 > [!NOTE]
 > The **Related** tab for segments sometimes includes an entry for **Customer journeys**, but this entry only finds journeys where the current segment is a *suppression segment*. It doesn't find journeys that use the current segment as a target segment. The reason for this is that suppression segments are related directly to the customer journey entity, while target segments are linked to journeys less directly, through a tile configuration, and therefore aren't resolved in the **Related** tab.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

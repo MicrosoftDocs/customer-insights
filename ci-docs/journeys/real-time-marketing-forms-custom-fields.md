@@ -1,7 +1,7 @@
 ---
 title: Create unmapped fields for marketing forms
 description: Mapped and unmapped fields for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/12/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -70,5 +70,3 @@ Unmapped fields and modified mapped fields can be saved for reuse later in other
 Once you add a saved field to canvas and modify it, you can save the changes to the original saved field by selecting the *Update field* button.
 
 The display name of the saved field must be unique. If you enter a display name of an existing field, you'll be prompted if you want to overwrite the existing field.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

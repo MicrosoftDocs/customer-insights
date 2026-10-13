@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Outreach Optimization Agent
 description: Outreach Optimization Agent responsible AI FAQs explain capabilities, intended use, limitations, and operational controls in Customer Insights - Journeys.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: Joni-M
@@ -87,5 +87,3 @@ Effective and responsible use of Outreach Optimization Agent depends on the foll
 - **Journey configuration**: Explicit goals, exit criteria, and scenario selection.
 - **Capacity and infrastructure**: Proper configuration of Copilot Studio capacity and required enablement from AI Hub.
 - **Human-in-the-loop controls**: Users retain ownership of content, goals, and journey design.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

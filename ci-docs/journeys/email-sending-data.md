@@ -1,7 +1,7 @@
 ---
 title: Email sending data access and privileges
 description: Learn how to grant email sending data access in Customer Insights - Journeys, including record-level and Service Reader role permissions for Dataverse entities.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -32,5 +32,3 @@ If there's a data access issue, one of the following errors may occur:
 - During email sending, if the data can't be acquired one of two potential interactions will be shown: either a `MissingDataAccessRights` interaction, or an `Other` interaction specifying `MissingPrivilegesError`.
 
 To resolve the above-listed errors, ensure that the Customer Insights - Journeys user has the necessary access rights to all the entities inside the email by following the steps described above.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

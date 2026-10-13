@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams meetings v2 for Customer Insights - Journeys online events
 description: Learn how to create and host Teams meeting v2 in Customer Insights - Journeys.
-ms.date: 02/05/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -52,5 +52,3 @@ The **Join in Teams** button generates a unique attendee URL for each registrant
 
 > [!IMPORTANT]
 > Synchronization between Teams and Customer Insights - Journeys works in one direction: Customer Insights - Journeys > Teams. The Teams calendar item for your event is read-only. Any changes you make in Teams may be overwritten by Customer Insights - Journeys. Make sure to manage and edit your meeting only from the Customer Insights - Journeys app.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

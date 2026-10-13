@@ -1,7 +1,7 @@
 ---
 title: Public IP addresses used for sending e-mails 
 description: Learn how public IP addresses are used for sending e-mails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/23/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -41,5 +41,3 @@ The Azure IP Ranges and Service Tags document shows the full list of IP ranges t
 
 > [!IMPORTANT]
 > In case of emergency, Microsoft might rotate the geo-based IP addresses. For better reliability and redundancy, allowlist all specified IP ranges.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

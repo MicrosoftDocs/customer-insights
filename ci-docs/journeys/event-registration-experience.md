@@ -1,7 +1,7 @@
 ---
 title: Create an event registration experience in Customer Insights - Journeys
 description: Build a seamless event registration experience using Customer Insights - Journeys. Learn how to create and manage registration forms.
-ms.date: 03/27/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: petrjantac
 ms.author: udag
@@ -90,5 +90,3 @@ An event registration form can generate API requests for the following actions:
 Depending on the configuration, a single form view or submission can result in multiple API calls, which can increase the likelihood of reaching service protection limits under high traffic.
 
 As with marketing forms, service protection limits are evaluated dynamically based on request volume, execution time, and concurrency. As a result, the maximum achievable throughput for event registration forms can vary between environments and event setups.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

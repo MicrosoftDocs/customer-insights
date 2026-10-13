@@ -1,7 +1,7 @@
 ---
 title: Create custom triggers in Customer Insights - Journeys
 description: Learn how to create, integrate, and finalize a custom trigger to start a journey from a customer action on your site or app.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: cmenesatti-m
 ms.author: udag
@@ -78,5 +78,3 @@ Once the integration has been completed, the **Triggers** page shows information
 
 > [!TIP]
 > When you look at the list of triggers, custom triggers have a plain lightning bolt icon :::image type="icon" source="media/real-time-marketing-custom.png":::. Out-of-the-box triggers have a lightning bolt with a suitcase icon :::image type="icon" source="media/real-time-marketing-oob.png":::.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

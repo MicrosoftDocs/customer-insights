@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
 description: The Responsible AI FAQs discuss the general copilot and the key considerations for making use of this technology responsibly.
-ms.date: 06/16/2026
+ms.date: 10/13/2026
 ms.topic: faq
 author: udag
 ms.author: udag
@@ -50,5 +50,3 @@ This capability may be subject to usage limits or capacity throttling. The capab
 Whether this Copilot is available in your environment is controlled by Power Platform administrator settings. [Learn how to add Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 
 When asking Copilot questions about how to use Customer Insights, it's recommended to describe your goal in addition the question itself. For example, "I'm organizing a two day event in a venue. How can I get started with setting up registration for it?" Clearly identify which page you want to navigate to. For example, "Take me to _page name_," such as "Take me to Accounts."
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

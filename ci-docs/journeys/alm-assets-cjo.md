@@ -1,7 +1,7 @@
 ---
 title: Application lifecycle management for digital assets
 description: Describes how to use an application lifecycle management (ALM) for digital assets in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/24/2024
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -88,5 +88,3 @@ If you export and then import a solution for emails without first exporting or i
 - *Can I delete digital assets from the source environment after migration?*
     
     It’s not possible to delete files from managed solutions. The reason is to ensure that your solution doesn’t have references to the deleted assets that leave you with orphan dependency. For example, emails that have a reference to digital asset. If you wish to delete digital assets, you have to delete the managed solution.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

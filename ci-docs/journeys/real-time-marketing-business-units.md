@@ -1,7 +1,7 @@
 ---
 title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -72,5 +72,3 @@ For more information on how business unit separation affects insights and activa
 ### See also
 
 [Domain authentication for modernized business units](domain-authentication.md#domain-authentication-for-modernized-business-units)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Record and publicize sponsorship details
 description: Register event sponsors and sponsorable articles, and track sponsorship type, value, and details in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/29/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -18,5 +18,3 @@ search.audienceType:
 [Open the Events work area](open-events.md) and go to **Events** > **Sponsorship Management** > **Sponsorships** to view, edit, and create sponsorship records. Each record here must be associated with an event record, and the sponsoring company (account record) must also be stored in Dynamics 365 Customer Insights - Journeys. Each record can also include information about the sponsorship deal itself, including the sponsorship type (money, services, or equipment), sponsorship value, and other details. If any sponsored articles are associated with this sponsorship, they are also listed here.
 
 You can also set up *Sponsorable articles*, which are items that are visibly present at the event, and feature a sponsor's logo or message. These typically include small freebies given away to event attendees, but could also be some type of infrastructure or facility provided to event-goers. Go to **Events** > **Sponsorship Management** > **Sponsorable articles** to view, edit, and create these records. Each sponsorable article record must relate to a parent sponsorship record (which identifies the sponsoring company and the event) and include price and quantity information.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Get an overview of forms in Dynamics 365 Customer Insights - Journeys, including form types, templates, and service protection limits.
-ms.date: 08/11/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: petrjantac
 ms.author: udag
@@ -108,5 +108,3 @@ To create a new custom form, navigate to the **Templates** section in the left s
 - [Form capture](real-time-marketing-form-capture.md): Get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor
 - [Customize form submission validation](real-time-marketing-form-customize-submission-validation.md)
 - [Customize form editor](developer/extend-ui.md): Add additional attributes to your form settings
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

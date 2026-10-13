@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 09/09/2025
+ms.date: 10/13/2026
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: udag
@@ -85,5 +85,3 @@ This isn't possible today. Trial licenses only work on trial-type environments i
 ## Trial platform FAQ
 
 [!INCLUDE [trial-faq-platform](./includes/trial-faq-platform.md)]
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

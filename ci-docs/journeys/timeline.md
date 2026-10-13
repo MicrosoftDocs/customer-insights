@@ -1,7 +1,7 @@
 ---
 title: Customer interactions timeline
 description: View historical customer interactions in Dynamics 365 Customer Insights - Journeys. Learn how to configure the timeline for a unified view of activities.
-ms.date: 06/17/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: colinbirkett
@@ -39,15 +39,13 @@ To add the custom connector to your timeline component through the [Power Apps m
 1. Open your custom contact or lead form and select the timeline component in the form.
 1. To add a new custom connector, in the **Properties** pane for the timeline component, go to **Custom connectors** and select **Add connector**.
     
-    > [!div class="mx-imgBorder"]
-    > ![Add a connector.](media/real-time-marketing-add-custom-connector.png "Add a connector")
+    :::image type="content" source="media/real-time-marketing-add-custom-connector.png" alt-text="Add a connector.":::
 
 1. The **New custom connector** pane is displayed. Add the following details and select **Save**:
     - **Constructor**: `msdynmkt_DynamicsMktTimelineInteractionAnalytics.TimelineInteractionAnalyticsResource`
     - **Resource path**: `msdynmkt_DynamicsMktTimelineInteractionAnalytics`
 
-    > [!div class="mx-imgBorder"]
-    > ![Custom connector details.](media/real-time-marketing-connector-details.png "Custom connector details")
+    :::image type="content" source="media/real-time-marketing-connector-details.png" alt-text="Custom connector details.":::
 
 1. The custom connector is now added to the timeline component. Select **Save** and then **Publish** to publish your custom contact or lead form. The timeline in your custom contact or lead form now shows the marketing interactions.
 
@@ -55,8 +53,7 @@ For more information, see [Use custom connectors with the timeline control](/pow
 
 ## Key capabilities of the timeline
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of new timeline view.](media/whats-new-timelineview.png "Screenshot of new timeline view")
+:::image type="content" source="media/whats-new-timelineview.png" alt-text="Screenshot of new timeline view.":::
 
 - Along with activities from Dynamics 365 Sales and Customer Service, you can view interactions based on activities from Customer Insights - Journeys. This includes interactions across the following marketing activities:
     - Emails
@@ -82,5 +79,3 @@ For more information, see [Use custom connectors with the timeline control](/pow
 
 > [!NOTE]
 > The timeline shows real-time marketing activities from the past year for the selected contact or lead.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

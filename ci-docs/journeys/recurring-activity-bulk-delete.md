@@ -1,7 +1,7 @@
 ---
 title: Recurring activity bulk deletion
 description: "For administrators: Recurring bulk deletion system jobs for Dynamics 365 Customer Insights - Journeys."
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: concept-article
 author: udag
 ms.author: udag
@@ -26,13 +26,10 @@ To prevent the database size from increasing indefinitely, we have created recur
 - *Microsoft.Dynamics.Crm.Marketing.ActivityBulkDeleteJob* to clear marketing activities.
 - *Microsoft.Dynamics.EventManagement.ActivityBulkDeleteJob* to clear event management-specific activities.
 
-> [!div class="mx-imgBorder"]
-> ![Deployed bulk activity deletion job on a customer instance.](media/bulk-activity-deletion.png)
+:::image type="content" source="media/bulk-activity-deletion.png" alt-text="Deployed bulk activity deletion job on a customer instance.":::
 
 ## Options to manually clear the table
 
 The marketing activity table varies in size, depending on your Customer Insights - Journeys usage. If you are creating a large number of marketing activities, you may want to clear the table more frequently than every seven days.
 
 To clear the table more frequently, you can create additional recurring bulk deletion jobs. The table is safe to be truncated at any time. All data can be cleared, regardless of the age of the data. Data processing is synchronous; only successfully executed activities are stored.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
