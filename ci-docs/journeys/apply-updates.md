@@ -1,7 +1,7 @@
 ---
 title: Keep Customer Insights - Journeys up to date
 description: Find out when an update for one or more Dynamics 365 Customer Insights - Journeys solutions is available and apply the update.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -88,5 +88,3 @@ To update shared (non-core Customer Insights - Journeys) solutions, including Cu
 If you have created a [Portal hosted event website](./developer/portal-hosted.md), you must [manually overwrite your sample website with the latest version](./developer/manually-overwriting-sample-website.md) to maintain functionality after applying any Customer Insights - Journeys update.
 
 If your event website is [self-hosted](./developer/self-hosted.md), you must [install the latest self-hosted sample website](./developer/event-management-web-application.md) to maintain functionality after applying any Customer Insights - Journeys update.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

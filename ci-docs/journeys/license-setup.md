@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -130,5 +130,3 @@ Each time you create a self-service trial, a license is created and isn't remove
 ### Why does usage on sandbox environments count against my entitlement?
 
 - The concept of sandbox and production environment types exists to support platform application lifecycle management features and doesn't intersect with any consumption usage metrics. Dynamics 365 Customer Insights, Dataverse add-ons, and other licenses are specified at the tenant level explicitly to capture usage across any and all environments of any and all types. Microsoft accrues the cost of database storage and transactions regardless of the environment type and therefore doesn't make any distinctions about usage by environment type with regard to entitlements. Entitlements are tenant-level, which is the sum of all usage at the tenant level, regardless of environment type.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

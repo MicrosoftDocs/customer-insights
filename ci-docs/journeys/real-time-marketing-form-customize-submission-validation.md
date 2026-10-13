@@ -1,7 +1,7 @@
 ---
 title: Customize form submission validation
 description: Learn how to extend the back-end validation of form submission in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/22/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -205,5 +205,3 @@ The client-side validation in marketing and event registration forms helps to en
 When a form with the `data-validate-submission` attribute is submitted, your custom plugin runs and validates the reCAPTCHA response with Google services. The custom plugin runs after the default Microsoft validation plugin. If there are no Microsoft captcha fields in the form, the Microsoft plugin sets `IsValid:false` and the submission fails unless you overwrite it with `IsValid:true`.
 
 :::image type="content" source="media/real-time-marketing-form-custom-captcha-6.png" alt-text="Validation flow." lightbox="media/real-time-marketing-form-custom-captcha-6.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

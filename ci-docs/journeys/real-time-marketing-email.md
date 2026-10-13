@@ -1,7 +1,7 @@
 ---
 title: Create Customer Insights - Journeys emails
 description: Discover how to use the Customer Insights - Journeys email editor to create dynamic, personalized emails with advanced features like AI image suggestions.
-ms.date: 04/16/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -37,8 +37,7 @@ The Customer Insights - Journeys email editor has a new assist edit control to b
 1. The content designer highlights personalized dynamic text.
 1. See and edit all dynamic text in the **Personalize** tab in the **Toolbox**.
 
-> [!div class="mx-imgBorder"]
-> ![Email editor screenshot.](media/real-time-marketing-email-editor.png "Email editor screenshot")
+:::image type="content" source="media/real-time-marketing-email-editor.png" alt-text="Email editor screenshot.":::
 
 ### Link to documents and videos stored in the asset library
 
@@ -49,8 +48,7 @@ Add feature-rich links to emails by directly linking to documents stored in the 
 1. To link to a document in the image library, select **Choose a file**, then select **Browse library**, and choose the file.
 1. Alternatively, you can upload a new file to link to by selecting **Upload to library**.
 
-> [!div class="mx-imgBorder"]
-> ![File select screenshot.](media/real-time-marketing-email-file-link.png "File select screenshot")
+:::image type="content" source="media/real-time-marketing-email-file-link.png" alt-text="File select screenshot.":::
 
 ### Working with image versions in emails
 
@@ -73,8 +71,7 @@ By default, the email adds a specific version of the image because it contains a
 
 Using text, images, or buttons in the Customer Insights - Journeys email editor, you can link to surveys, events, or marketing pages. You can also create text, button, or image links that allow recipients to join a Microsoft Teams event or that create a new calendar item.
 
-  > [!div class="mx-imgBorder"]
-  > ![Screenshot of link options for Customer Insights - Journeys email.](media/real-time-marketing-email-button2.png "Screenshot of link options for Customer Insights - Journeys email")
+  :::image type="content" source="media/real-time-marketing-email-button2.png" alt-text="Screenshot of link options for Customer Insights - Journeys email.":::
 
 The **Link to** dropdown allows the following options for Teams check-ins and calendar items:
 
@@ -98,13 +95,11 @@ To preview content for a specific audience member:
 1. In the **Audience data** side pane, select a sample audience member.
 1. To verify that default values for all dynamic text are set up correctly, don't select any audience member record. The preview will show the default values.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the preview and test tab in the email designer tool.](media/real-time-marketing-better-preview-and-test.png "Screenshot of the preview and test tab in the email designer tool.")
+:::image type="content" source="media/real-time-marketing-better-preview-and-test.png" alt-text="Screenshot of the preview and test tab in the email designer tool.":::
 
 To preview personalized content sourced from a trigger, follow the steps above and select or enter the trigger data. Below is an example where the email will be sent when the business trigger “Incident is created” is raised and will include the incident number and title (data that comes from the trigger).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of an email preview showing incident creation details, including the incident number and title.](media/real-time-marketing-incident-creation.png "Screenshot of an email preview showing incident creation details, including the incident number and title.")
+:::image type="content" source="media/real-time-marketing-incident-creation.png" alt-text="Screenshot of an email preview showing incident creation details, including the incident number and title.":::
 
 > [!NOTE]
 > For dynamic text that isn't bound to the audience, you can enter sample values to see how the content will look. You can also override the actual data that comes from the selected audience record or trigger. To override the data, select **Enter manually** for the chosen item and provide your own value. This is a quick and easy way to check for edge cases.
@@ -118,5 +113,3 @@ Emails are stored as HTML and are limited to a maximum size of 1 MB. To ensure c
 ### See also
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Set up quiet times to prevent messages from being sent during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 01/09/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -121,8 +121,7 @@ You can set up specific quiet dates when you don't want any messages to be sent,
 
 The first time you create and save a quiet time setting, the system asks if you wish to apply it to all existing journeys and messages. If you select **Apply to all**, the system applies the quiet time setting to all compliance profiles. If you select **Decide later**, you can add the quiet time setting directly to any compliance profiles you want later. Once a quiet time has been added to a compliance profile, all messages designated with that compliance profile respect the quiet times configured.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.](media/real-time-marketing-quiet-times-initial-save.png "Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.")
+:::image type="content" source="media/real-time-marketing-quiet-times-initial-save.png" alt-text="Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.":::
 
 ## Quiet times and frequency caps
 

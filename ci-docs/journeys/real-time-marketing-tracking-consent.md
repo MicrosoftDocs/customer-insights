@@ -1,7 +1,7 @@
 ---
 title: Configure Tracking Consent in Customer Insights - Journeys
 description: Learn how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to support privacy requirements for tracking pixels in email.
-ms.date: 10/06/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -74,5 +74,3 @@ So when you set the **Tracking** purpose to **Restrictive**, expect the drop in 
 [Manage consent for email, SMS (text), and custom channel messages](real-time-marketing-email-text-consent.md)  
 [Customer Insights - Journeys link tracking mechanics](real-time-marketing-link-tracking-mechanics.md)  
 [Customize your preference centers](real-time-marketing-preference-centers.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

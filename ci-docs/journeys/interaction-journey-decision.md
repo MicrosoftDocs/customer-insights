@@ -1,7 +1,7 @@
 ---
 title: Personalize messages with web interaction data
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/03/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: udag
@@ -116,5 +116,3 @@ In both cases, define conditions based on webpage URL, webpage title, and other 
   - keyboardSpace: "KSpace"
 - Action is outbound (`msdynci_actionisoutbound`): Whether the user’s click leads to a destination outside the current domain (for example, false).
 - Click coordinates (`msdynci_clickcoordinates`): The exact click location on the webpage (for example, 23456).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

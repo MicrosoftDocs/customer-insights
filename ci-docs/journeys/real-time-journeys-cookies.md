@@ -1,7 +1,7 @@
 ---
 title: How real-time journeys uses cookies
 description: Understand the deployment and management of cookies in real-time journeys for personalized customer interactions.
-ms.date: 05/14/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: colinbirkett
@@ -69,5 +69,3 @@ function disableCookiesUsage() {
 ```
 
 This action requires you to reload the page. Please note that without nonessential cookies, real-time journeys' web tracking capabilities are limited and you can't orchestrate personalized experiences for your customers.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

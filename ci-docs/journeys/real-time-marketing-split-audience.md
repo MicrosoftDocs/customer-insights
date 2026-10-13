@@ -1,7 +1,7 @@
 ---
 title: Split your audience into groups
 description: Learn how to split your audience into groups to deliver customer experiences in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/02/2024
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -39,5 +39,3 @@ The other difference is that an attribute branch permanently forks the journey i
 Similar to an attribute branch, segments rely on attributes of customers, so they're useful only when you need to create groups of customers who share certain attributes. Segment-based journeys are best for providing different experiences, whereas split allows you to provide a differentiated experience for a small part of the journey.
 
 Learn more about journey tiles: [Add an action in a journey](add-action.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

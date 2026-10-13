@@ -1,7 +1,7 @@
 ---
 title: When to use attribute versus if/then branches
 description: Learn the difference between attribute branches and if/then branches, and see use cases for choosing the right one in your journey.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -48,5 +48,3 @@ Finally, let’s assume you are creating a journey for customers that raise a su
 You can use an if/then branch to wait for a survey email open event. If you set the limit for one day, the if/then branch will wait for the customer to open the email within that one day. If the customer opens the email, they are funneled down the **yes** branch, otherwise they go in the **no** branch.
 
 :::image type="content" source="media/real-time-marketing-branches-if-then.png" alt-text="Screenshot of an if/then branch waiting one day for a customer to open a survey email." lightbox="media/real-time-marketing-branches-if-then.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Pause and resume a journey
 description: Learn how to pause and resume a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -64,5 +64,3 @@ While a journey is paused, you can make edits using the same capabilities availa
 ## Example scenario
 
 A national bank runs a campaign to contact borrowers at risk of foreclosure. When a hurricane strikes, the bank pauses the journey to avoid appearing insensitive. After the emergency passes, the bank resumes the journey without needing to rebuild or resegment the audience.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

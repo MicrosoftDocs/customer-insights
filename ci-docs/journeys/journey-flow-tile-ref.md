@@ -1,7 +1,7 @@
 ---
 title: Understanding the flow of a journey
 description: Learn about journey flow and tiles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/28/2024
+ms.date: 10/13/2026
 ms.topic: concept-article
 author: colinbirkett
 ms.author: colinbirkett
@@ -22,5 +22,3 @@ The journey start configuration lets you define how customers can start the jour
 ## Journey end
 
 By default, customers end the journey when they complete all the steps. You can set additional ways for customers to exit the journey by using triggers or segments such as when an event occurs. For more information, see [End a journey](journey-end.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

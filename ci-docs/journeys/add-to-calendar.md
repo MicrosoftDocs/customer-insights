@@ -1,7 +1,7 @@
 ---
 title: Generate iCalendar files for events and sessions
 description: Set up an Add to Calendar email button and customize iCalendar descriptions for events and sessions in Customer Insights - Journeys.
-ms.date: 07/16/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -53,5 +53,3 @@ Each event or session in the iCalendar file contains a configurable description.
 ## Streamed event check-ins
 
 For streamed events, a check-in button is automatically added to the iCalendar file description if the calendar content is empty. You can remove the check-in button or add a new button with the link set to the following wildcard: `{{msevtmgt_checkin_url}}`. The wildcard is converted to a personalized check-in link for the streamed event when the contact downloads the iCalendar file.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

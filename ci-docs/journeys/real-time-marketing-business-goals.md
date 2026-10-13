@@ -1,7 +1,7 @@
 ---
 title: Set a business goal and measure progress through a journey
 description: Learn how to create a business goal for a journey, set a target, and measure progress using count or percentage metrics.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -86,5 +86,3 @@ If a customer is part of two journeys with the same goal and the customer hits t
 
 1. The journey goal only counts unique profiles. Unique profiles are the number of unduplicated (counted only once) people that enter the journey. This means that in cases where the journey is repeating, the total inflow won’t match the number of unique profiles with which the goal attainment is calculated. For example, assume you want to create a repeating journey that measures how many people send you an interest form after your weekly webinars. The app will record the *first* time an attendee fills out the form, but it will not record any other forms the attendee might fill out as long as they return to the same journey.
 1. The journey can't use any of the Dataverse triggers as a goal. For example, this means that you can't use goals to measure how many incidents created are now resolved.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

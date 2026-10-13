@@ -1,7 +1,7 @@
 ---
 title: Open a Power Apps customization window
 description: "Learn how to open the Power Apps customization window in Dynamics 365 Customer Insights - Journeys to customize model-driven apps like forms and views."
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -24,6 +24,3 @@ Most types of customizations require you to work in the **Power Apps** customiza
     :::image type="content" source="media/calendar-powerapps.png" alt-text="Screenshot of the Power Apps customization window showing the navigation tree on the left and settings pane on the right." lightbox="media/calendar-powerapps.png":::
 
 For complete details about how to customize model-driven apps in Dynamics 365, see the [Power Apps documentation](/powerapps/?panel=getstarted#pivot=home).
-
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

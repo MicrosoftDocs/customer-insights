@@ -1,7 +1,7 @@
 ---
 title: Create conversational journeys
 description: Conversational journeys in Dynamics 365 Customer Insights let you design voice call experiences using Contact Center integration. Learn how to set up and branch journeys.
-ms.date: 05/07/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd-msft
 ms.author: udag
@@ -125,5 +125,3 @@ In Customer Insights - Journeys, quiet times are configurable time windows durin
 Quiet times are useful because they prevent calls from being placed during inappropriate hours (for example, late at night or early morning), which could otherwise lead to customer dissatisfaction or legal penalties.
 
 To learn about how to create and manage quiet times, see [Set quiet times to prevent messages from sending during unwanted hours](real-time-marketing-quiet-times.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

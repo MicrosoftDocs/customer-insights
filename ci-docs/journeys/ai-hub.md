@@ -1,7 +1,7 @@
 ---
 title: Introduction to AI Hub in Customer Insights – Journeys (preview)
 description: AI Hub in Customer Insights – Journeys lets admins manage AI agents, prerequisites, and limits for an environment. Learn how to enable and govern these features.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -124,5 +124,3 @@ If any mandatory prerequisite is no longer accepted in the Power Platform Admin 
 
 - All enabled agents are *automatically disabled*.
 - Agents remain unavailable until the prerequisite is accepted again.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

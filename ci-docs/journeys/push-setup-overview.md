@@ -1,7 +1,7 @@
 ---
 title: Push notification overview for application developers
 description: Learn how push notifications work in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/14/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -61,5 +61,3 @@ When a journey runs and tries to send a push notification to a user, Customer In
 To report on sending and interaction metrics for push notifications within Customer Insights - Journeys, you need to configure the application to send this information back to the Customer Insights - Journeys API.
 
 View full details about send and interaction reporting in [Push notification send and interaction reporting](developer-notifications.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

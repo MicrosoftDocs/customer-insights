@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/29/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -79,8 +79,7 @@ Here are the steps that you need to follow to enable double opt-in for the compl
 > [!IMPORTANT]
 > After reviewing the Double Opt-In email and journey and adjusting the settings, make sure to enable the toggle in the General section of the Double Opt-In tab. The feature remains inactive until this toggle is turned on
 
-> [!div class="mx-imgBorder"]
-> ![Set up double opt-in.](media/real-time-marketing-double-opt-in-setup.png)
+:::image type="content" source="media/real-time-marketing-double-opt-in-setup.png" alt-text="Set up double opt-in.":::
 
 To ensure proper handling of the double opt-in process, each form can only include elements from one compliance profile at a time.
 
@@ -167,5 +166,3 @@ There could be multiple things affecting the setup of double opt-in for your com
 ***What happens when an existing contact or lead submits a double opt-in enabled form?***
 
 Unless the user confirms their preferences, by clicking on the button in the confirmation email sent to contacts, none of the entries made during form submission by contacts are reflected on their record in the system.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

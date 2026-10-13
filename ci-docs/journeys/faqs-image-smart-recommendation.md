@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for smart image recommendations
 description: Smart image recommendations in Customer Insights - Journeys suggest relevant library images for email and message content with human review.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: udag
@@ -44,5 +44,3 @@ The system can't suggest relevant images if it can't find matching images in the
 Follow these practices to get the most from smart image recommendations:
 1. Add your content, such as email text, before you add the image.
 1. Review suggested images before you use them in your marketing content.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

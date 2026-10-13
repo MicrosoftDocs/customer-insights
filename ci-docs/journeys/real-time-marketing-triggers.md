@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys triggers 
 description: Learn about triggers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -57,5 +57,3 @@ Business triggers represent changes in Dynamics 365 applications like Sales or S
 - *Marketing form submitted*
 
 You can also create your own triggers based on any Dataverse record change. Learn more: [Trigger a journey based on a Dataverse record change](real-time-marketing-dataverse-trigger.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

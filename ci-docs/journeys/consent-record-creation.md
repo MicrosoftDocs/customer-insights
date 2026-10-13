@@ -1,7 +1,7 @@
 ---
 title: Create a consent record using a cloud flow
 description: Create consent records in Dynamics 365 Customer Insights - Journeys using a cloud flow. Automate consent management and ensure compliance. Learn how to set it up.
-ms.date: 06/20/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -191,5 +191,3 @@ To avoid this, use the “Reason description” field. Specify a unique value fo
 ### Managing ALM for the cloud flow
 
 If you have multiple environments (dev, test/QA, production, and so on) and need your cloud flow to stay consistent across environments, create the cloud flow in a solution. For more information, see [Create a cloud flow in a solution](/power-automate/create-flow-solution).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

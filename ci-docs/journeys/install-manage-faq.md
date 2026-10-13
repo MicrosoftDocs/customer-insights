@@ -1,7 +1,7 @@
 ---
 title: Installation and environment management FAQ
 description: Get answers to frequently asked questions about Customer Insights - Journeys installation, upgrades, and environment management.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: faq
 author: udag
 ms.author: udag
@@ -30,5 +30,3 @@ Keeping Customer Insights - Journeys up to date ensures that customers enjoy the
 ## How can customers ensure the upgrade order for their organizations?
 
 Upgrades are delivered by our system automatically. We cannot guarantee the order of upgrades between organizations. For customers who want to upgrade certain organizations before others, we recommend upgrading the organizations manually following the procedures in [Keep Customer Insights - Journeys up to date](apply-updates.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

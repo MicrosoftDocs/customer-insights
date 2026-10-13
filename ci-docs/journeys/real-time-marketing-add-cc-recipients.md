@@ -1,7 +1,7 @@
 ---
 title: Add email carbon copy recipients to journeys
 description: Enable and use the CC feature in Dynamics 365 Customer Insights - Journeys. Follow our guide to add up to five CC recipients to your emails.
-ms.date: 11/22/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -39,28 +39,21 @@ You can add carbon copy (CC) recipients to your journeys when sending emails. Wh
 The CC feature is disabled by default. To enable the feature:
 
 1. Go to **Settings** and select **Feature Switches**.
-    > [!div class="mx-imgBorder"]
-    > ![Select feature switches from settings.](media/real-time-email-cc-settings-feature-switches.png "Select feature switches from settings")
+    :::image type="content" source="media/real-time-email-cc-settings-feature-switches.png" alt-text="Select feature switches from settings.":::
 
 2. Enable the feature in the Customer Journey section.
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of enabling the feature switch.](media/real-time-email-cc-enable-feature.png "Screenshot of enabling the feature switch")
+    :::image type="content" source="media/real-time-email-cc-enable-feature.png" alt-text="Screenshot of enabling the feature switch.":::
 
 ## How to use the CC feature in customer journeys
 
 1. In your journey, select the **Send an email** action.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot choosing the Send an email action.](media/real-time-email-cc-send-email.png "Screenshot choosing the Send an email action")
+    :::image type="content" source="media/real-time-email-cc-send-email.png" alt-text="Screenshot choosing the Send an email action.":::
 
 1. Select the **Select a recipient** to dynamically select the CC recipient. You have to select the relation to your target audience (contact or lead).
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the recipient selection.](media/real-time-email-cc-select-recipient.png "Screenshot showing the recipient selection")
+    :::image type="content" source="media/real-time-email-cc-select-recipient.png" alt-text="Screenshot showing the recipient selection.":::
 
 1. Select up to five recipients. Make sure you're selecting entities that contain email addresses. If you select an entity that doesn't contain an email, it's ignored when sending the email.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing five recipients selected.](media/real-time-email-cc-select-recipient-up-to-5.png "Screenshot showing five recipients selected")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+    :::image type="content" source="media/real-time-email-cc-select-recipient-up-to-5.png" alt-text="Screenshot showing five recipients selected.":::

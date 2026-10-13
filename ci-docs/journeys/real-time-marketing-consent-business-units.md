@@ -1,7 +1,7 @@
 ---
 title: Consent management for business units
 description: Learn how consent is managed across business units in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/29/2024
+ms.date: 10/13/2026
 ms.topic: reference
 author: anubhav-t
 ms.author: udag
@@ -69,5 +69,3 @@ In the case where a consent record has to be updated because the end user modifi
 ### See also
 
 [Business unit scoping in Customer Insights - Journeys](real-time-marketing-business-units.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

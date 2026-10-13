@@ -1,7 +1,7 @@
 ---
 title: Edit live segments used in live journeys (preview)
 description: Learn how to edit a segment that's used by a live journey in Dynamics 365 Customer Insights - Journeys, without stopping the journey or creating a new journey version.
-ms.date: 10/09/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -29,8 +29,7 @@ Live segment editing is off by default. An administrator must turn it on.
 1. Under **Segmentation**, set **Edit live segments used in live journeys** to **On**.
 1. Select **Save** in the upper-right corner.
 
-> [!div class="mx-imgBorder"]
-> ![The Segmentation section of the Feature switches page with the Edit live segments used in live journeys switch turned on.](media/edit-live-segment-feature-switch.png "Turn on the live segment editing feature switch")
+:::image type="content" source="media/edit-live-segment-feature-switch.png" alt-text="The Segmentation section of the Feature switches page with the Edit live segments used in live journeys switch turned on.":::
 
 While the switch is off, the previous behavior applies: you can't edit segments that journeys or other segments depend on.
 
@@ -70,13 +69,11 @@ When live journeys or other segments depend on the segment, Customer Insights - 
 
 1. Select the **More commands** ellipsis, and then select **Edit**.
 
-   > [!div class="mx-imgBorder"]
-   > ![The More commands menu on a segment record, with the Edit command highlighted.](media/edit-live-segment-edit-command.png "Select Edit from the More commands menu")
+   :::image type="content" source="media/edit-live-segment-edit-command.png" alt-text="The More commands menu on a segment record, with the Edit command highlighted.":::
 
    The **Edit in-used segment** dialog lists the live journeys that use this segment and any segments that include it. Review the list to confirm you understand what your change affects. Selecting a journey or segment in the list opens it in a new tab, so you don't lose your place.
 
-   > [!div class="mx-imgBorder"]
-   > ![The Edit in-used segment dialog listing the dependent journeys and compound segments, with the Continue button.](media/edit-live-segment-dependency-dialog.png "Review the journeys and segments that depend on this segment")
+   :::image type="content" source="media/edit-live-segment-dependency-dialog.png" alt-text="The Edit in-used segment dialog listing the dependent journeys and compound segments, with the Continue button.":::
 
 1. Select **Continue**.
 
@@ -86,8 +83,7 @@ When live journeys or other segments depend on the segment, Customer Insights - 
 
    Your changes are local to your browser session until you save them. Anyone else who opens this segment while you're working sees the original definition, not your unsaved changes.
 
-   > [!div class="mx-imgBorder"]
-   > ![The segment builder in the editing state, showing the Finish editing and Discard changes commands.](media/edit-live-segment-editing-state.png "The segment stays live while you edit it")
+   :::image type="content" source="media/edit-live-segment-editing-state.png" alt-text="The segment builder in the editing state, showing the Finish editing and Discard changes commands.":::
 
 1. Select **Finish editing**.
 
@@ -98,8 +94,7 @@ When live journeys or other segments depend on the segment, Customer Insights - 
    - **Journeys without changes**, listing the journeys that aren't affected, so you can see at a glance which campaigns actually shift.
    - **Compound segments**, listing any segments that include this segment and are therefore also affected.
 
-   > [!div class="mx-imgBorder"]
-   > ![The Preview member changes and save dialog showing the member count estimate and the affected journeys grid.](media/edit-live-segment-impact-dialog.png "Preview how your change affects journeys and segments")
+   :::image type="content" source="media/edit-live-segment-impact-dialog.png" alt-text="The Preview member changes and save dialog showing the member count estimate and the affected journeys grid.":::
 
 1. Choose how to proceed:
 
@@ -109,8 +104,7 @@ When live journeys or other segments depend on the segment, Customer Insights - 
    | **Create a copy** | Saves your changes as a new segment and leaves the original untouched. Use this when you want to keep the live campaign exactly as it is. |
    | **Cancel** | Closes the dialog and returns you to editing. To abandon your changes entirely, select **Discard changes** in the command bar. |
 
-   > [!div class="mx-imgBorder"]
-   > ![The Save, Create a copy, and Cancel options at the bottom of the Preview member changes and save dialog.](media/edit-live-segment-save-options.png "Choose how to apply your changes")
+   :::image type="content" source="media/edit-live-segment-save-options.png" alt-text="The Save, Create a copy, and Cancel options at the bottom of the Preview member changes and save dialog.":::
 
 > [!IMPORTANT]
 > Your changes only exist in your browser until you select **Save** or **Create a copy**. If you navigate away or close the tab, they're discarded. The **Editing** state you see while working isn't saved to the segment record, so the segment never appears to be stuck mid-edit for other users.
@@ -126,8 +120,7 @@ Before changing a segment, check what depends on it. Open the segment and review
 
 The same information appears in the dialog when you select **Edit**, so you can review it without leaving the editing flow.
 
-> [!div class="mx-imgBorder"]
-> ![The Used in journey side pane listing three live journeys with their type, version, and start date.](media/edit-live-segment-usage-panel.png "See which journeys use a segment")
+:::image type="content" source="media/edit-live-segment-usage-panel.png" alt-text="The Used in journey side pane listing three live journeys with their type, version, and start date.":::
 
 ## Update a segment without creating a new journey version
 
@@ -186,8 +179,7 @@ The chart lines record only *when* a change was saved. Neither the lines nor the
 
 This information appears for every segment, not only for segments edited while they're live.
 
-> [!div class="mx-imgBorder"]
-> ![The Segment size chart with a Current edit marker line, next to the segment details pane showing the last query change time and author.](media/edit-live-segment-change-timestamps.png "Find out when a segment was last changed and who changed it")
+:::image type="content" source="media/edit-live-segment-change-timestamps.png" alt-text="The Segment size chart with a Current edit marker line, next to the segment details pane showing the last query change time and author.":::
 
 > [!TIP]
 > If a journey's audience changes unexpectedly, compare the **Current edit** timestamp against when the change in membership appeared. If membership shifted shortly after that timestamp, a segment edit is the likely cause, and the side pane tells you who to ask about it.
@@ -246,5 +238,3 @@ Learn more: [Use Customer Insights - Data profiles and segments in Customer Insi
 - [Segmentation overview](real-time-marketing-segments.md)
 - [Edit email components in a live journey](edit-email-in-live-journey.md)
 - [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

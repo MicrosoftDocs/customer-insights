@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
 description: Receiving push notifications on mobile devices is easy with Customer Insights - Journeys. Learn how to parse and handle notifications on iOS and Android.
-ms.date: 05/29/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: udag
@@ -307,5 +307,3 @@ Handle the application open through the notification in `MainActivity` to obtain
 ```
 
 ---
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

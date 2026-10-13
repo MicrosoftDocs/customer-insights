@@ -1,7 +1,7 @@
 ---
 title: Connect rich customer data from multiple sources
 description: Learn how to integrate Dynamics 365 Customer Insights - Data profiles and segments with Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -33,5 +33,3 @@ Learn more: [Use Customer Insights - Data profiles and segments in Customer Insi
 You aren't limited to cloud storage if you want to use Customer Insights - Data with Customer Insights - Journeys. If you already have your own Azure Data Lake Storage set up, you can connect with Customer Insights - Data, then share the data with the Customer Insights - Journeys app just as you would with a cloud-based setup.
 
 Learn more: [Enable data sharing with Dataverse from your own Azure Data Lake Storage](/dynamics365/customer-insights/data/own-data-lake-storage#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

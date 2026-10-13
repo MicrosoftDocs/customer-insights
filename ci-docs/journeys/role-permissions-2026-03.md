@@ -1,7 +1,7 @@
 ---
 title: Permission changes in the March 2026 release (version 1.1.62960.43)
 description: Out-of-the-box role permissions added, removed, or updated in the March 2026 release of Customer Insights - Journeys are documented in this changelist.
-ms.date: 08/05/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd
 ms.author: udag
@@ -518,5 +518,3 @@ _None_
 | msdynmkt_featureconfiguration | Local → Global |  |  |  |  |
 | msdynmkt_marketingform |  |  |  |  | (added) → Local |
 | msdynmkt_marketingformtemplate |  | (added) → Local | (added) → Local | (added) → Local |  |
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

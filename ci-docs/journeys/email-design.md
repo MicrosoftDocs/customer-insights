@@ -1,7 +1,7 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -57,8 +57,7 @@ Themes allow you to control the style of email elements such as fields, buttons,
 
 To edit the style of email elements, select the theme (brush) icon in the right pane, then select the element type from the theme section. Choose from input fields, buttons, text, labels, or error messages. Once you select an element type, customize its properties such as font, color, size, border, and background. You can preview the changes in the email editor.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the theme functionality area.](media/email-theme-button.png "Screenshot of the theme functionality area")
+:::image type="content" source="media/email-theme-button.png" alt-text="Screenshot of the theme functionality area.":::
 
 ## Make basic and required settings
 

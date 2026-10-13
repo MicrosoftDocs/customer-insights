@@ -1,7 +1,7 @@
 ---
 title: Best practices for email marketing
 description: How to design and send marketing email messages that avoid spam filters and get opened by customers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/01/2026
+ms.date: 10/13/2026
 ms.topic: best-practice
 author: udag
 ms.author: udag
@@ -116,5 +116,3 @@ When we notice that a Customer Insights - Journeys environment is generating a h
 If the bounce rate or spam complaint problem persists for more than a few days, and if the administrator has still not contacted Microsoft Support, we move the Customer Insights - Journeys environment to a high-risk sending pool. The high-risk sending pool has a lower reputation score than the standard high-deliverability sending pool.
 
 When a Customer Insights - Journeys environment is moved to the high-risk sending pool, we send an email to the administrator to inform them of the sending pool change and to urge them to [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. It may still be possible for the Customer Insights - Journeys environment to return to the low-risk sending pool, but not before the administrator contacts Microsoft Support to address the issue.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

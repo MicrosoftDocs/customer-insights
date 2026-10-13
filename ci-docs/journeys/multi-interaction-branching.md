@@ -1,7 +1,7 @@
 ---
 title: Tailor follow-up strategies by leveraging multiple customer actions at once
 description: Learn how to tailor follow-up strategies by leveraging multiple customer actions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -47,5 +47,3 @@ These examples show how Contoso Coffee uses multi-interaction branching to deliv
 
 > [!Note]
 > You might notice that not all [interaction triggers][real-time-marketing-triggers.md#interaction-triggers] show up when you use this feature to make journey branching decisions. This is a known issue that can affect some orgs. For a quick fix, raise a support ticket.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Use natural language in journeys
 description: Learn how to use natural language in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -22,8 +22,7 @@ Natural language input enables you to use common words and phrases to describe a
 1. A side pane titled **Attribute** will open. Enter the following information in the side pane:
     - **Display name**: To identify your attribute branch, enter a name for it.
     - The manual input will appear by default. To use natural language input, select the lightbulb icon.
-        > [!div class="mx-imgBorder"]
-        > ![Use natural language input.](media/real-time-marketing-nl-condition-input.png "Use natural language input")
+        :::image type="content" source="media/real-time-marketing-nl-condition-input.png" alt-text="Use natural language input.":::
     - Type your clauses using natural language the text box.
 
 ## Sample conditions
@@ -57,11 +56,8 @@ To provide feedback after you've entered a natural language clause:
 
 1. A thumbs up/thumbs down icon will appear below the text box.
 
-    > [!div class="mx-imgBorder"]
-    > ![Natural language feedback.](media/real-time-marketing-nl-condition-feedback.png "Natural language feedback")
+    :::image type="content" source="media/real-time-marketing-nl-condition-feedback.png" alt-text="Natural language feedback.":::
 
 1. Select the **thumbs down** icon.
 1. Select **Send feedback**.
 1. Enter a short explanation of what happened. Add comments about what you would expect the phrase to look like.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

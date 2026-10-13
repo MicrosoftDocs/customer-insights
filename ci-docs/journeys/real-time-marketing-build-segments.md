@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys
 description: Use the Customer Insights - Journeys segment builder to create dynamic and static segments with attributes, related tables, and manual selections. Start building targeted audiences.
-ms.date: 10/05/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -201,5 +201,3 @@ Using the query viewer, you can view, copy, and directly edit the underlying MQL
 ## Augment with the segment builder API
 
 The segment builder API powers the user interface (UI), so anything you do through the UI, you can do programmatically by using the API. Use the API to augment a segment you build by using the UI. For more information, see [Create a Customer Insights - Journeys segment using the Web API](real-time-marketing-api-segment.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

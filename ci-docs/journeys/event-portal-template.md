@@ -1,7 +1,7 @@
 ---
 title: Build an event registration portal with Power Pages
 description: Build an event registration portal with Power Pages. Learn how to create, customize, and publish your event registration website using the event registration template.
-ms.date: 10/02/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -141,5 +141,3 @@ You can set the following parameters for your website:
 
 > [!IMPORTANT]
 > Updating the **Homepage URL** or **Registration page URL** of the existing configuration automatically updates the public URL of all the events using this website configuration.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

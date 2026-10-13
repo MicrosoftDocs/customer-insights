@@ -1,7 +1,7 @@
 ---
 title: Deliverability recommendations when changing ESPs
 description: Follow deliverability best practices and a checklist for migrating data and warming up a new email service provider (ESP) in Customer Insights - Journeys.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -66,5 +66,3 @@ To mitigate risks, we’ve assembled a list of recommendations to follow when sw
 ## More help
 
 Contact our [support team](/dynamics365/field-service/troubleshoot-faq#where-can-i-find-help-for-errors-unexpected-behavior-crashes-or-bugs) if you have any questions.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

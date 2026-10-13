@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.collection: article
 ms.topic: overview
 author: udag
@@ -22,8 +22,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
     The new Dynamics 365 Customer Insights offering combines the standalone Dynamics 365 Customer Insights and Dynamics 365 Marketing apps into a single offering. While the name is unchanged, the new Customer Insights offering is expanded to include both the Customer Insights – Journeys (formerly Dynamics 365 Marketing) and Customer Insights – Data (formerly the standalone Customer Insights) applications.
 
-    > [!div class="mx-imgBorder"]
-    > ![SKU and name change diagram.](media/ci-faq-sku-name-change.png "SKU and name change diagram")
+    :::image type="content" source="media/ci-faq-sku-name-change.png" alt-text="SKU and name change diagram.":::
 
 1. **Why are the Dynamics 365 Marketing and current Dynamics 365 Customer Insights apps being combined into one offering?**
 
@@ -106,5 +105,3 @@ This FAQ answers questions about the new Customer Insights combined product offe
 1. **What happens to customers who only have a Dynamics 365 Marketing or Dynamics 365 Customer Insights license or have licensed both applications?**  
 
     After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2025, with a final contract maturity date that can't extend beyond September 1, 2027. At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

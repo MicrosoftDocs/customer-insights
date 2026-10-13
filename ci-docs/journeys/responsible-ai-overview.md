@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 description: Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys link to feature guidance for copilots, content tools, conversational journeys, and segments.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: udag
@@ -28,5 +28,3 @@ ms.custom:
 - [Responsible AI FAQs for image smart recommendation](faqs-image-smart-recommendation.md)
 - [Responsible AI FAQs for Journey Creation Agent](faqs-journey-copilot.md)
 - [Responsible AI FAQs for the segment copilot](faqs-segment-copilot.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

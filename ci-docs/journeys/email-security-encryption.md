@@ -1,7 +1,7 @@
 ---
 title: Email security and connection encryption
 description: Learn how Customer Insights - Journeys uses SSL and TLS connection encryption, including opportunistic TLS, to secure outgoing email delivery.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -29,5 +29,3 @@ There are three encryption requirement options available to use with StartTLS:
 Because not all email providers support connection encryption, it isn't advisable to use the enforced TLS method. This method creates a situation where even valid recipients can't receive emails from our platform.
 
 The Dynamics 365 Customer Insights - Journeys sending infrastructure uses the most flexible and reliable option, opportunistic TLS. This allows senders to deliver emails to all recipients that they want to reach, providing the maximum email security that email recipients support.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

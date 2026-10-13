@@ -1,7 +1,7 @@
 ---
 title: Monitor your monthly quotas
 description: View your remaining monthly credits for sending marketing email messages and other metered services in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/20/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -20,8 +20,7 @@ Dynamics 365 Customer Insights - Journeys is a subscription service that's bille
 
 The **Quota limits** page shows the total quota levels you have purchased and how much of each quota your organization has already used. To see how much of each quota you've used, go to **Settings** > **Overview** > **Quota limits**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the quota limits area.](media/quota-limits.png)
+:::image type="content" source="media/quota-limits.png" alt-text="Screenshot of the quota limits area.":::
 
 The following usages and limits are tracked on this screen:
 
@@ -57,5 +56,3 @@ The quota limits page also includes charts that show the monthly interaction usa
 > - For trials, see [Dynamics 365 Customer Insights - Journeys limits for trials](trial-preview-limits.md).
 > 
 > See also the [Readme](./known-issues.md) document for the latest news and updates.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

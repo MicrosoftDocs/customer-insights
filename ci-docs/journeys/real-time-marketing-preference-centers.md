@@ -1,7 +1,7 @@
 ---
 title: Create branded, customized preference centers to manage customer consent
 description: Learn how to set up preference centers to collect and manage consent from your customers.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: reference
 author: udag
 ms.author: udag
@@ -23,8 +23,7 @@ Preference centers in Customer Insights - Journeys allow you to provide customer
 
 In Customer Insights - Journeys, each compliance profile starts with a default preference center that you can configure. To setup the preference center, go to **Settings** > **Customer engagement** > **Compliance profiles** and select the compliance profile with the preference center to update. Follow the link to the preference center to make updates.
 
-> [!div class="mx-imgBorder"]
-> ![Compliance profile screenshot.](media/real-time-marketing-compliance-profile.png "Compliance profile screenshot")
+:::image type="content" source="media/real-time-marketing-compliance-profile.png" alt-text="Compliance profile screenshot.":::
 
 > [!NOTE]
 > Customers who have used Customer Insights - Journeys preference pages prior to the introduction of the preference center will have a compliance profile already created with the previously configured preference page in place of a preference center. It is recommended that customers replace preference pages with preference centers.
@@ -66,5 +65,3 @@ Once configured, you can start using the new preference center compliance profil
 
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

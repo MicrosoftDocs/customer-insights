@@ -1,7 +1,7 @@
 ---
 title: Define the custom channel
 description: Learn how to build the Channel Definition record that ties together a custom channel's entity, form, and API.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -99,5 +99,3 @@ The following samples include unpacked solutions for Dataverse and plugins proje
     - [Solution packager](/dynamics365/customerengagement/on-premises/developer/compress-extract-solution-file-solutionpackager)
 
     `pac solution pack --zipfile C:\tmp\SampleCustomChannelSolution.zip -f src\Solutions\Samples\SampleCustomChannel\SampleCustomChannel.Solution\unmanaged --packagetype Both`
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

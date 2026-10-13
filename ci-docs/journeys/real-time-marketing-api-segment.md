@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 04/21/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -394,5 +394,3 @@ Accept: application/json
 ```
 
 If a segment couldn't be stopped because it's in use, `WasStopped` will be false and the blocking `DependentJourneys` or `DependentSegments` arrays will be populated.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

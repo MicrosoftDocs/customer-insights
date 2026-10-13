@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Journey Creation Agent
 description: Journey Creation Agent in Customer Insights - Journeys helps marketers build customer journeys with natural language and human review.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m
@@ -119,5 +119,3 @@ Journey Creation Agent supports English.
 
 - [Journey Creation Agent in Customer Insights - Journeys](journey-creation-agent.md)
 - [Responsible AI FAQ for Customer Insights - Journeys](responsible-ai-overview.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

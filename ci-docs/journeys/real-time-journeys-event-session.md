@@ -1,7 +1,7 @@
 ---
 title: Set up session-level registration
 description: Learn how to set up session-level registration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: terezakirk
 ms.author: udag
@@ -103,5 +103,3 @@ If session capacity fields are hidden, enable the "Allow attendees to register f
 **Solution**:
 
 This is an informational warning and doesn't indicate an error. You can safely maintain your current capacities.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Raise triggers from a journey to run another journey or Power Automate flow
 description: Learn how to trigger an action outside of a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/06/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -40,15 +40,13 @@ Setting up a custom trigger action requires three steps: selecting a custom trig
 
 After placing a **Custom trigger** tile on the journey canvas, select which custom trigger will be activated when a customer reaches this point in the journey.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a trigger for a nurture journey.](media/Adding-custom-trigger-step1.png "Screenshot of a trigger for a nurture journey")
+:::image type="content" source="media/Adding-custom-trigger-step1.png" alt-text="Screenshot of a trigger for a nurture journey.":::
 
 ### 2. Understand the selected trigger usage
 
 After you select the custom trigger, the current usage of the custom trigger in all journeys will be displayed in **Used in:** field in the properties pane. By selecting the **Used in:** link, you are able to see all journeys and corresponding states that use the same custom trigger.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of viewing custom trigger usage.](media/viewing-custom-trigger-usage-step2.png "Screenshot of viewing the usage for a custom trigger")
+:::image type="content" source="media/viewing-custom-trigger-usage-step2.png" alt-text="Screenshot of viewing custom trigger usage.":::
 
 > [!NOTE]
 > Power Automate flows that reference the custom event are not tracked or displayed here.
@@ -62,11 +60,9 @@ When a customer reaches this stage of the journey, the custom trigger activated 
 
 1. **Specify a fixed value:** In the example here, you can pass the name of the source journey that's activating the custom trigger and, in turn, send the shopper to the nurture journey connected to that custom trigger. This is shown in the screenshot below.
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of mapping custom triggers with a value step 1.](media/map-custom-trigger-attribute-step3.png "Screenshot of mapping custom triggers with a value step 1")
+      :::image type="content" source="media/map-custom-trigger-attribute-step3.png" alt-text="Screenshot of mapping custom triggers with a value step 1.":::
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of mapping custom triggers with a value step 2.](media/map-custom-trigger-attribute-step4.png "Screenshot of mapping custom triggers with a value step 2")
+      :::image type="content" source="media/map-custom-trigger-attribute-step4.png" alt-text="Screenshot of mapping custom triggers with a value step 2.":::
 
     Passing the name of the source journey allows the nurture journey to do journey filtering/branching and take specific steps when being activated by a post-purchase journey (versus when being activated by other sources). This is discussed further below in the [Using custom triggers to activate chained journeys](real-time-marketing-custom-actions.md#using-custom-triggers-to-activate-chained-journeys) section.
 
@@ -74,11 +70,9 @@ When a customer reaches this stage of the journey, the custom trigger activated 
 
     In the example shown in the screenshot below, you can map the phone number from the customer profile to the "Phone number" field of the custom trigger:
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of mapping custom triggers with attribute step 1.](media/map-custom-trigger-attribute-step6.png "Screenshot of mapping custom triggers with attribute step 1")
+      :::image type="content" source="media/map-custom-trigger-attribute-step6.png" alt-text="Screenshot of mapping custom triggers with attribute step 1.":::
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of mapping custom triggers with attribute step 2.](media/map-custom-trigger-attribute-step7.png "Screenshot of mapping custom triggers with attribute step 2")
+      :::image type="content" source="media/map-custom-trigger-attribute-step7.png" alt-text="Screenshot of mapping custom triggers with attribute step 2.":::
 
 > [!NOTE]
 > Custom trigger attributes are data-type-specific. So you can only map, for instance, a numeric field from the customer profile into the phone number field of the custom trigger (since the field is of type "Number").
@@ -89,8 +83,7 @@ Custom triggers that are activated in one journey (as done above) can then trigg
 
 The screenshot below illustrates how the nurture journey is set up using the "Add to Nurture Journey" custom trigger. It also shows how the nurture journey is able to read the "Source Campaign" field that was part of the custom trigger (that was set to a fixed value of "Post purchase journey"). Using this field, you can branch the journey to provide a specific kind of a nurture treatment when shoppers come through the post purchase journey.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of chained journey that uses the custom trigger.](media/chained-journey-via-custom-trigger.png "Screenshot of chained journey that uses the custom trigger")
+:::image type="content" source="media/chained-journey-via-custom-trigger.png" alt-text="Screenshot of chained journey that uses the custom trigger.":::
 
 ## Trigger Power Automate flows from journeys
 
@@ -103,8 +96,7 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
     
 1. Select **+New flow** from the top navigation bar, select **Automated cloud flow**, and create a flow that starts with **When an action is performed (Microsoft Dataverse)**. 
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of creating a new Power Automate flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate flow")
+      :::image type="content" source="media/create-automated-flow-step8.png" alt-text="Screenshot of creating a new Power Automate flow.":::
 
 1. Fill in the required fields as follows:
     - Set Catalog to "Cxp"
@@ -116,8 +108,7 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
 
     The contact ID can be passed with `ActionInputs msdynmkt_profileid` as a value. It can also initialize a variable, as shown in the example below:
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of creating a Power Automate flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate flow using attribute contact ID.")
+    :::image type="content" source="media/automated-flow-step-using-contact-id.png" alt-text="Screenshot of creating a Power Automate flow using attribute contact ID.":::
 
 1. Start adding subsequent steps to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of the flow.
 
@@ -130,5 +121,3 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
 > If you can't find your custom trigger name in the **Action name** list, go to **Customer Insights - Journeys** > **Triggers**, select the custom trigger you want to use, then select **Go to code snippet**. The trigger name (beginning with "msdynmkt") is shown in the first line of the code.
 
 To learn more about this [Dataverse connector](/power-automate/dataverse/overview) action, see [Trigger flows with actions](/power-automate/dataverse/action-trigger).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

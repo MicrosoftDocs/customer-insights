@@ -1,7 +1,7 @@
 ---
 title: End a journey
 description: An overview of the journey end configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: cmenesatti
 ms.author: udag
@@ -28,5 +28,3 @@ By default, customers end the journey when they complete all the steps. You can 
 Journey goals let you track and [analyze the performance of the journey](real-time-marketing-analytics.md). You can use a trigger as the journey goal and measure the journey's success based on the customers who perform the trigger as they're going through the journey.
 
 Journey goals also help you determine the winner of A/B tests and find the best channel for channel optimization. For more information about using A/B tests, see [A/B tests in Customer Insights - Journeys](real-time-marketing-ab-tests-in-marketing-journeys.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

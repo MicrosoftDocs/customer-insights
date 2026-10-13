@@ -1,7 +1,7 @@
 ---
 title: Set message expiration in real-time journeys
 description: Learn how to set a message expiration for real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/02/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: Joni-M
 ms.author: udag
@@ -79,5 +79,3 @@ This option is useful for scenarios such as reminders before an event, messages 
 
 > [!IMPORTANT]
 > If a live journey uses the **Expire at a time specified by a trigger** option and the trigger date is more than one year in the past (for example, a birthday), the system automatically adjusts the date to the current year when evaluating the message expiration.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

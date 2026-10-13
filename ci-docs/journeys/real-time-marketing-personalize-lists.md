@@ -1,7 +1,7 @@
 ---
 title: Personalize lists of content in emails
 description: Learn how to personalize lists in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/29/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -107,8 +107,7 @@ Here's an example we define a condition to check if product being included in th
 
 When such conditions are defined, the list code is updated to provide a basic working template for you to customize as needed:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing code generated for adding conditions within list.](media/real-time-marketing-code-generator-1.png)
+:::image type="content" source="media/real-time-marketing-code-generator-1.png" alt-text="Screenshot showing code generated for adding conditions within list.":::
 
 For example, we can add annotation the "Out of stock" against the list item. This annotation will only be included if the condition is true for the list item.
 
@@ -138,5 +137,3 @@ Here's an example where an additional condition “LowStock” was defined when 
   {{/if}}
 {{/each}}
 ```
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

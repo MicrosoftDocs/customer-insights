@@ -1,7 +1,7 @@
 ---
 title: Baseline (pre-March 2026) permissions for out-of-the-box roles
 description: Out-of-the-box role permissions from before March 2026 are preserved here as a historical reference. Start here, then apply each release's changes to stay in sync.
-ms.date: 07/28/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd
 ms.author: udag
@@ -1704,5 +1704,3 @@ To keep your custom roles in sync, first align them with the documented baseline
 | WizardPage | Global |  |  |  |  |
 | Workflow | Global | Local | Local | Local | Global |
 | WorkflowSession | Global | Local | Local | Local |  |
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

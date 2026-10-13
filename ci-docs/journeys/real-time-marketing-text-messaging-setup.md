@@ -1,7 +1,7 @@
 ---
 title: Set up outbound text messaging
 description: Learn how to set up outbound text messaging in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -87,21 +87,16 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
 1. If you selected Infobip, enter the **API key** and **API Base URL** noted in the steps above. If you selected TeleSign, enter the **Customer ID** and **API key**. If you selected Twilio, enter the **Account SID** and **Auth Token**. If you selected LINK Mobility, contact them first to provide you with the integration credentials. Add them and then select the **Next** button.
 1. On the next screen, select **+New phone number** to add one or more numbers that will be used for the integration.
 1. On the **Add phone number** pane, add the number, its friendly name to distinguish it, the business unit it belongs, and its type. **Customer Insights - Journeys also supports Alphanumeric Sender IDs**.
-    > [!div class="mx-imgBorder"]
-    > ![Add SMS number screenshot.](media/real-time-marketing-add-sms-number.png "Add SMS number screenshot")
+    :::image type="content" source="media/real-time-marketing-add-sms-number.png" alt-text="Add SMS number screenshot.":::
 1. After adding the numbers, select the **Next** button to review the setup details and then select **Done** to complete it. 
 1. To receive SMS replies through the providers using the numbers you set up, you also need to specify and set up the **Callback URL**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Callback URL screenshot.](media/real-time-marketing-text-message-callback-url.png "Callback URL screenshot")
+    :::image type="content" source="media/real-time-marketing-text-message-callback-url.png" alt-text="Callback URL screenshot.":::
 
    For Azure Communication Services, navigate to your resource group through **Subscriptions** > **Resource group name** and create an Event Grid System Topic for your Communication Service resource. Select it and then select **+ Event Subscription**. To set up the **Delivery report Callback URL**, select “**SMS Delivery report received**” in the **Event type** and **Webhook** in the **Endpoint type**, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. To set up the **Incoming Message Callback URL**, select “**SMS received**” in the **Event type** and **Webhook** in the **Endpoint** type, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. 
 
    For Twilio, copy the **Callback URL** from the Customer Insights - Journeys app and paste it into the [numbers' configuration page](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming) in the **"A MESSAGE COMES IN"** field.
 
-    > [!div class="mx-imgBorder"]
-    > ![Twilio number config screenshot.](media/real-time-marketing-text-message-twilio-config.png "Twilio number config screenshot")
+    :::image type="content" source="media/real-time-marketing-text-message-twilio-config.png" alt-text="Twilio number config screenshot.":::
 
 For Infobip, LINK Mobility, Telesign, and Vibes, you'll need to contact customer support to set this up for you.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Test custom triggers before using them
 description: Learn how to test custom triggers before using them in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -40,17 +40,12 @@ The following steps illustrate how to test the abandoned cart trigger.
 1. After the custom trigger details page loads, scroll down to the **Test send** feature and select a Contact (this could be yourself or an internal colleague).
 1. Add the values to the attributes that will simulate the conditions you want your real customers to fulfill.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the attribute values filled out for the journey conditions.](media/real-time-marketing-test-send-values.png "Screenshot of the attribute values filled out for the journey conditions")
+    :::image type="content" source="media/real-time-marketing-test-send-values.png" alt-text="Screenshot of the attribute values filled out for the journey conditions.":::
 
 1. Select the **Test send** button. You'll receive a confirmation message that the trigger was sent successfully.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the test send confirmation.](media/real-time-marketing-test-send-confirmation.png "Screenshot of the test send confirmation")
+    :::image type="content" source="media/real-time-marketing-test-send-confirmation.png" alt-text="Screenshot of the test send confirmation.":::
 
 1. Once you're done testing, you can go to your journey and select the **Total inflow** link. You'll see that the inflow increased by one with the name of the contact you tested with. This confirms that the custom trigger worked as expected.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of journey inflow.](media/real-time-marketing-test-send-inflow.png "Screenshot of journey inflow")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+    :::image type="content" source="media/real-time-marketing-test-send-inflow.png" alt-text="Screenshot of journey inflow.":::

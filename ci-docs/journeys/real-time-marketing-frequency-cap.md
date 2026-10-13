@@ -1,7 +1,7 @@
 ---
 title: Set up frequency capping to limit the number of messages sent
 description: Learn how to limit the number of messages sent to your customers to prevent message fatigue.
-ms.date: 08/28/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -34,8 +34,7 @@ By default, the "Marketing Manager - Business" role will have the rights to crea
 > [!Note]
 > Messages sent before a frequency cap was added for a particular channel will not be counted towards the cap for future messages.
 
-> [!div class="mx-imgBorder"]
-> ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
+:::image type="content" source="media/real-time-marketing-frequency-cap-settings.png" alt-text="Frequency cap settings screenshot.":::
 
 ## How does frequency capping work
 
@@ -58,5 +57,3 @@ The right limit for a message will be different for each brand, industry, and ch
 - Understand your audience (ask about their preferences using a preference center or a quick poll).
 - Look at relevant analytics (study the unique open rate and click-through rate).
 - Study your journey (look at the drop off rates in the journey view).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

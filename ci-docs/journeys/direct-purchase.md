@@ -1,7 +1,7 @@
 ---
 title: Purchase a license directly from a trial
 description: Learn how to a license to purchase a paid license directly within a Dynamics 365 Customer Insights trial.
-ms.date: 07/23/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -63,5 +63,3 @@ In the admin center, *tenant admins* can:
 - Cancel any departmental purchase and (optionally) move assigned users to an organization purchase.
 
 For more information, see [Manage self-service purchases (Admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

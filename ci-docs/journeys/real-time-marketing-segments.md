@@ -1,7 +1,7 @@
 ---
 title: Segmentation overview
 description: Learn how to work with segments in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -21,8 +21,7 @@ You can create a new segment directly within the customer journey editor by sele
 
 This will take you directly to the segment builder, where you can create and save your segment.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of selecting the +New segment option.](media/real-time-marketing-segment-from-journey.png "Screenshot of selecting the +New segment option")
+:::image type="content" source="media/real-time-marketing-segment-from-journey.png" alt-text="Screenshot of selecting the +New segment option.":::
 
 ## Create a segment using Copilot 
 
@@ -50,8 +49,7 @@ Learn more: [Use Customer Insights - Data profiles and segments in Customer Insi
 
 As shown in the following image, you can see whether a segment is a Customer Insights - Journeys segment or a Customer Insights - Data segment when you make a segment selection in your customer journey.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of segment sources.](media/real-time-marketing-segment-source.png "Screenshot of segment sources")
+:::image type="content" source="media/real-time-marketing-segment-source.png" alt-text="Screenshot of segment sources.":::
 
 Learn more about [setting up and managing a Customer Insights - Data connection to Dynamics 365 Customer Insights - Journeys](/dynamics365/customer-insights/audience-insights/manage-environments).
 
@@ -72,7 +70,4 @@ You can use a segment as an exit criterion for your customer journey.
 
 To use a suppression segment, select **Exit criteria** in the right-side pane in the customer journey editor. Then, choose a segment under **Exit by segment**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of suppression segment selection.](media/real-time-marketing-suppression.png "Screenshot of suppression segment selection")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+:::image type="content" source="media/real-time-marketing-suppression.png" alt-text="Screenshot of suppression segment selection.":::

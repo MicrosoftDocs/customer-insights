@@ -1,7 +1,7 @@
 ---
 title: Improve email deliverability to China
 description: Learn how Chinese ISPs filter email and follow best practices for content, HTML, and sending limits to improve deliverability.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -91,5 +91,3 @@ Segment mail streams (such as transactional and marketing emails) into different
 
 > [!IMPORTANT]
 > Being blocklisted is usually temporary. The length can vary depending on your past history. Delisting is usually not possible. Follow the best practice tips in this article to improve your sending reputation.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

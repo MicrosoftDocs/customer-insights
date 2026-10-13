@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -195,5 +195,3 @@ For standard Dynamics 365 environments (without Customer Insights - Journeys ins
 ## Change the URL for an environment with Customer Insights - Journeys
 
 For standard Dynamics 365 environments (including Customer Insights - Journeys), you can use the Power Platform admin center to change the URL of the environment. Learn more: [Edit properties of an environment](/power-platform/admin/edit-properties-environment).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

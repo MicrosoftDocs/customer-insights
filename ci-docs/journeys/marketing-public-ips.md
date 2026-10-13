@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights - Journeys public IP addresses
 description: 'Dynamics 365 Customer Insights - Journeys public IP addresses: Find the latest public IPs by region to help you manage network access and email delivery. Check your region now.'
-ms.date: 08/15/2025
+ms.date: 10/13/2026
 ms.topic: overview
 author: udag
 ms.author: udag
@@ -36,5 +36,3 @@ The table below shows Customer Insights - Journeys services public IP addresses 
 | South America (SAM)        | 4.203.151.86/31, 4.203.151.88/29 |
 | Switzerland (CHE)          | 74.242.190.152/31, 74.242.190.144/29 |
 | United Arab Emirates (UAE) | 74.243.193.174/31, 74.243.193.208/29 |
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

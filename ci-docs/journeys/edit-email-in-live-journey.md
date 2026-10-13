@@ -1,7 +1,7 @@
 ---
 title: Edit email components in a live journey
 description: Learn how to edit email components in live journey in Dynamics 365 Customer Insights - Journeys
-ms.date: 12/12/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -51,5 +51,3 @@ The email editor components that can be edited in a live journey are:
 > [!NOTE]
 > - Link insights displays data for emails (with links) that have this feature enabled and were created after September 2024. 
 > - To easily track and identify links in analytics, we incorporate editable "link aliases" into the URL. 
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

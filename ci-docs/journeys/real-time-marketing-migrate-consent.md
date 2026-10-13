@@ -1,7 +1,7 @@
 ---
 title: Migrate consent records to Customer Insights - Journeys
 description: Learn how to migrate existing consent records to Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: reference
 author: udag
 ms.author: udag
@@ -17,8 +17,7 @@ When you install Customer Insights - Journeys, the consent center (**Customer In
 
 1. Add new consent records for email and text messages manually by selecting the corresponding option from the top ribbon.
 
-    > [!div class="mx-imgBorder"]
-    > ![Email and text consent entry screenshot.](media/real-time-marketing-email-text-consent2.png "Email and text consent entry screenshot")
+    :::image type="content" source="media/real-time-marketing-email-text-consent2.png" alt-text="Email and text consent entry screenshot.":::
 
 1. Import consent settings from an Excel file.
 
@@ -46,8 +45,7 @@ The **Load consent** button loads consent information for email addresses that a
 
 The following message appears:
 
-> [!div class="mx-imgBorder"]
-> ![Load consent screenshot.](media/real-time-marketing-load-consent.png "Load consent screenshot")
+:::image type="content" source="media/real-time-marketing-load-consent.png" alt-text="Load consent screenshot.":::
 
 To load consent from contacts or leads, the following conditions apply:
 
@@ -116,5 +114,3 @@ If you have set up a subscription list to track individuals who don't wish to be
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

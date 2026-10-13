@@ -1,7 +1,7 @@
 ---
 title: Personalize content
 description: Learn how to personalize content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/31/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,15 +28,13 @@ To set a default value:
 1. Add a personalized element.
 1. Enter the default content in the **Default value** field.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Default value field.](media/real-time-marketing-personalization-default.png)
+:::image type="content" source="media/real-time-marketing-personalization-default.png" alt-text="Screenshot of Default value field.":::
 
 ## Personalize text messages and push notifications
 
 You can add personalized content to your messages by selecting the ![Text and push personalization button.](media/real-time-marketing-sms-personalize-button.png "Text and push personalization button") icon:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing use of the text and push personalization button.](media/real-time-marketing-sms-personalize-example.png)
+:::image type="content" source="media/real-time-marketing-sms-personalize-example.png" alt-text="Screenshot showing use of the text and push personalization button.":::
 
 ## Related tables
 
@@ -44,27 +42,21 @@ Related tables are signified with the ![Related table icon.](media/real-time-mar
 
 Select this field to navigate to the related table:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing use an example related table.](media/real-time-marketing-personalization-related-traverse2.png)
+:::image type="content" source="media/real-time-marketing-personalization-related-traverse2.png" alt-text="Screenshot showing use an example related table.":::
 
 You can also search for fields in the related table (only the currently selected table will return results).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing a related table search.](media/real-time-marketing-personalization-related-search.png)
+:::image type="content" source="media/real-time-marketing-personalization-related-search.png" alt-text="Screenshot showing a related table search.":::
 
 To navigate between levels, select the breadcrumbs:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing personalization breadcrumbs.](media/real-time-marketing-personalization-breadcrumbs.png)
+:::image type="content" source="media/real-time-marketing-personalization-breadcrumbs.png" alt-text="Screenshot showing personalization breadcrumbs.":::
 
 Once you’ve selected a field, the full path to that field is displayed in the data binding.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the full path to the field.](media/real-time-marketing-personalization-related-path.png)
+:::image type="content" source="media/real-time-marketing-personalization-related-path.png" alt-text="Screenshot showing the full path to the field.":::
 
 ## Limitations
 
 - Option sets aren't supported for use in dynamic text. Option sets are supported in conditions, so an inline condition can be used to output option values in messages.
 - Personalization can only use triggers. However, messages that use personalization based on a trigger can only be used in journeys that are started by those triggers. If such a message is included in a journey where the trigger is received mid-journey, the journey designer will give an error message.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

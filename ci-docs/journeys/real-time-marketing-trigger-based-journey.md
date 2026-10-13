@@ -1,7 +1,7 @@
 ---
 title: Create a trigger-based journey
 description: Learn how to build a trigger-based journey in Dynamics 365 Customer Insights. Set up real-time responses to customer actions and drive engagement.
-ms.date: 07/11/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -52,8 +52,7 @@ When you create a trigger-based journey, specify the following properties to set
 - **Choose the type of journey**: You can select whether you want to create a trigger-based journey that responds to a customer action, or a segment-based journey that reaches out to a specific audience. Here, we want to create a trigger-based journey.
 - **Choose the trigger**: Select the trigger that starts the journey. To start the journey when a customer abandons their cart, select the *Abandoned cart* event.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Create a trigger-based journey page showing options to select the journey type and trigger event.](media/real-time-marketing-trigger-based-journey.png "Screenshot of the Create a trigger-based journey page showing options to select the journey type and trigger event.")
+:::image type="content" source="media/real-time-marketing-trigger-based-journey.png" alt-text="Screenshot of the Create a trigger-based journey page showing options to select the journey type and trigger event.":::
 
 Find more options for starting the journey in the journey task pane. For details, see [Add an action in a journey](add-action.md).
 
@@ -65,8 +64,7 @@ To add attributes, select a trigger, then select the **+Add condition** button. 
 
 In the abandoned cart journey, add a condition to trigger a reminder only when the cart value exceeds $50. To do this, select **+Add condition**, then select the "Cart Total" attribute from the Cart Abandoned trigger. Set the operator to ">" and the value to "50."
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of adding a trigger condition in the real-time marketing interface.](media/real-time-marketing-trigger-attribute.png "Add a trigger condition screenshot")
+:::image type="content" source="media/real-time-marketing-trigger-attribute.png" alt-text="Screenshot of adding a trigger condition in the real-time marketing interface.":::
 
 To learn how to add conditions based on nested attributes in triggers, see [Personalize triggers using conditions](real-time-marketing-personalize-triggers.md).
 
@@ -74,15 +72,13 @@ To learn how to add conditions based on nested attributes in triggers, see [Pers
 
 The goal for this journey is to drive a purchase. Use the *Purchase completed* trigger to track when users meet this goal. Set the **Amount of people needed for this goal** to 50 percent to indicate that you want at least 50 percent of customers who abandon carts and are targeted by this journey to complete the purchase.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Set the journey goal pane showing the Amount of people needed for this goal field set to 50 percent.](media/real-time-marketing-trigger-based-journey-goal.png "Set the journey goal screenshot")
+:::image type="content" source="media/real-time-marketing-trigger-based-journey-goal.png" alt-text="Screenshot of the Set the journey goal pane showing the Amount of people needed for this goal field set to 50 percent.":::
 
 ## Set the journey exit
 
 By default, customers leave the journey when they’ve completed all the steps. However, you can set additional journey exits using triggers. Setting the journey exit to a trigger provides an easy way to remove customers who perform the trigger from the journey, ensuring that customers don’t receive irrelevant messages from your customer journey. For this journey, you want to make sure to only send reminder messages if customers haven’t yet completed their purchase. By setting the journey exit to the *Purchase completed* event, you can ensure that the moment any customer completes the purchase, they exit the journey and no longer receive the reminder messages.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the journey exit settings showing how to set a trigger-based exit for the customer journey.](media/real-time-marketing-trigger-based-journey-exit.png "Set journey exit screenshot")
+:::image type="content" source="media/real-time-marketing-trigger-based-journey-exit.png" alt-text="Screenshot of the journey exit settings showing how to set a trigger-based exit for the customer journey.":::
 
 ## Add the abandoned cart reminders
 
@@ -94,13 +90,10 @@ On the journey canvas, select the plus sign (**+**) to add the abandoned cart re
 1. **Add a wait**: Add a wait and select **A set amount of time**. Set the duration to **1 day**. This step ensures that customers wait for one day after the text message before moving to the next step.
 1. **Send a push notification**: As the final step, send the *Final push notification* reminder.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the abandoned cart journey showing the sequence of email, if/then branch, text message, wait, and push notification steps.](media/real-time-marketing-trigger-based-abandoned-cart-journey.png "Abandoned cart journey screenshot")
+:::image type="content" source="media/real-time-marketing-trigger-based-abandoned-cart-journey.png" alt-text="Screenshot of the abandoned cart journey showing the sequence of email, if/then branch, text message, wait, and push notification steps.":::
 
 ## Publish the journey
 
 After you add all the steps to the journey canvas, the journey is ready to go live and message real customers. Before you publish the journey, make sure all related content (email, text messages, and push notifications) is in the **Ready to send** state. Also, publish any triggers and integrate their code. To learn how to make changes to the journey after you publish it, see [Edit a live journey in Customer Insights - Journeys](real-time-marketing-edit-journey.md).
 
 After you publish the journey, go to the journey [analytics page](real-time-marketing-analytics.md) to see how it's performing.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

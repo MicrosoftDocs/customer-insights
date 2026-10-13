@@ -1,7 +1,7 @@
 ---
 title: Define the message parts
 description: Learn how to create and configure message parts for a custom channel, including required fields and supported types.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -73,5 +73,3 @@ Example of customizations.xml including message parts:
   </msdyn_channelmessageparts>
 </ImportExportXml>
 ```
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

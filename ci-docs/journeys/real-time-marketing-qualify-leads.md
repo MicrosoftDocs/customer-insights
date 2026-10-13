@@ -1,7 +1,7 @@
 ---
 title: Qualify the best leads
 description: Learn how to qualify the best leads in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/15/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -27,8 +27,7 @@ Once the feature switch is enabled, two new features appear on your Customer Ins
 
 ## Define your marketing qualification criteria and qualification actions
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing lead qualification selection criteria](media/select-lead-qualification-criteria.png "Screenshot showing lead qualification selection criteria")
+:::image type="content" source="media/select-lead-qualification-criteria.png" alt-text="Screenshot showing lead qualification selection criteria":::
 
 The real-time journeys qualification allows you to define (1) qualification criteria and (2) actions when a lead meets the criteria. The qualification criteria are based on scoring models. To add new criteria:
 

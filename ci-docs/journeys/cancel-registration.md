@@ -1,7 +1,7 @@
 ---
 title: Set up event registration cancellation
 description: Learn how registered attendees can cancel registration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/03/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
@@ -36,5 +36,3 @@ When the attendee receives the email and selects the cancel registration button,
 ## Cancel registration manually 
 
 If your attendee can no longer attend an event and informs you through email or a phone call, you can manually cancel event registration by going to the **Registration and attendance** tab. Here, you can select the relevant registrations and select **Cancel registrations** on top of the grid.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
