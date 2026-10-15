@@ -1,8 +1,9 @@
 ---
 title: Connect to Microsoft Fabric OneLake
 description: Connect to Delta tables in a Microsoft Fabric OneLake Lakehouse and ingest the data into Dynamics 365 Customer Insights - Data.
-ms.date: 09/16/2026
+ms.date: 10/13/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
@@ -39,6 +40,7 @@ Before you create a Fabric OneLake data source:
 - Tables must have a primary key column with unique, non-null values. String, integer, and GUID data types are supported as primary keys.
 - Tables must be in the Delta format.
 - Tables must be limited to Delta features that require `minReaderVersion` 1 or 2. For more information, see [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
+- The physical Delta table name (the table folder name under `Tables` in a Fabric lakehouse) must start with an ASCII letter (`A`–`Z` or `a`–`z`) and contain only ASCII letters, digits (`0`–`9`), and underscores (`_`). For example, `Orders_2026` is supported, but `2026Orders`, `Sales Orders`, and `Sales-Orders` aren't. Tables with unsupported names aren't discovered. To include such a table, [rename it in Fabric Lakehouse explorer](/fabric/data-engineering/navigate-lakehouse-explorer#tables).
 
 ## Limitations
 
@@ -89,8 +91,6 @@ Shortcuts that use **delegated authentication**, including external shortcuts, a
 
 ## Connect to data in Fabric OneLake
 
-Data source names and table names must start with a letter and can contain only letters, numbers, and special characters. 
-
 1. In Customer Insights - Data, go to **Data** > **Data sources**.
 
 1. Select **Add a data source**.
@@ -106,14 +106,14 @@ Data source names and table names must start with a letter and can contain only 
 
    :::image type="content" source="media/onelake-add-data-source.png" alt-text="Screenshot of the Add a data source pane with Fabric OneLake selected." lightbox="media/onelake-add-data-source.png":::
 
-1. Select **Next**. Customer Insights - Data lists every Delta table it finds across the lakehouses in the selected workspace. Table names use the pattern `<lakehouse>_Lakehouse_<schema>_<table>`.
+1. Select **Next**. Customer Insights - Data lists Delta tables with supported physical table names across the lakehouses in the selected workspace. Names in this list use the pattern `<lakehouse>_Lakehouse_<schema>_<table>`. Check the physical table name (`<table>`) against the naming rule, not the combined name in the list.
 
 1. Select **Include** for each table you want to ingest.
 
    :::image type="content" source="media/onelake-add-delta-tables.png" alt-text="Screenshot of the Add Fabric Delta tables page listing tables from lakehouses with two tables selected.":::
 
    > [!TIP]
-   > If no tables are listed, ensure you completed the prerequisites to provide Customer Insights - Data. If tables are shown and a specific table isn't listed, confirm the table is a managed Delta table in a Fabric lakehouse and that the workspace contains it. Tables stored in a Fabric Data Warehouse aren't listed as these tables are exposed as SQL tables.
+   > If no tables are listed, ensure you completed the prerequisites to provide Customer Insights - Data. If tables are shown and a specific table isn't listed, confirm the table is a managed Delta table in a Fabric lakehouse, that the workspace contains it, and that its physical table name meets the [name requirements](#data-prerequisites). Tables stored in a Fabric Data Warehouse aren't listed as these tables are exposed as SQL tables.
 
 1. For each selected table where a primary key isn't automatically detected, **Required** appears under **Primary key**. For each of these tables:
 
