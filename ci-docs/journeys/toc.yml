@@ -550,6 +550,8 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
+  - name: Create read-only segment groups
+    href: developer/segment-read-only-groups.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
   - name: Set up payment gateway integration
