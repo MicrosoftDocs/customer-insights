@@ -172,6 +172,10 @@
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
       href: real-time-marketing-channel-optimization.md
+  - name: Collaborate using Microsoft Teams chat
+    items:
+    - name: Collaborate using Microsoft Teams chat
+      href: teams-chat.md
   - name: Triggers
     items:
     - name: Create a trigger-based journey

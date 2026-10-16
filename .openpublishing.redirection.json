@@ -3477,11 +3477,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/journeys/teams-chat.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/outbound-removal-notes",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/journeys/marketing-calendar.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/outbound-removal-notes",
       "redirect_document_id": false
