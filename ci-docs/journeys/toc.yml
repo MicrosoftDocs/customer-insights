@@ -546,7 +546,7 @@
     items:
     - name: Client-side extensibility for forms
       href: developer/realtime-marketing-form-client-side-extensibility.md
-    - name: Capture forms in Customer Insights - Journeys
+    - name: Set up form capture
       href: real-time-marketing-form-capture.md
     - name: Customize form submission validation
       href: real-time-marketing-form-customize-submission-validation.md
