@@ -126,4 +126,32 @@ Quiet times are useful because they prevent calls from being placed during inapp
 
 To learn about how to create and manage quiet times, see [Set quiet times to prevent messages from sending during unwanted hours](real-time-marketing-quiet-times.md).
 
+## Pass context variables to Contact Center
+Use context variables to send journey data to Contact Center with each conversation request. The Copilot Studio agent or service representative can then use this data to personalize the conversation. For example, they can greet the customer by name, refer to an order number, or see which journey started the call.
+
+The variables you can set are the context variables defined on the proactive engagement you selected in the conversation step. Each variable can have one of these values:
+
+| Value type | Description | Example |
+|---|---|---|
+| **Static** | A fixed value you enter when you design the journey. It's the same for every customer. | `LeaveVoiceMail` = `Yes` |
+| **Dynamic** | A value personalized for each customer, taken from contact attributes or, in trigger-based journeys, from trigger attributes. | `FirstName` = *Contact > First name* |
+
+### Prerequisites
+
+Before you add context variables in the journey, set them up in Contact Center:
+
+1. Define the context variables on the proactive engagement.
+1. On the outbound workstream, create a context variable with exactly the same name as the variable you pass from the journey. Learn more in [Manage context variables](/dynamics365/customer-service/administer/manage-context-variables).
+1. To use the value in a Copilot Studio agent, add a variable with the same name to a topic. Learn more in [Configure context variables for agents](/dynamics365/customer-service/administer/context-variables-for-bot).
+
+### Add context variables to a conversation step
+
+1. In the journey, select the voice or text message (SMS) conversation step.
+1. In the side pane, under **Context variables**, select **Add**.
+1. Select a context variable from the list.
+1. Choose **Static** and enter a value, or choose **Dynamic** and select a contact or trigger attribute.
+1. Repeat for any other variables, and then publish the journey.
+
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
