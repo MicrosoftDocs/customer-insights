@@ -482,6 +482,8 @@
       href: real-time-marketing-consent-business-units.md
     - name: Create consent records using a cloud flow
       href: consent-record-creation.md
+    - name: How contact point consent normalization works
+      href: consent-contact-point-normalization.md
     - name: Manage consent for email and text messages
       href: real-time-marketing-email-text-consent.md
     - name: Tracking consent
