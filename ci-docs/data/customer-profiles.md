@@ -44,7 +44,7 @@ Customer Insights - Data supports two types of profile types:
 
 ## Customer count
 
-Customer Insights displays a customer count in several locations. This number is a count of unified customer profiles and unknown profiles if [real-time web personalization is enabled](real-time-web-personalization.md). The counts shown can differ slightly.
+Customer Insights displays a customer count in several locations. This number is a count of unified customer profiles and unknown profiles if [web tracking and personalization is enabled](real-time-web-personalization.md). The counts shown can differ slightly.
 
 - The count on the **Home** page and the **Unify** page is only calculated when unification runs.
 - The count on the **Customers** page is updated in real time and can vary as unknown profiles are added in real time, and age out after 7 days.
