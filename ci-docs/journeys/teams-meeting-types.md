@@ -34,6 +34,8 @@ To create a Teams event, select **Event planning** in the Customer Insights - Jo
 ## Event streaming options
 
 After you flip the **Do you want to stream this event** toggle to **Yes**, you have six streaming options: Teams meeting, Teams webinar, Teams live event, and then modernized set of options, Teams meeting v2, Teams webinar v2, and Teams town hall. This article explains the difference between the event types.
+> [!IMPORTANT]
+Event check-in and join links are supported only for events hosted on Microsoft Teams. Use them exactly as generated. Changing these links or redirecting them to another meeting provider, isn't supported.
 
 ### Teams meetings, Teams webinars, and Teams live events
 
