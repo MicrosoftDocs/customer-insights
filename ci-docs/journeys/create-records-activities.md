@@ -116,7 +116,7 @@ Record creation succeeds only if *both* principals pass all required permission 
 
 ### Built-in tables (Lead, Task, Opportunity, Phone Call)
 
-For built-in tables, the **Create Record Role Extensible** role already includes the required privileges. No action is needed for the service role. The journey publisher must have the following privileges on the target table:
+For built-in tables, all required privileges are included in the role **Cxp Orchestration Engine Services User**. No action is needed for the service role. The journey publisher must have the following privileges on the target table:
 
 | Privilege | Why it's needed |
 |---|---|
