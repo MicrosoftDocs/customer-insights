@@ -65,7 +65,7 @@ Back in Customer Insights - Data, you can create a new instance and associate it
 1. Choose the **Copy from existing environment** checkbox and select your trial environment from the dropdown to copy data from.
 1. When it asks you which Dataverse environment to associate with, choose the new production environment you created. 
 
-After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned earlier, the trial environment appears in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration-preview).
+After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned earlier, the trial environment appears in this list. For more information, see [Copy the environment configuration](manage-environments.md#copy-the-environment-configuration).
 
 ### What are the trial limits and quotas?
 
