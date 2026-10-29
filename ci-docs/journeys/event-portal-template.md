@@ -27,6 +27,7 @@ You can create an event registration website in Power Pages simply by using the 
 
 > [!IMPORTANT]
 > Using Power Pages requires an extra license. You can test Power Pages using a free trial. For more information, see [licensing](/power-pages/go-live/assign-licensing).
+> If your Customer Insights - Journeys environment is in the Korea geo, the Power Pages templates for event registration aren’t supported.
 
 Power Pages, combined with the event registration template, unlocks powerful scenarios:
 
