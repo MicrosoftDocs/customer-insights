@@ -17,6 +17,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## November 2026
+
+### General availability
+
+#### Copy environment configurations
+
+Copying the configuration of an existing Customer Insights - Data environment to a new environment is now generally available. Reuse supported configuration settings to streamline environment setup and application lifecycle management.
+
+- [Docs](manage-environments.md#copy-the-environment-configuration)
+
 ## September 2026
 
 ### General availability
@@ -499,7 +509,7 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](manage-environments.md#copy-the-environment-configuration)
+- [Documentation](manage-environments.md#copy-the-environment-configuration-preview)
 
 <!--
 ## September 2022 updates
