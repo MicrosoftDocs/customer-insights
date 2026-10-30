@@ -13,7 +13,8 @@ ms.collection: bap-ai-copilot
 
 # Have a dialog with data using Copilot in Customer Insights - Data (preview)
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+> [!IMPORTANT]
+> We're removing dialog with data on November 2, 2026. After that date, it isn't available. To ask questions about your customer data in natural language from your own agent, use the [Customer Insights MCP Server](mcp-server-tools.md). Learn more in [Removed or deprecated features](removed-deprecated-features-customer-insights.md#dialog-with-data).
 
 > [!IMPORTANT]
 > Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
