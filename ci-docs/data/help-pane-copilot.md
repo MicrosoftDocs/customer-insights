@@ -13,7 +13,8 @@ ms.collection: bap-ai-copilot
 
 # Get answers to questions about capabilities from Copilot (preview)
 
-[!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
+> [!IMPORTANT]
+> We're removing the Copilot help pane on November 2, 2026. After that date, it isn't available. To get answers about Customer Insights - Data capabilities, use Ask Learn, the AI assistant on Microsoft Learn. Learn more in [Removed or deprecated features](removed-deprecated-features-customer-insights.md#copilot-help-pane).
 
 > [!IMPORTANT]
 > Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.

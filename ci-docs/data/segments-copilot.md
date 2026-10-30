@@ -13,7 +13,9 @@ ms.collection: bap-ai-copilot
 
 # Create segments with Copilot for Customer Insights - Data (preview)
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+> [!IMPORTANT]
+> We're removing segment creation with Copilot on November 2, 2026. After that date, it isn't available. To create segments, use [quick segments](segment-quick.md) or the [segment builder](segment-builder.md). Segments you already created with Copilot stay and keep working. Learn more in [Removed or deprecated features](removed-deprecated-features-customer-insights.md#create-segments-with-copilot).
+
 
 > [!IMPORTANT]
 > Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
