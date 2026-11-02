@@ -39,7 +39,7 @@ Before you create a Fabric OneLake data source:
 
 - Tables must have a primary key column with unique, non-null values. String, integer, and GUID data types are supported as primary keys.
 - Tables must be in the Delta format.
-- Tables must be limited to Delta features that require `minReaderVersion` 1 or 2. For more information, see [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
+- Tables must have a `minReaderVersion` of 3 or earlier and use only supported Delta features. For more information, see [Supported Databricks features and versions](connect-delta-lake.md#supported-databricks-features-and-versions).
 - The physical Delta table name (the table folder name under `Tables` in a Fabric lakehouse) must start with an ASCII letter (`A`–`Z` or `a`–`z`) and contain only ASCII letters, digits (`0`–`9`), and underscores (`_`). For example, `Orders_2026` is supported, but `2026Orders`, `Sales Orders`, and `Sales-Orders` aren't. Tables with unsupported names aren't discovered. To include such a table, [rename it in Fabric Lakehouse explorer](/fabric/data-engineering/navigate-lakehouse-explorer#tables).
 
 ## Limitations
@@ -49,7 +49,7 @@ This feature has the following limitations:
 - Files or tables that aren't in **Delta format** (for example, CSV or non-Delta Parquet) aren't supported.
 - Only **one Fabric OneLake data source per workspace**. To ingest data from another workspace, create another data source or use a Fabric shortcut to expose the remote table in the workspace.
 - Fabric **Data Warehouse** tables aren't supported.
-- Tables configured with Delta features that require `minReaderVersion` greater than 2, such as deletion vectors aren't supported. For more information, see [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
+- Tables that use unsupported Delta reader features aren't supported. For supported features, see [Supported Databricks features and versions](connect-delta-lake.md#supported-databricks-features-and-versions).
 
 ## Enable external access to OneLake data
 
