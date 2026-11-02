@@ -1,7 +1,7 @@
 ---
 title: FAQ for docs-based Q&A Copilot (preview)
 description: Docs-based Q&A in Customer Insights - Data uses AI to answer product questions from public documentation. This FAQ covers capabilities, evaluation, and limitations.
-ms.date: 07/10/2026
+ms.date: 10/29/2026
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
@@ -38,7 +38,7 @@ More evaluation was performed over custom datasets for offensive and malicious p
 - Inaccurate responses might be returned when users converse with the system in languages other than English.
 - The capability can only answer questions that are covered in [this product's public documentation](overview.md) and [troubleshooting pages](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights).
 - This capability can't access your data tables to answer questions about it. You can use the following capability for such questions: [Have a dialog with data using Copilot](dialog-with-data.md).
-- The capability doesn't answer questions about the [roadmap of our product](https://releaseplans.microsoft.com/).
+- The capability doesn't answer questions about the [roadmap of our product](https://aka.ms/AIatWorkroadmap).
 
 ## What are the supported geographies and languages?
 
