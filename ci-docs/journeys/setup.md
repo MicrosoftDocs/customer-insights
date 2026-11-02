@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: Learn how to install, uninstall, and manage Dynamics 365 Customer Insights environments with step-by-step guidance and troubleshooting tips.
-ms.date: 10/13/2026
+ms.date: 10/29/2026
 ms.topic: install-set-up-deploy
 author: udag
 ms.author: udag
@@ -31,7 +31,7 @@ To install Customer Insights, ensure you meet all the following requirements:
    - A security role (such [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install.
    - Permissions to register applications in Azure. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
    - A Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 environment. (The Customer Insights license agreement doesn't legally require the installing user to have this license, but a known technical issue currently makes it necessary.)
-- You must be located in a country/region where the product is supported. To read the latest list of countries/regions where you can use Customer Insights, download the [Microsoft Dynamics 365 International Availability](https://go.microsoft.com/fwlink/p/?linkid=875097) document (PDF).
+- You're located in a country/region where the product is supported. To read the latest list of countries/regions where you can use Customer Insights, go to [Microsoft Dynamics 365 International Availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 - You must disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features**, and set the toggle next to **Block unmanaged customizations** to **Off**. For more information, see [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations).
 
 Before starting the installation, close all other browser windows and tabs, and clear your browser cache. If you run into trouble while installing, see the [Administration and setup FAQ](setup-troubleshooting.yml) for some possible solutions.

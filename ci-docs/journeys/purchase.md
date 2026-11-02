@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 10/13/2026
+ms.date: 10/29/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -65,7 +65,7 @@ If you plan to use SMS, you must select a provider (such as Azure Communication 
 
 ### Step 4: Add Customer Insights to your Microsoft 365 tenant
 
-There are several ways to acquire a Customer Insights license. You can purchase a license from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/). Or, you can go to **Billing** > **Purchase services** in your Microsoft 365 admin center. You can also purchase a license by contacting your Microsoft sales representative or channel partner. After you've purchased a license and it's added to your tenant, you’ll find it in the Power Platform admin center under **Manage** > **Dynamics 365 apps**.
+You can acquire a Customer Insights license in several ways. Purchase a license from the [Dynamics 365 Customer Insights overview page](https://www.microsoft.com/dynamics-365/products/customer-insights). Or, go to **Billing** > **Purchase services** in your Microsoft 365 admin center. You can also purchase a license by contacting your Microsoft sales representative or channel partner. After you purchase a license and add it to your tenant, find it in the Power Platform admin center under **Manage** > **Dynamics 365 apps**.
 
 You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform admin center. Even old, expired trial licenses have records listed in the Power Platform admin center. You can access the installation management experience for any of these apps in the Power Platform admin center under **Manage** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is just a means to access the management page; it doesn't represent anything else.
 

@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 10/13/2026
+ms.date: 10/29/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
-This article lists monthly release notes for Dynamics 365 Customer Insights - Journeys, including early access features, preview features, general availability updates, enhancements, and bug fixes. For longer-term feature plans, see the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
+This article lists monthly release notes for Dynamics 365 Customer Insights - Journeys, including early access features, preview features, general availability updates, enhancements, and bug fixes. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
@@ -71,7 +71,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Transform customer journeys into action with record creation**  
 	- You can now create any record or activity directly from a journey with full control over fields and dynamic values. Instead of rigid workflows or manual data entry, you can automate actions for any scenario, including handing off high-value leads and opportunities or creating tasks for prompt follow-up, without leaving the journey builder. This means faster processes, fewer errors, and more flexibility to adapt customer journeys to your unique business needs without custom development.  
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)  
+
 	- [Docs](create-records-activities.md)
 
 
@@ -85,14 +85,14 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Automatically update emails with the latest content**
 	- Dynamic content blocks eliminate manual work and the risk of sending emails with outdated content. When a dynamic content block is updated, all emails using that block automatically refresh to ensure recipients always receive the most current content.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/automatically-update-emails-latest-content)
+
 	- [Docs](content-blocks.md#static-vs-dynamic-content-blocks)
 
 #### Public preview
 
 - **Enable advanced personalization using simple formulas to modify text, dates, and numbers**
 	- Enhance personalization by transforming data directly within your messages by using Power Fx expressions. Standardize customer names (for example, convert to proper case), format dates and numbers for different regions, and perform simple calculations such as days until expiration or suggested donation amounts based on prior activity. These capabilities help you deliver more accurate, relevant, and engaging communications, all without requiring changes to your data model.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers)
+
 	- [Docs](power-fx-dynamic-text.md)
 
 #### Monthly enhancements
@@ -110,7 +110,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Improve engagement and message timing with Outreach Optimization Agent**
 	- Outreach Optimization Agent helps you automatically optimize when and how often you reach each customer by intelligently orchestrating message timing and follow‑ups based on engagement history and real‑time signals.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-message-timing-outreach-optimization-agent)
+
 	- [Docs](outreach-optimization-agent.md)
 
 #### Monthly enhancements
@@ -129,14 +129,14 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Set message expirations to keep communication relevant**
 	- Customers can get frustrated when they receive outdated communications, such as expired coupons and irrelevant reminders. This frustration creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This feature keeps your customers engaged and satisfied with relevant communications in moments that matter.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
+
 	- [Docs](message-expiration.md)
 
 #### Public preview
 
 - **Create journeys in minutes with Journey Creation Agent**
 	- By using the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they never created one before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
+
 	- [Docs](journey-creation-agent.md)
 
 > [!NOTE]
@@ -178,7 +178,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 - **Create journeys in minutes with Journey Creation Agent**
 	- By using the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they never created one before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
 	- [Docs](journey-creation-agent.md)
- 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
+
  
 - **Govern Customer Insights - Journeys agents and Copilot centrally with Dynamics 365 AI Hub**
 	- Dynamics 365 AI Hub provides a single, in‑product location to manage all Customer Insights - Journeys agents and Copilot features for your environment. You can complete prerequisites, enable or disable agents, and configure guardrails such as follow‑up limits or processing caps, without navigating between tools. Because AI Hub is aligned with tenant‑level settings in Copilot Hub in Power Platform Admin Center, your environment automatically remains compliant with global governance policies.
@@ -225,12 +225,12 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Automatically update emails with the latest content**
 	- Dynamic content blocks eliminate manual work and the risk of sending emails with outdated content. When a dynamic content block is updated, all emails using that block automatically refresh to ensure recipients always receive the most current content.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/automatically-update-emails-latest-content)
+
 	- [Docs](content-blocks.md#static-vs-dynamic-content-blocks)
 
 - **Transform customer journeys into action with record creation**
 	- You can now create any record or activity directly from a journey with full control over fields and dynamic values. Instead of rigid workflows or manual data entry, you can automate actions for any scenario, including handing off high-value leads and opportunities or creating tasks for prompt follow-up, without leaving the journey builder. This means faster processes, fewer errors, and more flexibility to adapt customer journeys to your unique business needs without custom development.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+
 	- [Docs](create-records-activities.md)
 
 #### Monthly enhancements
@@ -253,19 +253,16 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 - **Create static segments with up to 200,000 members**
     - Marketers often receive customer lists from various systems and need to act quickly. These lists typically lack the attributes required for dynamic segments or aren't part of an existing Dataverse view. This feature enables marketers to build static segments with up to 200,000 members using data from any source. Marketers can upload CSV files, use the API to create segments as part of a workflow, or select contacts from a Dataverse view.
-    - [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
     - [Docs](real-time-marketing-build-segments.md#statically-include-or-exclude-up-to-2000000-segment-members)
 
 - **Drive confident engagement with enhanced consent‑based segmentation**
 	- As a marketer, you want to grow relationships on a foundation of trust, sending messages only to customers who expect to hear from you. Enhanced consent‑based segmentation turns your consent policies into clear, ready‑to‑use audiences. You can instantly see who qualifies for each purpose and channel, and build segments that stay aligned with your compliance profiles by design. You move faster from consent data to active audiences, so every journey is both relevant and respectful of customer choices.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/drive-confident-engagement-enhanced-consentbased-segmentation)
 	- [Docs](real-time-marketing-consent-segments.md)
 
 #### Public preview
 
 - **Set message expirations to keep communication relevant**
 	- Customers can get frustrated when they receive outdated communications, such as expired coupons and irrelevant reminders. This frustration creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This feature keeps your customers engaged and satisfied with relevant communications in moments that matter.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
 	- [Docs](message-expiration.md)
 
 #### New blogs and scenario docs
@@ -284,12 +281,11 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Maximize event ROI with paid registration, seamless payment integration** 
 	- Hosting impactful events demands significant time, resources, and budget, but often requires the use of disparate and fragmented tools to sell event tickets. This challenge makes it difficult to track payments, reduce registration drop-off, and ultimately provide a delightful attendee experience. By using the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. We're introducing support for session registrations with passes, ensuring that attendees can only register for sessions that the pass gives them access to.  
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration) 
+ 
 	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
 
 - **Enhanced reCAPTCHA**
 	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. By using the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all Customer Insights ‑ Journeys forms by June 30, 2026. 
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/strengthen-form-bot-protection-recaptcha) 
 	- [Docs](real-time-marketing-form-security-privacy.md#protect-forms-from-bots-with-recaptcha)
 
 #### Monthly enhancements

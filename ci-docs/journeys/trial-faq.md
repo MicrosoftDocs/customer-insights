@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 10/13/2026
+ms.date: 10/29/2026
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: udag
@@ -53,7 +53,7 @@ The Customer Insights trial lasts 30 days. As [mentioned below](trial-faq.md#how
 
 ### Is the trial available in all supported geographical regions and languages?
 
-Yes, the trial is available in all regions where the app is supported. To read the latest list of countries/regions where you can use Customer Insights, download the [Microsoft Dynamics 365 International Availability](https://go.microsoft.com/fwlink/p/?linkid=875097) document (PDF). For a list of supported languages, see [Supported languages](/powerapps/maker/portals/configure/enable-multiple-language-support#supported-languages).
+Yes, the trial is available in all regions where the app is supported. Review the [feature availability by region](https://releaseplans.microsoft.com/availability-reports/?report=featuregeoreport) report. For a list of supported languages, see [Supported languages](/powerapps/maker/portals/configure/enable-multiple-language-support#supported-languages).
 
 ### What are the trial limits and quotas?
 

@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 10/09/2026
+ms.date: 10/29/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -10,7 +10,7 @@ ms.reviewer: v-wendysmith
 
 # What's new in Dynamics 365 Customer Insights - Data
 
-We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
+We're excited to announce our newest updates! This article summarizes public preview features, general availability enhancements, and feature updates. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action, we update the app automatically with no downtime.
 
@@ -42,7 +42,6 @@ The following data enrichments reached general availability in August 2026:
 
 Access the interaction data captured by Customer Insights - Journeys and use it in Customer Insights - Data segments to include how customers responded to your campaign. This capability enables customer experience teams to combine the power of unified profiles with insights from Customer Insights - Journeys.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/generate-insights-marketing-interactions)
 - [Docs](journeys-interaction-data-segments-measures.md)
 
 ## July 2026
@@ -61,7 +60,6 @@ For organizations that require enhanced control over connections to a workspace,
 
 Use the Customer Insights MCP Server to enrich your chat and agent workflows with unified customer data and AI-generated insights.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/increase-accuracy-autonomous-agents-grounding-them-customer-insights)
 - [Docs](mcp-server-tools.md)
 
 ## May 2026
@@ -72,14 +70,12 @@ Use the Customer Insights MCP Server to enrich your chat and agent workflows wit
 
 The new performance dashboard gives you the ability to instantly see the overall end-to-end performance and operational status of Customers Insights - Data while allowing you to dive into task details when needed.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/track-manage-daily-processing-performance-dashboard)
 - [Docs](performance.md)
 
 #### Reduce alert fatigue with noise-free notifications
 
 Customer Insights - Data detects and self-corrects transient issues. ​This improved capability shows up in fewer emails sent to admins and in activity logs that distinguish between transient issues and permanent failures, allowing you to eliminate alerts to admins and on-call support staff for transient issues.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/reduce-alert-fatigue-noise-free-notifications)
 - [Docs](data-refresh-notifications.md)
 
 ### Public preview
@@ -88,14 +84,12 @@ Customer Insights - Data detects and self-corrects transient issues. ​This imp
 
 Easily explore and select customer data stored in Fabric OneLake for processing in Customer Insights - Data. The OneLake connector reads directly from your OneLake data, eliminating the need to copy or stage data.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/use-onelake-as-data-source-destination)
 - [Docs](connect-fabric-onelake.md)
 
 #### Target right audience based on signals from earlier campaigns
 
 Access the interaction data captured by Customer Insights - Journeys and use it in Customer Insights - Data segments to include how customers responded to your campaign. This capability enables customer experience teams to combine the power of unified profiles with insights from Customer Insights - Journeys.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/generate-insights-marketing-interactions)
 - [Docs](journeys-interaction-data-segments-measures.md)
 
 ## April 2026
@@ -106,7 +100,6 @@ Access the interaction data captured by Customer Insights - Journeys and use it 
 
 Creating segments in Customer Insights - Data is now faster, easier, and more accurate. Customer Insights - Data allows you to select from a list of valid display names for field values, eliminating the need to enter obscure codes or keep track of what data values are expected for each field.
 
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/easily-select-appropriate-field-values-list-when-working-segments-conditions)
 - [Docs](segments-overview.md#segment-builder-tips)
 
 ## October 2025
@@ -117,7 +110,6 @@ Creating segments in Customer Insights - Data is now faster, easier, and more ac
 
 Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
 
-- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/filter-rows-columns-source-data-improved-processing)
 - [Docs](tables-filters.md)
 
 #### Advanced merge preferences in data unification
@@ -136,10 +128,9 @@ Create a group of fields to treat as a single unit in your unified customer prof
 
 Easily send your customer data to external platforms like Google Ads, Facebook Ads, Snapchat, LinkedIn Ads, or use SFTP (Secure File Transfer Protocol) to share data with downstream activation platforms. When you use the rich customer insights created in Customer Insights - Data, you can drive targeted marketing and advertising campaigns, perform analytics on almost any platform, optimize ad spending, and improve customer engagement.
 
-- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/export-data-azure-data-lake-storage-gen2)
 - [Docs](export-azure-data-lake-storage-gen2.md)
 
-## July 2025
+<!-- Commenting out since the release plan entry doesn't exist ## July 2025
 
 ### General availability
 
@@ -147,7 +138,7 @@ Easily send your customer data to external platforms like Google Ads, Facebook A
 
 Customer Insights - Data now uses Virtual Network support for Power Platform to integrate Customer Insights - Data with resources inside your virtual network without exposing them over the public internet.
 
-- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/connect-firewalled-storage-accounts-using-azure-managed-identities)
+- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/connect-firewalled-storage-accounts-using-azure-managed-identities) -->
 
 ## May 2025
 
@@ -157,7 +148,6 @@ Customer Insights - Data now uses Virtual Network support for Power Platform to 
 
 Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
 
-- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/filter-rows-columns-source-data-improved-processing)
 - [Docs](tables-filters.md)
 
 ## October 2024
@@ -169,14 +159,12 @@ Improve the quality of your unified customer profiles and insights by filtering 
 As your Dynamics 365 Customer Insights usage increases, so does the number of segments and measures. Large numbers of segments and measures can result in longer system refresh times, which delay time-sensitive insights. 
 Customer Insights now automatically deactivates segments and measures based on their usage to ensure your active segments and measures refresh faster. As an admin you get to control the retention period that applies and can support your organization to scale confidently.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/planned-features)
 - [Docs](segments.md#automated-deactivation-of-unused-segments) 
 
 #### Accelerate time to insights with data in Delta Lake format
 
 Your customer data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. Get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/planned-features)
 - [Docs](connect-delta-lake.md)
 
 ## September 2024
@@ -187,7 +175,6 @@ Your customer data updates constantly, with rapidly changing signals like online
 
 Your data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. You can get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
 
-- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/planned-features)
 - [Docs](connect-delta-lake.md)
 
 ## June 2024
@@ -218,14 +205,12 @@ This capability includes the following features:
 
 **Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/elevate-customer-experiences-real-time)
 - [Docs](real-time-web-personalization-overview.md)
 
 #### Personalize omnichannel experiences with no code using Optimizely
 
 Customer Insights and Optimizely now unlock omnichannel personalization and experimentation capabilities, enabling marketers and citizen developers to personalize every customer touchpoint with no code or prior expertise required. By combining insights and segments from Customer Insights with Optimizely audiences, you can create experiences that are tailored to your customer's browsing activity, their loyalty, past engagement history, and other real-time signals. Moreover, you can continue the conversation or re-target your visitors by delivering the same consistent experience through customer journeys, based on which Optimizely treatment cohort the customer was part of.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/personalize-omnichannel-experiences-no-code-using-optimizely)
 - [Docs](optimizely-integration.md)
 
 ## April/May 2024
@@ -261,7 +246,6 @@ Insights are available to your business users through their Dynamics 365 applica
 
 :::image type="content" source="media/sales-ci-data.png" alt-text="Dynamics 365 Sales user interface with loyalty data from Customer Insights.":::
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/empower-marketing-sales-service-users-customer-insights-right-within-their-business-applications)
 - [Docs](integrate-d365-apps.md)
 
 ### New blog
@@ -299,7 +283,6 @@ You can now track changes to exports with newly added columns that show details 
 
 You can already create highly personalized experiences for your customers when you use enriched profiles from Dynamics 365 Customer Insights - Data. Now, you can further personalize journeys and content by using calculated metrics (customer measures) such as lifetime value, total or average spend, total amount insured or number of policies, etc. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or level of service (for example, priority notification ahead of others).
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/personalize-customer-experiences-using-calculated-metrics)
 - [Docs](dataverse-measures.md)
 
 ### Public preview features
@@ -322,7 +305,6 @@ You might have customer data where a person has multiple records and has provide
 
 In a revisited deduplication process, the system now runs every deduplication rule against every customer record in a table. The match results from all the rules are then analyzed and match groups that share a common record are combined into a single match group. This process can identify and combine potentially long and complex chains of matching relationships, which result in the creation of unified customer profiles with unparalleled accuracy.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/improved-accuracy-deduplication-process)
 - [Docs](data-unification-duplicates.md)
 
 ### Public preview
@@ -331,14 +313,12 @@ In a revisited deduplication process, the system now runs every deduplication ru
 
 Setting up Customer Insights with all your data and managing it to stay healthy can be complex at times. Now, Copilot in Customer Insights assists you by providing timely guidance that adapts, depending on where you are in the configuration process. In addition to this guidance, you can also ask your own questions to help clarify concepts or understand what you need to do next to successfully configure your solution.
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/receive-task-assistance-copilot-based-docs)
 - [Docs](help-pane-copilot.md)
 
 #### Seamlessly onboard customer data from your Delta Lake with no data integration
 
 Data already prepared and stored in your Azure Data Lake storage in the Delta Lake format can be readily attached in Customer Insights without data movement and formatting. This accelerates the processing time and reduces operations management of intermediate processing and data preparation leading to more regular and current insights. As a result, organizations can obtain more frequent and up-to-date insights, allowing them to make informed decisions faster and adapt to changing business environments more effectively.
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/seamlessly-onboard-customer-data-delta-lake-no-data-integration)
 - [Docs](connect-delta-lake.md)
 
 ### Monthly enhancements
@@ -363,7 +343,6 @@ Members of business units can now configure and run exports with a [Marketing co
 
 Customer Insights can now match and unify all the profile data for a specific customer, even if it requires several matching rules to identify all the customer’s records. Fully unified customer data ensures you can confidently use profiles to personalize the customer experience and make smarter decisions.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/improved-accuracy-deduplication-process)
 - [Docs](data-unification-duplicates.md)
 
 ### Public preview
@@ -372,7 +351,6 @@ Customer Insights can now match and unify all the profile data for a specific cu
 
 Effective segmentation, while a powerful tool for targeting the right audience, has traditionally required a thorough understanding of complex data models, database management and SQL (Structured Query Language). Segmentation assist, a copilot feature in Dynamics 365 Customer Insights, now makes it easy for marketing and CX teams to build and refine the rules that compose a segment using natural language, and immediately target them with customer journeys in Dynamics 365 Marketing or sync to ad/Martech platforms.
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/build-segments-using-everyday-words-copilot-customer-insights)
 - [Docs](segments-copilot.md)
 
 ### Monthly enhancements
@@ -389,14 +367,12 @@ Segments in Customer Insights - Data, now provides an "Inspection mode" toggle f
 
 The data prep report reduces the time and effort encountered by turning your data into rich insights about your customers, such as segments, measures, and predictions. With actionable recommendations based on an AI-driven quality analysis, you can improve your data quality proactively. Analysts and business users can spend more time generating and using accurate insights and less time on data hygiene, empowering them to elevate customer experiences and optimize business outcomes.
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/identify-eliminate-data-quality-issues-effortlessly-copilot)
 - [Documentation](removed-deprecated-features-customer-insights.md#data-prep-report)
 
 ### Address issues with environment status summary
 
 The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. With this summary, admins can focus on quickly taking the actions required.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
 - [Documentation](removed-deprecated-features-customer-insights.md#environment-status-summary)
 
 ### Monthly enhancements
@@ -428,7 +404,6 @@ Activity data can appear within the same activity timeline already used today to
 
 Activities within the Dynamics 365 activity timeline can be filtered, searched, and updated dynamically.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/display-customer-insights-activities-dynamics-365-activity-timeline)
 - [Documentation](activities-in-d365-timeline.md)
 
 ## May 2023
@@ -439,28 +414,24 @@ Copilot in Dynamics 365 Customer Insights - Data is powered by AI to provide you
 
 This feature democratizes access to insights, allowing analysts, marketers, and sellers to ask questions using conversational language and receive instant answers, without needing to have the knowledge of SQL programming. Copilot removes the barriers to getting a deeper understanding of customers, enabling users to speed up and scale the delivery of hyper-personalized experiences that customers expect.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
 - [Documentation](dialog-with-data.md)
 
 ### Unify your B2B account and contact data into easy to work with related tables that also support commercial contacts with unknown accounts  
 
 Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
 - [Documentation](b2b/data-unification-contacts.md)
 
 ### Bring your custom prediction models from Azure Synapse Analytics into Dynamics 365 Customer Insights - Data, using our Synapse pipeline integration
 
 Now you can utilize your existing custom models in Synapse with routinely refreshed, high-quality unified customer and transaction data to supercharge your next marketing or sales campaign.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/easily-connect-custom-prediction-models-guided-steps)
 - [Documentation](custom-models.md)
 
 ### Get an enhanced experience for custom prediction models in Dynamics 365 Customer Insights - Data with a user-friendly wizard
 
 Users can easily and quickly bring custom prediction models from Azure Machine Learning or Azure Synapse Analytics into Customer Insights - Data with a simple 5-step wizard that walks them through establishing a connection, addition of an AI/ML workflow, configuration of model parameters, setup of required data, and reviewing and running the model.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/connect-custom-machine-learning-models-azure-synapse-analytics)
 - [Documentation](custom-models.md)
 
 ## April 2023
@@ -471,7 +442,7 @@ We're enhancing our delete and reset environment capabilities to make them easie
 
 Because Customer Insights environments are associated with a Dataverse environment, they're always in sync. Environment owners have access to these capabilities from the Power Platform admin center solutions page and can delegate these permissions.
 
-- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/do-more-advanced-application-lifecycle-management)
+- [Docs](/power-platform/alm/)
 
 ## March 2023
 
@@ -490,16 +461,13 @@ After an admin successfully creates your initial environment, the FRE guides you
 
 This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights - Data provides connections to a broad set of sources](data-sources.md).
 
-- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
-
 ## January 2023
 
 ### Achieve business scenarios with application lifecycle management
 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
-- [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](manage-environments.md#copy-the-environment-configuration-preview)
+- [Docs](manage-environments.md#copy-the-environment-configuration-preview)
 
 <!--
 ## September 2022 updates
