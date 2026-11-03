@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
-description: Learn about the messaging, AI-powered, condition, and connector actions you can add to a Customer Insights - Journeys real-time journey.
-ms.date: 10/13/2026
+description: Learn how to add an action in a journey in Customer Insights - Journeys. Explore messaging, AI-powered, condition, and connector actions to engage customers.
+ms.date: 11/03/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -13,11 +13,11 @@ search.audienceType:
 
 # Add an action in a journey
 
-This page provides an overview of all the possible actions you can take in a journey.
+Learn how to add an action in a journey in Customer Insights - Journeys to send messages, optimize channels, branch customer paths, or connect other workflows.
 
-To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action when in your journey, select **+Add an action** under the Journey start node.
+To open the **Add an action** dashboard, go to Customer Insights - Journeys > **Journeys**. Select your desired journey or create a new journey by selecting **+New journey**. To add an action when in your journey, select **+Add an action** under the Journey start node.
 
-## Types of actions
+## Types of actions in real-time journeys
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
@@ -25,7 +25,7 @@ The main actions are grouped under [messaging actions](#messaging-actions), [AI-
 
 ### Messaging actions
 
-Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common messaging actions below.
+Customer Insights - Journeys helps you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common messaging actions in the following sections.
 
 #### Email
 
@@ -49,11 +49,11 @@ Customer Insights - Journeys offers the ability to integrate with the Contact Ce
 
 #### Voice conversation
 
-You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
+You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This feature is available only if you enable the [conversational journeys](conversational-journeys-overview.md) feature.
 
 #### Text message conversation
 
-You can send an initial text message to the recipient. When the recipient responds, an AI agent handles the conversation over the SMS channel. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
+You can send an initial text message to the recipient. When the recipient responds, an AI agent handles the conversation over the SMS channel. This feature is available only if you enable the [conversational journeys](conversational-journeys-overview.md) feature.
 
 ### AI-powered actions
 
@@ -69,19 +69,19 @@ Channel optimization uses AI to find the best channel to reach each customer and
 
 ### Condition actions
 
-You can set conditions throughout customers' journeys, such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
+You can set conditions throughout customers' journeys, such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See the available conditions in the following sections. 
 
 #### Wait time
 
 The wait tile holds the customer in the journey for the specified wait period.
 
 > [!IMPORTANT]
-> The maximum time a wait tile can wait for is 90 days or 12 weeks. The maximum time limitation applies whether selecting an amount of time or setting a fixed date.
+> The maximum time a wait tile can wait for is 90 days or 12 weeks. This maximum time limitation applies whether you select an amount of time or set a fixed date.
 
 You can configure the wait tile using the following parameters:
 
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait tile.
-- **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
+- **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers immediately proceed to the next step.
 
 #### Wait for a trigger
 
@@ -99,13 +99,13 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 There are two ways to create a branch in a journey:
 
-- Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger) tile.  
+- Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. You achieve this type of branching by using the [Wait for trigger](#wait-for-trigger) tile.  
 
-- Branch based on current information such as the customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
+- Branch based on current information such as the customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). You achieve this type of branching by using the [Attribute branch](#attribute-branch).  
 
 The key differences between these two branching methods are:
 
-Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This is why the tile is also referred to as an “if/then branch”.
+Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This branching method is why the tile is also referred to as an “if/then branch”.
 
 The attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
 
@@ -124,12 +124,12 @@ For example, you can configure the wait tile to wait for the *Email opened* even
 
 ##### Wait for segment membership
 
-The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
+The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you might want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
 
-Customer Insights - Data segments built using the "bring your own storage account" feature aren't supported.
+Customer Insights - Data segments built by using the "bring your own storage account" feature aren't supported.
 
 > [!NOTE]
-> The maximum time a wait for segment membership condition can wait is 90 days. If the customer doesn't become a segment member within that time, they proceed down the **No** branch.
+> The wait for segment membership condition can wait up to 90 days. If the customer doesn't become a segment member within that time, they proceed down the **No** branch.
 
 #### Attribute branch
 
@@ -137,7 +137,7 @@ An attribute branch lets you branch the journey based on various attributes, inc
 
 - **Customer's attributes**: You can branch the journey based on the customer's attributes, like address or age. The journey's audience defines which attributes are shown. For example, if the journey is for contacts, only attributes for contacts are shown.
 - **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contact-based segments are shown for journeys that are meant for contacts.
-- **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in a "wait for trigger" branch.
+- **Attributes in triggers**: You can branch the journey based on attribute values from the trigger that starts a trigger-based journey. Only this entry trigger appears under **Trigger** in the attribute picker. Custom triggers used in **Wait for trigger** tiles aren't available in this list, even when the attribute branch is on the **Yes** path.
 
 The attribute branch checks for attribute values the moment a customer enters this tile. For example, when a customer enters the attribute branch tile, the segment membership condition checks whether the customer is part of the specified segment at that instant.
 
@@ -149,9 +149,9 @@ Connectors provide additional features beyond the actions above. For example, yo
 
 #### Activate a custom trigger
 
-Triggering a custom event allows you to activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and "wait for trigger" branches for journeys.
+Triggering a custom event allows you to activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This feature includes custom triggers used in exit criteria, goals, and "wait for trigger" branches for journeys.
 
-When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data (for instance, attributes of the target audience such as contacts, leads, etc.) or data from other triggers used in the journey (for instance, attributes of the trigger that starts the journey).
+When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data, such as attributes of the target audience like contacts and leads, or data from other triggers used in the journey, such as attributes of the trigger that starts the journey.
 
 For example, a loan application journey could have various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur. The data you send with the trigger can be used to populate dynamic content or as inputs to other Flow actions.
 
