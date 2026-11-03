@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey
-description: Segment-based journeys in Dynamics 365 Customer Insights - Journeys let you send messages to segment members, set entry rules, and publish targeted campaigns.
-ms.date: 10/13/2026
+description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys to send targeted announcements and follow-ups. Learn how to set it up and publish.
+ms.date: 11/03/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: udag
@@ -18,9 +18,9 @@ ms.custom:
 
 Segment-based journeys send messages to people who qualify for one or more segments. Use them for outbound scenarios such as announcements or nurture campaigns. To create journeys that can react to customers' actions in real time, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md).
 
-## Creating a segment-based journey to send an announcement
+## Create a segment-based journey to send an announcement
 
-To illustrate the capabilities of segment-based journeys, we create a simple journey that sends an announcement to your most valuable customers about an upcoming product. If the customers show interest in the product by clicking the product link, we send them a follow-up message when the product is launched.
+To illustrate the capabilities of segment-based journeys, create a simple journey that sends an announcement to your most valuable customers about an upcoming product. If the customers show interest in the product by clicking the product link, send them a follow-up message when the product is launched.
 
 ## Prerequisites
 
@@ -29,13 +29,13 @@ To illustrate the capabilities of segment-based journeys, we create a simple jou
 Create a segment of your *Most valuable customers*. You can [create your own contact or lead-based segment](real-time-marketing-build-segments.md). Segment-based journeys can also [work with segments from Customer Insights - Data](real-time-marketing-segments.md#segments-created-in-customer-insights---data).
 - If you use Customer Insights - Data segments, use **Customer Profile** as the audience data for personalization.
 
-> [!Note]
-> Segment publishing requires *Create* and *Write* privileges for the `msdynmkt_segment entity`. Ensure that anyone who requires the ability to create a segment has the necessary permissions.
+> [!NOTE]
+> Segment publishing requires *Create* and *Write* privileges for the `msdynmkt_segment` entity. Ensure that anyone who requires the ability to create a segment has the necessary permissions.
 
 ### Create email and text messages
 
-- **Product announcement email**: Initial email announcement that is sent to your *most valuable customers*. Include a link to the new product in this email.
-- **Product launched text message**: Follow-up text message that's sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
+- **Product announcement email**: Initial email announcement that you send to your *most valuable customers*. Include a link to the new product in this email.
+- **Product launched text message**: Follow-up text message that you send after the product is launched. Send this follow-up message only to customers who clicked the link in the first email.
 
 You can build the journey while the content is in the **Draft** state. To publish and go live with the journey, move the content to the **Ready to send** state.
 
@@ -45,12 +45,12 @@ You can build the journey while the content is in the **Draft** state. To publis
 
 To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar.
 
-On the "Create a new journey" screen:
+On the **Create a new journey** screen:
 
 - Enter a name for the journey.
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select one or more segments. Note the following when selecting multiple segments:
-  - The total combined member count of all segments can't exceed the [segment limits for journeys](real-time-marketing-known-issues.md#segments). You can select at most 15 segments (or fewer if the segment size limit is reached sooner).
+  - The total combined member count of all segments can't exceed the [segment limits for journeys](real-time-marketing-known-issues.md#segments). You can select at most 25 segments (or fewer if the segment size limit is reached sooner).
   - Mixed audience types (for example, contacts and leads) can't be selected.
   - Environments that use their own [Azure Data Lake storage account](../data/own-data-lake-storage.md#connect-customer-insights---data-with-your-storage-account) aren't supported.
 - Choose the **frequency** at which your journey should run:
@@ -86,7 +86,7 @@ Use the plus sign (**+**) on the journey canvas to add the individual steps in y
 
 ## Publish the journey
 
-After adding all the steps to the journey canvas, the journey is ready to go live and message real customers. Before you publish the journey, make sure all related content (email, text messages, and push notifications) is in the **Ready to send** state. After publishing, you can't modify the journey, so verify that each step is set up the way you want.
+After adding all the steps to the journey canvas, the journey is ready to go live and message real customers. Before you publish the journey, ensure all related content (email, text messages, and push notifications) is in the **Ready to send** state. After publishing, you can't modify the journey, so verify that each step is set up the way you want.
 
 You can, however, still change the *segment* the journey uses without stopping the journey or creating a new version of it. Learn more: [Edit live segments used in live journeys](edit-live-segments.md)
 
