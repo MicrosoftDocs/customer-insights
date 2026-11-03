@@ -27,7 +27,11 @@
   href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
 
 - name: What's new
-  href: whats-new-customer-insights.md
+  items:
+    - name: What's new (current release)
+      href: whats-new-customer-insights.md
+    - name: What's new archive
+      href: whats-new-customer-insights-archive.md
 
 - name: Data sources
   items:
