@@ -1,7 +1,7 @@
 ---
 title: View tables in Customer Insights - Data
 description: View tables in Customer Insights - Data to evaluate data quality after ingestion. Explore fields, records, row filters, and Dataverse table schemas.
-ms.date: 08/25/2026
+ms.date: 11/03/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -14,9 +14,9 @@ ai-usage: ai-assisted
 
 # View tables in Customer Insights - Data
 
-After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page under the **Source** tab. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities. [Remove unwanted rows](tables-filters.md) from your source data before processing in Customer Insights - Data.
+After [configuring your data sources](data-sources.md), check the quality of the ingested data on the **Tables** page under the **Source** tab. Dynamics 365 Customer Insights - Data offers many capabilities that work with these tables. Reviewing the tables closely can help you validate the output of those capabilities. [Remove unwanted rows](tables-filters.md) from your source data before processing in Customer Insights - Data.
 
-As you work in Customer Insights - Data enriching your data or creating segments, measures, activities, and predictions, the tables that are created from those actions display on the **Tables** page under the **Output** tab.
+As you work in Customer Insights - Data enriching your data or creating segments, measures, activities, and predictions, the tables that you create from those actions appear on the **Tables** page under the **Output** tab.
 
 For more information about the **Relationships** tab, see [Relationships](relationships.md).
 
@@ -26,12 +26,13 @@ For more information about the **Relationships** tab, see [Relationships](relati
 ## View a list of tables
 
 1. Go to **Data** > **Tables**.
+
 1. To view your ingested source tables, stay on the **Source** tab. To view your output tables, select the **Output** tab.
 
    The following information displays for each table.
 
-   - **Name**: Name of the data table. If you see a warning symbol next to a table name, it means that the data for that table didn't load successfully.
-   - **Source**: Type of data source that ingested the table.
+   - **Table Name**: Name of the data table. If you see a warning symbol next to a table name, it means that the data for that table didn't load successfully.
+   - **Data source name**: Type of data source that ingested the table.
    - **Updated**: Time the table was last updated.
    - **Status**: Details about the last update of the table.
    - **Row filters**: Filter to remove unwanted rows. [Row filters](tables-filters.md) are available only for source tables.
@@ -39,10 +40,14 @@ For more information about the **Relationships** tab, see [Relationships](relati
 ## Explore a specific table's data
 
 1. Go to **Data** > **Tables** and select the appropriate tab.
+
 1. Select a table to open the details page.  
+
 1. Explore the different fields and records included for that table.
 
-- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which the system either auto-identifies or users [manually map](data-unification-map-tables.md). These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
+- The **Rows** tab is selected by default and shows details about individual records of the table. The records show the full, unfiltered data. Details listed depend on the table's data type.
+
+- The **Columns** tab shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which the system either auto-identifies or users [manually map](data-unification-map-tables.md). These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
   :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Screenshot of the Attributes tab showing the fields table with field names, data types, and types.":::
 
@@ -51,8 +56,6 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
   To learn more about the data ingested in the table, the **Summary** column provides important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
 
-- The **Data** tab shows details about individual records of the table. The records show the full, unfiltered data. Details listed depend on the table's data type.
-
 - The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
 
   - **Report name**: Name of the report.
@@ -60,11 +63,25 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Created**: Date and time of the table creation.
   - **Edited by**: Name of the person who modified the table.
   - **Edited**: Date and time of the table modification.
-    
+
 **Common issues:**
 - If the data source uses the AttachCDM (Delta format) or AttachCDS connection type, issues might occur during data loading.
 - Customer Insights – Data stores the Delta table version that was used at the time of ingestion. If maintenance operations occur such as VACUUM, delete, or cleanup on the Delta tables and remove the referenced version, the affected tables no longer display any data.
 - To resolve this issue, trigger a data source refresh to ingest the latest available version of the data.
+
+## Show or hide columns or tables from segment and measure builders
+
+As an administrator, you can control which columns or tables are visible in the segment and measure builders. This control helps reduce clutter and lets users focus on the data that's most relevant when creating segments and measures.
+
+If your organization has hundreds or thousands of columns, consider hiding unnecessary tables or columns to make it easier for users to find the data they need.
+
+1. Go to **Data** > **Tables** and select the appropriate tab.
+
+1. To hide one or more tables, select the checkbox next to the table names and then select **Hide in insights**. To show one or more tables that you previously hid, select the checkbox next to the table names and then select **Show in insights**.
+
+1. To hide one or more columns, open the table, and select the **Columns** tab. Select the checkbox next to the column names and then select **Hide in insights**. To show one or more columns that you previously hid, select the checkbox next to the column names and then select **Show in insights**.
+
+:::image type="content" source="media/tables-hide-columns.png" alt-text="Screenshot of Tables page showing a selected table and the Hide in insights button.":::
 
 ## View Customer Insights - Data tables in Dataverse
 
@@ -98,7 +115,7 @@ This table contains the unified customer profile from Customer Insights - Data. 
 
 ### AlternateKey
 
-The AlternateKey table contains keys of the tables that participate in the unify process.
+The AlternateKey table contains keys for the tables that participate in the unify process.
 
 |Column  |Type  |Description  |
 |---------|---------|---------|
