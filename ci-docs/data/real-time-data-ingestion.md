@@ -1,7 +1,7 @@
 ---
 title: Real-time data ingestion (preview)
 description: Ingest real-time data into Dynamics 365 Customer Insights - Data to surface the latest customer activities within seconds. Connect with the API or connector.
-ms.date: 07/29/2026
+ms.date: 10/12/2026
 ms.reviewer: v-wendysmith
 ms.topic: article
 author: Scott-Stabbert
@@ -43,6 +43,7 @@ Because real-time operations take place after the data unification process, they
 
 - You can update customer profiles but can't create or delete them.
 - You can't export real-time updates to external systems, like Power BI.
+- [Business unit data separation](business-units-data-separation.md) has no effect on data ingested or updated through the real-time API.
 
 ## Real-time creation of activities
 
