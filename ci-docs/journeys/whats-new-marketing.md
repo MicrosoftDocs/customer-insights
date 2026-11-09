@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 10/29/2026
+ms.date: 11/09/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -23,6 +23,35 @@ This article lists monthly release notes for Dynamics 365 Customer Insights - Jo
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### November 2026 update
+
+| App      | GA release      |
+|----------|-----------------|
+| Customer Insights - Journeys | 1.3.2529.71  |
+
+#### General availability
+
+- **Build audiences faster with reusable segment templates**
+    - Segment templates help you build audiences without recreating queries for each campaign. Choose a built-in template for common scenarios such as event attendance or email engagement, or save your own segment query as a reusable custom template. Add placeholders with hint text to guide marketers through entering campaign-specific values, reducing repetitive setup while keeping audience criteria consistent.  
+    - [Docs](real-time-marketing-segment-templates.md)
+
+
+#### Monthly enhancements
+
+- **Customize the consent list in double opt-in emails**
+    - With the new consent-list template, you can customize how purposes and topics appear in double opt-in confirmation emails. Filter and order the list to control what recipients see. By default, it shows opted-in choices using their marketing-form labels, in form order, so recipients can see what they're confirming.
+    - [Docs](real-time-marketing-double-opt-in.md#customize-the-consent-list)  
+- **Name and color-code segment groups to make complex definitions easier to review**
+    - Make complex segment definitions easier to understand by giving top-level groups descriptive names and distinct colors. Label groups to reflect their audience criteria and use colors to distinguish them at a glance, helping marketers review targeting logic and maintain segments without having to interpret each group from scratch.
+    - [Docs](real-time-marketing-build-segments.md#name-and-color-code-segment-groups)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
+
+- [Sample configuration guide for consent tracking](https://community.dynamics.com/blogs/post/?postid=5bdf04ab-dccb-f111-a05a-00224834ac53)
+
 
 ### October 2026 update
 
