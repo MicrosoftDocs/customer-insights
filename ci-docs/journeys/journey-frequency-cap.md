@@ -1,7 +1,7 @@
 ---
 title: Use frequency capping in your journey to limit the number of messages sent
 description: Frequency cap lets you limit messages in your journey to prevent customer fatigue. Learn how to set caps and bypass them when needed.
-ms.date: 08/29/2025
+ms.date: 11/09/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,5 +28,3 @@ The [frequency cap setting](real-time-marketing-frequency-cap.md) is on by defau
 1. Under **Other settings**, find **Frequency cap**. Exclude the journey from the frequency cap here.
 
 :::image type="content" source="media/real-time-marketing-frequency-cap-bypass.png" alt-text="Screenshot of the Frequency cap setting showing the option to bypass the cap for a journey." lightbox="media/real-time-marketing-frequency-cap-bypass.png":::
-
-[!INCLUDE[footer-include](./includes/footer-banner.md)]

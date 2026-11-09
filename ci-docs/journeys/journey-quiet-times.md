@@ -1,7 +1,7 @@
 ---
 title: Use quiet times in your journey to prevent messages from being sent during unwanted hours
-description: Quiet times help you prevent messages from being sent during unwanted hours in your journey. Learn how to set up and manage quiet times.
-ms.date: 08/29/2025
+description: Set quiet times in your journey to hold messages during unwanted hours. Learn how to adjust or disable quiet times for individual messages.
+ms.date: 11/09/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,5 +28,3 @@ In a journey, you see the type of [quiet time setting](real-time-marketing-quiet
 The journey lists the number of messages held for quiet times.
 
 :::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Screenshot of the quiet times settings applied in a journey, showing messages held due to quiet times." lightbox="media/quiet-times-and-journeys.png":::
-
-[!INCLUDE[footer-include](./includes/footer-banner.md)]

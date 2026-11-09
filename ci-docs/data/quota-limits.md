@@ -1,7 +1,7 @@
 ---
 title: Monitor your quota usage in Customer Insights - Data
 description: Monitor quota usage in Dynamics 365 Customer Insights - Data to manage subscription limits across environments. See how to check current usage.
-ms.date: 10/19/2026
+ms.date: 11/06/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -10,7 +10,7 @@ ms.reviewer: v-wendysmith
 
 # Monitor your quota usage
 
-See how many unified profiles your organization can use for Customer Insights - Data, and how many are used across all the Customer Insights - Data instances in the tenant.
+See how many unified profiles your organization can use for Customer Insights - Data, and how many are used across all the Customer Insights - Data instances in the tenant. The quota page is only visible to users who have access to Customer Insights - Data. For general information on licensing, see [Customer Insights license guidance](../journeys/license-setup.md).
 
 To check your current quota usage and limits, go to **Settings** > **Quota usage**.
 
