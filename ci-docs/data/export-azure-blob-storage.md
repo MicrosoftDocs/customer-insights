@@ -6,6 +6,7 @@ ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
+ai-usage: ai-assisted
 ---
 
 # Export data to an Azure Blob Storage
@@ -68,6 +69,12 @@ To configure this export, you must have [permission](export-manage.md#set-up-a-n
 1. Select **Save**.
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
+
+### Troubleshoot export authorization errors
+
+If an export fails with "This request is not authorized to perform this operation", check the destination storage account's copy restrictions. Also check its permissions and firewall settings.
+
+A restricted **Permitted scope for copy operations (preview)** can block the export's storage-copy operation. See [Permitted scope for copy operations](/azure/storage/common/security-restrict-copy-operations) to review and change the setting. Select **From any storage account** only if your organization's security policy permits broader copy sources. This setting doesn't grant data access or bypass the storage firewall.
 
 Exported data is stored in the Blob Storage container you configured. The following folder paths are automatically created in your container:
 
