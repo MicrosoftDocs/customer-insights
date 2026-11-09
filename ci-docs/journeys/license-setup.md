@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 10/27/2026
+ms.date: 11/06/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -32,17 +32,17 @@ Because Customer Insights licenses aren't seat-based (that is, you don't pay per
 
 ### Add licenses to your tenant
 
-Depending on how you acquire your license, there are different pathways to get the license on your tenant:
+Depending on how you acquire your license, different pathways exist to get the license on your tenant:
 
 - If you purchase directly through the Microsoft Admin Center, you follow the e-commerce flow, and the license is added to **Your Products** as soon as you complete the purchase flow.
-- If you purchase through a reseller, partner, or Microsoft volume licensing channels, there are various workflows in place that can take different amounts of time. If you don't see the license in *your products*, contact your reseller, partner, or Microsoft sales representative for help. The product team can't help until the license is on the tenant.
-- If you're redeeming internal usage rights (IURs) through the Microsoft Partner Network subscription programs, [follow the instructions](/partner-center/cloud-services#activate-a-subscription-for-the-first-time) to redeem your benefits, choose Dynamics 365 Marketing or Dynamics 365 Customer Insights, and add the licenses to your tenant using the assigned promo codes from the Partner Center.
+- If you purchase through a reseller, partner, or Microsoft volume licensing channels, various workflows are in place that can take different amounts of time. If you don't see the license in *your products*, contact your reseller, partner, or Microsoft sales representative for help. The product team can't help until the license is on the tenant.
+- If you're redeeming internal usage rights (IURs) through the Microsoft Partner Network subscription programs, [follow the instructions](/partner-center/cloud-services#activate-a-subscription-for-the-first-time) to redeem your benefits, choose Dynamics 365 Marketing or Dynamics 365 Customer Insights, and add the licenses to your tenant by using the assigned promo codes from the Partner Center.
 
 ### Monitoring your usage
 
 As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant-level licenses, which means that all meters associated with the licenses are summed at the tenant level across any environment of any type (sandbox, production, trial) that's using the application on a given tenant. To monitor your tenant-level usage:
 - For Customer Insights - Journeys, go to **Settings** > **Quota Limits** where you can see the total tenant-level entitled interacted people and monthly interactions, as well as how much has been used on the environment you are on and all **other** environments on the tenant. You get an in-app notification as your organization approaches its paid quota and as it exceeds it.
-- For Customer Insights - Data, visit each environment on the tenant and sum the total count of **Customers** in each environment. You can visit each environment using the environment switcher in the upper-right corner.
+- For Customer Insights - Data, [view the quota usage](../data/quota-limits.md) page to see the total tenant-level unified people quota and how much has been used in each environment.
 - For Dataverse and other platform-related meters, visit [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/) > **Licensing** > **Capacity add-ons**.
 
 ### Purchase guidance for Dynamics 365 Customer Insights
@@ -75,7 +75,7 @@ As stated in the published Dynamics 365 license guide, Customer Insights - Journ
     - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500,000 interacted people but have purchased the 500,000 sending burst add-on through their seller.
 - The Dataverse entitlements on the full price and the attach base offers are the same. In other words, you get the same number of Dataverse entitlements on the full price base offer as you do for the attach priced base offer. You can only get the Dataverse entitlements for the base offer (either full-priced or attached priced) one time, regardless of how many instances of the base offer you buy. You receive incremental Dataverse entitlements for each unit of add-on packs you buy of interacted people and unified people, respectively.
 
-### Licenses vs. applications
+### Licenses versus applications
 
 As of September 2023, application installation licenses count at the tenant level. Before this change, with the Dynamics 365 Marketing standalone license and installation model, each license was tightly bound to an environment to enforce the use of one license per environment. As of September 2023, this tight binding is removed to accommodate both the old Dynamics 365 Marketing standalone license model and the new Dynamics 365 Customer Insights license model. Licenses count at the tenant level and display in the installation quota at the top of the installation management page. Also with this change, listings of the licenses in the **Power Platform admin center** under **Licensing** are only a means to open the installation management page and always show as nonconfigured.
 
@@ -111,7 +111,7 @@ Buy enough quota to cover the highest usage you expect in any month. The quota g
 
 ### Why do I see so many listings of Dynamics 365 Marketing in Power Platform admin center > Manage > Dynamics 365 apps?
 
-Each time you create a self-service trial, a license is created and isn't removed. As of September 2023, these listings only let you open the installation page through the **Manage** option.
+Each time you create a self-service trial, you create a license that isn't removed. As of September 2023, these listings only let you open the installation page through the **Manage** option.
 
 ### Where can I learn more about Customer Insights - Journeys licensing?
 
@@ -130,4 +130,4 @@ Each time you create a self-service trial, a license is created and isn't remove
 
 ### Why does usage on sandbox environments count against my entitlement?
 
-- The concept of sandbox and production environment types exists to support platform application lifecycle management features and doesn't intersect with any consumption usage metrics. Dynamics 365 Customer Insights, Dataverse add-ons, and other licenses are specified at the tenant level explicitly to capture usage across any and all environments of any and all types. Microsoft accrues the cost of database storage and transactions regardless of the environment type and therefore doesn't make any distinctions about usage by environment type with regard to entitlements. Entitlements are tenant-level, which is the sum of all usage at the tenant level, regardless of environment type.
+- The concept of sandbox and production environment types exists to support platform application lifecycle management features and doesn't intersect with any consumption usage metrics. Specify Dynamics 365 Customer Insights, Dataverse add-ons, and other licenses at the tenant level explicitly to capture usage across any and all environments of any and all types. Microsoft accrues the cost of database storage and transactions regardless of the environment type and therefore doesn't make any distinctions about usage by environment type with regard to entitlements. Entitlements are tenant-level, which is the sum of all usage at the tenant level, regardless of environment type.
