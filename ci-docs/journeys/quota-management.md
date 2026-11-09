@@ -1,7 +1,7 @@
 ---
 title: Monitor your monthly quotas
 description: View your remaining monthly credits for sending marketing email messages and other metered services in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/27/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -15,8 +15,6 @@ search.audienceType:
 # Monitor your monthly quotas
 
 Dynamics 365 Customer Insights - Journeys is a subscription service that's billed monthly and sets organization-level quotas for the maximum number of interacted people records and monthly outbound interactions that you can send. Other quotas may also apply. You can always upgrade your subscription if you need higher quotas.
-> [!IMPORTANT]
-> Starting in December 2026, the Quota limits page will display inbound interactions from form and event-registration submissions. This reporting update doesn't change licensing entitlements.
 
 > [!TIP]
 > You'll see in-app notifications as your organization approaches its paid consumption quota and when it has exceeded it.

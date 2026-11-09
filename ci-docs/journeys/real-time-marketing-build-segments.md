@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys
 description: Use the Customer Insights - Journeys segment builder to create dynamic and static segments with attributes, related tables, and manual selections. Start building targeted audiences.
-ms.date: 10/13/2026
+ms.date: 10/23/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -11,6 +11,7 @@ search.audienceType:
   - customizer
   - enduser
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Build segments in Customer Insights - Journeys
@@ -120,6 +121,13 @@ In the preceding example, you add the attribute to a new group (Group 2). To cre
 > [!TIP]
 > While adding nested segments to the segment definition, you can view the details of the underlying segment by selecting the **View segment** hyperlink when hovering over the desired segment. To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action opens a dialog displaying the segment details.
 > :::image type="content" source="media/segment-details.png" alt-text="Screenshot showing link to view segment details." lightbox="media/segment-details.png":::
+
+### Name and color-code segment groups
+
+Name and color-code top-level groups to make your segment easier to read. In a group's header, select the pencil icon (**Edit group info**) to open **Edit group information**. Enter a descriptive **Name**, such as **Seattle customers**, and choose a **Color**, such as **Teal**. Select **Save** in the dialog, and then select **Save** on the segment command bar to save the group name and color with your segment.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Edit group information dialog with Seattle customers entered as the name and Teal selected as the color.](media/real-time-marketing-segment-group-name-color.png "Name and color-code a segment group")
 
 ## How conditions on a related table combine across groups
 

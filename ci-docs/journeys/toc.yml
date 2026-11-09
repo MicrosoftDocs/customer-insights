@@ -198,6 +198,8 @@
       items:
       - name: Build segments
         href: real-time-marketing-build-segments.md
+      - name: Create and use segment templates
+        href: real-time-marketing-segment-templates.md
       - name: Improve targeting with the redesigned segment builder
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Create a consent‑based segment
