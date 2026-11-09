@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # MCP Server tools reference for Customer Insights - Journeys
 
-One MCP server serves both Customer Insights - Journeys and Customer Insights - Data, so an agent in either app can call any of the tools listed here.
+One MCP server serves both Customer Insights - Journeys and Customer Insights - Data, but each tool works with a specific app. With Customer Insights - Journeys, you can use the consent, unsubscribe link, journey, and email tools. The customer profile tools, including `get_customer_segments`, need Customer Insights - Data and don't return Customer Insights - Journeys data.
 
 [!INCLUDE [mcp-server-tools-reference](~/../ci-shared/mcp-server-tools-reference.md)]
 
