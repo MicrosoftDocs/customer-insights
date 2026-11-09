@@ -1,8 +1,9 @@
 ---
 title: Customer Insights quickstart guide
-description: Customer Insights quickstart guide
-ms.date: 12/18/2023
+description: Use Customer Insights to unify customer data, create a loyalty segment, and send personalized reward emails. Follow this quickstart to get started.
+ms.date: 11/09/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 author: udag
 ms.author: udag
 search.audienceType: 
@@ -13,55 +14,66 @@ search.audienceType:
 
 # Customer Insights quickstart guide
 
-Customer Insights is a one-stop-shop to identify, ingest, and act on customer data. Use Customer Insights to harness disparate data and use it to reach customers when and where they’re the most responsive.
+Use Customer Insights to unify customer and loyalty data, build a segment for customers with more than 1,000 points, and send a personalized reward email. This quickstart shows how to connect the apps and publish a loyalty reward journey.
 
-Think of a scenario where a retail giant wants to reward customers who surpass a loyalty point threshold. Each purchase earns loyalty points that are redeemable for exclusive discounts and rewards. The retailer has heaps of information about what people buy, how often they shop, and what they like. They track product purchases and loyalty card usage, generating thousands of data points. Translating the data into action, however, involves navigating a maze of data sources, manually building segments, and initiating cumbersome communication processes.
+Think of a scenario where a retail giant wants to reward customers who surpass a loyalty point threshold. Each purchase earns loyalty points that you can redeem for exclusive discounts and rewards. The retailer has heaps of information about what people buy, how often they shop, and what they like. They track product purchases and loyalty card usage, generating thousands of data points. Translating the data into action, however, involves navigating a maze of data sources, manually building segments, and initiating cumbersome communication processes.
 
-Now, imagine if the retailer implemented Dynamics 365 Customer Insights. With Customer Insights, data is processed automatically, allowing the store to understand what customers like and how they shop. Customer Insights then allows customers to actively shape marketing campaigns, choosing how and where they interact with the brand. Dynamics 365 Customer Insights empowers the retailer&mdash;and you&mdash;to create personalized, targeted experiences.
+Now, imagine if the retailer implemented Dynamics 365 Customer Insights. By using Customer Insights, you can process data automatically, so the store understands what customers like and how they shop. Customer Insights then allows customers to actively shape marketing campaigns, choosing how and where they interact with the brand. Dynamics 365 Customer Insights empowers the retailer and you to create personalized, targeted experiences.
 
 This guide explores a step-by-step process to seamlessly integrate, analyze, and utilize customer information, crafting tailored experiences that resonate with individual preferences and behaviors.
 
 ## Prerequisites
 
-*Setup*:
+Before you begin:
 
-1. [Install Customer Insights - Data and Customer Insights - Journeys on the same environment](setup.md).
-1. [Set up Customer Insights - Data](/dynamics365/customer-insights/data/get-started)
+1. [Install Customer Insights - Data and Customer Insights - Journeys on the same Dataverse environment](setup.md), and [set up Customer Insights - Data](../data/get-started.md).
+1. Verify that you have permissions to configure data in Customer Insights - Data and create emails and journeys in Customer Insights - Journeys. See [Customer Insights - Data permissions](../data/user-roles.md) and [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md).
+1. Configure the email channel and a compliance profile for your reward email. Verify that your test recipients meet the configured consent requirements. Segment membership alone doesn't grant permission to send a message. See [Create an email](real-time-marketing-email.md) and [Configure consent management controls](real-time-marketing-compliance-settings.md).
+1. Use test customer records and email addresses you control before sending to a production audience.
 
-*Connect the apps*:
+### Connect the apps
 
-1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings > Data Management > Customer Insights** and select the **Connect** button. This completes the data sync for segmentation between the two applications.
-1. You can now use [unified profiles from Customer Insights - Data](/dynamics365/customer-insights/data/marketing-get-started) in Customer Insights - Journeys.
+Verify that Customer Insights - Data shares data with the Dataverse environment used by Customer Insights - Journeys. In Customer Insights - Journeys, check **Settings** > **Data management** > **Customer Insights - Data connector**.
 
-> [!NOTE]
-> If the apps are installed on the same Dataverse environment, they share the same data, including any unified profiles or Customer Insights - Data segments created in Customer Insights - Data. Once the button is selected to connect Customer Insights - Journeys and Customer Insights - Data segments, Customer Insights - Journeys sees Customer Insights - Data segments and they can be used in Customer Insights - Journeys for journeys.
+The connection might be discovered automatically. If it isn't, complete the integration setup and select **Connect**. See [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](real-time-marketing-ci-profile.md).
+
+Connecting the apps makes profiles and segments available to journeys, but it doesn't replace data ingestion, unification, or refresh processing. Before you send, confirm that the required profiles, measures, and segment membership are available.
 
 ## Procedure
 
-### Step 1: Import data into Customer Insights – Data (from data sources)
+Follow these five steps to build and validate the loyalty reward journey.
 
-Customer Insights - Data allows you to collect, unify, and enrich customer data from various sources. To ingest data, you need to create data sources and dataflows that define how the data is imported and transformed.
+### Step 1: Import data into Customer Insights - Data
 
-For example, if retailer mentioned above wanted to track customer purchases and loyalty card usage, they would create the following data sources: 
-- A CSV file that contains customer information from the eCommerce system such as name, email, phone, address, purchase history, etc.
-- An SQL database that contains customer information from the loyalty card system, such as name, email, phone number, loyalty status, loyalty points, etc.
+Create data sources for the customer and loyalty information you need. Choose a connector that fits where your data is stored. Not every connector requires a Power Query dataflow.
 
-:::image type="content" source="media/add-data-source-name.png" alt-text="Add data source name.":::
+For example, import:
+
+- Customer records from an e-commerce system, including a customer identifier, name, and email address.
+- Loyalty records from a loyalty card system, including a customer identifier, loyalty status, and loyalty points.
+- Purchase records, if you need transaction data to calculate loyalty points.
+
+:::image type="content" source="media/add-data-source-name.png" alt-text="Screenshot of the field for naming a new data source.":::
 
 > [!NOTE]
-> Customer Insights - Data supports a variety of data sources such as Azure Data Lake Storage, Azure Synapse Analytics, Microsoft Dataverse, Delta Lake, Power Query, and more. You can also use on-premises data sources using the data gateway. 
+> Customer Insights - Data supports connectors such as Microsoft Fabric OneLake, Azure Data Lake Storage, Microsoft Dataverse, and Power Query. Delta format is the native processing format. Where possible, choose a connector that attaches to your data rather than copying it.
 
-Learn more about creating data sources and dataflows in Customer Insights - Data: [Data sources overview](/dynamics365/customer-insights/data/data-sources)
+> Learn more: [Data sources overview](../data/data-sources.md).
 
-:::image type="content" source="media/list-of-data-sources.png" alt-text="List of data sources created.":::
+:::image type="content" source="media/list-of-data-sources.png" alt-text="Screenshot of the list of created data sources.":::
 
-After you create your data sources, you’ll use Customer Insights – Data to connect, import, and transform your data and create unified profiles for your customers.
+After you create your data sources, review the imported tables and resolve data quality issues before unification.
 
-### Step 2: Create unified profiles and set-up relationships in Customer Insights - Data
+### Step 2: Create unified profiles and set up relationships
 
-Unified profiles are the core of Customer Insights - Data, as they provide a holistic and actionable view of each customer. Once you’ve imported your data, run the data unification process. 
-- Unified profiles are created by matching and merging data from different sources based on a unique identifier such as email, phone number, loyalty status, purchase history, and more. 
-- You can also enrich unified profiles with additional attributes such as demographics, preferences, scores, etc. Learn more: [Data enrichment (preview) overview](/dynamics365/customer-insights/data/enrichment-hub)
+Run the data unification process to create a single profile for each customer:
+
+1. Select the tables and columns that contain customer profile information.
+1. Define deduplication rules within each table.
+1. Define matching conditions across tables using suitable identifiers, such as a customer ID, email address, or phone number.
+1. Choose the columns to include or merge in the unified profile, and run unification.
+
+Don't use changing values such as loyalty points or purchase history as customer identifiers. Keep purchase transactions in a related table rather than treating each purchase as a separate customer profile. [Set up relationships between tables](../data/relationships.md) to use transaction data in segments and measures.
 
 For example, a unified profile for a customer named John Smith might look like this:
 
@@ -77,64 +89,71 @@ For example, a unified profile for a customer named John Smith might look like t
 |     Gender    |     Male    |
 |     Purchase   History    |     Shoes, Jacket, Backpack    |
 
-Learn more about creating unified profiles in Customer Insights - Data: [Data unification overview](/dynamics365/customer-insights/data/data-unification)
+The purchase history in this example is a summary; keep individual transactions in the related purchase table.
 
-### Step 3: Analyze the data
+Learn more: [Data unification overview](../data/data-unification.md). You can optionally [enrich your profiles](../data/enrichment-hub.md) after unification.
 
-Next, you’ll want to enrich and visualize your customer data from various sources. This step helps you gain insights into customer behavior, preferences, needs, and value. You can analyze your data through:
-- **Segments**: Segments are groups of customers that share common characteristics or behaviors. 
-    - Create a segment for customers that surpass a loyalty point threshold. 
-    - For example, in the retail store scenario, you can create a segment with the following criteria: Loyalty Points > 1,000. This filters the customers who have more than 1,000 loyalty points. Learn more: [Create and manage segments](/dynamics365/customer-insights/data/segments)
+### Step 3: Create a loyalty segment and optional insights
 
-        :::image type="content" source="media/create-segments.png" alt-text="Create segments to analyze data.":::
+Use the unified data to identify the customers who qualify for the reward:
 
-- **Measures**: Measures are calculations that help you quantify customer behaviors and business performance. 
-    - You can use measures to create metrics, KPIs, or insights based on the data from your unified customer profiles. 
-    - For example, in the retail store scenario, you can create a measure that calculates the loyalty points for each customer based on the data from your Loyalty Card system. Learn more: [Create and manage measures](/dynamics365/customer-insights/data/measures)
+- **Measures**: If your source already contains each customer's current loyalty balance, use that value directly. If you need to calculate points from transaction data, create a customer measure first. Learn more: [Create and manage measures](../data/measures.md).
 
-        :::image type="content" source="media/create-measures.png" alt-text="Use measures to analyze data.":::
+    :::image type="content" source="media/create-measures.png" alt-text="Screenshot of the screen for creating customer measures.":::
 
-- **Predictions**: Predictions are forecasts that help you anticipate customer behavior and outcomes based on the data from your unified customer profiles. 
-    - You can use predictions to create scenarios, recommendations, or actions based on the data from your unified customer profiles. 
-    - For example, in the retail store scenario, you can use an out-of-box prediction model to predict the product recommendation for each customer based on their purchase behavior and customers with similar purchase patterns. Learn more: [Create and manage predictions](/dynamics365/customer-insights/data/predictions)
+- **Segments**: Create a segment in Customer Insights - Data with the condition Loyalty Points > 1,000. Use the profile attribute or the measure you prepared. In **Insights** > **Segments**, activate the segment if needed, refresh it, and check **Last refreshed** for a successful refresh. Confirm that the segment has the expected members. Learn more: [Create and manage segments](../data/segments.md).
 
-        :::image type="content" source="media/use-predictions.png" alt-text="Use predictions to analyze data.":::
+    :::image type="content" source="media/create-segments.png" alt-text="Screenshot of the screen for creating customer segments.":::
 
-### Step 4: Use Customer Insights - Data profiles in Customer Insights - Journeys
+- **Predictions (optional)**: Predictions aren't required for this reward journey. For a more advanced scenario, use a product recommendation model to suggest products based on purchase behavior and customers with similar purchase patterns. Review the model's data requirements before you configure it. Learn more: [Create and manage predictions](../data/predictions.md).
 
-Once you’ve connected both the applications, you can use the unified profiles to create and manage customer journeys in Customer Insights - Journeys.
+    :::image type="content" source="media/use-predictions.png" alt-text="Screenshot of the predictions screen for analyzing customer data.":::
 
-In Customer Insights - Journeys, create a journey that targets the segment you created in Customer Insights - Data. You can use the journey designer or the advanced editor to create your journey. For example, you can create a journey with the following steps:
+### Step 4: Create a personalized email and a segment-based journey
 
-- **Triggers**: Set the trigger to Segment (Customer Insights - Data) and select the segment you created in Customer Insights - Data. This starts the journey for every customer who belongs to that segment.
-- **Channels**: 
-    - Add an email tile and configure the email content. You can use dynamic content based on measures from the unified customer profile. For example, you can use the following template:
-    ```
-    Hi {{First Name}},
-    Congratulations! You have earned more than {{Loyalty Points}} loyalty points and become one of our loyal customers.
-    As a token of our appreciation, we would like to offer you a 20% off coupon for your next purchase. Just use the code LOYAL20 at the checkout and enjoy the discount.
-    Thank you for choosing us and we hope to see you soon.
-    Your friends at {{Company Name}}
-    ```
-- **Analytics**: You can measure the performance and effectiveness of your email campaign based on the Customer Insights - Data profiles. You can track metrics such as open rate, click rate, conversion rate, and revenue generated by your campaign.
-- **Lead scoring**: You can assign scores to your customers based on their loyalty points and other attributes from the Customer Insights - Data profiles. You can use the lead scoring feature to rank your customers based on their engagement and readiness to buy.
+Use the unified customer profiles and the segment you created in Customer Insights - Data:
 
-### Step 5 Add an end tile and set the journey status to "Completed"
+If the segment isn't visible in Customer Insights - Journeys or has no members, verify data sharing and segment membership in Dataverse before you continue. See [Use segments in Customer Insights - Journeys](../data/segments.md#use-segments-in-customer-insights---journeys).
 
-This will end the journey for the customer after they receive the email. Publish and activate your journey. This makes your journey live and ready to run. You can monitor the performance of your journey using the analytics dashboard and the insights panel.
+1. In Customer Insights - Journeys, go to **Settings** > **Customer engagement** > **Audience configuration**. For **Customer profile**, map the email address field to use for recipients. Customer profiles don't have default recipient fields. Learn more: [Select the audience source for journeys](real-time-marketing-audience-data.md).
+1. Go to **Channels** > **Emails** and create the reward email. Configure its sender, subject, compliance profile, and purpose.
+1. Add dynamic text through the personalization controls. Use **Customer Profile** as the audience data for this Customer Insights - Data segment, and select the name and loyalty points fields or measures. Configure default values where needed. Learn more: [Personalize content](real-time-marketing-personalization.md).
+1. Preview and test the email with representative data, then mark it as **Ready to send**.
+1. Go to **Engagement** > **Journeys**, select **+New journey**, and choose **Segment-based**. Select the Customer Insights - Data segment, choose the frequency and start time, and select **Create**. For a single reward send, use a one-time journey with a static audience.
+1. Add a **Send an email** step and select the reward email.
+
+For example, your email might read as follows after personalization:
+
+> Hi John,
+>
+> Congratulations! You earned 1,500 loyalty points. To thank you, here's a 20% discount on your next purchase. Use the code LOYAL20 at checkout.
+>
+> Your friends at Contoso
+
+This example shows the rendered message, not dynamic-text syntax to paste into the editor. Replace the sample offer with your own terms.
+
+Learn more: [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
+
+> [!NOTE]
+> Lead scoring models score leads, not unified customer profiles. Lead scoring isn't required for this loyalty reward journey. Learn more: [Create lead scoring models](real-time-marketing-create-lead-scoring-model.md).
+
+### Step 5: Validate, publish, and monitor the journey
+
+Before you send to a production audience:
+
+1. Verify the segment membership, recipient email mapping, personalization values, and consent settings by using a test audience.
+1. Confirm that Customer Insights - Data finishes refreshing the profiles and measures that the journey uses. Align journey quiet times with the refresh window, including time for data to finish writing to Dataverse. Updated segment membership alone doesn't mean that all profile and measure values are ready. See [Align quiet times with Customer Insights - Data refresh](coordinate-ci-data-refresh-with-quiet-times.md).
+1. Review the journey configuration and start time, and then select **Publish** when you're ready to send.
+1. Monitor delivery and engagement in the journey analytics. Review delivery failures or blocked messages before expanding the audience. See [Access and interpret analytics](real-time-marketing-analytics.md).
+
+Customers finish the journey when they complete its steps. You don't need to add an end tile or manually set the journey status to **Completed**. Learn more: [End a journey](journey-end.md).
 
 ## Summary
 
-Customer Insights effortlessly translates rich data into impactful, automated interactions that resonate with customers. To start the process, use Customer Insights - Data to create comprehensive customer views, importing data and processing it to create unified profiles.
+You connected Customer Insights - Data and Customer Insights - Journeys, unified customer records, created a loyalty segment, and configured a personalized reward journey. Use the journey's delivery and engagement results to refine your audience and message.
 
-Once the data is unified, use segments, measures, and predictions to analyze it and unveil valuable insights into customer behavior and preferences. 
+## Next steps
 
-After analyzing the data, reach out to customers with Customer Insights - Journeys, using the rich customer data to craft personalized journeys. The journeys are composed of launch triggers, communication channels (for example, email content based on dynamic customer attributes), analytics for campaign performance measurement, and lead scoring.
-
-Customer Insights is a complete solution to getting to know customers and reaching them when and where they're most receptive.
-
-**Next steps**
-
-- [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
-- [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md)
-- [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
+- [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md).
+- [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md).
+- [Create segments by using unified profiles and customer measures](unified-profile-segment-creation.md).

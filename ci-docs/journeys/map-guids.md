@@ -1,7 +1,7 @@
 ---
 title: Map GUIDs to email clients, browsers, operating systems, and device types
-description: GUIDs to map data on email clients, device types, browsers, and operating systems in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/03/2024
+description: Map GUIDs to email clients, browsers, operating systems, and device types in Customer Insights - Journeys interactions. Find the IDs you need to interpret data.
+ms.date: 11/09/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -13,16 +13,16 @@ search.audienceType:
 
 # Map GUIDs to email clients, browsers, operating systems, and device types
 
-Customer Insights - Journeys interactions like **EmailOpened** and **EmailClicked** contain information about email clients, device types, browsers, and operating systems used by recipients.
+Use this list of GUIDs to identify email clients, browsers, operating systems, and device types in Customer Insights - Journeys interactions such as **EmailOpened** and **EmailClicked**.
 
-The list below contains the Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems.
+The following list contains the globally unique identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems.
 
-The data related to user agents may be partial or missing, depending on when your journey was running, especially if it was active before August 2024. The detection of email clients relies on email opens and is dependent on the response received from the email provider. Certain email clients, like Apple, have privacy protections in place that may prevent detection. The detection of device types, browsers, and operating systems is dependent on email clicks.
+The data related to user agents might be partial or missing, depending on when your journey was running, especially if it was active before August 2024. The detection of email clients relies on email opens and depends on the response received from the email provider. Certain email clients, like Apple, have privacy protections that might prevent detection. The detection of device types, browsers, and operating systems depends on email clicks.
 
 > [!NOTE]
-> Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers, or operating systems used by the customer can't be detected. They are labelled as “Other” when the information can be detected but is non-categorized, such as an app by a smaller provider.
+> Some GUIDs are labeled as **Unknown** when you can't detect the email clients, device types, browsers, or operating systems used by the customer. They're labeled as **Other** when you can detect the information but it's non-categorized, such as an app by a smaller provider.
 
-## Email clients
+## Email client GUIDs
 
 | EmailClientsId    | Name      |
 | ------------- | ------------- |
@@ -35,7 +35,7 @@ The data related to user agents may be partial or missing, depending on when you
 | 108B4DC5-F39F-4005-B189-BD0E41ED5C7B | Other |
 | 87BDC7DA-02A6-4CE5-9B98-B4C9A6143D0E | Unknown |
 
-## Browsers
+## Browser GUIDs
 
 | BrowserId     | Name     |
 | ------------- | ------------- |
@@ -59,7 +59,7 @@ The data related to user agents may be partial or missing, depending on when you
 | F5B513F6-AD0A-4515-9A63-4E7BCC3C928F | Other |
 | 92362E2A-B4BD-4AB1-8CA5-69340ABC2846 | Unknown |
 
-## Operating systems
+## Operating system GUIDs
 
 | OperatingSystemId     | Name      |
 | ------------- | ------------- |
@@ -79,7 +79,7 @@ The data related to user agents may be partial or missing, depending on when you
 | 6B467D92-4CA8-4EA5-BC36-6FC1BA779F43 | Other |
 | BE048716-CA07-4A72-A61A-1AC558D5D591 | Unknown |
 
-## Device types
+## Device type GUIDs
 
 | DeviceTypeId      | Name    |
 | ------------- | ------------- |
