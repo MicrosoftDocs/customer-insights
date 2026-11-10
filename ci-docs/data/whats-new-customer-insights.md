@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/02/2026
+ms.date: 11/06/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -16,6 +16,22 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## November 2026
+
+### General availability
+
+#### Show or hide columns or tables from segment and measure builders
+
+Administrators can control which columns or tables are visible in the segment and measure builders. This control helps reduce clutter and lets users focus on the data that's most relevant when creating segments and measures.
+
+- [Docs](tables.md#show-or-hide-columns-or-tables-from-segment-and-measure-builders)
+
+#### Business unit support and role-based access control
+
+Administrators can control access to customer profiles, segments, and measures based on business units.
+
+- [Docs](business-units-data-separation.md)
 
 ## October 2026
 
