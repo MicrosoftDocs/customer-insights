@@ -1,16 +1,14 @@
 ---
-title: Export data to Salesforce Marketing Cloud (preview)
+title: Export data to Salesforce Marketing Cloud
 description: Export data to Salesforce Marketing Cloud through an SFTP location and use your customer profiles and segments in campaigns.
-ms.date: 07/24/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export data to Salesforce Marketing Cloud (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export data to Salesforce Marketing Cloud
 
 Use your customer data in Salesforce Marketing Cloud by exporting it through a Secure File Transfer Protocol (SFTP) location.
 

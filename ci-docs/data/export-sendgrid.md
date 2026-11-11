@@ -1,16 +1,14 @@
 ---
-title: Export segments to SendGrid (preview)
+title: Export segments to SendGrid
 description: Export segments to SendGrid from Customer Insights - Data to build contact lists for email campaigns. Follow the steps to connect and configure your export.
-ms.date: 07/24/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to SendGrid (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to SendGrid
 
 Export segments of unified customer profiles to SendGrid contact lists. Use these contact lists for campaigns and email marketing in SendGrid.
 

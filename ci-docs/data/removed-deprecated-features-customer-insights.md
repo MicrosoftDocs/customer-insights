@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Data
 description: Overview about features that are going away or are no longer available.
-ms.date: 06/17/2026
+ms.date: 11/05/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -61,6 +61,21 @@ We're removing these preview features on November 2, 2026. Until that date, they
 | **Product areas affected**         | Settings > System > Consent |
 | **Deployment option**              | All |
 | **Status**                         | Will be disabled on November 2, 2026. |
+
+## Features removed or deprecated in October 2026
+
+### Legacy third-party export connectors
+
+The following export connectors are deprecated: Blueshift, Campaign Monitor, Constant Contact, Criteo, HubSpot, Klaviyo, Mailchimp, MoEngage, Omnisend, Split, and TikTok.
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation or removal** | These export connectors aren't in active development. Don't create new connections or export configurations that use them. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Exports |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated as of October 14, 2026. |
+
 ## Features removed or deprecated in June 2026
 
 ### Environment status summary

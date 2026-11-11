@@ -95,7 +95,7 @@ You can access some Customer Insights - Data tables in Dataverse. The following 
 - [Prediction](#prediction)
 - [Segment membership](#segment-membership)
 
-Other tables available in Dataverse are [measures](dataverse-measures.md) and [real-time web personalization (preview)](#real-time-web-personalization-tables-preview).
+Other tables available in Dataverse are [measures](dataverse-measures.md) and [real-time web personalization](#real-time-web-personalization-tables).
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
@@ -196,7 +196,7 @@ This table contains segment membership information for customer profiles.
 | Identifier  | Text   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | SegmentMembershipId | Unique identifier      | Deterministic GUID generated from `Identifier`          |
 
-### Real-time web personalization tables (preview)
+### Real-time web personalization tables
 
 The following four tables are created when you set up real-time personalization.
 

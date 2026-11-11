@@ -1,7 +1,7 @@
 ---
 title: Export segments to Mailchimp (preview)
 description: Export segments to Mailchimp in Dynamics 365 Customer Insights to build targeted newsletters and email campaigns. Learn how to set up the connection.
-ms.date: 07/16/2026
+ms.date: 11/05/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -11,6 +11,9 @@ ms.author: sstabbert
 # Export segments to Mailchimp (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> This export connector is deprecated as of October 14, 2026, and is no longer in active development. Don't create new connections or export configurations that use this connector.
 
 Export segments of unified customer profiles to Mailchimp to create newsletters and email campaigns.
 

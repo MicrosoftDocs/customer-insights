@@ -1,7 +1,7 @@
 ---
-title: Export segments to Braze (preview)
+title: Export segments to Braze
 description: Export segments to Braze from Dynamics 365 Customer Insights - Data. Learn how to set up the connection and map customer IDs and emails.
-ms.date: 08/11/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -12,9 +12,7 @@ ms.custom:
 ai-usage: ai-assisted
 ---
 
-# Export segments to Braze (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Braze
 
 Export segments of unified customer profiles to Braze and use them for marketing campaigns and customer engagement activities.
 

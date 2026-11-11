@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/06/2026
+ms.date: 11/10/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -10,12 +10,11 @@ ms.reviewer: v-wendysmith
 
 # What's new in Dynamics 365 Customer Insights - Data
 
-This article summarizes public preview features, general availability enhancements, and feature updates. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+This article lists monthly release notes for Dynamics 365 Customer Insights - Data, including preview features, general availability updates, enhancements, and bug fixes. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
-We roll out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action. We update the app automatically with no downtime.
+Customer Insights - Data rolls out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action. We update the app automatically with no downtime.
 
-> [!TIP]
-> To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
 ## November 2026
 

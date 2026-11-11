@@ -1,24 +1,24 @@
 ---
-title: "Dataverse APIs for Customer Insights - Data"
-description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 03/17/2025
+title: Dataverse APIs for Customer Insights - Data
+description: Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data.
+ms.date: 11/02/2026
 ms.topic: reference
-author: srivas15
-ms.author: shsri
-ms.reviewer: mhart
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
 # Dataverse APIs for Customer Insights - Data
 
-If you're already using Customer Insights - Data APIs, such as query a Customer Profile or get segment memberships, we recommend you migrate your APIs to Dataverse APIs instead. Support for querying metadata, such as get segment definition and workflow management, is coming soon to Dataverse APIs.
+If you use Customer Insights - Data APIs, migrate your APIs to Dataverse APIs.
 
-If you're getting started with querying data using APIs, we recommend using Dataverse APIs instead.
+If you're new to querying data by using APIs, use Dataverse APIs.
 
 > [!IMPORTANT]
-> It's recommended to use Dataverse APIs only to read data (GET) and not to write data (POST/PATCH/PUT) as it can cause issues with Customer Insights - Data processing.
+> Use Dataverse APIs only to read data (GET). Don't use them to write data (POST, PATCH, or PUT) because it can cause problems with Customer Insights - Data processing.
 
-Dataverse APIs have the following advantages:
+Dataverse APIs provide the following benefits:
 
 - Extended capabilities for filtering and sorting
 
@@ -63,14 +63,14 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 ### Web Personalization
 
-Sample queries to [personalize your website](optimizely-integration.md) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). The tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
+Sample queries to [personalize your website](optimizely-integration.md) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). You can access the tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) in Dataverse.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
 |Get a customer by CookieId | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}')`  |          |
 |Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
-|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_p13nviews(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page views  |
-|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_p13nactions(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page clicks  |
+|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_p13nviews(cookieid='{cookieId}',top=10)`  |  You can change this query to return up to 200 recent page views.  |
+|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_p13nactions(cookieid='{cookieId}',top=10)`  |  You can change this query to return up to 200 recent page clicks.  |
 |Get all activities of a customer| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'`  |      |
 |Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2024-01-01T00:00:00Z and msdynci_activitytime lt 2024-06-01T00:00:00Z`  |      |
 |Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
@@ -79,7 +79,7 @@ Sample queries to [personalize your website](optimizely-integration.md) based on
 
 ### Unified activity
 
-Sample queries for the *UnifiedActivity* table if Web Personalization isn't in use.
+Sample queries for the *UnifiedActivity* table if you don't use Web Personalization.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
