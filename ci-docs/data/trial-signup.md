@@ -1,25 +1,25 @@
 ---
-title: "Sign up for a free Dynamics 365 Customer Insights trial"
-description: "Learn how to quickly sign up for and start a free Customer Insights trial. Explore the app and find additional learning resources."
-author: JimsonChalissery
+title: Sign up for a free Dynamics 365 Customer Insights trial
+description: "Dynamics 365 Customer Insights trial: Get started quickly with free access to key features, sample data, learning resources, and hands-on product exploration."
+author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 07/04/2025
+ms.date: 11/03/2026
 ms.topic: get-started
 ms.custom: bap-template 
-ms.reviewer: colinbirkett
+ms.reviewer: v-wendysmith
 ---
 
 # Sign up for a free Dynamics 365 Customer Insights trial
 
-Customer Insights offers a free 30-day trial of two applications: Customer Insights - Data and Customer Insights - Journeys. After a quick sign-up, you'll have access to many of the apps' key features. The trial allows you to test the apps with sample data and even try out your own customer data.
+Customer Insights offers a free 30-day trial of two applications: Customer Insights - Data and Customer Insights - Journeys. After a quick sign-up, you get access to many of the apps' key features. The trial lets you test the apps with sample data and even try out your own customer data.
 
 **To sign up for the trial**:
 
-1. Go to the [trial overview page](https://dynamics.microsoft.com/ai/customer-insights/) and select **Try Customer Insights for free**.
+1. Go to the [trial overview page](https://www.microsoft.com/dynamics-365/products/customer-insights) and select **Try for free**.
 1. Follow the onscreen guidance to enter the [email associated with your Microsoft account](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) and your contact information.
 1. Make selections and choose your focus until you get to the start page for your selected capability.
 
-The trial takes a few moments to load, and then you can start using the app. You'll see an environment with sample data to try out the product and its features. Select the button in the message bar at the top of the screen to set up the trial with your own data.
+The trial takes a few moments to load, and then you can start using the app. You see an environment with sample data to try out the product and its features. Select the button in the message bar at the top of the screen to set up the trial with your own data.
 
 ## What to try
 
@@ -27,7 +27,7 @@ Your trial environment includes the same features as the paid version.
 
 ### Customer Insights - Data
 
-The links below guide you through some of the key features and other resources.
+The following links guide you through some of the key features and other resources.
 
 - [Get started with Customer Insights - Data.](get-started.md)
 - [Add more users and assign permissions.](permissions.md)
@@ -41,10 +41,13 @@ The links below guide you through some of the key features and other resources.
 
 ### Customer Insights - Journeys
 
-The links below guide you through some of the key features and other resources.
+The following links guide you through key features and other resources.
 
 - [Create a marketing email and go live](../journeys/create-marketing-email.md)
 - [Target the right customers using the query assist copilot](../journeys/real-time-marketing-natural-language-segments.md)
 - [Journey Creation Agent in Customer Insights - Journeys](../journeys/journey-creation-agent.md)
 - [Create a demographic segment targeting leads](../journeys/real-time-marketing-build-segments.md#create-a-demographic-segment-targeting-leads)
 - [Create forms](../journeys/real-time-marketing-form-create.md)
+
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: "Unify customer columns for data unification"
-description: "Merge columns to create unified customer profiles."
-ms.date: 04/28/2025
+title: Unify customer columns for data unification
+description: Unify customer columns in Customer Insights - Data by combining related fields, choosing winning values, and excluding unwanted data.
+ms.date: 11/03/2026
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -13,11 +13,11 @@ ms.custom: bap-template
 
 In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns. For individual customers, you can group related profiles into a cluster.
 
-:::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
+:::image type="content" source="media/m3_unify.png" alt-text="Screenshot of the Unify customer fields page in the data unification process showing a table with merged fields that define the unified customer profile.":::
 
 ## Review and update the customer columns
 
-1. Review the list of columns that will be unified under the **Customer columns** tab of the table. Make any changes if applicable.
+1. Review the list of columns to unify under the **Customer columns** tab of the table. Make any changes if applicable.
 
    1. For any combined fields, you can:
       - [Edit](#edit-a-merged-field)
@@ -42,25 +42,25 @@ In this step of the unification process, choose and exclude columns to merge wit
 
 ### Edit a merged field
 
-1. Select a merged column and choose **Edit**. The Combine columns pane displays.
+1. Select a merged column and choose **Edit**. The **Combine columns** pane opens.
 
-1. Specify how to combine or merge the fields from one of three options:
-    - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
+1. Choose how to combine or merge the fields from one of three options:
+    - **Importance**: Identifies the winning value based on the importance rank you set for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
 
       > [!NOTE]
-      > The system uses the first non-null value. For example, given tables A, B, and C ranked in that order, if A.Name and B.Name are null, then the value from C.Name is used.
+      > The system uses the first non-null value. For example, given tables A, B, and C ranked in that order, if A.Name and B.Name are null, the value from C.Name is used.
 
-      :::image type="content" source="media/importance-merge-option.png" alt-text="Importance option in the merge fields dialog.":::
+      :::image type="content" source="media/importance-merge-option.png" alt-text="Screenshot of the Importance option in the merge fields dialog.":::
 
-    - **Most recent**: Identifies the winner value based on the most recency. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
+    - **Most recent**: Identifies the winning value based on the most recent value. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
 
-      :::image type="content" source="media/recency-merge-option.png" alt-text="Recency option in the merge fields dialog.":::
+      :::image type="content" source="media/recency-merge-option.png" alt-text="Screenshot of the Recency option in the merge fields dialog.":::
 
-    - **Least recent**: Identifies the winner value based on the least recency. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
+    - **Least recent**: Identifies the winning value based on the least recent value. Requires a date or a numeric field for every participating table in the merge fields scope to define the recency.
 
-1. You can add more fields to participate in the merge process.
+1. Add more fields to include in the merge process.
 
-1. You can rename the merged column.
+1. Rename the merged column.
 
 1. Select **Done** to apply your changes.
 
@@ -94,17 +94,17 @@ To see the list of all excluded fields, select **Excluded columns**. If necessar
 
 ### Change the order of fields
 
-Some tables contain more details than others. If a table includes the latest data about a field, you can prioritize it over other tables when merging values.
+Some tables contain more details than others. If a table includes the latest data about a field, prioritize it over other tables when merging values.
 
 1. Select the field.
   
-1. Choose **Move up/down** to set the order or drag and drop them in the desired position.
+1. Choose **Move up** or **Move down** to set the order, or drag and drop fields to the desired position.
 
 ### Combine fields manually
 
 Combine separated fields to create a merged column.
 
-1. Select **Combine** > **Fields**. The Combine columns pane displays.
+1. Select **Combine** > **Fields**. The **Combine columns** pane displays.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
@@ -144,7 +144,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
 1. Select **Combine** > **Group of fields**.
 
-   :::image type="content" source="media/merge-combine-group.png" alt-text="Combine group of fields screen.":::
+   :::image type="content" source="media/merge-combine-group.png" alt-text="Screenshot of the Combine group of fields screen.":::
 
 1. Specify which group of fields to select as the winner in the **Rank groups by** dropdown. The same merge policy is used for all the fields that make up the group.
 
@@ -152,9 +152,9 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
    - **Most recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked largest to smallest.
    - **Least recent**: Identifies the winner group by referencing a field in the group you select to indicate recency. The field can be a date, time, or numeric as long as it can be ranked smallest to largest.
 
-1. To add more than two fields for your combined group, select **Add** > **Field**. Add as many as 10 fields.
+1. To add more than two fields for your combined group, select **Add** > **Field**. Add up to 10 fields.
 
-1. To add more than two data sources for your combined group, select **Add** > **Group**. Add as many as 15 data sources.
+1. To add more than two data sources for your combined group, select **Add** > **Group**. Add up to 15 data sources.
 
 1. Enter the following information for each field you're combining:
 
@@ -163,16 +163,16 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
    - **Group 1**: The field from the first data source that corresponds to the **Name**. The ranking of your data sources indicates the order in which the system identifies and merges the records by **Importance**.
      > [!NOTE]
      > In the drop-down for a group, the list of fields is categorized by data source.
-     > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Combine group of fields screen with Group drop-down and data source highlighted.":::
+     > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Screenshot of the Combine group of fields screen with the Group drop-down and data source highlighted.":::
    - **Group2**: The field in the next data source that corresponds to the **Name**. Repeat for each data source you include.
 
 1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the **Unified data view** step but doesn't appear in the Customer profile.
 
-   :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
+   :::image type="content" source="media/merge-combine-group-example.png" alt-text="Screenshot of the Combine group of fields example.":::
 
 1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified data view** page, but not in the Customer profile. 
 
-   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified data view page highlighting the combine group name.":::
+   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Screenshot of the Unified data view page highlighting the combine group name.":::
 
 ## Group profiles into households or clusters
 
@@ -182,7 +182,7 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 
 1. Select **Advanced** > **Create cluster**.
 
-   :::image type="content" source="media/create-cluster.png" alt-text="Control to create a new cluster.":::
+   :::image type="content" source="media/create-cluster.png" alt-text="Screenshot of the control to create a new cluster.":::
 
 1. Choose between a **Household** or a **Custom** cluster. If the semantic fields *Person.LastName* and *Location.Address* exist in the *Customer* table, household is automatically selected.
 
@@ -196,21 +196,21 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 
 ## Configure customer ID generation
 
-The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that is automatically generated for each unified customer profile. We recommend using this default logic. However, in rare circumstances you can specify the fields to use as inputs to generate the  CustomerId.
+The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that the system automatically generates for each unified customer profile. Use this default logic. However, in rare circumstances, you can specify the fields to use as inputs to generate the CustomerId.
 
 1. Select the **Keys** tab.
 
-1. Hover on the **CustomerId** row and select **Configure**.
+1. Hover over the **CustomerId** row and select **Configure**.
 
-   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Screenshot of the control to customize the ID generation.":::
 
-1. Select up to five fields that will comprise a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
+1. Select up to five fields that create a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
 
-   Only include columns that are either not expected to change such as a government-issued ID, or when changed, a new CustomerId is appropriate. Avoid columns that might change such as phone, email, or address.
+   Only include columns that are either not expected to change, such as a government-issued ID, or when changed, warrant a new CustomerId. Avoid columns that might change, such as phone, email, or address.
 
 1. Select **Done**.
 
-For each input to the CustomerId generation, the first non-null TableName + field value are used. Tables are checked for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId will change.
+For each input to the CustomerId generation, the first non-null `TableName` + field value are used. The system checks tables for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId changes.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)

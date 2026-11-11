@@ -1,8 +1,8 @@
 ---
-title: "Table schemas in Common Data Model"
-description: "Work with tables in Common Data Model."
-ms.date: 07/04/2025
-ms.reviewer: colinbirkett
+title: Table schemas in Common Data Model
+description: Common Data Model table schemas help you build consistent customer data models with activities, profiles, segments, and measures. View the definitions.
+ms.date: 11/03/2026
+ms.reviewer: v-wendysmith
 ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -14,8 +14,6 @@ ms.custom: bap-template
 [Common Data Model](/common-data-model/) is a declarative specification, and a definition of standard tables that represent commonly used concepts and activities across business and productivity applications. This model is being extended to observational and analytical data as well. Common Data Model provides well-defined, modular, and extensible business tables—such as Account, Business Unit, Case, Contact, Lead, Opportunity, and Product—as well as interactions with vendors, workers, and customers—such as activities and service level agreements. Anyone can build on and extend Common Data Model definitions to capture additional business-specific ideas.
 
 This shared data model allows applications and data integrators to collaborate more easily by providing a unified definition of data. Common Data Model includes a rich metadata system with standard tables, relationships, hierarchies, traits, and more. It originated from Dynamics 365 apps and is open-sourced on GitHub with over 260 standard tables. A large system of internal and external partners contributes industry-specific concepts to Common Data Model.
-
-Multiple systems and platforms implement the Common Data Model today, including Power BI dataflows and Azure Data Services. It's already supported in Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, and upcoming Azure data services, directly accruing value towards the [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## Customer Insights - Data table schemas
 

@@ -1,7 +1,7 @@
 ---
-title: "Remove duplicates before unifying data"
-description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 09/29/2025
+title: Remove duplicates before unifying data
+description: The second step in the unification process is selecting which record to keep when duplicates are found.
+ms.date: 11/03/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,12 +13,12 @@ ms.custom: bap-template
 
 Deduplication finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
 
-Each deduplication rule is run against every row. If your first rule matches rows 1 and 2, and rule 2 matches rows 2 and 3, then rows 1, 2, and 3 are matched. When matched rows are found, a winner row is selected to represent that customer based on the **Merge preferences** (*Most filled*, *Most recent*, or *Least recent*). Use the **Advanced** option to create a winner row by selecting fields from the various matched rows, such as the most recent email, but the most filled address.
+Each deduplication rule runs against every row. If your first rule matches rows 1 and 2, and rule 2 matches rows 2 and 3, then rows 1, 2, and 3 are matched. When matched rows are found, the process selects a winner row to represent that customer based on the **Merge preferences** (*Most filled*, *Most recent*, or *Least recent*). Use the **Advanced** option to create a winner row by selecting fields from the various matched rows, such as the most recent email but the most filled address.
 
 Customer Insights - Data automatically performs the following actions:
 
-- Deduplicate records with the same primary key value, selecting the first row in the data set as the winner.
-- Deduplicate records using the **Matching Rules** defined for the table when matching rows between tables.
+- Deduplicates records with the same primary key value, selecting the first row in the data set as the winner.
+- Deduplicates records by using the **Matching Rules** defined for the table when matching rows between tables.
 
 ## Define deduplication rules
 
@@ -29,7 +29,7 @@ A good rule identifies a unique customer. Consider your data. It might be enough
    > [!TIP]
    > If you enriched tables on the data source level to help improve your unification results, select **Use enriched tables** at the top of the page. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Deduplication rules page with table highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Deduplication rules page with table highlighted and Add rule displayed."  lightbox="media/m3_duplicates_showmore.png":::
 
 1. In the **Add rule** pane, enter the following information:
    - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
@@ -55,24 +55,24 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
 ## Select merge preferences
 
-When rules are run and duplicate records are identified for a customer, a "winner row" is selected based on the merge policy. The winner row represents the customer in the next unification step that matches records between tables. Data in the non-winner (“alternate") rows is used in the Matching rules unification step to match records from other tables to the winner row. This approach improves matching results by allowing information like previous phone numbers to help identify matching records. The winner row can be configured to be the most filled, most recent, or least recent of the duplicate records found.
+When the system runs rules and identifies duplicate records for a customer, the merge policy selects a **winner row**. The winner row represents the customer in the next unification step that matches records between tables. The system uses data in the non-winner (**alternate**) rows in the **Matching rules** unification step to match records from other tables to the winner row. This approach improves matching results by allowing information like previous phone numbers to help identify matching records. You can configure the winner row to be the most filled, most recent, or least recent of the duplicate records found.
 
-1. Select a table and then **Edit merge preferences**. The **Merge preferences** pane appears.
+1. Select a table and then select **Edit merge preferences**. The **Merge preferences** pane appears.
 
 1. Choose one of three options to determine which record to keep if a duplicate is found:
-   - **Most filled**: Identifies the record with most populated columns as the winner record. It's the default merge option.
+   - **Most filled**: Identifies the record with the most populated columns as the winner record. It's the default merge option.
    - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
    - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
 
-   If there's a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
+   If there's a tie, the winner record is the one with the `MAX(PK)` or the larger primary key value.
 
-1. Optionally, to define merge preferences on individual columns of a table, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the table to see all its columns and define which option to use for individual columns. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+1. Optionally, to define merge preferences on individual columns of a table, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email **and** the most complete address from different records. Expand the table to see all its columns and define which option to use for individual columns. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
-   :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
+   :::image type="content" source="media/m3_adv_merge.png" alt-text="Screenshot of Advanced merge preferences pane showing recent email and complete address.":::
 
 1. Select **Done** to apply your merge preferences.
 
-After defining the deduplication rules and merge preferences, select **Next**.
+After you define the deduplication rules and merge preferences, select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step for a single table: View unified data](data-unification-merge-tables.md)
