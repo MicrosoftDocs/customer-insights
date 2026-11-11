@@ -1,11 +1,11 @@
 ---
-title: "Relationships between tables and table paths"
-description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 01/22/2025
-ms.reviewer: mhart
+title: Relationships between tables and table paths
+description: Table relationships in Customer Insights - Data connect records across sources so you can build richer segments and measures. Learn how to create and manage them.
+ms.date: 11/02/2026
+ms.reviewer: v-wendysmith
 ms.topic: article
-author: srivas15
-ms.author:  shsri
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -15,7 +15,8 @@ Customer data is often spread across multiple tables. It's critical for this dat
 
 Relationships define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
-There are three types of relationships: 
+There are three types of relationships:
+
 - Non-editable system relationships are created by the system as part of the data unification process
 - Non-editable inherited relationships are created automatically from ingesting data sources
 - Editable custom relationships are created and configured by users
@@ -24,7 +25,7 @@ There are three types of relationships:
 
 During data unification, system relationships are created automatically based on intelligent matching. These relationships help relate the customer profile records with corresponding records. The following diagram illustrates the creation of three system-based relationships. The customer table is matched with other tables to produce the unified *Customer* table.
 
-:::image type="content" source="media/relationships-tables-merge.png" alt-text="Diagram with relationship paths for the customer table with three 1-n relationships.":::
+:::image type="content" source="media/relationships-tables-merge.png" alt-text="Screenshot of relationship paths for the customer table with three one-to-many relationships.":::
 
 - ***CustomerToContact* relationship** was created between the *Customer* table and the *Contact* table. The *Customer* table gets the key field **Contact_contactID** to relate to the *Contact* table key field **contactID**.
 - ***CustomerToAccount* relationship** was created between the *Customer* table and the *Account* table. The *Customer* table gets the key field **Account_accountID** to relate to the *Account* table key field **accountID**.
@@ -39,6 +40,7 @@ During the data ingestion process, the system checks data sources for existing r
 Custom relationships allow you to connect two tables that can then be used together in downstream segments and measures. 
 
 For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in three tables:
+
 - loyaltyContacts: contains a list of all customers. Columns include LoyaltyId and FullName.
 - Purchases: contains purchase history of all customers. Columns include Timestamp, LoyaltyId, PurchasePrice, and StoreId.
 - Stores: contains more details about each store. Columns include StoreId, StoreSize, and StoreLocation.
@@ -52,7 +54,7 @@ For this example, create a custom relationship between Purchases and Stores as a
 
 1. In the **New relationship** pane, provide the following information:
 
-   :::image type="content" source="media/relationship-add.png" alt-text="New relationship side pane with empty input fields.":::
+   :::image type="content" source="media/relationship-add.png" alt-text="Screenshot of the New relationship side pane with empty input fields.":::
 
    - **Relationship name**: Name that reflects the purpose of the relationship. Relationship names are case sensitive. Example: PurchasesToStores.
    - **Description**: Description of the relationship.
@@ -75,11 +77,12 @@ For this example, create a custom relationship between Purchases and Stores as a
 
 Go to **Data** > **Tables** and the **Relationships** tab to view all the relationships that have been created, their source table, the target table, and the cardinality.
 
-:::image type="content" source="media/relationships-list.png" alt-text="List of relationships and options in the action bar of the Relationships page.":::
+:::image type="content" source="media/relationships-list.png" alt-text="Screenshot of the list of relationships and options in the action bar of the Relationships page.":::
 
 Use the **Filter by** or **Search relationships** options to locate a particular relationship. To see a network diagram of the existing relationships and their cardinality, select [**Visualizer**](#explore-the-relationship-visualizer).
 
 Select a relationship to view available actions:
+
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
 - **Delete**: Delete custom relationships.
 - **View**: View system-created and inherited relationships.
@@ -90,7 +93,8 @@ The relationship visualizer shows a network diagram of the existing relationship
 
 :::image type="content" source="media/relationship-visualizer.png" alt-text="Screenshot of the relationship visualizer network diagram with connections between related tables.":::
 
-To customize the view, you can change the position of the boxes by dragging them on the canvas. Other options include: 
+To customize the view, change the position of the boxes by dragging them on the canvas. Other options include:
+
 - **Export as image**: Save the current view as an image file.
 - **Change to horizontal/vertical layout**: Change the alignment of the tables and relationships.
 - **Edit**: Update properties of custom relationships in the edit pane and save changes.
@@ -113,7 +117,7 @@ A relationship is classified as a **direct relationship** when a source table re
 
 For example, if an activity table called *eCommerce_eCommercePurchases* connects to a target table *eCommerce_eCommerceContacts* table through *ContactId* only, it's a direct relationship.
 
-:::image type="content" source="media/direct_Relationship.png" alt-text="Source table connects directly to target table.":::
+:::image type="content" source="media/direct_Relationship.png" alt-text="Screenshot of the source table connecting directly to the target table.":::
 
 #### Multi-path relationship
 
@@ -121,7 +125,7 @@ A **multi-path relationship** is a special type of direct relationship that conn
 
 For example, if an activity table called *eCommerce_eCommercePurchases* relates to two target tables, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-path relationship.
 
-:::image type="content" source="media/multi-path_relationship.png" alt-text="Source table connects directly to more than one target table through a multi-hop relationship.":::
+:::image type="content" source="media/multi-path_relationship.png" alt-text="Screenshot of the source table connecting directly to more than one target table through a multi-path relationship.":::
 
 ### Indirect relationship
 
@@ -133,7 +137,7 @@ A **multi-hop relationship** is an *indirect relationship* that allows you to co
 
 For example, if an activity table called *eCommerce_eCommercePurchasesWest* connects to an intermediate table called *eCommerce_eCommercePurchasesEast* and then connects to a target table called *eCommerce_eCommerceContacts*, it's a multi-hop relationship.
 
-:::image type="content" source="media/multi-hop_relationship.png" alt-text="Source table connects directly to a target table with an intermediate table.":::
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="Screenshot of the source table connecting to a target table with an intermediate table.":::
 
 ### Multi-hop, multi-path relationship
 
@@ -141,7 +145,7 @@ Multi-hop and multi-path relationships can be used together to create **multi-ho
 
 For example, if an activity table called *eCommerce_eCommercePurchasesWest* connects to an intermediate table called *eCommerce_eCommercePurchasesEast* and then connects to two target tables, both *eCommerce_eCommerceContacts* and *loyaltyScheme_loyCustomers*, it's a multi-hop, multi-path relationship.
 
-:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Source table connects directly to one target table and connects to another target table through an intermediate table.":::
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Screenshot of the source table connecting directly to one target table and connecting to another target table through an intermediate table.":::
 
 ## Next step
 
