@@ -1,16 +1,14 @@
 ---
-title: Export segments to Dynamics 365 Sales (preview)
+title: Export segments to Dynamics 365 Sales
 description: Export segments to Dynamics 365 Sales to build marketing lists, follow-up workflows, and promotions. Learn how to configure the connection and export.
-ms.date: 07/16/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Dynamics 365 Sales (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Dynamics 365 Sales
 
 Use your customer data to create marketing lists, follow-up workflows, and send promotions by using Dynamics 365 Sales.
 

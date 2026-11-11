@@ -1,16 +1,14 @@
 ---
-title: Export segments to Autopilot (preview)
+title: Export segments to Autopilot
 description: Export segments to Autopilot (now Ortto) from Customer Insights. Configure your connection, match email fields, and export unified profiles for email marketing.
-ms.date: 07/14/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Autopilot (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Autopilot
 
 Export segments of unified customer profiles to Autopilot and use them for email marketing in Autopilot. [Autopilot is now Ortto](https://ortto.com/autopilot/).
 

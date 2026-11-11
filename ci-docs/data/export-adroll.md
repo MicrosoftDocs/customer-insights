@@ -1,16 +1,14 @@
 ---
-title: Export segments to AdRoll (preview)
+title: Export segments to AdRoll
 description: Export segments to AdRoll in Dynamics 365 Customer Insights to power your advertising campaigns. Learn how to configure the connection and set up exports.
-ms.date: 07/14/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to AdRoll (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to AdRoll
 
 Export segments of unified customer profiles to AdRoll and use them for advertising.
 

@@ -1,16 +1,14 @@
 ---
-title: Export segments to Iterable (preview)
+title: Export segments to Iterable
 description: Export segments to Iterable to power your marketing activities. Learn how to configure the connection and export unified customer profiles.
-ms.date: 07/16/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Iterable (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Iterable
 
 Export segments of unified customer profiles to Iterable and use them for marketing activities.
 

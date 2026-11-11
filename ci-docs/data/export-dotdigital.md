@@ -1,16 +1,14 @@
 ---
-title: Export segments to DotDigital (preview)
+title: Export segments to DotDigital
 description: DotDigital segment export lets you send unified customer profiles to address books for email marketing. Learn how to configure the connection and export.
-ms.date: 07/30/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to DotDigital (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to DotDigital
 
 Export segments of unified customer profiles to DotDigital address books and use them for campaigns, email marketing, and to build customer segments with DotDigital.
 
