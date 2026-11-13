@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 11/06/2026
+ms.date: 11/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -89,7 +89,7 @@ Customer Insights - Journeys is licensed per tenant, and each tenant is priced b
     An interacted person is any entity (such as a contact, lead, or Customer Insights - Data profile) engaged in an interaction. Entities that are stored, but not marketed to using Customer Insights - Journeys interactions don't count towards the interacted people quota. After an interaction (see below) is logged for a person. It doesn't matter how many interactions occur on that entity, it's counted once. After an interacted person hasn't received or engaged an interaction for 12 months, the entity becomes inactive and is no longer counted.
 - **What is an interaction?**  
     An interaction is an inbound or outbound message orchestrated through Customer Insights - Journeys. The interaction can be sent through out-of-box channels available in Customer Insights - Journeys (for example, email, SMS, or push notifications), other Microsoft channels (for example, ACS), or third-party systems integrated with Customer Insights - Journeys (for example, other text message (SMS) providers) or received via form sumbissions, event registrations, and so on.  
-    Safe use limits allow 10x interactions per interacted person licensed. The exact system events counted against interactions in the interaction quota are `EmailSent`, `EmailCcSent`, `SmsSent`, `PushNotificationSent`, `VoiceChannelSent`, and `CustomChannelSent`.  
+    Safe use limits allow 10x interactions per interacted person licensed. The exact system events counted against interactions in the interaction quota are `EmailSent`, `SmsSent`, `PushNotificationSent`, `CustomSent`, `EmailCcSent`, `VoiceCallSent`, `FormSubmitted`, and `EventRegistration`.  
 - **Which interacted people count against my quota?**  
     Interacted people are licensed at the tenant level. Any entities across all Dataverse environments on a tenant where Customer Insights - Journeys orchestrates interactions count toward the total interacted people for the tenant. This applies to any environment, including production, sandbox, developer, or trial.
 - **Where can I see my quotas and quota usage?**  
