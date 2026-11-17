@@ -40,9 +40,9 @@ More evaluation was performed over custom datasets for offensive and malicious p
 - This capability can't access your data tables to answer questions about it. You can use the following capability for such questions: [Have a dialog with data using Copilot](dialog-with-data.md).
 - The capability doesn't answer questions about the [roadmap of our product](https://aka.ms/AIatWorkroadmap).
 
-## What are the supported geographies and languages?
+## What are the supported geographies?
 
-Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+See [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
