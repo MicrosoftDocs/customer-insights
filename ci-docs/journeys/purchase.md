@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 10/29/2026
+ms.date: 11/17/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -33,7 +33,7 @@ Which base license you choose depends on whether you already have a qualifying D
 
 Once you have a base license, you can purchase add-ons to increase the number of allowed interacted people you're actively engaging or unified people you're unifying and enriching. Learn more: [Dynamics 365 Customer Insights pricing](https://www.microsoft.com/dynamics-365/products/customer-insights/pricing)
 
-If you need the application to run in a specific data center region, be sure to check the application data center geo availability. See the [geo availability map](https://dynamics.microsoft.com/availability-reports/georeport/) to check availability. 
+If you need the application to run in a specific data center region, check the application data center geo availability. For more information, see [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ### Customer Insights licensing options
 

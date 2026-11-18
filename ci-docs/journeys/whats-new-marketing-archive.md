@@ -1,7 +1,7 @@
 ---
 title: What's new archive
 description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: udag
@@ -1996,7 +1996,7 @@ Additionally, Customer Insights - Journeys features are now available in France 
     - Testing triggers before using them in a journey is the safest way to ensure that your expectations meet the customer's reality. The test send feature gives you reassurance in the quality and behavior of your custom triggers before you send them to your audience. For example, when you create an abandoned cart journey, you can use the test send feature to ensure that your "cart abandoned" custom trigger behaves as expected.
         - [Docs](real-time-marketing-test-triggers.md)
 - **Real-time marketing geo expansion**
-    - Real-time marketing features are now available in all geographies where Dynamics 365 Customer Insights - Journeys is available. You can find a list of geographies on [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
+    - Real-time marketing features are now available in all geographies where Dynamics 365 Customer Insights - Journeys is available. For more information, see [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ### August 2022 update
 

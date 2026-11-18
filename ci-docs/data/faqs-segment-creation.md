@@ -44,9 +44,9 @@ Segment creation with Copilot in Customer Insights - Data helps users of all tec
 
 You measure Copilot's performance by tracking the successful creation of AI-generated segment criteria and the publishing of segments based on Copilot's suggestions. You also track feedback from the thumbs up and thumbs down buttons to gauge customer satisfaction with the feature.
 
-## What are the supported geographies and languages?
+## What are the supported geographies?
 
-Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+See [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

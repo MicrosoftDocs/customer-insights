@@ -1,7 +1,7 @@
 ---
 title: Journey Creation Agent in Customer Insights - Journeys (preview)
 description: Journey Creation Agent in Customer Insights - Journeys explains capabilities, prerequisites, prompt tips, troubleshooting, and how to review AI-generated journeys.
-ms.date: 10/13/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -185,7 +185,7 @@ The **Journey Creation Agent (preview)** option doesn't appear when you select *
 
 - **Feature not enabled**: Your administrator may need to enable Journey Creation Agent in your environment. Contact your administrator and ask them to verify that the feature is turned on in **AI Hub**.
 - **Insufficient permissions**: You need a Marketing Manager or Marketing Professional role, or equivalent permissions that include journey creation rights. Contact your administrator to verify your role assignment.
-- **Unsupported region**: Journey Creation Agent may not be available in all regions at release. Check the [Dynamics 365 Customer Insights - Journeys feature availability by region](https://releaseplans.microsoft.com/availability-reports/?report=featuregeoreport) report for current availability.
+- **Unsupported region**: Journey Creation Agent might not be available in all regions at release. Check the [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability) for details.
 - **Sign-in window blocked**: Your browser is preventing the sign-in window from opening. To continue, allow pop-ups from the site. Then, refresh the page or select **Try again**.
 
 ### The agent doesn't recognize my segment, trigger, or content assets

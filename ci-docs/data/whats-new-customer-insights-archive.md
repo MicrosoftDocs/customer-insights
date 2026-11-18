@@ -1,7 +1,7 @@
 ---
 title: What's new archivein Dynamics 365 Customer Insights - Data
 description: Information about features, improvements, and bug fixes from previous years.
-ms.date: 11/02/2026
+ms.date: 11/17/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -424,7 +424,7 @@ When you create a new Customer Insights environment, select the region where you
 
 You can now easily select the same region as your existing Microsoft Dataverse environment or your Azure Data Lake storage account (if you choose that option), depending on the availability of Customer Insights in that region.
 
-For more information, see [Create a new environment](create-environment.md) and [Product availability by geography](https://dynamics.microsoft.com/availability-reports/).
+For more information, see [Create a new environment](create-environment.md) and [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ## July 2022 updates
 
