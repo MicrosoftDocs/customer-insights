@@ -10,7 +10,7 @@ ms.reviewer: v-wendysmith
 
 # What's new in Dynamics 365 Customer Insights - Data
 
-This article lists monthly release notes for Dynamics 365 Customer Insights - Data, including preview features, general availability updates, enhancements, and bug fixes. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+This article lists monthly release notes for Dynamics 365 Customer Insights - Data, including preview features, general availability updates, enhancements, and bug fixes. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 Customer Insights - Data rolls out updates on a region-by-region basis. So certain regions might see features before others. Unless specified differently, you don't need to take any action. We update the app automatically with no downtime.
 
