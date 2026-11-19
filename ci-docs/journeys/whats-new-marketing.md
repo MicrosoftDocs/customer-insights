@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
-This article lists monthly release notes for Dynamics 365 Customer Insights - Journeys, including early access features, preview features, general availability updates, enhancements, and bug fixes. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+This article lists monthly release notes for Dynamics 365 Customer Insights - Journeys, including early access features, preview features, general availability updates, enhancements, and bug fixes. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 

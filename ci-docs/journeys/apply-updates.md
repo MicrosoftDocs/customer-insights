@@ -28,7 +28,7 @@ When you install Customer Insights - Journeys, all its solutions are installed i
 
 ## Find out when new updates are available
 
-Microsoft releases updates to Customer Insights - Journeys every month or so, with a major refresh every six months. We announce monthly updates (and other news) in the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article, where we also summarize all the new features and bug fixes included with each release. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+Microsoft releases updates to Customer Insights - Journeys every month or so, with a major refresh every six months. We announce monthly updates (and other news) in the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article, where we also summarize all the new features and bug fixes included with each release. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 You can also find out when an update is available by checking the status of your apps and solutions in the Customer Insights - Journeys settings, as described in the following sections.
 
