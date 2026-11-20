@@ -61,9 +61,9 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 |Get a customer if they're a member of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"') and msdynci_customerid eq '{CID}'&$select=msdynci_customerid`  |   |
 |Get all segment memberships of a customer| `{serviceRoot}/msdynci_segmentmemberships?$filter=msdynci_customerid eq '{CID}'&$select=msdynci_segments`  |      |
 
-### Web Personalization
+### Web personalization
 
-Sample queries to [personalize your website](optimizely-integration.md) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). You can access the tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) in Dataverse.
+Sample queries to [personalize your website](optimizely-integration.md) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). You can access the tables created for [web tracking and personalization](tables.md#web-personalization-tables) in Dataverse.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
