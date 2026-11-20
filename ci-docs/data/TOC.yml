@@ -172,6 +172,8 @@
   items:
     - name: View tables in Customer Insights - Data
       href: tables.md
+    - name: Access output tables in Microsoft Fabric
+      href: fabric-output-tables.md
     - name: Filter out unwanted data from your ingested data
       href: tables-filters.md
     - name: Review the table schemas in Common Data Model
