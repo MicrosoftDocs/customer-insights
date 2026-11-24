@@ -1,11 +1,11 @@
 ---
 title: User roles
 description: Learn about user roles and what permissions they have in Customer Insights - Data.
-ms.date: 03/19/2026
-ms.reviewer: mhart
+ms.date: 11/23/2026
+ms.reviewer: v-wendysmith
 ms.topic: article
-author: jodahl
-ms.author: jodahl
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -65,7 +65,7 @@ The table provides an overview of the different roles. For  details, see each in
 - View exports in the **Exports** page.
 - Install and use the **Power BI Customer Insights** dashboard.
 
-## Marketing contributor (preview)
+## Marketing contributor
 
 - Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
