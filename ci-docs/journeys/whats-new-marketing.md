@@ -28,7 +28,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App      | GA release      |
 |----------|-----------------|
-| Customer Insights - Journeys | 1.3.2529.71  |
+| Customer Insights - Journeys | 1.3.3647.77 |
 
 #### General availability
 
@@ -57,7 +57,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 | App              | GA release      |
 |------------------|------------------|
-| Customer Insights - Journeys | 1.3.1162.80  |
+| Customer Insights - Journeys | 1.3.2529.71 |
 
 #### General availability
 
@@ -94,7 +94,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 | App              | GA release      |
 |------------------|------------------|
-| Customer Insights - Journeys | 1.3.1162.68 |
+| Customer Insights - Journeys | 1.3.1162.80 |
 
 #### General availability
 
