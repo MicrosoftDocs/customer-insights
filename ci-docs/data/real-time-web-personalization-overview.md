@@ -1,7 +1,7 @@
 ---
 title: Web tracking and personalization overview
-description: Recognize returning website visitors, personalize their experience, and turn anonymous browsing activity into customer profiles with Dynamics 365 Customer Insights - Data.
-ms.date: 10/21/2026
+description: Explore web tracking and personalization in Customer Insights - Data to recognize returning visitors and link anonymous browsing to customer profiles.
+ms.date: 11/24/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # Web tracking and personalization overview
 
-Most people who visit your website never tell you who they are. They browse, compare, read a few pages, and leave. Until they submit a form, their entire visit is invisible to you.
+Web tracking and personalization helps you recognize returning website visitors and connect anonymous browsing activity to customer profiles. Learn how Customer Insights - Data uses that activity to personalize visits before customers identify themselves.
 
 Web tracking and personalization in Customer Insights - Data changes that. Add a small script to your website, and Customer Insights - Data starts recognizing visitors, remembering what interests them, and personalizing their experience based on their activity. When a visitor eventually shares an email address or phone number, their previous browsing activity becomes part of their customer profile.
 
@@ -57,7 +57,7 @@ A visitor is either **unknown** or **known**, and unknown visitors can become kn
 
 This profile merging sets the feature apart from traditional web analytics. For example, if a person browses from both a laptop and a phone, the two anonymous profiles merge into a single customer profile after the person signs in on either device.
 
-## How it works
+## How web tracking connects anonymous activity to customer profiles
 
 The following example shows how Customer Insights - Data connects anonymous web activity to a known customer profile. In this example, Abbie registers in your store in person.
 
@@ -66,7 +66,7 @@ The following example shows how Customer Insights - Data connects anonymous web 
 1. Abbie signs in or provides their email address when downloading content. Your website calls the `setUser` function with the identifier from your own customer table.
 1. The profiles merge in real time. Abbie's known profile includes the interactions recorded while they were anonymous and the cookie identifier as a new identity. From that point on, segments, measures, and APIs refer to their known profile, and the anonymous profile expires.
 
-Cookie identifiers expire after one year, with the expiration period resetting after each visit, so a returning visitor stays recognizable.
+For cookie lifetimes and browser storage, see [Cookies and browser storage for web tracking in Customer Insights - Data](real-time-web-tracking-cookies.md).
 
 To set up web tracking and personalization, see [Set up web tracking and personalization](real-time-web-personalization.md).
 
@@ -82,7 +82,7 @@ Web activity is stored in three tables based on the type of signal:
 |---|---|
 | `msdynci_personalizationview` | **Page views**: One row is created each time a visitor loads a tracked page. |
 | `msdynci_personalizationaction` | **Clicks and element interactions**: One row is created each time a visitor selects a tracked element. |
-| `msdynci_personalizationuser` | **Sign-in signals**: Written when your site calls `setUser`. These signals identify a visitor rather than describe browsing, so they carry no page or campaign data. |
+| `msdynci_personalizationuser` | **Sign-in signals**: Sent when your site identifies a customer through `setUser`, or when the script restores a saved customer ID on a later page load. These signals identify a visitor rather than describe browsing, so they carry no page or campaign data. |
 
 The page views and clicks tables contain the data you use most often. Segments and measures also read data from these tables.
 
@@ -99,7 +99,13 @@ For information about two optional fields available for views and actions, see [
 
 ## Privacy and consent
 
-The tracking script sets a cookie on your visitors' devices. Depending on applicable laws and regulations, you might need to obtain consent before setting cookies on visitors' devices. Knowing and following the rules that apply in your markets is your organization's responsibility. If your site allows visitors to opt out of cookies, ensure the tracking script respects their choice.
+The tracking script sets cookies on your visitors' devices. Depending on applicable laws and regulations, you might need to obtain consent before setting cookies on visitors' devices. Knowing and following the rules that apply in your markets is your organization's responsibility. If your site allows visitors to opt out of cookies, ensure the tracking script respects their choice.
+
+In addition to the [visitor cookie](real-time-web-tracking-cookies.md#cookies-used-by-web-tracking), the tracking script can set the `msdynci_userauthid` cookie when your website identifies a customer through `setUser`. This cookie remembers the customer ID, with a configured expiry of 365 days when written.
+
+In addition to the [browser storage used for web tracking](real-time-web-tracking-cookies.md#browser-local-storage), the script can use the `cisegments` localStorage entry to cache personalization segment information. Include this storage in your website's privacy assessment and withdrawal handling.
+
+For cookie permission, browser storage, and withdrawal handling, see [Cookies and browser storage for web tracking in Customer Insights - Data](real-time-web-tracking-cookies.md). To connect your website's consent controls, see [Set up web tracking and personalization](real-time-web-personalization.md#connect-your-websites-consent-controls).
 
 ## Web tracking capacity
 

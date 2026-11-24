@@ -1,10 +1,11 @@
 ---
 title: Configure Tracking Consent in Customer Insights - Journeys
 description: Learn how to configure tracking consent in Dynamics 365 Customer Insights - Journeys to support privacy requirements for tracking pixels in email.
-ms.date: 10/13/2026
+ms.date: 11/24/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
+ai-usage: ai-assisted
 search.audienceType:
   - admin
   - customizer
@@ -21,6 +22,12 @@ As described in this article, Customer Insights - Journeys offers configuration 
 
 > [!IMPORTANT]
 > This summary is general information, not legal advice. Consult your own privacy counsel on how the recommendation applies to your organization.
+
+## Website cookie permission and browser storage
+
+Website cookie permission and the compliance profile's **Tracking** purpose are separate controls. The **Tracking** purpose governs Customer Insights - Journeys tracking, including whether website interactions are recorded against a known customer profile. The **Tracking** purpose isn't the website cookie-permission switch. Configure cookie permission separately. Tracking consent can also affect whether message links supply tracking context. Changing purpose consent doesn't remove existing cookies or browser storage.
+
+Connect your website's consent manager to the cookie controls before the website tracking script initializes, and handle browser-data cleanup separately when permission is withdrawn. See [How to disable nonessential real-time journeys marketing cookies](real-time-journeys-cookies.md#how-to-disable-nonessential-real-time-journeys-marketing-cookies) for integration steps, the limits of cookie refusal, and withdrawal guidance.
 
 ## Configure tracking consent requirements
 

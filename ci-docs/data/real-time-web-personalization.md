@@ -1,7 +1,7 @@
 ---
 title: Set up web tracking and personalization
-description: Set up web tracking and personalization in Customer Insights - Data to identify visitors, preserve browsing history, and tailor web experiences.
-ms.date: 10/21/2026
+description: Set up web tracking and personalization in Customer Insights - Data to identify visitors, retain browsing history, and tailor their web experience. Get started.
+ms.date: 11/24/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # Set up web tracking and personalization
 
-Let Customer Insights - Data automatically create unknown profiles for unauthenticated visitors to your website and track their page views and interactions in real time. Set up web tracking, merge customers' unknown profiles with their known profiles when they authenticate on your site, and personalize their web experience. Learn more in [Web tracking and personalization overview](real-time-web-personalization-overview.md).
+Set up web tracking and personalization in Customer Insights - Data to create unknown profiles for unauthenticated visitors and track their page views and interactions in real time. Merge unknown profiles with known customer profiles when visitors authenticate, and personalize their web experience. Learn more in [Web tracking and personalization overview](real-time-web-personalization-overview.md).
 
 > [!IMPORTANT]
 > If you added the tracking script to your website before October 2026, you **must** update your website with the latest script to continue using tracking and personalization. Copy the script from Customer Insights - Data or Customer Insights - Journeys. Scripts are customized for your environment, so it's important to copy and use the production script on your production website. If your script contains `allowIpAddressCollection`, you have the latest script.
@@ -40,6 +40,12 @@ Set up web tracking and personalization in three steps. The first step is requir
 - You include your `<WebCustomers>` table in the [data unification process](data-unification.md).
 
 - You have a way to personalize your site, either by using the APIs with your development team or by using the Optimizely integration if you have an Optimizely license.
+
+## Connect your website's consent controls
+
+Connect your website's consent manager before the tracking script initializes. For cookie permission, see [Connect your website's cookie controls](real-time-web-tracking-cookies.md#connect-your-websites-cookie-controls).
+
+Changing a Customer Insights - Journeys **Tracking** purpose setting doesn't automatically disable Customer Insights - Data collection.
 
 ## Add the tracking script
 
@@ -96,6 +102,8 @@ When a visitor signs in, Customer Insights - Data can merge their anonymous prof
 
 The merge happens in real time. The known profile gains the anonymous profile's interactions and its cookie ID, and the anonymous profile expires.
 
+When cookies are allowed, the script saves the customer ID in `msdynci_userauthid`. On later page loads, it restores that ID and automatically sends a `user` event without another `setUser` call. The cookie doesn't prove the visitor is still signed in; handle sign-out and account changes according to your identity and consent requirements.
+
 ## Capture query string and IP address (optional)
 
 Page view and click events can also record the page's query string and an anonymized IP address. Both settings are **off by default**. Turn on each setting separately in the `cfg` block of the tracking script.
@@ -111,10 +119,10 @@ cfg: {
 
 | Setting | Effect |
 |---|---|
-| `queryStringAttributes` | Specify the query string parameters to capture. Parameter names aren't case-sensitive, and only parameters in the 'allowlist' are recorded. If you leave it unset or empty, nothing is captured. |
-| `allowIpAddressCollection` | Set to `true` to collect the visitor's IP address with the last octet zeroed. If you omit it or set it to `false`, the IP address isn't collected. |
+| `queryStringAttributes` | Specify the query string parameters to capture. Parameter names aren't case-sensitive, and the system records only parameters in the allow list. If you leave it unset or empty, the system captures nothing. |
+| `allowIpAddressCollection` | Set to `true` to collect the visitor's IP address with the last octet zeroed. If you omit it or set it to `false`, the system doesn't collect the IP address. |
 
-The query string (`msdynci_querystring`) enables campaign attribution. Tag your campaign links with the parameter names in the 'allowlist'. You can then build a segment of people who arrived through a specific campaign. The value isn't stored as it appears in the address bar. It's rebuilt into a canonical form so that segment rules match consistently:
+The query string (`msdynci_querystring`) enables campaign attribution. Tag your campaign links with the parameter names in the allow list. You can then build a segment of people who arrived through a specific campaign. The value isn't stored as it appears in the address bar. The system rebuilds it into a canonical form so that segment rules match consistently:
 
 ```text
 Address bar   https://example.com/page?Plan=Pro&other=x&utm_campaign=Spring+Sale
@@ -124,15 +132,15 @@ Stored        &utm_campaign=Spring%20Sale&plan=Pro&
 
 The following rules apply:
 
-- Parameters that aren't in the 'allowlist' are dropped. `other=x` never reaches storage.
-- Parameter names are converted to lowercase. Values retain their original case.
-- Order follows your 'allowlist', not the address bar.
+- The system drops parameters that aren't in the allow list. `other=x` never reaches storage.
+- The system converts parameter names to lowercase. Values retain their original case.
+- Order follows your allow list, not the address bar.
 - Each token is wrapped in `&`, so a rule matching `&plan=Pro&` matches exactly and doesn't match `plan=Promo`.
-- If a parameter appears more than once, the first occurrence is kept.
+- If a parameter appears more than once, the system keeps the first occurrence.
 - The script doesn't capture content after a `#` in the URL.
-- Values are capped at 2,000 characters and trimmed at a token boundary. The event itself is always recorded even when values are trimmed.
+- The system caps values at 2,000 characters and trims at a token boundary. The event itself is always recorded even when values are trimmed.
 
-**IP address** (`msdynci_ipaddress`) is collected with the last octet zeroed: `203.0.113.0`, not `203.0.113.47`. As a result, it identifies a general network rather than a device.
+The system collects the **IP address** (`msdynci_ipaddress`) with the last octet zeroed: `203.0.113.0`, not `203.0.113.47`. As a result, it identifies a general network rather than a device.
 
 ## Understand real-time web event processing
 
@@ -145,7 +153,7 @@ Keep the following points in mind:
 
 This difference can cause slight discrepancies between a segment count and the activity shown on a profile timeline.
 
-## Use the captured values in segments
+## Use captured query-string values in segments
 
 Selected query-string data is stored in the dedicated Dataverse field `msdynci_querystring`, separate from the URL field `msdynci_viewuri`. Use `msdynci_querystring` for query-parameter conditions. Include the `&name=value&` boundaries when matching a complete pair, such as `&campaign=1324&`.
 

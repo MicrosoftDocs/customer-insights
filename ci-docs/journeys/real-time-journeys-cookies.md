@@ -1,10 +1,11 @@
 ---
 title: How real-time journeys uses cookies
-description: Understand the deployment and management of cookies in real-time journeys for personalized customer interactions.
-ms.date: 10/13/2026
+description: Learn how real-time journeys cookies track website activity and help associate visits with contacts or leads. Explore cookie behavior and consent controls.
+ms.date: 11/24/2026
 ms.topic: article
 author: udag
 ms.author: colinbirkett
+ai-usage: ai-assisted
 search.audienceType:
   - admin
   - customizer
@@ -15,57 +16,54 @@ ms.custom:
   - ai-seo-date:12/13/2024
 ---
 
-# How real-time journeys uses cookies
+# How real-time journeys use cookies
 
-Real-time journeys identify website visitors using a technology called cookies. Cookies are small text files that are placed on your device by websites you visit or applications you use. Cookies are widely used to make websites work more efficiently, enhance the user experience, and provide data to website or application owners.
+Real-time journeys use cookies to record website visits and link clicks and help associate activity with known contacts or leads. This article explains how those cookies are deployed and how to control nonessential cookies.
 
-Our product uses cookies to help you understand customer behavior and provide personalized experiences to your customers.
+Dynamics 365 Customer Insights - Journeys uses cookies to help you understand customer behavior and provide personalized experiences to your customers.
 
 > [!IMPORTANT]
-> Many countries and regions (including the European Union) require that you get consent before setting a cookie on a user's machine. It's your organization's responsibility to be aware of, and conform to, all relevant laws and regulations in the markets where you operate, including consent to set cookies. For more information on EU regulations, see [Cookies and similar technologies](https://commission.europa.eu/resources-partners/europa-web-guide/design-content-and-development/privacy-security-and-legal-notices/cookies-and-similar-technologies_en).
+> Many countries and regions (including the European Union) require that you get consent before setting a cookie on a user's machine. It's your organization's responsibility to be aware of, and conform to, all relevant laws and regulations in the markets where you operate, including consent to set cookies. For more information about EU regulations, see [Cookies and similar technologies](https://commission.europa.eu/resources-partners/europa-web-guide/design-content-and-development/privacy-security-and-legal-notices/cookies-and-similar-technologies_en).
+>
+> This information isn't legal advice. Consult your own privacy counsel about your consent design.
 
-## How cookies are deployed
+## How real-time journeys deploy cookies
 
-Real-time journeys can generate a small piece of JavaScript code that reads and sets cookies on any webpage where you place the code. All you need to do is include the script to the webpage to let real-time journeys record website visits and link clicks for that webpage.
+Real-time journeys can generate a small piece of JavaScript code that reads and sets cookies on any webpage where you place the code. All you need to do is include the script on the webpage to let real-time journeys record website visits and link clicks for that webpage.
 
-A cookie identifies a single device/browser/account combination. If you use two different browsers (such as Microsoft Edge and Mozilla Firefox on the same computer), each has its own cookie. Likewise, you have different cookies on each device that you use. Another user with their own account on your computer has another set of cookies. If a device gets deleted and reinstalled, all cookies are also deleted. Nevertheless, real-time journeys attempts to resolve the actual marketing profile (contact, lead) associated with each unique cookie ID.
+A cookie identifies a single device/browser/account combination. If you use two different browsers (such as Microsoft Edge and Mozilla Firefox on the same computer), each browser has its own cookie. Likewise, you have different cookies on each device that you use. Another user with their own account on your computer has another set of cookies. If a device gets deleted and reinstalled, all cookies are also deleted. Nevertheless, real-time journeys attempts to resolve the actual marketing profile (contact, lead) associated with each unique cookie ID.
 
-Whenever a profile (such as a contact, lead, or Customer Insights - Data profile) visits a webpage, real-time journeys correlates the behavior-analysis cookie ID with the available profile data. In this way, the cookie ID is mapped to a real-time journeys profile ID, allowing the administrator to determine who has been browsing the site.
+For supported web tracking scenarios, Customer Insights - Journeys associates website activity with known contacts or leads through a tracked message link or a marketing or event registration form submission. See [Personalize messages with web interaction data](interaction-journey-decision.md).
 
 ## Cookies set by real-time journeys
 
-**Long-term behavioral-analysis cookie**: The cookies are set and/or read on any webpage where you placed a real-time journeys website behavioral-analysis script. The cookies enable real-time journeys to collect end user events based on their level of interaction with a given website. The cookies contain no personal information, but do uniquely identify a specific browser on a specific machine. Real-time journeys can use the cookies to correlate this ID with an actual profile in the real-time journeys database. The cookies remain active for one year.
+[!INCLUDE [web-tracking-identifiers](~/../ci-shared/web-tracking-identifiers.md)]
 
 ## List of real-time journeys cookies
 
-The following table lists the cookies used by real-time journeys and their purpose and properties.
+[!INCLUDE [web-tracking-visitor-cookie](~/../ci-shared/web-tracking-visitor-cookie.md)]
 
-| Cookie name             | Is essential | Purpose           | First or third party | Properties              | Function (purpose detail)                                                                                                                                                                                                                                                                                                                   | Source URL/JavaScript |
-|-------------------------|--------------|-------------------|----------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| msdynci_trackingContext | No           | Behavior tracking | First party          | Persistent, client-side | This cookie tracks web behavior, such as page visits and clicks, over a 365-day period. It associates this behavior with a known user profile within Customer Insights - Journeys to enable orchestration of personalized experiences tailored to user behavior and preferences, and analysis of end-user web interactions in reports. | Set by the website tracking script. This cookie is created when a user visits a website using a tracking link generated by a Customer Insights - Journeys email.            |
-| msdynmkt_formsubmissionid | No | Behavior tracking | First party | Persistent, client-side | We set this cookie when an end user submits a Customer Insights - Journeys form (with web tracking enabled) on a web page. When a form is submitted by the end user, a new contact or lead is created. We use the cookie available in the browser to associate future page visits and clicks, over a 365-day period, with the newly generated contact or lead. This enables orchestration of personalized experiences tailored to user behavior and preferences, and analysis of end-user web interactions in reports. | Set by the service or form loader script.    |
+Reading an existing `_msci` cookie on an ordinary visit doesn't renew its expiry.
+
+### Journeys attribution cookies
+
+Customer Insights - Journeys uses the following cookies to associate website activity with known contacts or leads. Not every cookie is created on every visit.
+
+| Cookie name | Is essential | Purpose | First or third party | Properties | Function (purpose detail) | When set |
+|-------------|--------------|---------|----------------------|------------|---------------------------|----------|
+| `msdynci_trackingContext` | No | Behavior tracking | First party | Persistent, client-side; configured expiry of 365 days when written. | Stores the tracking context used to associate website activity with a known contact or lead. | The website tracking script initializes with a tracking context in the URL from a tracked Customer Insights - Journeys message link, and cookie usage is permitted. |
+| `msdynmkt_formsubmissionid` | No | Behavior tracking | First party | Persistent, client-side; configured expiry of 365 days when written. | Associates subsequent website activity with the contact or lead resolved by a marketing or event registration form submission. A submission can create, match, or update a record according to the [matching settings](real-time-marketing-manage-forms.md#form-settings). | The form loader receives a successful submission response containing a submission ID, with **Web tracking** enabled for the marketing or event registration form and cookie usage permitted. |
+
+A new tracked link or successful submission can write the corresponding attribution cookie again.
+
+[!INCLUDE [web-tracking-browser-storage](~/../ci-shared/web-tracking-browser-storage.md)]
 
 ## How to disable nonessential real-time journeys marketing cookies
 
-Real-time journeys provides a JavaScript API to help your organization conform with data regulations by disabling nonessential real-time journeys cookies. When you define the following function in your web pages, real-time journeys won't set nonessential cookies.
+For marketing and event registration forms, also define the function before the form loader initializes.
 
-```
-<script>
-    function disableCookiesUsage() {
-         return true;
-    }
-</script>
-```
+[!INCLUDE [web-tracking-cookie-controls](~/../ci-shared/web-tracking-cookie-controls.md)]
 
-> [!NOTE]
-> Without the above code, real-time journeys set nonessential cookies by default.
+Account for tracking scripts loaded by marketing or event registration forms as well as scripts installed separately. A tracking context supplied in a Customer Insights - Journeys message link can still be used in memory when cookies are refused.
 
-If you use a third-party system to handle consent, such as a consent service or a cookie banner, you can instruct real-time journeys to set nonessential cookies with the following call:
-
-```
-function disableCookiesUsage() {
-     return false;
- }
-```
-
-This action requires you to reload the page. Please note that without nonessential cookies, real-time journeys' web tracking capabilities are limited and you can't orchestrate personalized experiences for your customers.
+Website cookie permission is separate from the compliance profile's **Tracking** purpose. See [Configure tracking consent](real-time-marketing-tracking-consent.md) for Customer Insights - Journeys consent enforcement.

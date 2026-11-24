@@ -1,15 +1,16 @@
 ---
 title: Customer Insights - Journeys forms security and privacy
 description: Learn about security and privacy protections for Customer Insights - Journeys forms, including reCAPTCHA setup and error troubleshooting.
-ms.date: 10/13/2026
+ms.date: 11/24/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
+ai-usage: ai-assisted
 ---
 
 # Security and privacy for Customer Insights - Journeys forms
 
-Microsoft builds its products based on strong security and privacy principles. Customer data belongs to the customer, and Microsoft protects it by design and by default throughout its lifecycle.
+Customer Insights - Journeys forms include security and privacy protections for marketing and event registration forms. Learn how domain controls, reCAPTCHA, and web tracking settings help protect form data.
 
 Customer Insights - Journeys forms treat security and privacy as core features. Microsoft protects all form data with encryption in transit and at rest, strong identity and access controls, and ongoing security validation. Microsoft regularly tests forms and related services through automated security checks, vulnerability scanning, and penetration testing as part of the Secure Development Lifecycle (SDL).
 
@@ -49,4 +50,7 @@ For common reCAPTCHA configuration errors and how to resolve them, see [Troubles
 ## Customer Insights - Journeys forms privacy
 
 - Marketing and event registration forms don't use any cookies by default. Form visit and form submit interactions use a [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
-- The system uses cookies for tracking end users only when you turn on the **Web tracking** feature in Form settings. If you disable **Web tracking**, the system doesn't set any tracking cookies.
+- The **Web tracking** setting controls the marketing or event registration form's web tracking functionality, including its form-submission tracking cookie. Turning off this setting doesn't remove a separately installed website tracking script or delete existing cookies or browser storage. Configure your website's cookie-permission integration and withdrawal handling separately. See [How real-time journeys uses cookies](real-time-journeys-cookies.md#how-to-disable-nonessential-real-time-journeys-marketing-cookies).
+
+> [!IMPORTANT]
+> This information isn't legal advice. Consult your own privacy counsel about your consent design.
