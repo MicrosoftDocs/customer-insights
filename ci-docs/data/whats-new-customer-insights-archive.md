@@ -287,7 +287,7 @@ The System Status page in Customer Insights - Data is an indispensable tool for 
 
 ### Monthly enhancements
 
-[Marketing Contributor role](user-roles.md#marketing-contributor-preview):
+[Marketing Contributor role](user-roles.md#marketing-contributor):
 
 - can search for segments by name and only get results from their business unit
 - can filter by tags and tags honor business unit. Tags created in a business unit aren't visible and searchable in other business units
