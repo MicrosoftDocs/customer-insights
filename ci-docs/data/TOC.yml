@@ -136,6 +136,8 @@
           href: real-time-web-personalization-overview.md
         - name: Set up web tracking and personalization
           href: real-time-web-personalization.md
+        - name: Cookies and browser storage for web tracking
+          href: real-time-web-tracking-cookies.md
         - name: Personalize your customers' web experience
           href: optimizely-integration.md
         - name: Scenarios for web tracking and personalization
