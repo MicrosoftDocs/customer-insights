@@ -1,8 +1,8 @@
 ---
-title: "Create a new environment"
-description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 09/10/2025
-ms.reviewer: mhart
+title: Create a new environment in Customer Insights - Data
+description: Create a new environment in Dynamics 365 Customer Insights by choosing storage, Dataverse settings, and region. Follow these steps to get started.
+ms.date: 11/24/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -11,40 +11,28 @@ ms.custom: bap-template
 
 # Create a new environment
 
-After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the administrator of the Microsoft 365 tenant receives an email that invites them to create an environment and [add users from their organization as administrators](permissions.md). These administrators can then manage users and Customer Insights environments. A user assigned the Administrator role in Customer Insights - Data is automatically assigned the System Administrator role in the Dataverse environment. A System Administrator role is required to create, manage, and delete Power Platform dataflow connections.
+After [your organization purchases a license for Dynamics 365 Customer Insights](paid-license.md), the administrator of the Microsoft 365 tenant receives an email that invites them to create an environment and [add users from their organization as administrators](permissions.md). These administrators can then manage users and Customer Insights environments. A user assigned the Administrator role in Customer Insights - Data is automatically assigned the System Administrator role in the Dataverse environment. You need the System Administrator role to create, manage, and delete Power Platform dataflow connections.
 
 > [!IMPORTANT]
-> In most cases, installing Customer Insights - Data should be done through [Power Platform admin center](../journeys/setup.md).
+> For first-time set up, you must install Customer Insights - Data through [Power Platform admin center](../journeys/setup.md).
 
-Use the environments creation experience in Customer Insights - Data for the following scenarios:
+For subsequent environments, you can create an environment directly through Customer Insights - Data or through Power Platform admin center.
 
-- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md)
-- [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
-- [Create a copy of an existing environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview)
+You must use Customer Insights - Data for the following scenarios:
+
+- You want the new environment to use your [own Azure Data Lake Storage Account](own-data-lake-storage.md).
+- You want to [copy the existing environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
 
 ## Prerequisites
 
 - [Administrator permissions](user-roles.md#admin) in Customer Insights - Data.
-
-To install Customer Insights - Data on an existing Dataverse environment:
-
-- A user [role that allows the creation of Dataverse environments](/power-platform/admin/create-environment).
-- You checked that the Dataverse environment is associated to certain security groups and you're added to those security groups.
-- A Dataverse license is assigned to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
-- Customer Insights - Data isn't already installed. [Learn how to delete an existing environment](manage-environments.md#delete-an-existing-environment).
-
-To create a new Dataverse environment when installing Customer Insights - Data:
-
-- You have the [required license and role in Power Platform](/power-platform/admin/create-environment#who-can-create-environments).
-- Your Power Platform administrator didn't [disable the creation of Dataverse environments](/power-platform/admin/control-environment-creation) for everyone except admins.
+- You must have an existing Dataverse environment.
 
 ## Create an environment in Customer Insights - Data
 
-We recommend to [use the consolidated environment manager for Customer Insights](../journeys/setup.md) to create new environment by default.
-
 1. Open the environment picker and select **+ New**.
   
-   :::image type="content" source="media/environment-picker.png" alt-text="Select the environment picker.":::
+   :::image type="content" source="media/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
 1. Follow the guided experience outlined in the following sections and provide all required information for a new environment.
 
@@ -66,8 +54,8 @@ We recommend to [use the consolidated environment manager for Customer Insights]
 
 1. Choose where to store the data:
 
-   - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
-   - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
+   - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, use this option.
+   - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control over where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
 1. Select **Next**.
 
@@ -77,7 +65,7 @@ Select an existing Dataverse environment that doesn't already have a Customer In
 
 If you chose to use your own Azure Data Lake storage in the previous step, you can [enable data sharing with Dataverse](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview). You can use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse autoenabled for new environments.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="Screenshot of data sharing with Microsoft Dataverse autoenabled for new environments.":::
 
 1. Choose an existing Dataverse environment from the drop-down that you want to install Customer Insights - Data. To create a new environment, go to the Power Platform admin center and [create it](/power-platform/admin/create-environment#create-an-environment-with-a-database). Then, refresh the list of environments and select the newly created environment.
 
