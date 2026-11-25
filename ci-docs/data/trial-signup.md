@@ -3,10 +3,11 @@ title: Sign up for a free Dynamics 365 Customer Insights trial
 description: "Dynamics 365 Customer Insights trial: Get started quickly with free access to key features, sample data, learning resources, and hands-on product exploration."
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 11/03/2026
+ms.date: 11/25/2026
 ms.topic: get-started
 ms.custom: bap-template 
 ms.reviewer: v-wendysmith
+ai-usage: ai-assisted
 ---
 
 # Sign up for a free Dynamics 365 Customer Insights trial
@@ -23,7 +24,7 @@ The trial takes a few moments to load, and then you can start using the app. You
 
 ## What to try
 
-Your trial environment includes the same features as the paid version.
+Your trial provides most features, with some restrictions. Before you try the apps, review the [Customer Insights - Data trial limits and quotas](trial-faq.md#what-are-the-trial-limits-and-quotas), [features unavailable in the Data trial](trial-faq.md#what-features-are-available-in-the-trial), and [Customer Insights - Journeys trial limits](../journeys/trial-preview-limits.md).
 
 ### Customer Insights - Data
 
@@ -43,7 +44,7 @@ The following links guide you through some of the key features and other resourc
 
 The following links guide you through key features and other resources.
 
-- [Create a marketing email and go live](../journeys/create-marketing-email.md)
+- [Create and send a targeted email in Customer Insights - Journeys.](../journeys/real-time-marketing-email-get-started.md)
 - [Target the right customers using the query assist copilot](../journeys/real-time-marketing-natural-language-segments.md)
 - [Journey Creation Agent in Customer Insights - Journeys](../journeys/journey-creation-agent.md)
 - [Create a demographic segment targeting leads](../journeys/real-time-marketing-build-segments.md#create-a-demographic-segment-targeting-leads)
