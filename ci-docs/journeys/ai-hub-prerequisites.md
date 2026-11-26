@@ -1,7 +1,7 @@
 ---
 title: Manage prerequisites in AI Hub (preview)
 description: AI Hub prerequisites in Customer Insights – Journeys define the required settings for AI agents. Learn how to review and accept each setting in Power Platform Admin Center.
-ms.date: 07/09/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -94,6 +94,4 @@ If your environment is part of an environment group, you can also govern the AI 
 
 ## Geographical availability and languages supported
 
-AI agents in Customer Insights - Journeys are available in the geographical regions and languages listed in the [Copilot international availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+AI agents in Customer Insights - Journeys are available in the geographical regions listed in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).

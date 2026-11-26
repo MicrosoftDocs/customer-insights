@@ -1,7 +1,7 @@
 ---
 title: Google Postmaster Tools - What it is and how it can help you
 description: Set up Google Postmaster Tools and understand its dashboards for spam rate, reputation, authentication, and delivery errors.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -143,5 +143,3 @@ This graph monitors what percentage of your total emails were rejected or tempor
 :::image type="content" source="media/postmaster-delivery-errors.png" alt-text="Screenshot of the Google Postmaster Tools Delivery errors dashboard listing reasons emails were rejected or failed." lightbox="media/postmaster-delivery-errors.png":::
 
 That’s pretty much it. We hope this helps you get Google Postmaster Tools up and running. If you need more insights into these tools, let us know. We can help.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

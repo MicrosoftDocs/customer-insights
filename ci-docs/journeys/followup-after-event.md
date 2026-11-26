@@ -1,7 +1,7 @@
 ---
 title: Evaluate your event and follow up with attendees 
 description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/10/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -45,5 +45,3 @@ Event and session attendance records are available for all contacts. This inform
 ## View and analyze event results
 
 By the time your event is finished, you'll have generated a wealth of new data in Dynamics 365, and the system is well-equipped to help you analyze that data by using detailed analytics. To review event analytics, [open the Events work area](open-events.md), go to **Events** > **Event** > **Events**, and open the main event record for your event to see results and analytics that relate to that event.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

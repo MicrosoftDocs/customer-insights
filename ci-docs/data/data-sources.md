@@ -1,7 +1,7 @@
 ---
 title: Data sources overview
 description: Learn how to import or ingest data from various sources.
-ms.date: 06/04/2026
+ms.date: 11/04/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -54,7 +54,9 @@ When you ingest data, Customer Insights – Data performs basic data profiling. 
 
 After you ingest the data, you can view the results of data profiling.
 
-1. Go to **Data** \> **Tables**, and select a table. Then, in the row for a field (for example, `DateOfBirth`), in the **Summary** column, select the **Summary** icon.
+1. Go to **Data** > **Tables**.
+
+1. Select a table and then select the **Columns** tab. Then, in the row for a field (for example, `DateOfBirth`), in the **Summary** column, select the **Summary** icon.
 
     :::image type="content" source="media/tables-summary-icon.png" alt-text="Screenshot of the Attributes tab on the page for the Customer table, highlighting the Summary icon for the DateOfBirth field.":::
 

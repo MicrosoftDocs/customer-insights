@@ -1,7 +1,7 @@
 ---
-title: Export segments to LiveRamp (preview)
+title: Export segments to LiveRamp
 description: Export segments to LiveRamp for powerful identity resolution across hundreds of platforms. Learn how to connect your data and personalize campaigns.
-ms.date: 07/08/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -9,9 +9,7 @@ ms.author: sstabbert
 ms.custom: sfi-image-nochange
 ---
 
-# Export segments to LiveRamp&reg; (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to LiveRamp&reg;
 
 Activate your data in LiveRamp to connect with over 500 platforms across digital, social, and TVs. Work with your data in LiveRamp to target, suppress, and personalize ad campaigns.
 

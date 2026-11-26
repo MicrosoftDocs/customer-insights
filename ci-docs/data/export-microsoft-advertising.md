@@ -1,16 +1,14 @@
 ---
-title: Export segments to Microsoft Advertising (preview)
+title: Export segments to Microsoft Advertising
 description: Export segments to Microsoft Advertising from Dynamics 365 Customer Insights to create Customer Match audiences. Learn how to configure connections for ad campaigns.
-ms.date: 07/16/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Microsoft Advertising (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Microsoft Advertising
 
 Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising to create Customer Match audiences. Use these audiences for your ad campaigns.
 

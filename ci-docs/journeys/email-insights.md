@@ -1,7 +1,7 @@
 ---
 title: Email insights
 description: How to access and interpret email insights in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -81,5 +81,3 @@ Use click map insights to optimize your content placement, layout, and design to
 Get insights into key metrics like unique opens, unique clicks, delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant. Use these insights to see what resonates with your audience. You see variation insights only if an email has conditional content.
 
 :::image type="content" source="media/email-insights-variation.png" alt-text="Screenshot of the variation insights dashboard showing metrics for each email variant." lightbox="media/email-insights-variation.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

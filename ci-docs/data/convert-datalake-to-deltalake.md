@@ -1,7 +1,7 @@
 ---
-title: "Update a Common Data Model data source to use Delta tables"
-description: "Learn how to convert Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
-ms.date: 04/21/2025
+title: Update a Common Data Model data source to use Delta tables
+description: Learn how to convert Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data.
+ms.date: 11/02/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -21,7 +21,7 @@ Update an existing data connection with Common Data Model tables and move to Del
 
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
-- The Delta tables and their schema must match the tables in the existing Common Data Model data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the Common Data Model data source. The tables names and their schemas must match exactly. In Delta, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the Common Data Model data source. Otherwise, the update fails.
+- The Delta tables and their schema must match the tables in the existing Common Data Model data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the Common Data Model data source. The table names and their schemas must match exactly. In Delta, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the Common Data Model data source. Otherwise, the update fails.
 
   For example, if the selected Common Data Model data source tables are Table1 and Table2, then the folder you choose for the update must show Table1 and Table2 in the hierarchy.
 
@@ -38,17 +38,17 @@ Update an existing data connection with Common Data Model tables and move to Del
 
 1. Select the Azure Data Lake Common Data Model data source and then select **Update to Delta tables**. Or, select **Begin update** from the **Add tables** page if you're editing the Common Data Model data source.
 
-   :::image type="content" source="media/delta-lake-update.svg" alt-text="Data sources page showing a Common Data Model data source with Update to Delta tables highlighted.":::
+   :::image type="content" source="media/delta-lake-update.svg" alt-text="Screenshot of the Data sources page showing a Common Data Model data source with Update to Delta tables highlighted.":::
 
-1. Select **Browse** and navigate to the folder that contains the data in Delta format and *exactly matches* the selected Azure Data Lake data source table. Select it, and then select **Update data source**.
+1. Select **Browse** and go to the folder that contains the data in Delta format and *exactly matches* the selected Azure Data Lake data source table. Select it, and then select **Update data source**.
 
    The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    > [!IMPORTANT]
-   > Don't stop the refreshing process as it could negatively impact updating the data source.
+   > Don't stop the refreshing process as it could negatively affect updating the data source.
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-We recommend you continue to stream your data to the Data Lake Storage location through your existing pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
+Continue to stream your data to the Data Lake Storage location through your existing pipeline and keep the manifests and schemas until you determine the update was successful and everything is working as expected.
 
 ## Revert the conversion from Common Data Model tables to Delta tables
 
@@ -56,16 +56,16 @@ If you tried to update an Azure Data Lake Common Data Model data source to Delta
 
 ### Prerequisites
 
-- Your organization has continued to stream the Data Lake Storage data through your pipeline.
-- Your organization has maintained the Data Lake Storage manifests and schemas.
+- Your organization continues to stream the Data Lake Storage data through your pipeline.
+- Your organization maintains the Data Lake Storage manifests and schemas.
 
-### Revert back to an Azure Data Lake Common Data Model data source
+### Revert to an Azure Data Lake Common Data Model data source
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the Azure Data Lake Common Data Model data source and then select **Revert to Common Data Model tables**.
+1. Select the Azure Data Lake Common Data Model data source, and then select **Revert to Common Data Model tables**.
 
-1. Confirm that you want to revert. The **Data sources** page opens showing the new data source in **Refreshing** status.
+1. Confirm that you want to revert. The **Data sources** page opens and shows the new data source in **Refreshing** status.
 
    > [!IMPORTANT]
    > Don't stop the refreshing process as it could negatively impact reverting the data source.

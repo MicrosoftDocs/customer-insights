@@ -1,7 +1,7 @@
 ---
 title: Transfer customizations between environments using solution export and import
 description: How to move customizations between environments using solution export/import in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -146,5 +146,3 @@ To import a solution:
 1. Select **Close** to close the import dialog.
 
 1. To confirm the import, go to the Customer Insights - Journeys app, open a marketing form record and look for the new customized field on the **Summary** tab.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

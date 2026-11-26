@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -368,5 +368,3 @@ Reuse this example to enrich your leads with more UTM parameters, like utm_campa
 ### Custom back-end validation of form submission
 
 It's possible to build [custom back-end form submission validation](real-time-marketing-form-customize-submission-validation.md) that prevents or extends form submission processing.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

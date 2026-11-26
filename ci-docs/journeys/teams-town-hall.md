@@ -1,7 +1,7 @@
 ---
 title: Set up large-scale events with Teams town halls
 description: Learn how to create and host large scale streamed events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams town halls.
-ms.date: 02/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -77,5 +77,3 @@ The **Join in Teams** button generates a unique attendee URL for each registrant
 ## Attendance report
 
 Users don't need to register for town hall events, so registrations don't include check-ins. You can view the attendance report for attendees who join the event after it ends, but the report doesn't link to event registrations. Teams town hall events track attendance by email, so the check-in table in Customer Insights - Journeys shows attendance data connected to email addresses, not to event registrations.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

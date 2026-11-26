@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails
 description: One-click unsubscribe helps recipients opt out of commercial emails in Customer Insights - Journeys. Learn how to enable and manage this feature.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: get-started
 author: udag
 ms.author: udag
@@ -27,13 +27,11 @@ ms.custom:
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
-> [!div class="mx-imgBorder"]
-> ![Select the unsubscribe link](media/select-unsubscribe-link.png "Select the unsubscribe link")
+:::image type="content" source="media/select-unsubscribe-link.png" alt-text="Select the unsubscribe link":::
 
 When selected, a dialog asks the user to confirm the unsubscribe. If the user selects the **Unsubscribe** button, they're unsubscribed from the email without visiting a web page:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing you are unsubscribed without opening a web page](media/you-are-unsubscribed.png "Screenshot showing you are unsubscribed without opening a web page")
+:::image type="content" source="media/you-are-unsubscribed.png" alt-text="Screenshot showing you are unsubscribed without opening a web page":::
 
 To support this capability, the email sender adds information in the email headers that tells the email client how to automatically unsubscribe. The receiving email client uses this information to show users easy ways to unsubscribe from unwanted messages.
 
@@ -115,5 +113,3 @@ No. You can't retroactively apply the one-click headers to emails that are alrea
 Gmail considers several factors before surfacing the one-click unsubscribe link in the email client, even when the one-click unsubscribe headers are present in the email. Here's a community thread from Google where this has been discussed: [List-Unsubscribe header not providing the option to unsubscribe](https://support.google.com/mail/thread/49653586).
 
 If you've turned on the feature switch, all future emails sent from the system include the one-click unsubscribe headers. As long as the email has the headers as specified, you can be confident that you're complying with Google’s guidelines. To check, download the message or select “Show Original” in the message menu to verify that the headers are present.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

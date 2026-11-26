@@ -1,7 +1,7 @@
 ---
 title: Real-time marketing journey templates
 description: Learn how to use real-time marketing journey templates in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/27/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: colinbirkett
 ms.author: colinbirkett
@@ -53,5 +53,3 @@ You can save journeys as templates with placeholder content selected or only wit
 ## Start a journey from a template
 
 Anyone creating a journey can select your template from the list of available templates when creating a journey from scratch in the journey editor. 
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

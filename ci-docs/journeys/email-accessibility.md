@@ -1,7 +1,7 @@
 ---
 title: Email accessibility checker
 description: Use the built-in accessibility checker in Customer Insights - Journeys to find and fix accessibility issues in your email messages.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -29,5 +29,3 @@ You can drill down into any of the accessibility issues found to get help on how
 :::image type="content" source="./media/accessibility-checker-issue-drill.png" alt-text="Screenshot of an accessibility problem expanded in the checker panel, showing details and guidance for fixing the problem." lightbox="./media/accessibility-checker-issue-drill.png":::
 
 After you make an update, select **Check it again** to confirm your fix meets the accessibility requirements.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

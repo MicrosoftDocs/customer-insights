@@ -1,7 +1,7 @@
 ---
 title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -69,8 +69,6 @@ Enabling business units scoping in Customer Insights - Data impacts how certain 
 
 For more information on how business unit separation affects insights and activation in Customer Insights - Data and Customer Insights - Journeys, see [From Customer Insights ‑ Data to Customer Insights ‑ Journeys: How BU separation affects insights and activation](https://community.dynamics.com/blogs/post/?postid=d4d7c64c-1ddc-f011-8544-000d3a110039). In this blog post, you can see a table comparing how specific Customer Insights - Data items appear and behave in Customer Insights - Journeys.
 
-### See also
+### Related information
 
 [Domain authentication for modernized business units](domain-authentication.md#domain-authentication-for-modernized-business-units)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

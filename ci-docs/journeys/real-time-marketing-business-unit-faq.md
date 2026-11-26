@@ -1,7 +1,7 @@
 ---
 title: Business units FAQs for real-time journeys
 description: Business units FAQ for Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: faq
 author: udag
 ms.author: udag
@@ -60,5 +60,3 @@ Areas that support business units but don't yet support modernized business unit
 
 Areas that don't yet support business units at all (that is, all records are created at the organization level) include:
 - Audience configuration
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

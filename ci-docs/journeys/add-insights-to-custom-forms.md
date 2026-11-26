@@ -1,7 +1,7 @@
 ---
 title: Add (customized) contact or lead insights to custom forms
 description: Learn how to add customized contact or lead insights to custom forms Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -72,5 +72,3 @@ To create a JSON file with layout definition:
     :::image type="content" source="media/add-insights-admin-portal-small.png" alt-text="Screenshot showing the admin portal." lightbox="media/add-insights-admin-portal.png":::
 
 1. Upload the file. In the custom control configuration, make sure to use the value of the “Name” field (including the solution prefix).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

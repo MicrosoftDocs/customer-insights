@@ -1,7 +1,7 @@
 ---
 title: Get started with Customer Insights - Journeys app setup 
 description: Learn how to get up and running quickly in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/23/2023
+ms.date: 10/13/2026
 ms.topic: get-started
 author: udag
 ms.author: udag
@@ -32,5 +32,3 @@ Follow these steps to expedite the Dynamics 365 Customer Insights - Journeys set
 ## Next steps
 
 After the Customer Insights - Journeys app is set up, you can start setting up features such as [email](email-get-started.md) and [text messages](real-time-marketing-outbound-text-messaging.md) to reach out to your customers.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

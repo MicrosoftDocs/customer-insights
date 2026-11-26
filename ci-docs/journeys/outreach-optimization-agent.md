@@ -1,7 +1,7 @@
 ---
 title: Outreach Optimization Agent in Customer Insights - Journeys (preview)
 description: Outreach Optimization Agent in Dynamics 365 Customer Insights - Journeys helps schedule marketing emails at high-engagement times in journeys.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -88,5 +88,3 @@ The end date also defines when the goal evaluation completes:
 
 - If the goal condition (for example, a link click) is satisfied before the end date, the goal is recorded as met.
 - If the end date is reached and the goal condition hasn't occurred, the agent outputs **Goal not met**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

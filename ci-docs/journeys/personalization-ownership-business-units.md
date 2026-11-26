@@ -1,7 +1,7 @@
 ---
 title: How record ownership and business units affect personalization
 description: Learn how Dataverse record ownership, journey ownership inheritance, and business units determine whether personalization placeholders resolve or return empty values in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/13/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -103,5 +103,3 @@ Choose a mitigation that meets your security and privacy requirements:
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 - [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 - [Create or edit business units](/power-platform/admin/create-edit-business-units)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

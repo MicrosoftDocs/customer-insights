@@ -1,7 +1,7 @@
 ---
 title: MCP Server tools reference for Customer Insights - Data
 description: Reference for the Customer Insights MCP Server tools you can call from Customer Insights - Data, covering unified profiles, segments, measures, predictions, consent, and journeys.
-ms.date: 09/29/2026
+ms.date: 10/08/2026
 ms.update-cycle: 180-days
 ms.topic: reference
 ms.service: dynamics-365-customer-insights
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # MCP Server tools reference for Customer Insights - Data
 
-One MCP server serves both Customer Insights - Data and Customer Insights - Journeys, so an agent in either app can call any of the tools listed here.
+One MCP server serves both Customer Insights - Data and Customer Insights - Journeys, but each tool works with a specific app. With Customer Insights - Data, you can use the customer profile tools. The journey and email tools need Customer Insights - Journeys, and the consent tools need Customer Insights - Journeys or Shared Consent.
 
 [!INCLUDE [mcp-server-tools-reference](~/../ci-shared/mcp-server-tools-reference.md)]
 

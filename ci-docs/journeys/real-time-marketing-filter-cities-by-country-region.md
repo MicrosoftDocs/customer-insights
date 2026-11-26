@@ -1,7 +1,7 @@
 ---
 title: Filter cities by country/region in Customer Insights - Journeys forms
 description: 'Customer Insights - Journeys forms: Filter city options by country/region for faster, more accurate submissions. Learn how to set up filtered lookups.'
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -115,5 +115,3 @@ Learn more about security roles in [Security roles and privileges](/power-platfo
 1. **Publish** and test your form.
 
 You're done setting up! Your form now shows users only the most relevant options based on their selections. This approach improves data quality, reduces errors, and makes the form faster and easier to complete. You're ready to deliver a professional, user-friendly solution that helps customer satisfaction and operational efficiency.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

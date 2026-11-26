@@ -1,7 +1,7 @@
 ---
 title: Push notification user mapping for application developers
 description: Push notification user mapping connects Customer Insights - Journeys records to mobile app users so notifications reach the correct person.
-ms.date: 07/16/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -48,5 +48,3 @@ https://<your Customer Insights - Journeys instance>.dynamics.com/api/data/v9.0/
 ```
 
 This query to Dataverse returns a single contact that has *andrew@contosoltd.com* as the email address. Once this ID is acquired (in this example, a contact ID), it should be used as the `UserId` parameter in the mobile application.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

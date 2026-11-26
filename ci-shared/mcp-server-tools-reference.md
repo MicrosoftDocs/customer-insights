@@ -2,37 +2,40 @@ The Customer Insights [Model Context Protocol (MCP)](https://modelcontextprotoco
 
 There's a single MCP server for both apps. Instead of calling internal APIs directly, your agents work through one secure interface that applies the same rules Customer Insights enforces everywhere else, including consent rules enforced during journey execution.
 
-Through MCP, an agent can:
+The server is shared, but each tool works with the data of a specific app. Through MCP, an agent can:
 
-- Discover the data sources ingested into Customer Insights
-- Resolve a record from a source system to a unified customer profile
-- Retrieve profile attributes, segments, measures, predictions, and cluster membership
-- Check consent and generate compliant unsubscribe links before sending a message
-- Create journeys and validate email content
+- **With Customer Insights - Data**: discover ingested data sources, resolve a source record to a unified customer profile, and retrieve profile attributes, segment membership, measures, predictions, and cluster membership
+- **With Customer Insights - Journeys or Shared Consent**: check consent and generate compliant unsubscribe links before sending a message
+- **With Customer Insights - Journeys**: create journeys and validate email content
 
 ## Tools at a glance
 
-| Tool | Display title | What it does | Read-only |
-|---|---|---|---|
-| `find_customer` | **Find Customer** | Searches unified customer profiles by first or last name | Yes |
-| `get_customer_by_source_id` | **Resolve Customer By Source Id** | Resolves a unified customer ID from a source system record ID | Yes |
-| `get_customer_by_contact` | **Resolve Customer By Contact** | Resolves a unified customer ID from a Dataverse contact GUID | Yes |
-| `get_customer_details` | **Get Customer Details** | Returns the full Customer 360 view for one customer | Yes |
-| `get_customer_segments` | **Get Customer Segments** | Lists the segments a customer belongs to | Yes |
-| `get_customer_measures` | **Get Customer Measures** | Returns calculated measures and KPIs | Yes |
-| `get_customer_predictions` | **Get Customer Predictions** | Returns machine learning predictions such as churn probability | Yes |
-| `get_cluster_information` | **Get Cluster Information** | Returns cluster membership, such as a household, and other members | Yes |
-| `list_data_sources` | **List Data Sources** | Lists ingested data sources and their record counts | Yes |
-| `check_consent` | **Check Consent** | Checks consent for a contact point, channel, purpose, and topic | Yes |
-| `get_unsubscribe_link` | **Get Unsubscribe Link** | Generates a compliant unsubscribe link for a recipient | Yes |
-| `create_journey` | **Create Journey** | Validates, enriches, and creates a journey | No |
-| `validate_email` | **Validate Email** | Validates an existing email without changing it | Yes |
+The **Requires** column shows what each tool works with. A tool doesn't read data from the other app, so a tool that requires Customer Insights - Data doesn't return Customer Insights - Journeys data.
+
+| Tool | Display title | What it does | Requires | Read-only |
+|---|---|---|---|---|
+| `find_customer` | **Find Customer** | Searches unified customer profiles by first or last name | Customer Insights - Data | Yes |
+| `get_customer_by_source_id` | **Resolve Customer By Source Id** | Resolves a unified customer ID from a source system record ID | Customer Insights - Data | Yes |
+| `get_customer_by_contact` | **Resolve Customer By Contact** | Resolves a unified customer ID from a Dataverse contact GUID | Customer Insights - Data | Yes |
+| `get_customer_details` | **Get Customer Details** | Returns the full Customer 360 view for one customer | Customer Insights - Data | Yes |
+| `get_customer_segments` | **Get Customer Segments** | Lists the Customer Insights - Data segments a customer belongs to | Customer Insights - Data | Yes |
+| `get_customer_measures` | **Get Customer Measures** | Returns calculated measures and KPIs | Customer Insights - Data | Yes |
+| `get_customer_predictions` | **Get Customer Predictions** | Returns machine learning predictions such as churn probability | Customer Insights - Data | Yes |
+| `get_cluster_information` | **Get Cluster Information** | Returns cluster membership, such as a household, and other members | Customer Insights - Data | Yes |
+| `list_data_sources` | **List Data Sources** | Lists ingested data sources and their record counts | Customer Insights - Data | Yes |
+| `check_consent` | **Check Consent** | Checks consent for a contact point, channel, purpose, and topic | Customer Insights - Journeys or Shared Consent | Yes |
+| `get_unsubscribe_link` | **Get Unsubscribe Link** | Generates a compliant unsubscribe link for a recipient | Customer Insights - Journeys or Shared Consent | Yes |
+| `create_journey` | **Create Journey** | Validates, enriches, and creates a journey | Customer Insights - Journeys | No |
+| `validate_email` | **Validate Email** | Validates an existing email without changing it | Customer Insights - Journeys | Yes |
+
+> [!IMPORTANT]
+> `get_customer_segments` returns Customer Insights - Data segments only. It doesn't return membership of segments you build in Customer Insights - Journeys, and no tool in the Customer Insights MCP Server returns Customer Insights - Journeys segment membership.
 
 `create_journey` is the only tool that writes data. It isn't read-only, destructive, or idempotent, so calling it twice creates two journeys. Every other tool only reads.
 
 ## How the tools fit together
 
-Most workflows follow a two-step pattern: resolve a unified customer ID, then use that ID to retrieve customer data.
+The customer profile tools, which need Customer Insights - Data, follow a two-step pattern: resolve a unified customer ID, then use that ID to retrieve customer data. The consent, journey, and email tools don't need a unified customer ID.
 
 ### Step 1: Resolve a unified customer ID
 
@@ -56,7 +59,10 @@ After you resolve the ID, call any of these tools:
 
 ## Customer profile tools
 
-These tools read from **Dataverse virtual entities**, which reflect live unified customer data.
+These tools need Customer Insights - Data. They read from **Dataverse virtual entities**, which reflect the live unified customer data that Customer Insights - Data creates, including its segments, measures, predictions, and clusters.
+
+> [!NOTE]
+> The customer profile tools don't read Customer Insights - Journeys data. If you use only Customer Insights - Journeys, there are no unified customer profiles for these tools to read. Learn more in [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](/dynamics365/customer-insights/journeys/real-time-marketing-ci-profile).
 
 ### Find Customer
 
@@ -104,7 +110,9 @@ Use this tool after you resolve a customer ID and you want the full picture in o
 
 **`get_customer_segments`**
 
-Lists the segments or audiences a unified customer belongs to. Each result includes the segment name, display name, and segment ID.
+Lists the Customer Insights - Data segments or audiences a unified customer belongs to. Each result includes the segment name, display name, and segment ID.
+
+This tool doesn't return Customer Insights - Journeys segments.
 
 ### Get Customer Measures
 
@@ -137,6 +145,8 @@ Lists the data sources ingested into Customer Insights. For each source, the too
 No input is required. Use this tool to discover valid source entity names before you call `get_customer_by_source_id`.
 
 ## Consent and compliance tools
+
+These tools need Customer Insights - Journeys or a Dynamics 365 app with Shared Consent. They don't need Customer Insights - Data.
 
 These tools delegate to the same backend consent service that Customer Insights - Journeys uses during journey execution, so an agent's decision always matches what a journey would do. The consent service can run independently of a full Customer Insights installation, so these tools are available even in environments where only Dynamics 365 Sales or Contact Center is deployed.
 
@@ -209,6 +219,8 @@ https://public-fra.mkt.dynamics.com/api/v2.0/orgs/7b2fdebc-d216-ee11-a66d-002248
 
 ## Journey and email tools
 
+These tools need Customer Insights - Journeys.
+
 ### Create Journey
 
 **`create_journey`**
@@ -230,15 +242,21 @@ Use it to catch content problems, such as unresolved placeholders, before a jour
 
 ### Look up a customer by name and get their full profile
 
+This workflow needs Customer Insights - Data.
+
 1. Call `find_customer`, then pick the matching customer and note their unified ID.
 1. Call `get_customer_details` to get the profile, segments, measures, and source provenance.
 
 ### Enrich a known Dataverse contact
 
+This workflow needs Customer Insights - Data.
+
 1. Call `get_customer_by_contact` to resolve the contact ID to a unified customer ID.
 1. Call `get_customer_predictions` and `get_cluster_information` to get churn scores, customer lifetime value scores, and cluster membership.
 
 ### Resolve a record from another source system
+
+This workflow needs Customer Insights - Data.
 
 1. Call `list_data_sources` to find the valid source entity name.
 1. Call `get_customer_by_source_id` to resolve the source record to a unified customer ID.
@@ -246,12 +264,16 @@ Use it to catch content problems, such as unresolved placeholders, before a jour
 
 ### Send a compliant message
 
-1. Resolve the customer with one of the resolution tools.
+This workflow needs Customer Insights - Journeys or Shared Consent.
+
+1. Get the recipient's contact point, such as an email address or phone number, and their record ID. If you use Customer Insights - Data, you can resolve the customer with one of the resolution tools first.
 1. Call `check_consent` to confirm the contact is opted in for the purpose, topic, channel, and contact point you intend to use.
 1. Call `get_unsubscribe_link` to get a personalized opt-out link.
 1. Compose and send the message with the link embedded.
 
 ### Build and check a journey
+
+This workflow needs Customer Insights - Journeys.
 
 1. Call `create_journey` with the journey payload.
 1. Call `validate_email` on the emails the journey uses to confirm the content resolves correctly.
@@ -293,7 +315,10 @@ The MCP server enforces security at several layers:
 
 Before you use the tools, make sure you have:
 
-- A Dynamics 365 Customer Insights environment. For the consent tools, a Dynamics 365 environment with Shared Consent deployed also works, for example, Dynamics 365 Sales with Shared Consent.
+- The app each tool needs:
+  - For the customer profile tools, Customer Insights - Data.
+  - For the journey and email tools, Customer Insights - Journeys.
+  - For the consent tools, Customer Insights - Journeys or a Dynamics 365 environment with Shared Consent deployed, for example, Dynamics 365 Sales with Shared Consent.
 - Access to the Dataverse tables that back the tools you plan to call.
 - For the consent tools, at least one compliance profile with purposes and topics. The default compliance profile includes a **Commercial** purpose with restrictive enforcement and a **Transactional** purpose with nonrestrictive enforcement, so you can start right away without extra configuration.
 - The Dataverse security role privileges that the tools require for the user or agent identity.
@@ -303,8 +328,9 @@ Before you use the tools, make sure you have:
 Keep these limitations in mind:
 
 - The consent tools cover consent checks and unsubscribe link generation. Updating consent, administrative operations such as creating or deleting purposes and topics, and consent model metadata retrieval aren't exposed through MCP.
+- **Customer Insights - Journeys segments**: No tool returns Customer Insights - Journeys segment membership. `get_customer_segments` returns Customer Insights - Data segments only.
 - **Performance**: Calls through MCP can have higher latency than direct service calls during journey execution. Factor this in when you design high-throughput scenarios.
-- **Single MCP server**: One server covers both Customer Insights - Journeys and Customer Insights - Data, and all tools share the same server-level scope definition. Tool-level authorization controls access to individual tools.
+- **Single MCP server**: One server covers both Customer Insights - Journeys and Customer Insights - Data, and all tools share the same server-level scope definition. Tool-level authorization controls access to individual tools. Each tool still needs what's shown in its **Requires** column in [Tools at a glance](#tools-at-a-glance).
 
 ## Related information
 

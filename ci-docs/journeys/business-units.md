@@ -1,7 +1,7 @@
 ---
 title: Use business units to control access to Customer Insights - Journeys records
 description: Learn how business units affect users and record visibility in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -34,5 +34,3 @@ For complete details about how business units work in model-driven apps in Dynam
 
 - [Business unit support in Customer Insights - Journeys](real-time-marketing-business-units.md)
 - [Support for modernized business units](real-time-marketing-modernized-business-units.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

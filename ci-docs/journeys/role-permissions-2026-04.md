@@ -1,7 +1,7 @@
 ---
 title: Permission changes in the April 2026 release (version 1.1.64196.86)
 description: The April 2026 release of Customer Insights - Journeys added new table permissions to four Marketing roles; review the details in this changelist.
-ms.date: 08/05/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd
 ms.author: udag
@@ -141,5 +141,3 @@ _None_
 _No changes._
 
 ---
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

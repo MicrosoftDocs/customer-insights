@@ -1,7 +1,7 @@
 ---
 title: Set up and manage an event waitlist
 description: Learn how to register interested attendees on a waitlist in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
@@ -99,5 +99,3 @@ There are two triggers related to waitlisting that can help optimize your waitli
 
 - **Marketing event registration created**: Applicable when a new waitlist registration is created.
 - **Marketing registration created from waitlist**: Applicable when registration changes status from "Waitlisted" to "Registered."
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

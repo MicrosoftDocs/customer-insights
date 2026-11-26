@@ -1,16 +1,14 @@
 ---
-title: Export segments to Marketo (preview)
+title: Export segments to Marketo
 description: Export segments to Marketo to power email campaigns and target customer groups. Learn how to configure the connection and set up exports in Customer Insights.
-ms.date: 07/16/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Marketo (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Marketo
 
 Export segments of unified customer profiles to generate campaigns, provide email marketing, and use specific groups of customers with Marketo.
 

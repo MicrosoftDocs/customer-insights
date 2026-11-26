@@ -1,7 +1,7 @@
 ---
 title: Set up push notification applications
 description: Learn how to set up push notification applications for Customer Insights - Journeys
-ms.date: 10/31/2024 
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -46,14 +46,12 @@ To create a new mobile app configuration, go to **Settings** in Customer Insight
 To create a configuration, complete the following steps:
 
 1. Start by adding a **Name** and **Description** for the configuration.
-    > [!div class="mx-imgBorder"]
-    > ![Mobile app configuration screenshot.](media/real-time-marketing-mobile-app-configuration.png)
+    :::image type="content" source="media/real-time-marketing-mobile-app-configuration.png" alt-text="Mobile app configuration screenshot.":::
 1. For the next step of the configuration, an app developer needs to help you get the iOS APNs certificate or tokens or Android FCM key for your mobile application. Learn more: [Push notification setup for application developers](developer-push-device-registration.md)
 
 You can choose to configure an iOS application, an Android application, or both at the same time. Customer Insights - Journeys handles both apps under a single mobile configuration.
 
-> [!div class="mx-imgBorder"]
-> ![Single Mobile app configuration screenshot.](media/real-time-marketing-single-mobile-app-configuration.png)
+:::image type="content" source="media/real-time-marketing-single-mobile-app-configuration.png" alt-text="Single Mobile app configuration screenshot.":::
 
 Select the tab that corresponds with your device's operating system:
 
@@ -94,5 +92,3 @@ There are two FCM authentication modes: Service Account JSON and API key.
 > To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](developer-push-device-registration.md)
 
 ---
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

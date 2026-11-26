@@ -54,9 +54,9 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - The Azure OpenAI Service model determines the generation of the `Did you know` section and `Explore further` result.
 
-## What are the supported geographies and languages?
+## What are the supported geographies?
 
-Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+See [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

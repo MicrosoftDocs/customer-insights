@@ -1,7 +1,7 @@
 ---
 title: A/B tests in Customer Insights - Journeys
 description: A/B tests in Customer Insights - Journeys help you compare content and channels to find the best way to reach your customers. Learn how to set up and analyze tests.
-ms.date: 01/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -36,8 +36,7 @@ Suppose you want to test two different emails on a trigger-based journey that st
     - Select the channels you want to test. For example, select one email for version A and one for version B, then select **Create test**.on B, then select **Create test**.
 1. When you select the A/B test tile, the side pane opens.
 
-    > [!div class="mx-imgBorder"]
-    > ![A/B test side panel.](media/real-time-marketing-enter-ab-test-details.png "A/B test side panel")
+    :::image type="content" source="media/real-time-marketing-enter-ab-test-details.png" alt-text="A/B test side panel.":::
 
     The pane contains the following parameters:
 
@@ -50,8 +49,7 @@ Suppose you want to test two different emails on a trigger-based journey that st
 - **Default version**: Lastly, choose a default version in case the test doesn't end successfully. If a winner isn't determined by the deadline specified through the date and time, the default version is automatically sent.
 1. When you're ready to publish the journey, the A/B test looks like this:
 
-    > [!div class="mx-imgBorder"]
-    > ![A/B test side panel is configured and ready for journey creation](media/real-time-marketing-ready-to-publish-journey.png "A/B test side panel is configured and ready for journey creation")
+    :::image type="content" source="media/real-time-marketing-ready-to-publish-journey.png" alt-text="A/B test side panel is configured and ready for journey creation":::
 
 ## Example 2: Creating an A/B test for segment-based journeys
 
@@ -61,13 +59,11 @@ Complete steps one through three outlined in the first example, but notice that 
 
 1. **A/B test with no control group**: This A/B test works like trigger-based journeys, where customers go through the test as they come until a winner is determined.
  
-    > [!div class="mx-imgBorder"]
-    > ![A/B test with no control group](media/real-time-marketing-ab-test-with-no-control-group.png "A/B test with no control group")
+    :::image type="content" source="media/real-time-marketing-ab-test-with-no-control-group.png" alt-text="A/B test with no control group":::
 
 1. **A/B test with a control group**: This option lets you specify exactly how many customers to test. For example, if your segment has 100 loyalty members, you can first test on 20 percent, or 20 members, with each version receiving 10 members. After the A/B test, the remaining 80 members get the winning version. You can adjust the initial audience and the distribution as needed.
  
-    > [!div class="mx-imgBorder"]
-    > ![A/B test with control group](media/real-time-marketing-ab-test-with-control-group.png "A/B test with control group")
+    :::image type="content" source="media/real-time-marketing-ab-test-with-control-group.png" alt-text="A/B test with control group":::
 
 For this example, we're using an A/B test with a control group. All the other settings are the same as in example one.
 
@@ -103,5 +99,3 @@ There are three possible A/B test result outcomes:
         - Leave at least five hours between the start and end of the test (test end time or journey finish time).
         - Make sure the journey has enough volume and engagement for meaningful statistical analysis.
         - Let the evaluation process run in the background; it can take several hours to finish, depending on traffic and engagement volume.
- 
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

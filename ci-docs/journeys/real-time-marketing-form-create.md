@@ -1,7 +1,7 @@
 ---
 title: Create Customer Insights - Journeys forms
 description: Create forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/05/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -118,10 +118,8 @@ Once you publish the form, you can still access these options by selecting the *
 >
 > If you want to disable the domain for form hosting, contact support.
 
-### See also
+### Related information
 
 - [Management and advanced configuration of forms](real-time-marketing-manage-forms.md)
 - [Personalize emails and branch journeys using submitted values](real-time-marketing-form-submitted-values.md)
 - [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

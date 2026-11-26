@@ -1,13 +1,14 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
-description: Feature switches for Dynamics 365 Customer Insights - Journeys are listed by category, with preview or production status and links for more details.
-ms.date: 10/09/2026
+description: Explore feature switches in Dynamics 365 Customer Insights - Journeys by category. Use the Preview features only filter to find preview options.
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
 ms.author: colinbirkett
 ms.reviewer: udag
 ms.collection: bap-ai-copilot
+ai-usage: ai-assisted
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -16,140 +17,117 @@ ms.custom:
 
 # Use feature switches to enable or disable optional and preview features
 
-Feature switches are settings that let administrators turn optional and preview features on or off in Dynamics 365 Customer Insights - Journeys without waiting for a full release update. Use the **Feature switches** page to quickly enable or disable these features for your environment.
+Feature switches let administrators turn optional and preview features on or off in Dynamics 365 Customer Insights - Journeys. Use the **Feature switches** page to enable or disable capabilities for your environment.
 
-To enable or disable a feature, go to **Settings** > **Overview** > **Feature switches** and set the various feature sliders to **On** or **Off** as needed. After you set the feature sliders, select **Save** in the upper right corner of the window.
+## Find and change feature switches
 
-The following tables list each available feature switch, organized by area, along with its preview or production status and a link to more information.
+1. Go to **Settings** > **Overview** > **Feature switches**.
+1. Find the switch you want to change. Use **Search switches** to search by name or description, select a category tab, or select **All** to browse the categories together.
+1. To quickly find preview features, turn on **Preview features only**. Turn it off to include switches without a preview label again.
+1. Set the feature switches to **On** or **Off** as needed.
+1. Select **Save** to apply your feature setting changes.
 
-## Segmentation feature switches
+The **Preview features only** toggle filters the displayed switches. It doesn't enable or disable features and doesn't require you to select **Save**.
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Use protected fields in segments | Production | Let segments use protected columns/fields in criteria for real-time marketing. Use with caution. [Learn about protected fields in segments](protected-fields.md). |
-| Use system command bar | Preview | Use the system command bar to improve the segmentation experience. This feature lets you customize the ribbon and use default customer relationship management (CRM) actions. |
-| Edit live segments used in live journeys | Preview | Let users change a segment that's used by a live journey, without stopping the journey or creating a new journey version. [Learn about editing live segments](edit-live-segments.md). |
+The following tables follow the category order on the **Feature switches** page. Preview labels identify switches marked as preview on that page; the absence of a preview label isn't a statement of general availability.
 
-## Business unit feature switches
+> [!NOTE]
+> Consult your legal or privacy counsel to determine the consent and tracking settings appropriate for your organization.
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Business unit scoping (real-time journeys) | Production | [Enable business unit scoping for marketing processes in real-time journeys](real-time-marketing-business-units.md). |
+## Copilot
 
-## Tracking feature switches
+| Feature switch | Description |
+|---|---|
+| Global data sharing consent | Allow data sharing for Copilot features. |
+| Global opt-in consent | [Consent to enable Copilot or Bing Search-powered features](https://go.microsoft.com/fwlink/?linkid=2255531). |
+| AI tagging for images (preview) | [Enable AI-generated tags when you upload images to the asset library](upload-images-files.md). |
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| UTM tracking | Production | [Enable UTM (Urchin Tracking Module) parameters to be automatically added to every link in your messages. This allows source tracking within third-party tools like Google Analytics](real-time-marketing-utm.md).|
-| Bot protection | Production | [Filter out nonhuman click interactions](bot-protection.md). |
+## Business units
 
-## Event management feature switches
+| Feature switch | Description |
+|---|---|
+| Business unit scoping | [Enable business unit scoping for marketing processes in real-time journeys](real-time-marketing-business-units.md). |
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Event registration forms | Preview | [Enable marketing forms to submit event registrations](event-forms.md).|
-| Enable events creation in real-time journeys | Production | [Enable events creation in real-time marketing](set-up-event.md).|
-| Enable session level registration in real-time journeys | Production | [Enable session level registration in real-time journeys](real-time-journeys-event-session.md). |
-| Waitlist in Real-time Journeys | Preview | Enable waitlist functionality for events/sessions, allowing attendees to join a waitlist if an event or a session is full. |
+## Compliance
 
-## Customer journey feature switches
+| Feature switch | Description |
+|---|---|
+| One-click unsubscribe | Enable one-click unsubscribe for supported email clients, so recipients can unsubscribe from commercial emails without visiting a preference center. [Learn about one-click unsubscribe](one-click-unsubscribe.md). |
+| Check contact consent in real-time journeys | Enable additional contact-attribute consent checks for email and tracking when the audience is contacts. These checks supplement contact point consent checks. [Learn about contact consent checks](real-time-marketing-compliance-settings.md). |
+| Double opt-in | Enable double opt-in for real-time journeys. [Learn about double opt-in](real-time-marketing-double-opt-in.md). |
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Updated customer journey designer | Production | [Enable the redesigned customer journey design workspace](customer-journeys-create-automated-campaigns.md).|
-| CC recipients for emails | Production | Enable adding email CC recipients. Their interactions with sent emails (open, forward, unsubscribe) will be counted as a primary recipient interaction against quota and will affect your insights and analytics. [Learn how to add CC recipients to emails](real-time-marketing-add-cc-recipients.md).|
+## Email editor
 
-## Email editor feature switches
+| Feature switch | Description |
+|---|---|
+| Litmus integration | Enable an optional third-party inbox-preview integration. Review the Litmus [terms of service](https://www.litmus.com/terms) and [privacy policy](https://www.litmus.com/privacy) before enabling the integration. |
+| PowerFx personalization formulas (preview) | Let marketers use Power Fx expressions in email personalization placeholders. [Learn about Power Fx formulas](power-fx-dynamic-text.md). |
+| Filter email templates by language | Enable a language dropdown when selecting email templates to show templates matching the selected language. When disabled, templates in all languages are available. |
+| Easy email creation experience | [Enable content creation with in-place editing and an improved template gallery](real-time-marketing-email.md). |
+| View in browser | [Enable adding a link to view emails in web browsers](view-email-in-browser.md). |
+| Show exact copy of sent emails | Enable viewing exact copies of sent emails on the contact timeline. This feature applies to emails sent after you enable it; copies are available for one year. [Learn about viewing sent emails](view-previously-sent-emails.md). |
+| Dynamic content blocks | Enable dynamic content blocks. Updates to a dynamic content block automatically appear in emails that include it when you send them. [Learn about dynamic content blocks](content-blocks.md#static-vs-dynamic-content-blocks). |
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Enhanced HTML controls | Preview | [Enable custom code markup and real-time HTML email editing](email-creation-with-html-edits.md). |
-| Live email editing with Link alias | Preview | [Enable editing personalization and conditional content in live email with link alias](edit-email-in-live-journey.md). |
-| Easy email creation experience | Production | [Enable easy content creation with in-place editing and an improved template gallery](real-time-marketing-email.md).|
-| Send now | Preview | [Enable Send Now to send emails without having to build a journey](email-without-journey.md).|
-| View in browser | Production | [Enable adding a link to view emails in web browsers](view-email-in-browser.md). |
-| Email clickmap | Preview | Understand customers' interactions and gain insights into which links receive the most and least engagement based on your email design. |
-| Litmus integration | Production | By enabling Litmus, you agree to the Litmus [terms of service](https://www.litmus.com/terms) and [privacy policy](https://www.litmus.com/privacy). Litmus is an external, third-party product made available to you on an optional trial basis. It is subject to the [terms of service](https://www.litmus.com/terms) set forth by Litmus. This is not a Microsoft product, so you need to give consent before turning on Litmus. |
+## Forms
 
-## Copilot feature switches
+| Feature switch | Description |
+|---|---|
+| Form capture | [Enable form capture in real-time journeys](real-time-marketing-form-capture.md). |
+| Enable custom JavaScript in forms | Control custom JavaScript in forms. [Learn about custom JavaScript in forms](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form). |
+| Enable table-less layouts in form editor | Use `<div>` containers instead of table-based layouts in the form editor. |
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Global opt-in consent | Production | [Consent to enable Copilot and/or Bing Search-powered features](https://go.microsoft.com/fwlink/?linkid=2255531). |
-| Global data sharing consent | Production | Allows data sharing for Copilot features. |
+<a id="integration-feature-switches"></a>
 
-## Library feature switches
+## Integrations
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| AI tagging for images | Preview | [Enable AI-generated tags to be added when you upload images to the asset library](upload-images-files.md). |
+| Feature switch | Description |
+|---|---|
+| Contact Center integration | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. [Learn about conversational journeys](conversational-journeys-overview.md). |
+| Customer Voice integration | Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys. |
 
-## Data sharing program feature switches
+## Lead management
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Azure Content Delivery Network (CDN) | Production | [Disable Azure Content Delivery Network (CDN) for Customer Insights - Journeys](cdn-disabling.md). |
+| Feature switch | Description |
+|---|---|
+| Lead scoring | [Create a scoring model](real-time-marketing-create-lead-scoring-model.md) to identify the best leads, and [define qualification criteria](real-time-marketing-qualify-leads.md) for marketing qualified leads. |
 
-## Email sending feature switches
+## Orchestration
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Email deduplication | Preview | [Prevents sending the same email more than once to an email address. This general setting applies to all segment-based journeys](email-deduplication.md). |
-| One-click unsubscribe | Production | Enable one-click unsubscribe for supported email clients. This feature allows recipients to unsubscribe from commercial emails without visiting a preference center. [Learn about one-click unsubscribe](one-click-unsubscribe.md). |
+| Feature switch | Description |
+|---|---|
+| Send now | [Enable Send Now to send emails without building a journey](email-without-journey.md). |
+| CC recipients for emails | Enable adding CC recipients to emails. [Learn how to add CC recipients to emails](real-time-marketing-add-cc-recipients.md). |
+| Email deduplication | Prevent duplicate sends to a shared email address at an email tile in a segment-based journey. Deduplication doesn't span different email tiles or journeys. [Learn about email deduplication](email-deduplication.md). |
+| Record creation | Enable the creation of Dataverse records from journeys. [Learn about creating records and activities](create-records-activities.md). |
+| Ongoing journey reentry | Make reentry available for ongoing journeys. Members can reenter when they leave and rejoin the starting segment if the journey's rejoin option is enabled. |
 
-## Contact timeline feature switches
+## Personalization
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Show exact copy of sent emails | Production | [Enable saving an exact copy of sent emails on contact timeline](view-previously-sent-emails.md). |
+| Feature switch | Description |
+|---|---|
+| Use protected fields in personalization | Allow protected columns or fields in personalization. Use with caution. [Learn about protected fields in personalization](overriding-fls-attributes.md). |
 
-## Forms feature switches
+## Segmentation
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Form capture | Production | [Enable form capture in real-time journeys](real-time-marketing-form-capture.md). |
-| Enable custom JavaScript in forms | Production | [If disabled, custom JavaScript is automatically removed from real-time journey forms](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form). |
-| Form prefill | Preview | Enable form prefill in real-time journeys. [Learn about form prefill](form-prefill.md). |
-| Enable table-less layouts in form editor | Production | Use `<div>` containers instead of table-based layouts in the form editor. Existing forms are automatically converted to the table-less layout when edited. |
-| Custom unmapped fields | Production | Enable custom unmapped fields. |
+| Feature switch | Description |
+|---|---|
+| Use protected fields in segments | Let segments use protected columns or fields in criteria for real-time journeys. Use with caution. [Learn about protected fields in segments](protected-fields.md). |
+| Query edit | Edit a segment query directly in an editor. |
+| Edit live segments used in live journeys (preview) | Let users change a segment that's used by a live journey without stopping the journey or creating a new journey version. [Learn about editing live segments](edit-live-segments.md). |
+| Segment templates | Enable templates for creating segments, including custom segment templates. [Learn about segment templates](real-time-marketing-segment-templates.md). |
 
-## Journey feature switches
+## Tracking
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Lead and opportunity creation | Preview | [Lets journeys create leads and opportunities by using built-in journey activities](lead-generation-overview.md). |
-| Tile entry and exit analytics | Preview | View additional information on journey tiles, such as which customers entered a journey step, which customers have exited the journey, and why they exited the journey. [Learn about journey tile actions](add-action.md). |
-| Wait for segment membership | Production | Enhances the "Wait for trigger" tile (also known as the if/then tile) to verify and pause until the audience becomes a member of the specified segment. |
-| Ongoing journey re-entry | Production | Lets audience members re-enter ongoing journeys when they rejoin the segments. |
+| Feature switch | Description |
+|---|---|
+| UTM tracking | Enable UTM (Urchin Tracking Module) parameters in email and text-message links where tracking is permitted, for source tracking in third-party tools such as Google Analytics. [Learn about UTM tracking](real-time-marketing-utm.md). |
 
-## Integration feature switches
+## Other
 
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Customer Voice integration | Production | [Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys](customer-voice.md). |
-| Contact Center integration | Preview | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. [Learn about conversational journeys](conversational-journeys-overview.md). |
-
-## Compliance feature switches
-
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Check contact consent in real-time journeys | Production | [Enable real-time journeys to use contact attributes to enforce consent in addition to contact point consent records](real-time-marketing-compliance-settings.md). |
-| Double opt-in | Preview | Enable double opt-in functionality for real-time journeys. Forms created or modified after enabling this feature link to a compliance profile and inherit its double opt-in status. [Learn about double opt-in](real-time-marketing-double-opt-in.md). |
-
-## Lead management feature switches
-
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Lead scoring | Production | [Create scoring model to identify the best leads and define qualification criteria for marketing qualified leads](set-up-lead-scoring.md). |
-
-## Machine learning feature switches
-
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Smart scheduler | Production | [Automatically select the best time to send an email message](automated-scheduler.md). |
+| Feature switch | Description |
+|---|---|
+| Azure Content Delivery Network (CDN) | [Disable Azure Content Delivery Network (CDN) for Customer Insights - Journeys](cdn-disabling.md). |
 
 > [!IMPORTANT]
 > [!INCLUDE [cc_preview_features_definition](./includes/cc-preview-features-definition.md)]
 > [!INCLUDE [cc_preview_features_no_MS_support](./includes/cc-preview-features-no-ms-support.md)]
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

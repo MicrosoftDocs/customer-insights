@@ -1,7 +1,7 @@
 ---
 title: Keep Customer Insights - Journeys up to date
 description: Find out when an update for one or more Dynamics 365 Customer Insights - Journeys solutions is available and apply the update.
-ms.date: 03/25/2026
+ms.date: 10/29/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,7 +28,7 @@ When you install Customer Insights - Journeys, all its solutions are installed i
 
 ## Find out when new updates are available
 
-Microsoft releases updates to Customer Insights - Journeys every month or so, with a major refresh every six months. We announce monthly updates (and other news) in the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) page, where we also summarize all the new features and bug fixes included with each release. Future directions and major releases are described on the [Dynamics 365 and Power Platform Release Plans](/business-applications-release-notes/index) website.
+Microsoft releases updates to Customer Insights - Journeys every month or so, with a major refresh every six months. We announce monthly updates (and other news) in the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article, where we also summarize all the new features and bug fixes included with each release. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 You can also find out when an update is available by checking the status of your apps and solutions in the Customer Insights - Journeys settings, as described in the following sections.
 
@@ -88,5 +88,3 @@ To update shared (non-core Customer Insights - Journeys) solutions, including Cu
 If you have created a [Portal hosted event website](./developer/portal-hosted.md), you must [manually overwrite your sample website with the latest version](./developer/manually-overwriting-sample-website.md) to maintain functionality after applying any Customer Insights - Journeys update.
 
 If your event website is [self-hosted](./developer/self-hosted.md), you must [install the latest self-hosted sample website](./developer/event-management-web-application.md) to maintain functionality after applying any Customer Insights - Journeys update.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

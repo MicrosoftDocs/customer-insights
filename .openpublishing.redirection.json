@@ -3477,11 +3477,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/journeys/teams-chat.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/outbound-removal-notes",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/journeys/marketing-calendar.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/outbound-removal-notes",
       "redirect_document_id": false
@@ -3789,6 +3784,11 @@
     {
       "source_path": "ci-docs/journeys/marketing-execution-section.md",
       "redirect_url": "dynamics365/customer-insights/journeys/real-time-marketing-email",
+      "redirect_document_id": false 
+    }, 
+    {
+      "source_path": "ci-docs/data/private-endpoint.md",
+      "redirect_url": "/dynamics365/customer-insights/data/private-links",
       "redirect_document_id": false
     }
   ]

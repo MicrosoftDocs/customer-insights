@@ -1,7 +1,7 @@
 ---
 title: Create custom channels in Customer Insights - Journeys
 description: Learn how to create and use custom channels in Customer Insights - Journeys, from installing the app to sending messages.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -64,5 +64,3 @@ To add a custom channel message action:
 2. Select the custom channel and the relevant message you want to send in the right pane.
 
     :::image type="content" source="media/real-time-marketing-select-custom-channel.png" alt-text="Screenshot of the right pane for selecting a custom channel and message to send." lightbox="media/real-time-marketing-select-custom-channel.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,16 +1,14 @@
 ---
-title: Export segments to Adobe Campaign Standard (preview)
+title: Export segments to Adobe Campaign Standard
 description: Export segments to Adobe Campaign Standard using Azure Blob Storage. Learn how to configure the connection, map fields, and launch targeted email campaigns.
-ms.date: 09/04/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Adobe Campaign Standard (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Adobe Campaign Standard
 
 Export segments that target relevant audiences to Adobe Campaign Standard.
 

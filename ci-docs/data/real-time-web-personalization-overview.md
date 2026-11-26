@@ -1,112 +1,120 @@
 ---
-title: Web tracking and personalization overview (preview)
-description: Learn how to provide personalized web interactions and experiences in real time with Customer Insights - Data.
-ms.date: 03/24/2026
+title: Web tracking and personalization overview
+description: Explore web tracking and personalization in Customer Insights - Data to recognize returning visitors and link anonymous browsing to customer profiles.
+ms.date: 11/24/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: v-wendysmith
-ms.custom: bap-template
+ms.reviewer: tozahalk
+ms.custom:
+  - bap-template
+  - ci-data-web-tracking
+  - ai-gen-docs-bap
+  - ai-seo-date: 09/16/2026
+ai-usage: ai-assisted
 ---
 
-<!-- I reversed the title in line 26 so it matches the content that follows - first unknown, then known. -->
+# Web tracking and personalization overview
 
-# Web tracking and personalization overview (preview)
+Web tracking and personalization helps you recognize returning website visitors and connect anonymous browsing activity to customer profiles. Learn how Customer Insights - Data uses that activity to personalize visits before customers identify themselves.
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-Real-time web tracking and personalization in Customer Insights - Data captures and leverages website activity both for known and anonymous visitors.
+Web tracking and personalization in Customer Insights - Data changes that. Add a small script to your website, and Customer Insights - Data starts recognizing visitors, remembering what interests them, and personalizing their experience based on their activity. When a visitor eventually shares an email address or phone number, their previous browsing activity becomes part of their customer profile.
 
 Watch this brief video to learn more about real-time web personalization.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+## Benefits of web tracking and personalization
 
-## Unknown and known customers
+Web tracking and personalization in Customer Insights - Data provides the following benefits.
 
-**Anonymous customers**
+**Recognize people before they identify themselves**: A visitor who came last week is recognized when they return, even though you still don't know their name. You can greet them differently from a first-time visitor.
 
-Anonymous customer tracking lets you:
+**React to what someone is actually interested in**: If a visitor spent time viewing premium coffee machines, you can feature those products the next time they arrive instead of showing the generic homepage.
 
-- Identify anonymous users who visit and later return to your website.
+**Keep the history when an anonymous visitor becomes a customer**: When someone gives you an email address, their previous browsing activity becomes part of their profile. New customers don't start as blank records.
 
-- Track the activities of anonymous users over time to understand their interests, such as the pages viewed and elements clicked.
+**Use website behavior everywhere you already work**: Web activity becomes available to the segments, measures, and profiles you already build. For example, you can create an audience of visitors who viewed the pricing page twice but never requested a demo.
 
-- Personalize your website content when the customer returns based on their interests.
+**See which campaigns actually drove engagement**: Tag your campaign links and Customer Insights - Data records which visits came from which campaign, so you can measure engagement rather than clicks.
 
-**Known customers**
+## Web tracking and personalization scenarios
 
-An *unknown customer* becomes a *known customer* when they share identifying details (for example, an email address to download content, create an account, or place an order).
+The following list provides some common scenarios for using web tracking and personalization. For more scenarios, see [Scenarios for web tracking and personalization](real-time-web-personalization-scenarios.md).
 
-Converting an unknown customer to a known customer lets you:
+- **Welcome back a returning visitor**: Recognize a repeat anonymous visitor and change the content they see.
+- **Recover an abandoned browse**: Identify a visitor who viewed a product and left, and follow up while their interest is fresh.
+- **Offer something to a specific audience**: Show an incentive only to visitors who belong to a segment such as high lifetime value.
+- **Turn a browser into a known customer**: Merge an anonymous profile into a known profile when the visitor signs up, while retaining their browsing history.
 
-- Keep all the activity history that was accrued when they were unknown, providing deeper insight.
+## Unknown and known visitors
 
-- Combine unknown profiles and activity data from a person visiting from multiple machines into a single known customer profile.
+A visitor is either **unknown** or **known**, and unknown visitors can become known without losing their history.
 
-- Unify customer data from your website with your other sources of customer data such as sales and support, giving you unprecedented ability to understand customer needs and how they interact with your brand.
+**Unknown visitors** are people browsing your site who don't identify themselves. Customer Insights - Data gives each visitor an anonymous identifier stored in a cookie and records the pages they view and the elements they select. You can personalize for them without ever knowing who they are.
 
-> [!TIP]
-> [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
+**Known customers** are people you can identify because they sign in, download something, or place an order. When an unknown visitor becomes known, their anonymous profile merges into their known profile, and you keep everything.
 
-## Customer tracking
+This profile merging sets the feature apart from traditional web analytics. For example, if a person browses from both a laptop and a phone, the two anonymous profiles merge into a single customer profile after the person signs in on either device.
 
-Customer Insights - Data uses cookies to recognize returning visitors and enrich profiles over time. Cookie IDs use a rolling one-year expiration that refreshes with each visit. When a customer authenticates on your site, Customer Insights - Data merges the anonymous and known profiles in real time.
+## How web tracking connects anonymous activity to customer profiles
 
-For example, a retail store has a customer named Abbie in Customer Insights - Data who registered in person. When Abbie first visits your website, Customer Insights - Data creates an anonymous profile and tracks her web interactions. After Abbie authenticates, the profiles merge automatically. After the merge:
+The following example shows how Customer Insights - Data connects anonymous web activity to a known customer profile. In this example, Abbie registers in your store in person.
 
-- The known profile gets all the unknown profile's web interactions and appears on the known profile timeline.
-- The known profile gets the cookie ID as a new identifier.
-- All downstream processes, such as segments, measures, and APIs, refer to the known profile going forward.
-- The unknown profile expires.
+1. Abbie visits your website for the first time. They receive an anonymous identifier stored in a cookie, and Customer Insights - Data begins associating their activity with that identifier. They typically appear on the **Customers** page as an unknown profile within about 30 seconds.
+1. Your website personalizes what Abbie sees based on their browsing activity.
+1. Abbie signs in or provides their email address when downloading content. Your website calls the `setUser` function with the identifier from your own customer table.
+1. The profiles merge in real time. Abbie's known profile includes the interactions recorded while they were anonymous and the cookie identifier as a new identity. From that point on, segments, measures, and APIs refer to their known profile, and the anonymous profile expires.
 
-## Examples
+For cookie lifetimes and browser storage, see [Cookies and browser storage for web tracking in Customer Insights - Data](real-time-web-tracking-cookies.md).
 
-Use real-time web personalization to increase engagement and drive higher customer satisfaction in the following ways:
+To set up web tracking and personalization, see [Set up web tracking and personalization](real-time-web-personalization.md).
 
-- Promote a premium coffee machine on your website if a customer browses other premium coffee machines.
-- Offer a discount code on the website to all your customers who are members of the segment called "high lifetime value."
-- Dynamically update the text on your website to add a welcome message to your loyal customers.
-- Send an email to your customers promoting your premium coffee machines if they read the reviews of similar products in the last 30 days.
+## Data captured by web tracking
 
-## How it works
+All data recorded by the tracking script is stored in Dataverse and can be viewed in Power Apps.
 
-Web personalization starts by assigning an anonymous tracking cookie, capturing activity in Dataverse, and unifying it into a known customer profile.
+### Web activity tables
 
-**Start anonymous visitor tracking**
+Web activity is stored in three tables based on the type of signal:
 
-- A visitor accesses your website and receives a web tracking GUID stored in a persistent cookie. If the same person visits from another device or browser, they receive a different GUID.
+| Table | What it holds |
+|---|---|
+| `msdynci_personalizationview` | **Page views**: One row is created each time a visitor loads a tracked page. |
+| `msdynci_personalizationaction` | **Clicks and element interactions**: One row is created each time a visitor selects a tracked element. |
+| `msdynci_personalizationuser` | **Sign-in signals**: Sent when your site identifies a customer through `setUser`, or when the script restores a saved customer ID on a later page load. These signals identify a visitor rather than describe browsing, so they carry no page or campaign data. |
 
-- The script streams the visitor’s events to Dataverse in real time and associates the activity with the tracking GUID.
+The page views and clicks tables contain the data you use most often. Segments and measures also read data from these tables.
 
-- Unknown customers and their activity typically appear on the Customer Insights - Data **Customers** page in about 30 seconds. You can also see this information in Power Apps in the [Web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview).
+### What each event records
 
-- Your [website personalizes content](optimizely-integration.md) for the unknown visitor.
+Every view and action row captures:
 
-**Make unknown visitor known**
+- **Who**: The visitor's cookie identifier (`msdynci_userlocalid`), which connects anonymous activity to the same visitor across a visit. Sign-in signals also include the authenticated identifier that your site passes to `setUser` (`msdynci_userauthid`).
+- **What**: The page address for a view (`msdynci_viewuri`) or the element that you selected for an action.
+- **When**: The time the signal was raised (`msdynci_signaltimestamp`) and the time the row was written.
+- **Which profile it belongs to**: A reference to the visitor's cookie record, which is how the row is later associated with a customer profile. You don't have to create this relationship yourself. The unified profile contains the web activity references created during unification.
 
-- The visitor provides an email address or phone number (for example, through a webinar sign-up, content download, or account creation).
+For information about two optional fields available for views and actions, see [Capture query string and IP address (optional)](real-time-web-personalization.md#capture-query-string-and-ip-address-optional).
 
-- Your website process creates or updates the customer record in the customer tracking table (for example, `<WebCustomers>` table) and finds the record’s primary key (PK). The PK is typically a GUID or incremental integer (INT) and not the email.
+## Privacy and consent
 
-- Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your `<WebCustomers>` table.
+The tracking script sets cookies on your visitors' devices. Depending on applicable laws and regulations, you might need to obtain consent before setting cookies on visitors' devices. Knowing and following the rules that apply in your markets is your organization's responsibility. If your site allows visitors to opt out of cookies, ensure the tracking script respects their choice.
 
-**Unify identities in Customer Insights - Data**
+In addition to the [visitor cookie](real-time-web-tracking-cookies.md#cookies-used-by-web-tracking), the tracking script can set the `msdynci_userauthid` cookie when your website identifies a customer through `setUser`. This cookie remembers the customer ID, with a configured expiry of 365 days when written.
 
-- On the next unification run, Customer Insights - Data merges the `<WebCustomers>` table and the linked web tracking GUID into a single unified profile.
+In addition to the [browser storage used for web tracking](real-time-web-tracking-cookies.md#browser-local-storage), the script can use the `cisegments` localStorage entry to cache personalization segment information. Include this storage in your website's privacy assessment and withdrawal handling.
 
-- The unified profile preserves all earlier anonymous activity.
+For cookie permission, browser storage, and withdrawal handling, see [Cookies and browser storage for web tracking in Customer Insights - Data](real-time-web-tracking-cookies.md). To connect your website's consent controls, see [Set up web tracking and personalization](real-time-web-personalization.md#connect-your-websites-consent-controls).
 
-**Customer becomes known on second device**
+## Web tracking capacity
 
-- If the same customer deletes their cookies or uses a different device or browser and visits your website, they receive a new web tracking GUID.
-
-- When the customer provides the same email address or phone number, your website finds the same PK and calls the `setUser` function.
-
-- On the next unification run, Customer Insights - Data merges multiple web tracking GUIDs (and any related customer records) into a single unified profile.
+Web tracking events are written to your Dataverse environment. Sustained tracking volume therefore consumes Dataverse capacity like other write activity. Before you add the script to a high-traffic site, check your expected daily event volume against your environment's capacity. Monitor capacity consumption after you go live.
 
 ## Next steps
 
-- [Set up real-time web personalization](real-time-web-personalization.md)
-- [Web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview)
+- [Scenarios for web tracking and personalization](real-time-web-personalization-scenarios.md)
+- [Set up web tracking and personalization](real-time-web-personalization.md)
+- [Personalize your customers' web experience](optimizely-integration.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

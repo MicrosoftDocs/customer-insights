@@ -1,7 +1,7 @@
 ---
 title: Improve targeting using interaction data in segments
 description: Learn how to improve targeting by using interaction data in segments in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/11/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -29,18 +29,15 @@ Let’s say you want to create a segment containing all contacts who opened an e
 1. To create a new segment, go to **Customer Insights - Journeys > Audience > Segments** and select **+ New Segment**. For the segment name, enter **All contacts who opened an email at least once in the past week**. Select your target audience. 
 1. In the **Elements** section in the right pane, go to the **Behavioral** tab and select **Email > Opened**.
 
-    > [!div class="mx-imgBorder"]
-    > ![select email opened tab to start creating new segment](media/real-time-marketing-email-opened.png "select email opened tab to start creating new segment") 
+    :::image type="content" source="media/real-time-marketing-email-opened.png" alt-text="select email opened tab to start creating new segment":::
 
 1. When you add the interaction to your canvas, it automatically defaults to a time window and a frequency count of how many times the interaction has occurred in the past. To edit the time window and count to your scenario, select the **Edit interaction** button. To proceed, select **Done**.
 
-    > [!div class="mx-imgBorder"]
-    > ![select interaction details to see how many times email was opened for a particular duration](media/real-time-marketing-email-edit-interaction-details.png "select interaction details to see how many times email was opened for a particular duration") 
+    :::image type="content" source="media/real-time-marketing-email-edit-interaction-details.png" alt-text="select interaction details to see how many times email was opened for a particular duration":::
 
 1. Select the email that you want to see whether the customers opened in the previous seven days.
 
-    > [!div class="mx-imgBorder"]
-    > ![select your desired email to look for its interaction details](media/real-time-marketing-select-your-email.png "select your desired email to look for its interaction details") 
+    :::image type="content" source="media/real-time-marketing-select-your-email.png" alt-text="select your desired email to look for its interaction details":::
 
 > [!NOTE]
 > The members preview isn't available with behavioral segments.

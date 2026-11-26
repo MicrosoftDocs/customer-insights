@@ -1,7 +1,7 @@
 ---
 title: Best practices for administration
 description: Learn about best practices for Dynamics 365 Customer Insights - Journeys administration and management.
-ms.date: 09/09/2025
+ms.date: 10/13/2026
 ms.custom:
   - dyn365-admin
   - dyn365-marketing
@@ -101,5 +101,3 @@ You can replicate Customer Insights - Journeys configurations and data across en
 Customer Insights - Journeys is only available in certain geos. Refer to [the International availability guide](/dynamics365/get-started/availability) for Customer Insights - Journeys geo availability.
 
 If your tenant is in a non-supported geo, you can't deploy Customer Insights - Journeys in that geo. The tenant must be enabled for multi-geo before deploying Customer Insights - Journeys in a supported geo. In this scenario, open a support request to check for feasibility.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

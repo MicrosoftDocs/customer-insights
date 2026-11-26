@@ -1,7 +1,7 @@
 ---
 title: Import data and control how duplicate records are identified
 description: Import data into Customer Insights - Journeys from .csv or Excel files and configure how duplicate records are detected.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -186,5 +186,3 @@ You must wait for an import job to be completed before you can repair failures.
    - **Delete import source file**: Deletes the import log file and its details.
    - **All records imported to this entity during this import**: Deletes all records that were imported from the selected file.
    - **All imported records from the .zip file**: Deletes the import file along with the records that were imported from the import file.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

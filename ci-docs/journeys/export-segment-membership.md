@@ -1,7 +1,7 @@
 ---
 title: Export segment membership for offline analysis
 description: Export segment membership to a CSV file in Customer Insights - Journeys. Choose columns with a view and include contact or lead IDs for offline analysis. Learn how.
-ms.date: 10/09/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -76,5 +76,3 @@ The ID column stays visible in your browser until you hide it. To remove it, sel
 - You can export only segments that target contacts or leads.
 - The exported file includes the columns from the view selected in **Column set from** and, if shown, the contact or lead ID. Export from the **Members and Insights** tab to get these columns.
 - Export is available only for users with the *Export Segment Members* privilege and read and write access to the segment.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys integration with Microsoft Fabric overview
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: colinbirkett
@@ -48,13 +48,11 @@ The following sections explain how to set up Power BI and access your Customer I
 1. Create or open a Lakehouse.
 1. From the Lakehouse choose **Get data** and select **New shortcut**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create a shortcut through lakehouse to get data](media/create-shortcut-from-lakehouse.png "Create a shortcut through lakehouse to get data")
+    :::image type="content" source="media/create-shortcut-from-lakehouse.png" alt-text="Create a shortcut through lakehouse to get data":::
 
 1. Select **Dataverse** from the shortcut source types.
 
-    > [!div class="mx-imgBorder"]
-    > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
+    :::image type="content" source="media/select-your-dataverse.png" alt-text="Select your Dataverse from the shortcut":::
 
 1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with. Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
 1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"Customer Insights Journeys"** folder. The Customer Insights Journeys folder only lists the interaction types for which data has been generated up to that point.
@@ -123,5 +121,3 @@ Here are some additional resources for this topic:
 - [Lakehouse end-to-end scenario: overview and architecture](/fabric/data-engineering/tutorial-lakehouse-introduction)
 - [Implement medallion lakehouse architecture in Microsoft Fabric](/fabric/onelake/onelake-medallion-lakehouse-architecture)
 - [Organize a Fabric lakehouse using medallion architecture design](/training/modules/describe-medallion-architecture/)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

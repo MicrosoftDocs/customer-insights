@@ -1,16 +1,14 @@
 ---
 title: Export segments to ActiveCampaign
 description: Export segments of unified customer profiles to ActiveCampaign for marketing. Learn how to configure the connection.
-ms.date: 07/13/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to ActiveCampaign (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to ActiveCampaign
 
 Export segments of unified customer profiles to ActiveCampaign and use them for marketing activities.
 

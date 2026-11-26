@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Journeys interaction data in segments and measures
 description: Learn how to use Customer Insights - Journeys behavioral interaction data in Customer Insights - Data segments and measures.
-ms.date: 08/10/2026
+ms.date: 11/25/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -9,26 +9,28 @@ ms.reviewer: udag
 ms.service: dynamics-365-customer-insights
 ms.subservice: dynamics-365-customer-insights-data
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Use Customer Insights - Journeys interaction data in segments and measures
 
 Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. You can combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
 
-[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages or doesn't engage with a marketing touchpoint. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it. The interaction data is stored in tables that you can view under **System** on the **Tables** page. Only tables that contain data are shown.
+[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages or doesn't engage with a marketing touchpoint. The system captures these interactions across email, push notifications, text messages, forms, and events. You can view the interaction data in tables under **System** on the **Tables** page. The system shows only tables that contain data.
 
 ## Prerequisites
 
 - [Deploy Customer Insights - Journeys and Customer Insights - Data](../journeys/setup.md) in the same environment.
-- [Unify data](data-unification.md) that includes contacts or leads from Customer Insights - Journeys into unified customer profiles.
+- [Unify data](data-unification.md) into unified customer profiles.
 
 ## Available interaction types
 
-You can find Customer Insights - Journeys interaction data on the **Behavioral** tab in both the segment builder and the measure builder. The segment and measure builders only include interaction data linked to a unified **Customer Profile** in Customer Insights - Data. The builders don't include interactions associated with contacts or leads that aren't unified into a customer profile. To use contact- or lead-based interactions directly in journey branching and real-time targeting, use Customer Insights - Journeys.
+You can find Customer Insights - Journeys interaction data on the **Behavioral** tab in both the segment builder and the measure builder. The default relationship links the interaction's **ProfileId** to **Customer.CustomerProfileId** for CustomerProfile interactions. For other profile types, see [Use interactions recorded against other profile types](#use-interactions-recorded-against-other-profile-types).
 
 The following interaction types are available across channels:
 
 **Email**
+
 - Email Consent not given
 - Email Blocked
 - Email Bounced
@@ -38,12 +40,14 @@ The following interaction types are available across channels:
 - Email Sent
 
 **Push notifications**
+
 - Push Notification Link Clicked
 - Push Notification Not Sent
 - Push Notification Opened
 - Push Notification Sent
 
 **Text messages**
+
 - Text Message Bounced
 - Text Message Delivered
 - Text Message Link Clicked
@@ -51,6 +55,7 @@ The following interaction types are available across channels:
 - Text Message Sent
 
 **Events and forms**
+
 - Marketing Event Check-in
 - Event Registration Canceled
 - Event Registration Created
@@ -128,10 +133,93 @@ Use measures built on interaction data as attributes in segment conditions. This
 ## Limitations
 
 - **Batch only**: The system processes interaction data in batch with each system refresh. Segments and measures don't reflect interactions in real time. For real-time journey branching based on interactions, use Customer Insights - Journeys.
-- **Profile-linked interactions only**: You can only access interactions linked to a unified Customer Profile. Interactions on contacts or leads that aren't yet unified don't appear.
+- **Profile-linked interactions only**: Customer-based results include interactions that match a unified Customer Profile through the selected relationship.
 - **Not surfaced in customer timeline**: Customer Insights - Journeys interaction data isn't shown on the customer profile timeline in Customer Insights - Data. Use Customer Insights - Journeys contact insights to view timeline data.
 - **Ingestion time**: Initial ingestion can take 30 minutes to several hours for large environments, depending on data volume.
 - **Segments and measures**: Behavioral interaction data from Customer Insights - Journeys is only available in segments and measures.
+
+## Use interactions recorded against other profile types
+
+The default relationship supports CustomerProfile IDs. For another profile type, such as Contact or Lead, configure a path that maps the interaction's `ProfileId` to Customer through the correct identifier.
+
+| Profile type | `ProfileType` value | Identifier to match |
+| --- | --- | --- |
+| CustomerProfile | `msdynci_customerprofile` | `Customer.CustomerProfileId`, through the default system relationship |
+| Contact | `contact` | The Contact identifier that maps to Customer |
+| Lead | `lead` | The Lead identifier that maps to Customer |
+
+Use the existing relationship and filter controls to configure this path.
+
+### Example: Customers who opened an email sent to Contacts
+
+Suppose a journey targets Contacts. You want a segment of unified customers who opened a specific email in the last 30 days.
+
+For this example:
+
+- The Contact table comes from the same Dataverse environment as the interactions.
+- You ingest that table into Customer Insights - Data and include it in unification.
+- A valid relationship maps its Contact IDs to Customer.
+
+These contact-specific prerequisites apply to this example, not to the default CustomerProfile flow.
+
+### Set up the relationship
+
+1. Go to **Data** > **Tables** > **Relationships**.
+
+1. Inspect the existing relationship from the ingested Contact table to Customer.
+
+1. If the interaction-to-Contact relationship is missing, select **New relationship**.
+
+1. Create a many-to-one relationship from **EmailOpened.ProfileId** to the Contact primary key, such as **Contact.contactid**.
+
+1. Save the relationship. Leave the system CustomerProfile relationship unchanged.
+
+The complete path is:
+
+```text
+EmailOpened.ProfileId -> Contact.contactid -> Customer
+```
+
+Use the actual table and key names in your environment. If Customer already exposes the correct Contact identifier, a direct relationship to that field is another option. Don't assume that the field is named `contactid`.
+
+> [!IMPORTANT]
+> Check which source IDs the path preserves. Several contacts can unify into one customer. A join to one retained Contact ID can miss other contacts' interactions. Duplicate matches can increase measure counts.
+
+For more information, see [Relationships between tables and table paths](relationships.md).
+
+### Use the Contact path in a segment
+
+1. Create a customer segment and select a field from **Behavioral** > **Email Opened**.
+
+1. Select the email to match.
+
+1. In the same interaction rule, add **Profile type is equal to `contact`** and the required **Timestamp** condition. Combine these conditions with **AND**.
+
+1. Select **Set relationship path** and choose the Contact-based path, not the system CustomerProfile path.
+
+1. Save and run the segment.
+
+The result contains unified customers reached through matching Contact interactions. It doesn't change the segment's audience to Contact records.
+
+### Reuse the relationship in a measure
+
+1. Create a customer measure that counts **ProfileId** in **Email Opened**, grouped by **CustomerId**.
+
+1. In **Filter**, add **Profile type is equal to `contact`**, the email condition, and the required Timestamp condition.
+
+1. In **Relationship path**, choose the same Contact-based path.
+
+1. Save and run the measure.
+
+Two matching email-open records for a Contact that maps once to a customer contribute a count of two. The explicit filter excludes records with another `ProfileType`.
+
+The system stores the relationship once for that interaction table and can reuse it. Each saved segment or measure stores its own selected path and conditions. Another table, such as Email Sent, needs its own interaction relationship.
+
+### Lead and other profile types
+
+For lead interactions, use `ProfileType = lead` and a relationship to the correct lead identifier, such as **Lead.leadid**. That path must reach Customer.
+
+For other supported profile types, verify the stored `ProfileType` value and the meaning of `ProfileId`. Then select the matching relationship path and add the corresponding condition.
 
 ## Related content
 

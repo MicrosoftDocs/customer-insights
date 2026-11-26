@@ -1,7 +1,7 @@
 ---
 title: Control access to designer features
 description: How to limit access to the content designer's HTML tab and Litmus previews in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -31,5 +31,3 @@ To control access to these designer features:
     - **User**: To apply protection to a specific user, choose a user name from this lookup field. Each rule can apply only to one team _or_ one user.
     - **Blocked features**: Use this lookup field to choose which features you want to hide from the specified user or team: HTML, Litmus, or both.
 1. Save your settings.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

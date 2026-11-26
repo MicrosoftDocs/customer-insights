@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Form prefill auto-fills known values on Customer Insights - Journeys forms for contacts and leads, based on tracking consent and security checks.
-ms.date: 07/15/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: petrjantac
 ms.author: udag
@@ -146,5 +146,3 @@ To enable form prefill, ensure that all the following requirements are correctly
   3. The end user who is opening a website with a form has provided tracking consent.
   4. The link that redirects to a prefilled form must be created as a Customer Insights - Journeys tracking link generated from a real customer journey (not from a test send). After clicking the tracking link, the URL must include the required tracking parameters, such as:
   `website_url/path#msdynmkt_trackingcontext=[some_guid]&msdynmkt_prefill=[some_text]`
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

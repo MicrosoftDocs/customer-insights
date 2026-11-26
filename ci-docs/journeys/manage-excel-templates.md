@@ -1,7 +1,7 @@
 ---
 title: Create and deploy Excel templates
 description: Create, customize, and upload Excel templates to export and analyze data from Dynamics 365 Customer Insights - Journeys records.
-ms.date: 07/29/2026
+ms.date: 10/13/2026
 ms.topic: install-set-up-deploy
 author: udag
 ms.author: udag
@@ -134,5 +134,3 @@ If you attempt to view Customer Insights - Journeys data by using an Excel templ
   Excel templates don't open on Windows 8.1 devices with the Windows 8.1 Mobile app. You get the following error message: "We've recovered as much of your document as we could, but you can't edit it. Try to open and repair the document on your PC to fix the problem." This problem is known.
 - **Use table column names and range names in formulas**  
   When you create Excel formulas, don't use column titles or cell numbers. Instead, use the table column names, and define names for cells or cell ranges.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

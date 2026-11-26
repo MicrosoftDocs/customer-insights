@@ -1,7 +1,7 @@
 ---
 title: Define the message editor interface (optional)
 description: Customize the message editor interface for a custom channel by defining an entity, form, and placeholders attribute.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -94,5 +94,3 @@ Next, create a form for the custom entity that will be loaded in the Customer In
 The form ID of this entity is assigned to **msdyn_messageformid attribute** at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
 You can use custom controls on the form or out-of-the-box controls that support personalization.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

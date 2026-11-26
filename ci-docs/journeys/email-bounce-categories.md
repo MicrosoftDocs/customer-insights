@@ -1,7 +1,7 @@
 ---
 title: Email bounce categories
 description: A comprehensive list of email bounce categories and definitions for Customer Insights - Journeys, including hard bounces and reputation issues.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -77,5 +77,3 @@ Policy-related errors may also indicate that the recipient’s server can't iden
 You can investigate bounce error details in your customer journey to correct any errors. To review bounce errors details, select the contact that bounced, or open your customer journey and go to the **Delivery** tab.
 
 :::image type="content" source="media/email-bounce-categories-errors.png" alt-text="Screenshot of the Delivery tab showing detailed bounce error messages for a bounced email in Customer Insights - Journeys." lightbox="media/email-bounce-categories-errors.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

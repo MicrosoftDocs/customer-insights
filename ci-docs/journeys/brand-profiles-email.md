@@ -1,7 +1,7 @@
 ---
 title: Use brand profiles in emails
 description: Discover how to select and manage brand profiles in the Customer Insights - Journeys email designer for seamless branding.
-ms.date: 04/16/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -26,13 +26,11 @@ This article explains how to use brand profiles in the Customer Insights - Journ
 
 To use brand profiles in the Customer Insights - Journeys email designer, select the desired profile from the **Brand profile** dropdown in the upper-right corner.
 
-> [!div class="mx-imgBorder"]
-> ![Select a brand profile in the Customer Insights - Journeys email designer.](media/brand-profile-email-select.png "Select a brand profile in the Customer Insights - Journeys email designer")
+:::image type="content" source="media/brand-profile-email-select.png" alt-text="Select a brand profile in the Customer Insights - Journeys email designer.":::
 
 After you select a brand profile, the default sender for the profile is automatically populated into the email sending settings. If you have more than one sender, you can remove the default sender, and then choose from any of the other senders in the profile by selecting the lookup icon in the **Sender** box under **Send settings**.
 
-> [!div class="mx-imgBorder"]
-> ![Select a different sender.](media/brand-profiles-email-senders.png "Select a different sender")
+:::image type="content" source="media/brand-profiles-email-senders.png" alt-text="Select a different sender.":::
 
 > [!NOTE]
 > To use a one-time sender for your email (and avoid adding it to the brand profile), leave the sender field empty and manually insert custom sender settings.
@@ -43,8 +41,7 @@ You can use the dynamic values from a brand profile to set social links for your
 
 Learn more about dynamic values in [Personalize content](real-time-marketing-personalization.md).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of adding dynamic values.](media/brand-profiles-email-dynamic.png "Add dynamic values")
+:::image type="content" source="media/brand-profiles-email-dynamic.png" alt-text="Screenshot of adding dynamic values.":::
 
 ## Updating brand profiles in emails
 
@@ -54,5 +51,3 @@ When you update a brand profile, changes aren't automatically applied to your al
 1. Temporarily switch the current brand profile to another brand profile.
 1. After you select another brand profile, switch back to the original brand profile.
 1. Republish the changes to ensure the updates are reflected.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

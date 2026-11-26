@@ -1,7 +1,7 @@
 ---
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,8 +28,7 @@ To begin your email sending process, follow these steps:
 1. Go to **Customer Insights - Journeys** > **Channels** > **Emails** and select **+ New** in the top toolbar. Select the email template that you want to use. You can either use a predesigned template or create your own custom template by selecting **Skip**.
 1. From the email editor, mark your email "Ready to Send" by selecting the **Ready to Send** button.
 
-    > [!div class="mx-imgBorder"]
-    > ![Ready to send screenshot.](media/email-without-journey-ready.png "Ready to send screenshot")
+    :::image type="content" source="media/email-without-journey-ready.png" alt-text="Ready to send screenshot.":::
 
 1. The button changes to **Send now** or **Schedule for later** and can be selected to start the flow. If you select **Schedule for later**, you're prompted to choose a date to send the email.
 1. Select a segment and select **Preview** to preview the segment. You can only select published segments.
@@ -54,5 +53,3 @@ Send now is a simplified workflow that supports limited scenarios. It doesn't su
     - Complex inline conditions with 1:n relationships such as **Contacts** > **Accounts**.
     - Dynamic text.
     - Lists.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

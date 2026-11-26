@@ -1,7 +1,7 @@
 ---
 title: Administer users, teams, and templates
 description: Configure organization settings for users, teams, Word and Excel templates, and fiscal year in Customer Insights - Journeys.
-ms.date: 07/30/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -24,5 +24,3 @@ The **Settings** menu :::image type="icon" source="media/settings-icon.png"::: a
 - **Fiscal Year**: Define the fiscal year period used for reporting financial data at your organization. More information: [Define fiscal year settings](fiscal-year-settings.md)
     - To change the fiscal year, go to **Settings** :::image type="icon" source="media/settings-icon.png"::: > **Advanced settings**.
     - A new window titled **Business management** will open. Select **Fiscal Year Settings**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

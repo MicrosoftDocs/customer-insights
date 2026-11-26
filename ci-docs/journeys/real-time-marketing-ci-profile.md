@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
 description: Learn how to use Customer Insights - Data profiles and segments in Customer Insights - Journeys.
-ms.date: 08/25/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -21,8 +21,7 @@ For example, let's say you have an e-commerce website. You capture information a
 
 To target visitors with abandoned carts, you first need to define a [custom trigger](real-time-marketing-custom-triggers.md) for any shopper who abandons a cart. You need to set the **Data type** field for the trigger's **Customer Data** property to **Profile (Customer Insights - Data)**. You then need to set up a [trigger-based journey](real-time-marketing-trigger-based-journey.md) using the abandoned cart trigger.
 
-> [!div class="mx-imgBorder"]
-> ![Cart custom event screenshot.](media/real-time-marketing-ci-profile-cart-event.png)
+:::image type="content" source="media/real-time-marketing-ci-profile-cart-event.png" alt-text="Cart custom event screenshot.":::
 
 Alternately, you can create a scheduled journey targeting the customers in an abandoned cart segment. When creating your journey, you're able to see segments from both Customer Insights - Journeys and Customer Insights - Data in the **Audience** dropdown list.
 
@@ -45,19 +44,15 @@ Customer Insights - Journeys can automatically discover Customer Insights - Data
 1. If you haven't provisioned the Dynamics 365 Customer Insights - Journeys application in a Dataverse org, complete the steps [in the section above](real-time-marketing-ci-profile.md#set-up-your-customer-insights---data-environment-for-use-with-customer-insights---journeys) to first set up your Customer Insights - Data environment. If you complete these steps before Customer Insights - Journeys is installed in the Dataverse org, the Customer Insights - Journeys app automatically discovers the Customer Insights - Data environment. You can verify whether Customer Insights - Journeys has discovered the Customer Insights - Data environment by going to **Settings** > **Data management** > **Customer Insights - Data connector**.
 1. If you’ve already enabled Customer Insights - Journeys in the Customer Insights - Journeys app prior to setting up Customer Insights - Data as described above, the automatic discovery won't take place. In this case, **Settings** > **Data management** > **Customer Insights - Data connector** shows the following screen:
 
-> [!div class="mx-imgBorder"]
-> ![Customer Insights - Data setup screenshot.](media/real-time-marketing-ci-setup.png)
+:::image type="content" source="media/real-time-marketing-ci-setup.png" alt-text="Customer Insights - Data setup screenshot.":::
 
   - To retry Customer Insights - Data discovery, complete the [above-listed steps](real-time-marketing-ci-profile.md#set-up-your-customer-insights---data-environment-for-use-with-customer-insights---journeys) in your Customer Insights - Data environment, and then return to **Settings** > **Data management** > **Customer Insights - Data connector** and select **Connect**.
   - If the setup is correct, Customer Insights - Journeys is able to discover Customer Insights - Data, and you should see the success indicator.
 
-> [!div class="mx-imgBorder"]
-> ![Customer Insights - Data setup success screenshot.](media/real-time-marketing-ci-profile-success2.png)
+:::image type="content" source="media/real-time-marketing-ci-profile-success2.png" alt-text="Customer Insights - Data setup success screenshot.":::
 
 ## Set up default properties for unified customer profiles
 
 When using Customer Insights - Data customer profiles in real-time customer journeys, you are required to specify which attributes in the profile correspond to the customer’s preferred email and phone number. To eliminate the need for specifying this information every time, you can create default settings that customer journeys automatically uses from that point on.
 
 Learn more: [Audience configuration](real-time-marketing-audience-data.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

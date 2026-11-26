@@ -1,29 +1,31 @@
 ---
-title: "Export diagnostic logs"
-description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 03/11/2025
-ms.reviewer: mhart
+title: Export diagnostic logs
+description: Export diagnostic logs from Customer Insights - Data to Azure Monitor to monitor activity, troubleshoot issues, analyze security, and support compliance. 
+ms.date: 11/02/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: brndkfr
-ms.author: bkief
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export diagnostic logs
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/). Forwarding your logs to Azure Monitor lets you observe your Customer Instance - Data instance with great flexibility. Some of the use cases you can solve with this data in Azure Monitor Log Analytics include:
-- Monitoring and troubleshooting: You can use Log Analytics to monitor and troubleshoot your applications, infrastructure, and network. It helps you identify issues and diagnose problems quickly.
-- Security analysis: You can use Log Analytics to detect security threats and investigate security incidents.
-- Compliance auditing: You can use Log Analytics to audit your infrastructure and applications for compliance with regulatory standards.
+Forward logs from Dynamics 365 Customer Insights - Data by using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/). By forwarding your logs to Azure Monitor, you can observe your Customer Insights - Data instance with great flexibility. Some of the use cases you can solve with this data in Azure Monitor Log Analytics include:
+
+- Monitoring and troubleshooting: Use Log Analytics to monitor and troubleshoot your applications, infrastructure, and network. It helps you identify issues and diagnose problems quickly.
+- Security analysis: Use Log Analytics to detect security threats and investigate security incidents.
+- Compliance auditing: Use Log Analytics to audit your infrastructure and applications for compliance with regulatory standards.
 
 ## Logs available for Customer Insights - Data
+
 Customer Insights sends the following event logs:
 
 - **Audit Events**
   - **APIEvent** - enables change tracking via the Customer Insights - Data UI.
 - **Operational Events**
-  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data into other systems. You can perform these steps individually (for example, trigger a single export) or run them orchestrated (for example, data refresh from data sources that trigger the unification process, which pulls in enrichments and exports the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the environment. For more information, see the [APIEvent Schema](#api-event-schema).
 
 ## Set up the diagnostic settings
@@ -43,7 +45,7 @@ Customer Insights sends the following event logs:
 
 1. Select **Add destination**.
 
-   :::image type="content" source="media/diagnostics-pane.png" alt-text="Diagnostics connection.":::
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="Screenshot of the diagnostics pane.":::
 
 1. Provide a name in the **Name for diagnostics destination** field.
 
@@ -71,7 +73,7 @@ Customer Insights service principal gets the **Storage Account Contributor** per
 
 ### Event Hub
 
-Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and creates two Event Hubs under the selected namespace:
+The Customer Insights service principal gets the **Azure Event Hubs Data Owner** permission on the resource and creates two event hubs under the selected namespace:
 
 - `insight-logs-audit` containing **audit events**
 - `insight-logs-operational` containing **operational events**
@@ -92,7 +94,7 @@ Under the **Queries** window, expand the **Audit** solution and locate the examp
 1. Select the diagnostics destination in the list.
 
    > [!TIP]
-   > Removing the destination stops the log forwarding, but does not delete the resource on the Azure subscription. To delete the resource in Azure, select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there. Then delete the diagnostics destination.
+   > Removing the destination stops the log forwarding, but it doesn't delete the resource on the Azure subscription. To delete the resource in Azure, select the link in the **Actions** column to open the Azure portal for the selected resource and delete it there. Then delete the diagnostics destination.
 
 1. In the **Actions** column, select the **Delete** icon.
 
@@ -100,14 +102,14 @@ Under the **Queries** window, expand the **Audit** solution and locate the examp
 
 ## Log categories and event schemas
 
-Currently [API events](apis.md) and workflow events are supported and the following categories and schemas apply.
+Currently, the service supports [API events](apis.md) and workflow events. The following categories and schemas apply.
 The log schema follows the [Azure Monitor common schema](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema).
 
 ### Categories
 
 There are two categories:
 
-- **Audit events**: [API events](#api-event-schema) to track the configuration changes on the service. `POST|PUT|DELETE|PATCH` operations go into this category.
+- **Audit events**: [API events](#api-event-schema) that track the configuration changes on the service. This category includes `POST`, `PUT`, `DELETE`, and `PATCH` operations.
 - **Operational events**: [API events](#api-event-schema) or [workflow events](#workflow-event-schema) generated while using the service.  For example, `GET` requests or the execution events of a workflow.
 
 ## Event schemas
@@ -121,19 +123,19 @@ API events and workflow events have a common structure, but with a few differenc
 | `time`            | Timestamp | Required          | Timestamp of the event (UTC)       | `2020-09-08T09:48:14.8050869Z`         |
 | `resourceId`      | String    | Required          | ResourceId of the environment that emitted the event         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
 | `operationName`   | String    | Required          | Name of the operation represented by this event.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
-| `category`        | String    | Required          | Log category of the event. Either `Operational` or `Audit`. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with `Audit`, everything else with `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
+| `category`        | String    | Required          | Log category of the event. Either `Operational` or `Audit`. All POST, PUT, PATCH, and DELETE HTTP requests are tagged with `Audit`, and all other requests are tagged with `Operational`. | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Required          | Status of the event. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
 | `resultSignature` | String    | Optional          | Result status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.        | `200`             |
 | `durationMs`      | Long      | Optional          | Duration of the operation in milliseconds.     | `133`     |
 | `callerIpAddress` | String    | Optional          | Caller IP address, if the operation corresponds to an API call that comes from a publicly available IP address.                                                 | `144.318.99.233`         |
 | `identity`        | String    | Optional          | JSON object describing the identity of the user or application that did the operation.       | See [Identity](#identity-schema)  section.     |  
-| `properties`      | String    | Optional          | JSON object with more properties to the particular category of events.      | See [Properties](#api-properties-schema) section.    |
+| `properties`      | String    | Optional          | JSON object with more properties for the particular category of events.      | See [Properties](#api-properties-schema) section.    |
 | `level`           | String    | Required          | Severity level of the event.    | `Informational`, `Warning`, `Error`, or `Critical`.           |
 | `uri`             | String    | Optional          | Absolute request URI.    |               |
 
 #### Identity schema
 
-The `identity` JSON object has the following structure
+The `identity` JSON object has the following structure:
 
 ```json
 {
@@ -159,13 +161,13 @@ The `identity` JSON object has the following structure
 
 #### API properties schema
 
-[API events](apis.md) have following properties.
+[API events](apis.md) have the following properties.
 
 | Field                        | Description                                                                                                            |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `properties.eventType`       | Always `ApiEvent`, marking the log event as API event.                                                                 |
 | `properties.userAgent`       | Browser agent sending the request or `unknown`.                                                                        |
-| `properties.method`          | HTTP method: `GET/POST/PUT/PATCH/HEAD`.                                                                                |
+| `properties.method`          | HTTP method: `GET`, `POST`, `PUT`, `PATCH`, `HEAD`.                                                                                |
 | `properties.path`            | Relative path of the request.                                                                                          |
 | `properties.origin`          | URI indicating where a fetch comes from or `unknown`.                                                                  |
 | `properties.operationStatus` | `Success` for HTTP Status code < 400 <br> `ClientError` for HTTP Status code < 500 <br> `Error` for HTTP Status >= 500 |
@@ -176,7 +178,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data. You can run all those steps individually or orchestrate them with the following processes.
 
 #### Operation types
 
@@ -212,12 +214,12 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | `category`      | String    | Required          | Log category of the event. Always `Operational` for Workflow events                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Required          | Status of the event. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | Optional          | Duration of the operation in milliseconds.                                                                                                                    | `133`                                                                                                                                                                    |
-| `properties`    | String    | Optional          | JSON object with more properties to the particular category of events.                                                                                        | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
+| `properties`    | String    | Optional          | JSON object with more properties for the particular category of events.                                                                                        | See sub section [Workflow Properties](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | Required          | Severity level of the event.                                                                                                                                  | `Informational`, `Warning`, or `Error`                                                                                                                                   |
 
 #### Workflow properties schema
 
-Workflow events have following properties.
+Workflow events have the following properties.
 
 | Field              | Workflow | Task | Description            |
 | ------------------------------- | -------- | ---- | ----------- |
@@ -233,12 +235,12 @@ Workflow events have following properties.
 | `properties.endTimestamp`                    | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | Yes      | Yes  | UTC Timestamp `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.instanceId`                      | Yes      | Yes  | Environment ID                                                                                                                                                                                                                              |  
-| `properties.identifier`                      | No       | Yes  | - For OperationType = `Export`, the identifier is the guid of the export configuration. <br> - For OperationType = `Enrichment`, it's the guid of the enrichment <br> - For OperationType `Measures` and `Segmentation`, the identifier is the table name. |
+| `properties.identifier`                      | No       | Yes  | - For OperationType = `Export`, the identifier is the GUID of the export configuration. <br> - For OperationType = `Enrichment`, it's the GUID of the enrichment <br> - For OperationType `Measures` and `Segmentation`, the identifier is the table name. |
 | `properties.friendlyName`                    | No       | Yes  | User-friendly name of the export or the table that is processed.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Optional. Error message with more details.                                                                                                                                                                                                                  |
 | `properties.additionalInfo.Kind`             | No       | Yes  | Optional. For OperationType `Export` only. Identifies the type of the export. For more information, see [overview of export destinations](export-destinations.md).                                                                                          |
 | `properties.additionalInfo.AffectedTables` | No       | Yes  | Optional. For OperationType `Export` only. Contains a list of configured tables in the export.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Optional. For OperationType `Export` only. Detailed message for the export.                                                                                                                                                                                 |
-| `properties.additionalInfo.tableCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicates the total numbers of members the segment has.                                                                                                                                                    |
+| `properties.additionalInfo.tableCount`      | No       | Yes  | Optional. For OperationType `Segmentation` only. Indicates the total number of members the segment has.                                                                                                                                                    |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/09/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -160,8 +160,7 @@ To create a copy of a role:
 1. Select the **Security roles** icon.
 1. Select the check box next to the role you want to copy, then open the **More Actions** dropdown in the Security Roles toolbar, and select **Copy Role...**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Copy security role window.](media/copy-role.png "Screenshot of the Copy security role window.") 
+:::image type="content" source="media/copy-role.png" alt-text="Screenshot of the Copy security role window.":::
 
 ## Special permissions for marketing pages and assist edit
 
@@ -314,5 +313,3 @@ After you deploy Customer Insights - Journeys features, several field security p
 | Marketers - Mobile app channel instance secrets | Push notification channel |
 | Marketers - Mobile app secrets   | Push notification channel |
 | Customer Journey Orchestration Shared SMS Channels Profile | SMS channel |
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

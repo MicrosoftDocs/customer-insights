@@ -1,7 +1,7 @@
 ---
 title: Create records and activities from journeys
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 09/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: udag
@@ -116,7 +116,7 @@ Record creation succeeds only if *both* principals pass all required permission 
 
 ### Built-in tables (Lead, Task, Opportunity, Phone Call)
 
-For built-in tables, the **Create Record Role Extensible** role already includes the required privileges. No action is needed for the service role. The journey publisher must have the following privileges on the target table:
+For built-in tables, all required privileges are included in the role **Cxp Orchestration Engine Services User**. No action is needed for the service role. The journey publisher must have the following privileges on the target table:
 
 | Privilege | Why it's needed |
 |---|---|
@@ -294,5 +294,3 @@ This condition can occur when the selected dynamic content path is incorrect or 
 - [Journeys overview](journeys-overview.md)
 - [Add an action in a journey](add-action.md)
 - [Journey analytics](real-time-marketing-analytics.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

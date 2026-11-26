@@ -1,7 +1,7 @@
 ---
 title: Notes about outbound marketing removal
 description: Outbound marketing removal notes explain which tables, data, assets, and archived documentation remain available after removal in Customer Insights - Journeys.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: vinayd-msft
@@ -60,5 +60,3 @@ If you previously used outbound marketing, you may still be able to access most 
 ## Outbound marketing documentation
 
 As outbound marketing has reached its end of life, documentation pages about it have been removed. If you need to refer to the outbound marketing documentation, [download the archived outbound marketing documentation PDF](https://download.microsoft.com/download/85f03905-daeb-4370-8abe-f5c75f27daf9/dynamics365-customer-insights-journeys-outbound-marketing.pdf). The password for the document is `Outbound(not-supported)`. This documentation is provided for archival purposes. No updates are being made to this content, and it will be removed in the future without further notice.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

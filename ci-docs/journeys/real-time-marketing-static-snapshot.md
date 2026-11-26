@@ -1,7 +1,7 @@
 ---
 title: Create a static snapshot of a segment
 description: Learn how to create static segment snapshots in Customer Insights - Journeys
-ms.date: 03/31/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,5 +28,3 @@ The Customer Insights - Journeys static segment experience helps you capture the
 Using the [attribute logic builder](real-time-marketing-build-segments.md), you build your segment as usual. You then decide that you want to create a static snapshot to capture only the contacts who’ve checked into the event at the time you’re making the segment. To create a static snapshot of the segment, go to **Settings**, and set the segment refresh rate to **Static snapshot**.
 
 :::image type="content" source="media/real-time-marketing-static-snapshot-of-segment.png" alt-text="Screenshot of the interface to create a static snapshot." lightbox="media/real-time-marketing-static-snapshot-of-segment.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

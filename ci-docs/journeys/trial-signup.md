@@ -1,7 +1,7 @@
 ---
 title: Sign up for a free trial
 description: Learn how to quickly sign up for and start a free Dynamics 365 Customer Insights - Journeys trial. Explore the app with tours and videos, and find additional learning resources.
-ms.date: 09/09/2025
+ms.date: 10/13/2026
 ms.topic: get-started
 ms.custom: template-trial-setup
 author: udag
@@ -62,5 +62,3 @@ Your trial environment includes many of the same features as the paid version. T
 - [Explore Microsoft Learn training](/training/browse/?products=dynamics-marketing)
 - [Watch videos on the product playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_cV1n1es1YJt_T2A5u-XpR)
 - [Trial FAQ](trial-faq.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

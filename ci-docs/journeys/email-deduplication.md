@@ -1,7 +1,7 @@
 ---
 title: Prevent duplicate emails to shared email addresses
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/19/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -23,8 +23,7 @@ When email deduplication is disabled (default), the journey sends the email to e
 
 2. Enable the **Email deduplication** feature toggle in the "Email sending" section.
 
-> [!div class="mx-imgBorder"]
-> ![Turn on the button for email deduplication.](media/enable-email-deduplication-button.png)
+:::image type="content" source="media/enable-email-deduplication-button.png" alt-text="Turn on the button for email deduplication.":::
 
 ## How to view duplicated email addresses
 
@@ -39,5 +38,3 @@ When you view the insights, you see all duplicated email addresses in the **bloc
 > Email deduplication works on the email level, per journey. Email duplication isn't detected if you're:
 > 1. Sending the same email across multiple journeys. For each journey, the email is sent once.
 > 1. Sending the same email through different tiles in the same journey (for example, A/B testing, attribute branching, etc.). In this scenario, each email is considered unique, even if you send the same email.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

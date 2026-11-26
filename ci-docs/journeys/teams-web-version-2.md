@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 description: Learn how to create and host online events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 05/13/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -103,5 +103,3 @@ After you run a Teams webinar-based Customer Insights - Journeys event, you can 
 
 > [!IMPORTANT]
 > Organizations that manage their Teams user policies need to make sure that the admin enables the `OnlineMeetingArtifact.Read.All` API permissions in the Teams authentication app before synchronizing the engagement data. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

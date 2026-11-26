@@ -1,7 +1,7 @@
 ---
 title: Data management settings 
 description: Learn how to import, export, and clean data in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -48,5 +48,3 @@ Data and templates can be exported from:
 When you export data or templates while working in the **Settings** work area, you must select the entity you want to export (such as a lead or contact). You can also choose the view that will be used for exporting. If you don't choose a view, the default view is selected, and the data or template for all the columns in that view are exported.
 
 More information: [Export data](export-data-word-excel.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

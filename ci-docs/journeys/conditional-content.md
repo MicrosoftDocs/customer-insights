@@ -1,7 +1,7 @@
 ---
 title: How to use conditional content
 description: Learn how to use conditional content features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/20/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -19,8 +19,7 @@ Conditional content is an easy way to deliver effective and engaging personalize
 
 Conditional content, as the name implies, consists of two parts: condition and content. The combination of these two parts is called a “variation.” You can create as many variations as needed. At the time an email is sent, conditions are evaluated in the order they're present in the email. When a condition is satisfied, the corresponding content is included and the conditional evaluation stops. If none of the conditions are satisfied, the default content is used. If there's no default content, then no content is included.
 
-> [!div class="mx-imgBorder"]
-> ![Conditional content screenshot.](media/conditional-content-screenshot.png "Conditional content screenshot")
+:::image type="content" source="media/conditional-content-screenshot.png" alt-text="Conditional content screenshot.":::
 
 Conditional content can be a section or an image:
 
@@ -50,8 +49,7 @@ This section explains how to create, delete, preview, and test conditional conte
 
 1. In the email designer, select a section (or an image) and then select the conditional content button.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the conditional content button.](media/conditional-content-button.png "Screenshot of the conditional content button")
+    :::image type="content" source="media/conditional-content-button.png" alt-text="Screenshot of the conditional content button.":::
 
 1. The section (or the image) frame changes color to indicate it's now a conditional section. The property pane on the right margin shows a new sub-tab called **Variation**. Select the **Variation** sub-tab.
 1. Select **+ New Condition** in the property pane. Define the condition.
@@ -106,5 +104,3 @@ See [Use calculated measures in Customer Insights - Journeys and other Dataverse
 As shown in the screenshot below, measures can also be used to define conditions that can then be used in inline conditions, conditional content, or attribute branching steps in journeys.
 
 :::image type="content" source="media/conditional-content-measures.png" alt-text="Browsing Customer Insights - Data measures for conditional content screenshot.":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

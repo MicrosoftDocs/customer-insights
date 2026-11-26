@@ -1,7 +1,7 @@
 ---
 title: Set up an automated text message keyword flow
 description: Learn how to set up an automated text message keyword flow in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -40,19 +40,14 @@ To create a keyword flow:
 1. Select the **Send a text message** tile and choose a text message template that includes keywords. In this example, the sender has created a keyword called **CONFIRM** that allows the recipient to confirm a doctor's appointment.
 1. Select **create branches** to automatically branch your customer journey based on the keywords.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create branches screenshot](media/create-branches.png "Create branches screenshot")
+    :::image type="content" source="media/create-branches.png" alt-text="Create branches screenshot":::
 
 1. Specify the next actions for each keyword and branch.
 
-    > [!div class="mx-imgBorder"]
-    > ![Specify keyword actions screenshot](media/keyword-actions.png "Specify keyword actions screenshot")
+    :::image type="content" source="media/keyword-actions.png" alt-text="Specify keyword actions screenshot":::
 
 1. Choose how strict the keyword identification method should be.
 
-    > [!div class="mx-imgBorder"]
-    > ![Keyword identification screenshot](media/keyword-identification-method.png "Keyword identification screenshot")
+    :::image type="content" source="media/keyword-identification-method.png" alt-text="Keyword identification screenshot":::
 
 Finally, you can create additional branches and select keywords from the text message keywords page that weren't included in the text message template, in case you’d like to include branching for keywords that were communicated to customers in past text messages.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

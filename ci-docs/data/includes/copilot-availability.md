@@ -1,3 +1,3 @@
 ### International availability
 
-To learn about the languages and regions that are supported, see the [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+To learn about the supported regions, see [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).

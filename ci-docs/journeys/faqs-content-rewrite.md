@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for content rewrite
 description: Content rewrite in Customer Insights - Journeys helps marketers rephrase and adjust email, form, text, and push notification copy.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: udag
@@ -64,5 +64,3 @@ Follow these practices to get the most from the content rewrite feature:
 1. Start with at least 10 words in your source text.
 1. Use high-quality source text.
 1. Always review and edit content rewrite suggestions before publishing them in a marketing campaign.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

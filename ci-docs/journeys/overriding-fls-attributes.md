@@ -1,7 +1,7 @@
 ---
 title: Override field-level security attributes
 description: Learn how to override field-level security attributes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/10/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -52,5 +52,3 @@ After you finish the prerequisites and accept the risks of overriding FLS, enabl
 
 - [Form and field level security](admin-users-licenses-roles.md#form-and-field-level-security)
 - [Don't modify or remove marketing service users](admin-users-licenses-roles.md#dont-modify-or-remove-service-users).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

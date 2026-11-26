@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Data
 description: Overview about features that are going away or are no longer available.
-ms.date: 06/17/2026
+ms.date: 11/05/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,6 +17,64 @@ This article describes features that have been removed, or that are planned for 
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
+
+## Features removed or deprecated in November 2026
+
+We're removing these preview features on November 2, 2026. Until that date, they work as before.
+
+### Dialog with data
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service. To ask questions about your customer data in natural language from your own agent, use the [Customer Insights MCP Server](mcp-server-tools.md). |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Insights |
+| **Deployment option**              | All |
+| **Status**                         | Will be disabled on November 2, 2026. |
+
+### Create segments with Copilot
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service. To create segments, use [quick segments](segment-quick.md) or the [segment builder](segment-builder.md). |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Segments |
+| **Deployment option**              | All |
+| **Status**                         | Will be disabled on November 2, 2026. |
+
+### Copilot help pane
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service. To get answers about Customer Insights - Data capabilities, use Ask Learn, the AI assistant on Microsoft Learn. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Help pane |
+| **Deployment option**              | All |
+| **Status**                         | Will be disabled on November 2, 2026. |
+
+### Copilot consent settings
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The Copilot features that use these settings are removed. You don't need to change your consent settings before the removal. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Settings > System > Consent |
+| **Deployment option**              | All |
+| **Status**                         | Will be disabled on November 2, 2026. |
+
+## Features removed or deprecated in October 2026
+
+### Legacy third-party export connectors
+
+The following export connectors are deprecated: Blueshift, Campaign Monitor, Constant Contact, Criteo, HubSpot, Klaviyo, Mailchimp, MoEngage, Omnisend, Split, and TikTok.
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation or removal** | These export connectors aren't in active development. Don't create new connections or export configurations that use them. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Exports |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated as of October 14, 2026. |
 
 ## Features removed or deprecated in June 2026
 

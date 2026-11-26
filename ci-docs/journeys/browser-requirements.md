@@ -1,7 +1,7 @@
 ---
 title: Browser and system requirements
 description: Find the supported desktop and tablet browsers, screen readers, and email clients for Dynamics 365 Customer Insights - Journeys, plus browser setup steps.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -59,5 +59,3 @@ If you're using Microsoft Edge on a touch device, such as a tablet, enable the t
 ## Supported email clients
 
 Marketing emails you create and send with Dynamics 365 Customer Insights - Journeys, including all included templates, render correctly across a wide range of recipient email clients, though older clients typically support fewer formatting options. For a complete list of tested email clients, see [Tested email clients](email-templates.md#tested-clients).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

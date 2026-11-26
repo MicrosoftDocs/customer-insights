@@ -1,16 +1,14 @@
 ---
-title: Export segments to Sendinblue (preview)
+title: Export segments to Sendinblue
 description: Export segments to Sendinblue and reach specific customer groups with targeted email marketing. Follow the steps to connect, configure, and run your export.
-ms.date: 07/24/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Sendinblue (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Sendinblue
 
 Export segments of unified customer profiles to generate campaigns, provide email marketing, and use specific groups of customers with Sendinblue.
 

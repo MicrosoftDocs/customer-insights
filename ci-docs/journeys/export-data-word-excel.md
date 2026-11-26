@@ -1,7 +1,7 @@
 ---
 title: Export data to Word or Excel files
 description: Export Customer Insights - Journeys data to Word documents or Excel workbooks using built-in templates for records and record lists.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -66,5 +66,3 @@ What you see in the Excel workbook is based on two things:
 ### Step 4: Share the results with others
 
 Save a copy either online or to your computer, and then share the workbook or link with others for their review and input.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

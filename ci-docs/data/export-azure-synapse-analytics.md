@@ -1,16 +1,14 @@
 ---
-title: Export data to Azure Synapse Analytics (preview)
+title: Export data to Azure Synapse Analytics
 description: Export data from Dynamics 365 Customer Insights - Data to Azure Synapse Analytics. Learn the prerequisites, permissions, and steps to set up and manage the export.
-ms.date: 09/04/2026
+ms.date: 10/26/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export data to Azure Synapse Analytics (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export data to Azure Synapse Analytics
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 

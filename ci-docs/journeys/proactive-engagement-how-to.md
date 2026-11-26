@@ -1,7 +1,8 @@
 ---
 title: Create conversational journeys
 description: Conversational journeys in Dynamics 365 Customer Insights let you design voice call experiences using Contact Center integration. Learn how to set up and branch journeys.
-ms.date: 05/07/2026
+ai-usage: ai-assisted
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd-msft
 ms.author: udag
@@ -127,6 +128,7 @@ Quiet times are useful because they prevent calls from being placed during inapp
 To learn about how to create and manage quiet times, see [Set quiet times to prevent messages from sending during unwanted hours](real-time-marketing-quiet-times.md).
 
 ## Pass context variables to Contact Center
+
 Use context variables to send journey data to Contact Center with each conversation request. The Copilot Studio agent or service representative can then use this data to personalize the conversation. For example, they can greet the customer by name, refer to an order number, or see which journey started the call.
 
 The variables you can set are the context variables defined on the proactive engagement you selected in the conversation step. Each variable can have one of these values:
@@ -152,6 +154,4 @@ Before you add context variables in the journey, set them up in Contact Center:
 1. Choose **Static** and enter a value, or choose **Dynamic** and select a contact or trigger attribute.
 1. Repeat for any other variables, and then publish the journey.
 
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
-

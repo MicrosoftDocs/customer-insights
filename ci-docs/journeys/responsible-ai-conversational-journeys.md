@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for conversational journeys
 description: Learn how to responsibly use AI for conversational journeys in Dynamics 365 Customer Insights - Journeys. Discover key considerations and best practices.
-ms.date: 06/23/2025
+ms.date: 10/13/2026
 ms.topic: faq
 author: udag
 ms.author: udag
@@ -64,5 +64,3 @@ To learn more about the system operational factors and settings for effective an
 - [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
 - [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
 - [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

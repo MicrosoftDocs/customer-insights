@@ -1,8 +1,8 @@
 ---
-title: "Assign user permissions"
-description: "Learn how to add user permissions in Customer Insights - Data."
-ms.date: 09/10/2025
-ms.reviewer: mhart
+title: Add users and assign roles in Customer Insights - Data
+description: Assign user permissions in Customer Insights - Data to control access for users and groups. Learn how to add, edit, remove, and review roles.
+ms.date: 11/18/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Assign user permissions
 
-Access to Customer Insights - Data is restricted to users in your organization that an admin adds to the application. An admin can add, edit, or remove users. A user can be a single user, group, or application. [User roles](user-roles.md) determine what the user can access within Customer Insights - Data.
+Only users that an admin adds to the application can access Customer Insights - Data. An admin can add, edit, or remove users. A user can be a single user, group, or application. [User roles](user-roles.md) determine what the user can access within Customer Insights - Data.
 
-A user assigned the Administrator role in Customer Insights - Data is automatically assigned the System Administrator role in the Dataverse environment. A System Administrator role is required to create, manage, and delete Power Platform dataflow connections.
+A user assigned the Administrator role in Customer Insights - Data is automatically assigned the System Administrator role in the Dataverse environment. You need the System Administrator role to create, manage, and delete Power Platform dataflow connections.
 
 ## Add users
 

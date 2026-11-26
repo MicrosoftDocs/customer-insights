@@ -28,8 +28,6 @@
       href: real-time-marketing-dynamic-content-multiple-languages.md
 - name: What's new
   items:
-  - name: Release plans
-    href: /dynamics365/release-plans/
   - name: What's new (current release)
     href: whats-new-marketing.md
   - name: What's new archive
@@ -172,6 +170,10 @@
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
       href: real-time-marketing-channel-optimization.md
+  - name: Collaborate using Microsoft Teams chat
+    items:
+    - name: Collaborate using Microsoft Teams chat
+      href: teams-chat.md
   - name: Triggers
     items:
     - name: Create a trigger-based journey
@@ -196,6 +198,8 @@
       items:
       - name: Build segments
         href: real-time-marketing-build-segments.md
+      - name: Create and use segment templates
+        href: real-time-marketing-segment-templates.md
       - name: Improve targeting with the redesigned segment builder
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Create a consent‑based segment
@@ -478,6 +482,8 @@
       href: real-time-marketing-consent-business-units.md
     - name: Create consent records using a cloud flow
       href: consent-record-creation.md
+    - name: How contact point consent normalization works
+      href: consent-contact-point-normalization.md
     - name: Manage consent for email and text messages
       href: real-time-marketing-email-text-consent.md
     - name: Tracking consent
@@ -542,7 +548,7 @@
     items:
     - name: Client-side extensibility for forms
       href: developer/realtime-marketing-form-client-side-extensibility.md
-    - name: Capture forms in Customer Insights - Journeys
+    - name: Set up form capture
       href: real-time-marketing-form-capture.md
     - name: Customize form submission validation
       href: real-time-marketing-form-customize-submission-validation.md
@@ -550,6 +556,8 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
+  - name: Create read-only segment groups
+    href: developer/segment-read-only-groups.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
   - name: Set up payment gateway integration

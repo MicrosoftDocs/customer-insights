@@ -1,7 +1,7 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
 description: Reusable content blocks in Dynamics 365 Customer Insights - Journeys help you save time and ensure consistency across emails. Learn how to create and use them today.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: vinayd-msft
 ms.author: udag
@@ -36,25 +36,21 @@ The two types of content blocks are based on what they *contain*:
 
 - **Element content blocks:** These content blocks include one or more elements (text, image, button, link, etc.) only, but no layout. Below is an example of an element content block that contains some text:
 
-    > [!div class="mx-imgBorder"]
-    > ![Element content block example.](media/content-blocks-element-text.png "Element content block example")
+    :::image type="content" source="media/content-blocks-element-text.png" alt-text="Element content block example.":::
 
     Because this content block type only contains elements, it doesn’t have its own layout and takes the shape of section or column that it's placed in. In the screenshot below, the same text content block from above has been inserted into three differently sized columns:
 
-    > [!div class="mx-imgBorder"]
-    > ![Three-column element content block example.](media/content-blocks-email-insert.png "Three column element content block example")
+    :::image type="content" source="media/content-blocks-email-insert.png" alt-text="Three-column element content block example.":::
 
 Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style. 
 
 - **Section content blocks:** These content blocks include one or more sections and therefore retain their layout. Sections can include any combination of elements such as text, image, button, link, etc. Here's an example:
 
-    > [!div class="mx-imgBorder"]
-    > ![Section content block example.](media/content-blocks-section-text-image.png "Section content block example")
+    :::image type="content" source="media/content-blocks-section-text-image.png" alt-text="Section content block example.":::
 
     Such a section retains its layout when inserted into an email:
 
-    > [!div class="mx-imgBorder"]
-    > ![Section content block retain layout example.](media/content-blocks-email-instert2.png "Section content block retain layout example")
+    :::image type="content" source="media/content-blocks-email-instert2.png" alt-text="Section content block retain layout example.":::
 
 ## Static vs dynamic content blocks
 
@@ -113,13 +109,11 @@ You can search content blocks by name or by tags.
 
 - **Search:** Find all content blocks that have "text" in their name:
 
-    > [!div class="mx-imgBorder"]
-    > ![Content block name search.](media/content-blocks-search-text.png "Content block name search")
+    :::image type="content" source="media/content-blocks-search-text.png" alt-text="Content block name search.":::
 
 - **Search:** Find all content blocks that have the tag "Contoso":
 
-    > [!div class="mx-imgBorder"]
-    > ![Content block tag search.](media/content-blocks-lock.png "Content block tag search")
+    :::image type="content" source="media/content-blocks-lock.png" alt-text="Content block tag search.":::
 
 ## Updating a content block
 
@@ -127,8 +121,7 @@ A content block can only be updated from **Assets** > **Content blocks**. Open t
 
 Updating a static content block doesn't update emails that already use it. Check the **Settings** pane to see which emails and templates use the content block, so you know which ones to update manually. When you update a dynamic content block, the same list shows which emails will be updated automatically.
 
-> [!div class="mx-imgBorder"]
-> ![Content block update screenshot.](media/content-block-update.png "Content block update screenshot")
+:::image type="content" source="media/content-block-update.png" alt-text="Content block update screenshot.":::
 
 > [!IMPORTANT]
 > When you update a dynamic content block, all emails that use it are updated. If any of those emails are used in a live journey, the updated content is sent after the content block is published as *Ready to send*. If the journey is actively sending to a large audience, different recipients might receive different versions of the email.
@@ -146,5 +139,3 @@ When you delete a dynamic content block, it's also removed from all emails that 
 ## Limitations
 
 - Links included in dynamic content blocks can’t be used for branching in journeys. This limitation doesn't apply to static content blocks.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

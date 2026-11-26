@@ -1,7 +1,7 @@
 ---
 title: Open the event management work area 
 description: Explains how to access event-management features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: udag
@@ -24,5 +24,3 @@ To find the event management work area:
 1. You are now in the events work area and can navigate between event-related entities using the side navigator, just as with the core **Customer Insights - Journeys** work area.
 
 1. You can create a new event by selecting **+ New Real-time event** in the top navigation ribbon.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

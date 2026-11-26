@@ -1,7 +1,7 @@
 ---
 title: Measure marketing effectiveness using UTM codes
 description: Learn how to add Urchin Tracking Module (UTM) codes to URLs for improved link tracking in Customer Insights - Journeys.
-ms.date: 07/31/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -28,8 +28,7 @@ To use UTM codes, an administrator needs to enable the UTM codes feature switch.
 
 When you enable UTM tracking, you see the default values for each UTM parameter. These are the values that are added to all URLs that you add to your emails or text messages.
 
-> [!div class="mx-imgBorder"]
-> ![Enable UTM codes screen.](media/real-time-marketing-utm-enable.png "Enable UTM codes screen")
+:::image type="content" source="media/real-time-marketing-utm-enable.png" alt-text="Enable UTM codes screen.":::
 
 > [!TIP]
 > It may take up to five minutes after enabling the feature switch toggle before the UTM settings are propagated across the channels.
@@ -45,25 +44,21 @@ Imagine an abandoned cart scenario in which website visitors add items to their 
 
 First, create a journey that [targets visitors that abandoned their cart](real-time-marketing-trigger-based-journey.md). After the journey trigger, you'll add a reminder email that nudges visitors to complete the purchases. Because completing the purchase is the purpose of the journey, you can also [set a goal](real-time-marketing-business-goals.md) that measures success whenever a visitor completes a purchase.
 
-> [!div class="mx-imgBorder"]
-> ![Create an abandoned cart journey.](media/real-time-marketing-utm-abandoned.png "Create an abandoned cart journey")
+:::image type="content" source="media/real-time-marketing-utm-abandoned.png" alt-text="Create an abandoned cart journey.":::
 
 To use UTM codes in the reminder email, go to **Emails** and select the email you plan to use in your abandoned cart journey. Add a URL to the email that directs your customers back to your website. In the **Add a link** window, you see the default values that are automatically appended to every URL in your message, including unsubscribe.
 
-> [!div class="mx-imgBorder"]
-> ![UTM parameters and values.](media/real-time-marketing-utm-values.png "UTM parameters and values")
+:::image type="content" source="media/real-time-marketing-utm-values.png" alt-text="UTM parameters and values.":::
 
 In this case, the source value Dynamics 365 Customer Insights - Journeys, the campaign value is the name of the abandoned cart journey, the medium is channel that you're using which is email, and the content is the name of the email.
 
 Once your journey is live and customers start using your links, you're able to review insights including how many people clicked your link and how many successfully completed a purchase.
 
-> [!div class="mx-imgBorder"]
-> ![Journey goal success.](media/real-time-marketing-utm-goal.png "Journey goal success")
+:::image type="content" source="media/real-time-marketing-utm-goal.png" alt-text="Journey goal success.":::
 
 You can also use Google Analytics to determine how successful the email you sent was in driving traffic to your website.
 
-> [!div class="mx-imgBorder"]
-> ![View results in Google Analytics.](media/real-time-marketing-utm-google.png "View results in Google Analytics")
+:::image type="content" source="media/real-time-marketing-utm-google.png" alt-text="View results in Google Analytics.":::
 
 ## Customizing UTM links
 
@@ -80,8 +75,7 @@ To begin customizing your links, select the **+ New** button at the top of the p
 
 To save your customize settings, select the **Save** button at the top of the screen.
 
-> [!div class="mx-imgBorder"]
-> ![Customize UTM links screenshot.](media/real-time-marketing-utm-custom.png "Customize UTM links screenshot")
+:::image type="content" source="media/real-time-marketing-utm-custom.png" alt-text="Customize UTM links screenshot.":::
 
 ## UTM parameters in Universal vs Google Analytics 4
 
@@ -97,12 +91,8 @@ If your compliance setting consent model is set to **Restrictive**, then (depend
 
 For example, if you're configured to “Get tracking consent from customers” and the consent model is **Restrictive**, then you need prior consent for tracking to include tracking links:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing get tracking consent set to yes.](media/real-time-marketing-utm-get-consent.png "Screenshot showing get tracking consent set to yes")
+:::image type="content" source="media/real-time-marketing-utm-get-consent.png" alt-text="Screenshot showing get tracking consent set to yes.":::
 
 To guarantee that tracking links are always included (the links don’t require customer consent for tracking), the settings should look like this:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing get tracking consent set to no and default tracking to track.](media/real-time-marketing-utm-get-consent-no.png "Screenshot showing get tracking consent set to no and default tracking to track")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+:::image type="content" source="media/real-time-marketing-utm-get-consent-no.png" alt-text="Screenshot showing get tracking consent set to no and default tracking to track.":::

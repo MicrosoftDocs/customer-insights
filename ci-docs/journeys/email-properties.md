@@ -1,7 +1,7 @@
 ---
 title: Set the sender, receiver, language and legal designation for a message
 description: Learn how to use the email settings provided on the Summary tab, including to and from options, language, and the legal designation in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/28/2024
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -59,5 +59,3 @@ Start by designing the HTML version of your message. When you're almost done, go
 
 - To fine-tune the text version, clear the **Automatically generate** check box to unlock the text field, and then edit the text as needed. From now on, though, your text version will no longer be linked to the HTML version and won't be updated to match any changes you make to the HTML.
 - To go back to tracking the HTML version, reselect the **Automatically generate** check box. This will remove any customizations that you've made to the plain text and update it to match the current HTML design on an ongoing basis.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

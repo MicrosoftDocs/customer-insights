@@ -1,7 +1,7 @@
 ---
-title: Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)
+title: Customer Insights business unit integration with Dynamics 365 applications and Power Platform
 description: Learn how Customer Insights - Journeys marketing contributors can get access to customer profiles and segments that belong to their business unit.
-ms.date: 07/13/2026
+ms.date: 10/12/2026
 ms.reviewer: v-wendysmith
 ms.service: dynamics-365-customer-insights
 ms.topic: concept-article
@@ -10,9 +10,7 @@ ms.author: sstabbert
 ms.custom: bap-template
 ---
 
-# Customer Insights business unit integration with Dynamics 365 applications and Power Platform (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Customer Insights business unit integration with Dynamics 365 applications and Power Platform
 
 ## Customer Insights - Data with Customer Insights - Journeys
 
@@ -27,7 +25,7 @@ Marketing contributors in Customer Insights - Data should get the *Marketing Pro
 
 Customer Insights - Data writes data into Dataverse with ownership and role-based access controls for easy activation, for example, through [model-driven applications](/power-apps/maker/model-driven-apps/model-driven-app-overview). Dataverse lets organizations easily use data in model-driven apps for customer service, sales, and other business functions with the benefits of fine-grained permission controls.
 
-Currently, business unit ownership from the associated customer profile is applied in Dataverse on the following tables: CustomerProfile, UnifiedActivity, SegmentMembership, and CustomerMeasure. All records are assigned to the root business unit for the rest of the tables that are written to Dataverse.
+Currently, business unit ownership from the associated customer profile is applied in Dataverse on the following tables: CustomerProfile, UnifiedActivity, SegmentMembership, and CustomerMeasure. All records are assigned to the root business unit for the rest of the tables that are written to Dataverse. Business unit ownership isn't applied to updates made through the [real-time API](real-time-data-ingestion.md), so business unit data separation has no effect on those records.
 
 ## Data consumption APIs
 
@@ -35,7 +33,7 @@ To maintain business unit data separation, all API-based data consumption scenar
 
 ## Next steps
 
-- [Business unit support and role-based access control (preview)](business-units-data-separation.md)
-- [Data and security roles in Dataverse (preview)](access-business-units-dataverse.md)
+- [Business unit support and role-based access control](business-units-data-separation.md)
+- [Data and security roles in Dataverse](access-business-units-dataverse.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

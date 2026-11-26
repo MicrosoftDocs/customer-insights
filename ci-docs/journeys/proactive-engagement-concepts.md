@@ -1,7 +1,7 @@
 ---
 title: Conversational journeys concepts
 description: Conversational journeys in Dynamics 365 Customer Insights – Journeys helps you automate personalized customer interactions across channels. Learn key concepts and get started.
-ms.date: 05/07/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: vinayd-msft
 ms.author: udag
@@ -66,5 +66,3 @@ The [Wait for Trigger](add-action.md#wait-for-trigger) action pauses a journey u
 ## Frequency cap
 
 [Frequency capping](real-time-marketing-frequency-cap.md) limits how often a contact receives messages within a certain timeframe. This helps prevent sending too many messages and lowers the risk of unsubscribes or spam complaints.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

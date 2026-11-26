@@ -1,7 +1,7 @@
 ---
 title: Use your own Azure Data Lake Storage account for segments
 description: Learn about the requirements to use your own Azure Data Lake Storage account for segments in Customer Insights - Journeys.
-ms.date: 11/19/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -71,5 +71,3 @@ To grant permissions to the service principal for the storage account you want t
 1. Select **Review + assign**.
 
 It can take up to 15 minutes to propagate the changes.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

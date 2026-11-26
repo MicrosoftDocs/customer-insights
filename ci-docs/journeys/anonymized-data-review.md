@@ -1,7 +1,7 @@
 ---
 title: Anonymized customer data human review notice
 description: Learn about Microsoft's human data review policy in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/17/2024
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -82,5 +82,3 @@ All proper tagging to handle DSRs is maintained. You can contact your Dynamics 3
 ## Have more questions?
 
 Learn more: [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=512132).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

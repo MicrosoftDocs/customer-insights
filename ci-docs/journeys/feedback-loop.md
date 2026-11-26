@@ -1,7 +1,7 @@
 ---
 title: "Feedback loop: What is it and how to prevent complaints"
 description: Describes what a feedback loop is in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/07/2024
+ms.date: 10/13/2026
 ms.topic: concept-article
 author: colinbirkett
 ms.author: colinbirkett
@@ -79,5 +79,3 @@ Supported complaint feedback loops (FBLs) listed below:
 * Yandex
 * Ziggo
 * Zoho
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

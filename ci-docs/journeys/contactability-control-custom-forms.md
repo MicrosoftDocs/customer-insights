@@ -1,7 +1,7 @@
 ---
 title: Add a contactability grid control to custom forms
 description: Learn how to add contactability grid control to custom forms.
-ms.date: 10/13/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -21,19 +21,12 @@ This article explains how to add a contactability consent control to custom form
     > [!NOTE]
     > You may not have forms defined as a customization, but instead in your own solution. In that case, instead of selecting the **Tables** menu in step two, you should select the **Solutions** menu and then select your solution that contains the form.
 1. From the list of components, add a new **1-column tab** to the layout of the form.
-    > [!div class="mx-imgBorder"]
-    > ![For the layout, add a section of one column tab](media/add-1-column-tab.png "For the layout, add a section of one column tab")
+    :::image type="content" source="media/add-1-column-tab.png" alt-text="For the layout, add a section of one column tab":::
 1. Select the **Expand this tab by default** and **Expand first component to full tab** options for this tab and name the tab "Communication."
-    > [!div class="mx-imgBorder"]
-    > ![Expand column tab to full display](media/expand-column-tab-to-full-display.png "Expand column tab to full display")
+    :::image type="content" source="media/expand-column-tab-to-full-display.png" alt-text="Expand column tab to full display":::
 1. Add a **1-column section** component on this tab.
-    > [!div class="mx-imgBorder"]
-    > ![Add a section of one column](media/add-1-column-section.png "Add a section of one column")
+    :::image type="content" source="media/add-1-column-section.png" alt-text="Add a section of one column":::
 1. Once added, expand the **More Components** section, and add the **ContactabilityGrid** control onto the new section.
-    > [!div class="mx-imgBorder"]
-    > ![Select the contactability grid by expanding the section](media/select-contactability-grid.png "Select the contactability grid by expanding the section")
+    :::image type="content" source="media/select-contactability-grid.png" alt-text="Select the contactability grid by expanding the section":::
 1. Once complete, the contactability consent control looks like this:
-    > [!div class="mx-imgBorder"]
-    > ![You can add your contact points](media/add-your-contact-points.png "You can add your contact points")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+    :::image type="content" source="media/add-your-contact-points.png" alt-text="You can add your contact points":::

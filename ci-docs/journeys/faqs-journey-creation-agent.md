@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Journey Creation Agent
 description: Journey Creation Agent in Customer Insights - Journeys helps marketers build customer journeys with natural language and human review.
-ms.date: 07/09/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m
@@ -90,7 +90,7 @@ The agent was evaluated against curated datasets, quality metrics, and golden sc
 
 **Personally identifiable information (PII) in prompts may be blocked.** Don't include customer names, email addresses, phone numbers, or other PII in your journey description. Use segment names and trigger names instead.
 
-**Feature availability varies by region and license.** Journey Creation Agent requires a Dynamics 365 Customer Insights - Journeys license, may not be available in all regions, and may require you to allow data movement across regions. See the [Dynamics 365 Customer Insights - Journeys feature availability by region](https://releaseplans.microsoft.com/availability-reports/?report=featuregeoreport) report for details.
+**Feature availability varies by region and license.** Journey Creation Agent requires a Dynamics 365 Customer Insights - Journeys license, might not be available in all regions, and might require you to allow data movement across regions. See [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability) for details.
 
 ## What operational factors and settings allow for effective and responsible use of Journey Creation Agent?
 
@@ -119,5 +119,3 @@ Journey Creation Agent supports English.
 
 - [Journey Creation Agent in Customer Insights - Journeys](journey-creation-agent.md)
 - [Responsible AI FAQ for Customer Insights - Journeys](responsible-ai-overview.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Manage fiscal year settings
 description: Configure the fiscal year period, start date, and display format used for financial reporting in Customer Insights - Journeys.
-ms.date: 07/23/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -26,5 +26,3 @@ A fiscal period defines the time reflected in financial reports for your organiz
     - In the **Fiscal Period** drop-down list, select how you want to display the fiscal period.
     - In the **Display As** drop-down list, select how you want the fiscal year abbreviation and the year to appear.
 1. Select **OK**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

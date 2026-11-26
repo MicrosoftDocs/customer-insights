@@ -1,7 +1,7 @@
 ---
 title: Define an extended configuration entity for the channel instance account
 description: Learn how to define an extended configuration entity for the custom channel instance account in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/17/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -81,5 +81,3 @@ For each custom channel solution:
     For example, in SMS, the form looks like this:
 
       :::image type="content" source="media/real-time-marketing-sms-channel.png" alt-text="Screenshot of a form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

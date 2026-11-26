@@ -1,7 +1,7 @@
 ---
 title: Copilot - Use AI to kickstart email creation
 description: Content ideas Copilot in Dynamics 365 Customer Insights - Journeys generates email draft ideas from key points. Learn how to enable it and use your organization's emails.
-ms.date: 07/09/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: udag
@@ -119,5 +119,3 @@ Copilot generates original content, but it isn't always factual. In addition, be
 > If you encounter inappropriate content being generated, report it to Microsoft using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/marketing/overview/). It will help improve the functionality moving forward.
 >
 > Microsoft may disable the content ideas feature for selected customers if abuse of the functionality is detected.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

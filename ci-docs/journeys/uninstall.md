@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 05/18/2026 
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -238,5 +238,3 @@ Customer Insights - Journeys application dependencies are installed alongside th
 
 1. msdyn_DataInsightsAndAnalytics: Enables analytics capabilities for Dynamics 365 applications like Customer Service, Field Service, and Universal Resource Scheduling.
 1. DynamicsMKT_Segmentation: Standard entity of segment representation and segment metadata.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

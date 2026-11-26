@@ -27,7 +27,11 @@
   href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
 
 - name: What's new
-  href: whats-new-customer-insights.md
+  items:
+    - name: What's new (current release)
+      href: whats-new-customer-insights.md
+    - name: What's new archive
+      href: whats-new-customer-insights-archive.md
 
 - name: Data sources
   items:
@@ -126,14 +130,18 @@
       href: customer-profiles.md
     - name: Manage the search & filter index
       href: search-filter-index.md
-    - name: Real-time web personalization
+    - name: Web tracking and personalization
       items:
-        - name: Real-time web personalization overview
+        - name: Web tracking and personalization overview
           href: real-time-web-personalization-overview.md
-        - name: Set up real-time web personalization
+        - name: Set up web tracking and personalization
           href: real-time-web-personalization.md
+        - name: Cookies and browser storage for web tracking
+          href: real-time-web-tracking-cookies.md
         - name: Personalize your customers' web experience
           href: optimizely-integration.md
+        - name: Scenarios for web tracking and personalization
+          href: real-time-web-personalization-scenarios.md
     - name: Define customer activities
       href: activities.md
     - name: Integrate activities with Dynamics 365 timelines
@@ -166,6 +174,8 @@
   items:
     - name: View tables in Customer Insights - Data
       href: tables.md
+    - name: Access output tables in Microsoft Fabric
+      href: fabric-output-tables.md
     - name: Filter out unwanted data from your ingested data
       href: tables-filters.md
     - name: Review the table schemas in Common Data Model
@@ -366,6 +376,8 @@
       href: schedule-refresh.md
     - name: View system configuration
       href: system.md
+    - name: Monitor quota usage
+      href: quota-limits.md
 
 - name: Environments
   items: 

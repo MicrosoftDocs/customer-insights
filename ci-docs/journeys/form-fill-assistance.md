@@ -4,14 +4,13 @@ description: Learn how to use AI-generated optional suggestions for fields in a 
 author: udag
 ms.author: udag
 ms.topic: overview
-ms.date: 04/21/2026
+ms.date: 10/13/2026
 ---
 
 # Use Copilot's form fill assistance feature in Dynamics 365 Customer Insights - Journeys
 
 [!INCLUDE [form-filling-assistance](~/../shared-content/shared/dynamics365-core/form-filling-assistance.md)]
 
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
 
 ### Related information
 

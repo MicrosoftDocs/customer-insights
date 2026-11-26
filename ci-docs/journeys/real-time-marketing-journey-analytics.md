@@ -1,7 +1,7 @@
 ---
 title: Real-time tile analytics in journeys
 description: Real-time journey analytics help you track customer movement at every step, showing who enters, exits, and why. Start analyzing your journeys now.
-ms.date: 07/11/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -75,5 +75,3 @@ For example, immediately after a segment-based journey starts, the system proces
 In the screenshot, you see that 36 people in the audience segment enter this journey. Five of those people haven't yet moved to the next step in the journey. Thirty-one people are analyzed and move to the next step in the journey. Nobody exits the journey because of processing at this step in the journey.
 
 :::image type="content" source="media/real-time-tile-analytics-entry-tile-in-progress.png" alt-text="Screenshot of entry action analytics showing inflow, processing, and processed counts for a journey step.":::
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

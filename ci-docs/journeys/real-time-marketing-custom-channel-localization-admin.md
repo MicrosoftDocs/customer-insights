@@ -1,7 +1,7 @@
 ---
 title: Define the localization for the admin interface (optional)
 description: Learn how to define the Channel Definition Locale contract to localize a custom channel's admin interface content.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -55,5 +55,3 @@ Example of customizations.xml including channel definition locales:
   </msdyn_channeldefinitionlocales>
 </ImportExportXml>
 ```
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Move triggers between environments – ALM process for triggers
 description: Migrate triggers between Dynamics 365 environments with Power Platform solutions, including export, import, and solution upgrade steps.
-ms.date: 07/30/2026
+ms.date: 10/13/2026
 ms.topic: get-started
 author: udag
 ms.author: udag
@@ -122,5 +122,3 @@ Solution upgrades only change the state of the triggers when the triggers in the
 
     - **Self-serve**: One way to circumvent a potential issue where you see that imported "published" triggers are in a "draft" state for an extended period is to do a solution upgrade and reimport the trigger again.
     - **Reach out to your Microsoft representative**: Open a [support ticket](https://dynamics.microsoft.com/contact-us/) with the Microsoft support team to have one of the engineers investigate the issue and provide additional mitigation solutions.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Throughput guidance
 description: Learn about throughput based on your monthly interactions quota in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -63,5 +63,3 @@ Let’s think about this with an example: Contoso (a coffee maker) purchases 1,0
 ### I don't think that I'm getting the throughput that is promised in the tables above. What do I do in that case?
 
 If you believe that your throughput doesn't meet expectations per these guidelines, contact support or [create a ticket](/power-platform/admin/get-help-support).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

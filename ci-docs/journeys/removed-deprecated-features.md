@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
 description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
-ms.date: 04/03/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -65,5 +65,3 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No. You can follow this guide to develop a custom integration: [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b). |
 | **Product areas affected**         | LinkedIn lead generation |
 | **Status**                         | Removed as of December 2, 2024 |
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

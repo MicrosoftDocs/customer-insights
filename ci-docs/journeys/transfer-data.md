@@ -1,7 +1,7 @@
 ---
 title: Transfer data with the Configuration Migration tool
 description: Transfer Customer Insights - Journeys data between environments using the Configuration Migration tool, and understand its capabilities and limitations.
-ms.date: 07/13/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: colinbirkett
@@ -171,5 +171,3 @@ To import data to your destination environment:
     :::image type="content" source="media/dmt-import4.png" alt-text="Screenshot of the Configuration Migration tool showing the import process completed successfully." lightbox="media/dmt-import4.png":::
 
 1. After the import finishes, select **Exit** to close the page.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

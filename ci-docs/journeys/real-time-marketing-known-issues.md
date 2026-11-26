@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys, including limits for analytics, content, segments, and triggers. Find mitigations and workarounds.
-ms.date: 10/05/2026
+ms.date: 10/13/2026
 ms.topic: troubleshooting-known-issue
 author: udag
 ms.author: udag
@@ -84,5 +84,3 @@ This article lists known issues in Customer Insights - Journeys and provides mit
 - Currently, triggers also fire when you manually update a record in Dynamics 365 Dataverse. This condition can cause a contact to go through the journey based on the trigger even if they don't do anything to activate it.
 - In rare instances, trigger-based journeys that use the if/then tile might encounter a delay in processing certain trigger events. In extreme situations, this delay could result in the event not being captured. While this occurrence is highly uncommon, the system continuously monitors and enhances the system to minimize any potential impact.
 - Triggers can have at most 30 attributes. If the trigger has a table reference, the reference counts as one attribute toward the limit of 30. There's an additional limit of 1,024 on the number of columns from all such entity references.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

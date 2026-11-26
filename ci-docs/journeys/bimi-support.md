@@ -1,7 +1,7 @@
 ---
 title: BIMI support
 description: Understand BIMI support in Dynamics 365 Customer Insights - Journeys, including logo requirements, DNS setup, and email authentication protocols.
-ms.date: 07/22/2026
+ms.date: 10/13/2026
 ms.topic: reference
 author: udag
 ms.author: udag
@@ -60,5 +60,3 @@ BIMI is useful for organizations and businesses to adopt for several reasons:
 1. **Validate your BIMI record**: Use the [BIMI Validator tool](https://bimigroup.org/bimi-generator/) to ensure that your BIMI record is correctly formatted and that your brand logo image file is accessible from the specified URL.
 
 BIMI support is currently limited, so not all email clients or providers display the BIMI logo. However, by using BIMI with Microsoft Dynamics 365 Customer Insights - Journeys, organizations can enhance the effectiveness of their email marketing campaigns and strengthen their brand's reputation.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: User account management in Customer Insights - Journeys
 description: View a list of users licensed for Dynamics 365 Customer Insights - Journeys, then search, sort, and edit their basic details.
-ms.date: 07/29/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -23,5 +23,3 @@ To view a list of existing users:
 The list provides standard tools to search, sort, and page through the list as needed. Select and open any user in the list to view and edit basic information about that user.
 
 To create new users, grant licenses, and manage permissions for users, work in the Microsoft 365 admin center and/or the advanced settings for Dynamics 365. For details about these operations, see [Manage user accounts, licenses, and roles](admin-users-licenses-roles.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

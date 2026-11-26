@@ -1,7 +1,7 @@
 ---
 title: Check your message for errors and prepare it for delivery
 description: Learn how to finalize your email message, check it for errors, go live, and schedule it for delivery using a customer journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/25/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -67,5 +67,3 @@ For more information, see [Use customer journeys to create automated campaigns](
 ## Gain insights from your email results
 
 Once you start delivering an email message using a customer journey, Dynamics 365 Customer Insights - Journeys begins to collect information about how recipients interact with that message. The system provides a wealth of information, including analytics, KPIs, graphs, and more, to help you gain insights from your marketing results. For more information, see [Analyze results to gain insights from your marketing activities](insights.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

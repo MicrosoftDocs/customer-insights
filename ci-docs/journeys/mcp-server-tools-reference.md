@@ -1,7 +1,7 @@
 ---
 title: MCP Server tools reference for Customer Insights - Journeys
 description: Reference for the Customer Insights MCP Server tools you can call from Customer Insights - Journeys, covering consent, unsubscribe links, journey creation, email validation, and unified profiles.
-ms.date: 09/29/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.topic: reference
 ms.service: dynamics-365-customer-insights
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # MCP Server tools reference for Customer Insights - Journeys
 
-One MCP server serves both Customer Insights - Journeys and Customer Insights - Data, so an agent in either app can call any of the tools listed here.
+One MCP server serves both Customer Insights - Journeys and Customer Insights - Data, but each tool works with a specific app. With Customer Insights - Journeys, you can use the consent, unsubscribe link, journey, and email tools. The customer profile tools, including `get_customer_segments`, need Customer Insights - Data and don't return Customer Insights - Journeys data.
 
 [!INCLUDE [mcp-server-tools-reference](~/../ci-shared/mcp-server-tools-reference.md)]
 
@@ -22,5 +22,3 @@ One MCP server serves both Customer Insights - Journeys and Customer Insights - 
 
 - [Connect Customer Insights - Journeys through Agent 365 Tooling Gateway](mcp-server-agent365-tooling-gateway.md)
 - [Consent management overview](real-time-marketing-compliance-settings.md)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

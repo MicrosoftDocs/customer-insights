@@ -1,7 +1,7 @@
 ---
 title: Create lead scoring models for Customer Insights - Journeys
 description: Learn how to create lead scoring models in Dynamics 365 Customer Insights - Journeys using demographic attributes and interactions.
-ms.date: 07/14/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create lead scoring models
 
-To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity that meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, or attending an event) will get a high score, provided you've set up your scoring model correctly.  
+To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity that meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, or attending an event) will get a high score, provided you've set up your scoring model correctly.
 
 This article covers the experience of creating a scoring model.
 
@@ -83,5 +83,3 @@ When your model is ready, select **Publish** to start calculating scores. You ca
 > If you [merge duplicate records](/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads), the scoring models don't score the primary record unless you complete one of the following actions:
 > 1. Manually delete the score of the merged leads (non-primary records).
 > 1. Republish your scoring models.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

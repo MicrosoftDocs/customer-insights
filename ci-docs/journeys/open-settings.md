@@ -1,7 +1,7 @@
 ---
 title: Open the administration settings 
 description: Access the administration settings in Dynamics 365 Customer Insights - Journeys to manage users, defaults, webinars, and quotas.
-ms.date: 08/03/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -28,5 +28,3 @@ Administrators use settings to fine-tune application behavior, set defaults, man
 Use the left navigation pane to navigate between settings pages, which are organized into sections. Select an entry under a heading to open the related settings page.
 
 See the subtopics in this section for details about how to work with each group of settings provided on the **Settings** page.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Export segments to Constant Contact (preview)
 description: Export segments of unified customer profiles to Constant Contact for targeted marketing. Follow these steps to set up the connection and configure exports.
-ms.date: 07/16/2026
+ms.date: 10/14/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -11,6 +11,9 @@ ms.author: sstabbert
 # Export segments to Constant Contact (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> This export connector is deprecated as of October 14, 2026, and is no longer in active development. Don't create new connections or export configurations that use this connector.
 
 Export segments of unified customer profiles to Constant Contact and use them for marketing activities.
 

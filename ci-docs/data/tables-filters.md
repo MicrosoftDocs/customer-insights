@@ -86,7 +86,7 @@ After [configuring your data sources](data-sources.md), apply row filters before
 
    :::image type="content" source="media/tables-source-tab.png" alt-text="Screenshot of the Source tab on the Tables page.":::
 
-1. Select the row filter link for any table and set the filters. The type of data determines the filter options.
+1. Select **Add filters** under **Row filters** for any table and set the filters. The type of data determines the filter options.
 
    :::image type="content" source="media/tables-filter-rows.png" alt-text="Screenshot of the Filter rows dialog box.":::
 

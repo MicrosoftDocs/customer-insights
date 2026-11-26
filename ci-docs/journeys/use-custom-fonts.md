@@ -1,7 +1,7 @@
 ---
 title: Use custom fonts in emails
 description: Learn how to use custom fonts in emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/24/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -63,14 +63,13 @@ For Customer Insights - Journeys, finding the right web font means exploring dif
 
 Embed fonts by going to the **Theme** tab in the email or form designers, or in the **Theme** tab in a brand profile.
 
-> [!div class="mx-imgBorder"]
-> ![Select theme to get started with font](media/select-theme-to-use-font.png "Select theme to get started with font")
+:::image type="content" source="media/select-theme-to-use-font.png" alt-text="Select theme to get started with font":::
 
 To embed a new font, scroll down to the **A1. **Browse library**: Upload font files from the library.
     - **Step 1**: After you select **Browse library**, you see a list of custom fonts available for use.
     - **Step 2**: Select a font from the list or upload a new one.   - **Step 2**: Select from the list of fonts available or upload new.
-      > [!div class="mx-imgBorder"]
-      > ![Select from list of fonts or add a new one](media/1. **Upload font files**: Import font files saved on your system.
+      :::image type="content" source="media/select-fonts-from-list.png" alt-text="Select from list of fonts or add a new one":::
+1. **Upload font files**: Import font files saved on your system.
     - **Step 1**: Select upload font files from the **Add custom font** dropdown.
     - **Step 2**: Select the font file from your system.** dropdown.
     - Step 2: Select the respective font file from the system.
@@ -91,8 +90,7 @@ Here's a common @font-face declaration for importing a web font into an email us
 1. Copy the URL for the **Latin** version of the @font-face.
 1. Paste it into the **Add font using URL** dialog box.
 
-    > [!div class="mx-imgBorder"]
-    > ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
+    :::image type="content" source="media/enter-the-respective-font-url.png" alt-text="Enter the URL of the font in the dialog box":::
     >
    
 ## Add custom fonts and fallback fonts to your email HTML
@@ -113,5 +111,3 @@ Integrating web fonts into Customer Insights – Journeys enhances your brand’
 - **Navigating web font licensing**: When you create campaigns, it's important to respect licensing requirements for web fonts. While most providers let you use their fonts, always follow individual licensing agreements. Contact font providers for details about licensing in Customer Insights - Journeys.
 - **Use reliable fallback fonts**: Add web-safe fonts like Arial, Helvetica, or Times New Roman to your font stack. These fonts work across devices and email clients, so your content stays readable even if the primary font doesn't load.
 - **Test across email clients**: Not all email clients support web fonts. Gmail and Outlook are examples. Use the built-in testing tools in Customer Insights – Journeys to preview your emails in different environments and check that fallback fonts show correctly.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

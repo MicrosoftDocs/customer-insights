@@ -1,7 +1,7 @@
 ---
 title: Implement push notification interaction tracking
 description: "Developer: Learn how to implement push notification interactions in Customer Insights - Journeys."
-ms.date: 03/14/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -161,5 +161,3 @@ AsyncTask.execute(new Runnable() {
 ```
 
 ---
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Email policies and suspension standards
 description: Learn about Dynamics 365 Customer Insights - Journeys email policies and what to do if your account is suspended.
-ms.date: 02/14/2025
+ms.date: 10/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -41,5 +41,3 @@ In cases where we detect concrete signs of abuse or lack of cooperation, we term
 
 - A violation of our [terms of use](https://www.microsoft.com/servicesagreement).
 - Usage of the [default domain feature](domain-authentication.md#the-default-authenticated-domain) for bulk email sending.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

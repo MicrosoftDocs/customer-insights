@@ -1,7 +1,7 @@
 ---
 title: Manage and apply roles to teams
 description: Organize users into teams and apply roles to teams in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/19/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -64,5 +64,3 @@ To apply security roles to teams, and to customize each role:
 For more information about managing teams and working with security roles, see [Manage teams](/power-platform/admin/manage-teams) and [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
 For more information about the security roles included with the Dynamics 365 Customer Insights - Journeys, see [Manage user accounts, licenses, and roles](admin-users-licenses-roles.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

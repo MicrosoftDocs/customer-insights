@@ -1,7 +1,7 @@
 ---
 title: Use binding IDs to correlate across triggers
 description: Binding IDs let you correlate custom triggers to specific instances of a repeatable journey in Customer Insights - Journeys.
-ms.date: 08/05/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -159,5 +159,3 @@ Trigger event: "incident/000"
 Resume event: ""
 Result: Case 3 resume
 ```
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

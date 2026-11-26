@@ -1,7 +1,7 @@
 ---
 title: Customize the form editor
 description: Learn how to customize the form entity in Dynamics 365 Customer Insights - Journeys.
-ms.date: 1/26/2024
+ms.date: 10/13/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: udag
@@ -30,46 +30,36 @@ Let's add a "Campaign" field to your forms in this step-by-step guide.
 
 1. Go to **Power Apps**, and find the **Form** table (msdynmkt_marketingform) under **Dataverse** > **Tables**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Form table.](media/real-time-marketing-form-customization-step1.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step1.png" alt-text="Form table.":::
 
 1. Create a new column of Form table, which is used to store the reference to your campaign. Select button New and select Column. Changing Data type to *Lookup* adds drop-down menu *Related table*. Select Campaign in Related table. Add Display name and Save the new column.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create a new column of Form table.](media/real-time-marketing-form-customization-step2.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step2.png" alt-text="Create a new column of Form table.":::
 
 1. Go to **Data experiences -> Forms** to access the new form editor form
 
-    > [!div class="mx-imgBorder"]
-    > ![Data experiences -> Forms.](media/real-time-marketing-form-customization-step3.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step3.png" alt-text="Data experiences -> Forms.":::
 
 1. Select **Form Settings** from the list.
 
-    > [!div class="mx-imgBorder"]
-    > ![Form Settings.](media/real-time-marketing-form-customization-step4.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step4.png" alt-text="Form Settings.":::
 
 1. Drag and drop the **Campaign** field from the left column to the designated place in the form.
 
-    > [!div class="mx-imgBorder"]
-    > ![Add Campaign field.](media/real-time-marketing-form-customization-step5.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step5.png" alt-text="Add Campaign field.":::
 
 1. It's important to add the **Campaign** field to the main form, otherwise the custom field can't be rendered. Go to **Data Experiences** > **Forms** and select the form *Information* with form type *Main*.
 
-    > [!div class="mx-imgBorder"]
-    > ![Add the Campaign field to the main form.](media/real-time-marketing-form-customization-step6.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step6.png" alt-text="Add the Campaign field to the main form.":::
 
 1. Select the **Campaign** field in the left column to add it to the form. Once you see the **Campaign** field properties in the right column, select the **Hide** checkbox to hide this field on the main form.
 
-    > [!div class="mx-imgBorder"]
-    > ![Hide the field.](media/real-time-marketing-form-customization-step7.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step7.png" alt-text="Hide the field.":::
 
 1. To save your changes, select the **Save and publish** button in the top right corner.
 1. Once you create a new marketing form in Customer Insights – Journeys, you're now able to see the **Campaign** field in the form settings. You might need to reload the Customer Insights – Journeys app to reflect the customization changes. Press F5 to reload the browser tab.
 
-    > [!div class="mx-imgBorder"]
-    > ![Final result in form editor.](media/real-time-marketing-form-customization-step8.png)
+    :::image type="content" source="media/real-time-marketing-form-customization-step8.png" alt-text="Final result in form editor.":::
 
 > [!IMPORTANT]
 > It's recommended to deploy changes to the forms entity within a managed solution. [Learn more](/power-platform/alm/solution-concepts-alm)
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

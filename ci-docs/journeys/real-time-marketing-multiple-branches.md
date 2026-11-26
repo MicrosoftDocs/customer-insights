@@ -1,7 +1,7 @@
 ---
 title: Personalize journey variations using multiple journey branches
 description: Learn how to create more personalized journey variations using multiple journey branches in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/13/2026
 ms.topic: how-to
 author: udag
 ms.author: udag
@@ -21,23 +21,19 @@ Journey branches let you create personalized journeys for customers, engaging th
 
 1. After you've selected a trigger to start the journey, you can create multiple branches using the enhanced **Attribute Branch** action. To add an attribute branch, select the **+** button on the canvas, then choose **Branch based on a specific value**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create an attribute branch.](media/real-time-marketing-multiple-branches-attribute.png "Create an attribute branch")
+    :::image type="content" source="media/real-time-marketing-multiple-branches-attribute.png" alt-text="Create an attribute branch.":::
 
 1. Next, select the attribute and define the conditions in the right pane to create journey branches.
 
-    > [!div class="mx-imgBorder"]
-    > ![Define conditions screenshot.](media/real-time-marketing-multiple-branches-conditions.png "Define conditions screenshot")
+    :::image type="content" source="media/real-time-marketing-multiple-branches-conditions.png" alt-text="Define conditions screenshot.":::
 
 1. Toggle condition types to define attributes in segments and audience.
 
-    > [!div class="mx-imgBorder"]
-    > ![Toggle condition types screenshot.](media/real-time-marketing-multiple-branches-segments.png "Toggle condition types screenshot")
+    :::image type="content" source="media/real-time-marketing-multiple-branches-segments.png" alt-text="Toggle condition types screenshot.":::
 
 1. You can also mix and match different branching types to create more complex conditions.
 
-    > [!div class="mx-imgBorder"]
-    > ![Mix and match branching types screenshot.](media/real-time-marketing-multiple-branches-types2.png "Mix and match branching types screenshot")
+    :::image type="content" source="media/real-time-marketing-multiple-branches-types2.png" alt-text="Mix and match branching types screenshot.":::
 
 > [!NOTE]
 > Branches are evaluated in priority order. The same customer won't go down multiple branches simultaneously. For dynamic segments with frequent membership changes, when using segment membership as a branching condition in a journey, be aware that in rare cases processing delays may cause evaluations to reflect an earlier segment status. To improve accuracy, consider adding a wait time of about two hours or more before evaluating segment membership.
@@ -48,14 +44,10 @@ Journey branches let you create personalized journeys for customers, engaging th
 
 1. When there are multiple links defined in an email, the journey will automatically prompt you to create branches based on the interactions with the email.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create branches based on interactions screenshot.](media/real-time-marketing-multiple-branches-interactions.png "Create branches based on interactions screenshot")
+    :::image type="content" source="media/real-time-marketing-multiple-branches-interactions.png" alt-text="Create branches based on interactions screenshot.":::
 
 1. You can then select the different links defined in the email as branching options.
 
     You can also drag and drop the branches on the side panel to define a prioritized order for the branches to be evaluated. The same customer won't go down multiple branches simultaneously.
 
-    > [!div class="mx-imgBorder"]
-    > ![Different links as branching options screenshot.](media/real-time-marketing-multiple-branches-links.png "Different links as branching options screenshot")
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
+    :::image type="content" source="media/real-time-marketing-multiple-branches-links.png" alt-text="Different links as branching options screenshot.":::

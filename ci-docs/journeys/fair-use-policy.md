@@ -1,7 +1,7 @@
 ---
 title: Service limits and fair use policy
 description: Check the maximum usage limits for Customer Insights - Journeys features such as interactions, data sync rows, segments, and journey throughput.
-ms.date: 07/13/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -43,5 +43,3 @@ The segment limits treat static and dynamic segments differently, so it helps to
 - It contains only manually included or excluded members, with no other query criteria.
 
 Any other segment counts as **dynamic**.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

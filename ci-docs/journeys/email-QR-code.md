@@ -1,7 +1,7 @@
 ---
 title: Use QR codes for event registration, links to content, or URLs
 description: Learn how to use QR codes for event registration, links to content, or URLs in email messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: udag
@@ -23,8 +23,7 @@ Add a QR code to link to different sources of information in just a few steps:
 1. Open the **Elements** pane and drag a QR code element into your email.
 1. In the **Edit QR code** pane, choose the **Link to** dropdown and select what the QR code links to. When linking to a file or a video, upload a new file or link to an existing media file in your asset library.
 
-    > [!div class="mx-imgBorder"]
-    > ![Add different attributes for the QR Code as per your requirement](media/add-attributes-for-qr-code.png "Add different attributes for the QR Code as per your requirement")
+    :::image type="content" source="media/add-attributes-for-qr-code.png" alt-text="Add different attributes for the QR Code as per your requirement":::
 
 1. Use the options in the **Edit QR code** pane to customize the size, alignment, and border spacing of the QR code. You can also enable tracking of recipient usage.
 
@@ -59,8 +58,7 @@ To link to a specific event:
 > [!IMPORTANT]
 > When you use a QR code to link to a specific event, the QR code only provides a registration ID. To add verification, check-in, and registration features, event organizers need to do some custom development. One way to do this is by creating a custom smartphone app.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of attaching a specific event to a QR code in the event registration interface.](media/add-specific-event-with-qr-code.png "Attach your specific event with your QR Code")
+:::image type="content" source="media/add-specific-event-with-qr-code.png" alt-text="Screenshot of attaching a specific event to a QR code in the event registration interface.":::
 
 ### Use trigger attributes to supply event details
 
@@ -71,8 +69,7 @@ You can use a trigger as a data source for dynamic data for event details includ
 1. In the **Select Event/Event registration** dropdown, select **From other source**.
 1. In the **Choose an attribute** dropdown, select the data source to link to.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of using trigger attributes to supply event details for a QR code in the event registration interface.](media/qr-code-trigger.png "Use trigger attributes for event details")
+:::image type="content" source="media/qr-code-trigger.png" alt-text="Screenshot of using trigger attributes to supply event details for a QR code in the event registration interface.":::
 
 Test your email by sending a preview to yourself or a colleague.
 
@@ -95,5 +92,3 @@ If the event registration ID is missing or not generated, follow these steps:
 > The QR code only provides a registration ID. Custom development is required to implement the necessary verification, check-in, and registration features. Consider developing a custom smartphone app for these purposes.
 >
 > Adding QR codes to event emails with triggered journeys and dynamic data makes event management more personal and efficient, especially during check-in.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

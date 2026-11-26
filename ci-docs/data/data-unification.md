@@ -1,7 +1,7 @@
 ---
-title: "Data unification overview"
-description: "Learn how to unify your customer data sources to create a single master dataset of customer profiles in Customer Insights - Data."
-ms.date: 06/09/2025
+title: Data unification overview
+description: Data unification creates a single customer profile from multiple tables in Customer Insights - Data. Learn how to map, match, and merge your data.
+ms.date: 11/03/2026
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you then unify the data. Unification combines your various customer data sources and creates a single customer profile record per customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos. Before unification, we recommend that you review your ingested source data and [remove any unwanted rows](tables-filters.md).
+After [setting up the data sources](data-sources.md), unify the data. Unification combines your various customer data sources and creates a single customer profile record for each customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos. Before unification, review your ingested source data and [remove any unwanted rows](tables-filters.md).
 
-Data can be unified on a single table or multiple tables. Tables were previously called entities.
+You can unify data on a single table or multiple tables. Tables were previously called entities.
 
 ## Data unification process
 
@@ -29,13 +29,13 @@ The unification process consists of four steps:
 
 ## Customer ID
 
-When unification runs, a unique **CustomerId** is assigned to each customer profile. This ID doesn't change between unification runs except in the following two cases.
+When unification runs, it assigns a unique **CustomerId** to each customer profile. This ID doesn't change between unification runs except in the following two cases.
 
 - **Merge profiles**
-  When two or more or more unified profiles exist and the source data or rules change such that the source data now matches, then the next unification run creates one customer profile where several previously existed. The new merged customer profile is assigned one of the previous CustomerIds. In rare cases a new CustomerId might be assigned, for example when many changes happen to one or both of the unified profiles being merged. The **PreviousCustomerId** field for the merged customer profile shows the previous CustomerId, or when appropriate, multiple CustomerIds separated by semicolons.
+  When two or more unified profiles exist and the source data or rules change such that the source data now matches, the next unification run creates one customer profile where several previously existed. The new merged customer profile is assigned one of the previous CustomerIds. In rare cases, a new CustomerId might be assigned, for example when many changes happen to one or both of the unified profiles being merged. The **PreviousCustomerId** field for the merged customer profile shows the previous CustomerId, or when appropriate, multiple CustomerIds separated by semicolons.
 
 - **Split a profile**
-  When one unified customer profile exists and the source data or rules change such that the records no longer match, then the next unification run creates two or more customer profiles where one previously existed. One record retains the previous CustomerId, while the others are assigned a new CustomerID. The **PreviousCustomerId** field for the customer profile with the newly assigned CustomerId shows the CustomerId the profile was split off from.
+  When one unified customer profile exists and the source data or rules change such that the records no longer match, the next unification run creates two or more customer profiles where one previously existed. One record retains the previous CustomerId, while the others are assigned a new CustomerID. The **PreviousCustomerId** field for the customer profile with the newly assigned CustomerId shows the CustomerId the profile was split off from.
 
 ## See also
 

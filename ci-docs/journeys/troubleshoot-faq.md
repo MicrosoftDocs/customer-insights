@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions for Dynamics 365 Customer Insights - Journeys - General
 description: Learn about general FAQs for Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/09/2025
+ms.date: 10/13/2026
 ms.topic: troubleshooting
 author: udag
 ms.author: udag
@@ -36,5 +36,3 @@ Admins can use the [Support experience](/power-platform/admin/get-help-support) 
 
 - To learn about known issues, check out [Known issues and workarounds](known-issues.md).
 - To learn about limitations, check out the [Fair use policy](fair-use-policy.md).
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

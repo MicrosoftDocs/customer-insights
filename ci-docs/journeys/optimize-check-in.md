@@ -1,7 +1,7 @@
 ---
 title: Make the most of your event check-in flow 
 description: Learn how to optimize your event check-in flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2024
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -43,5 +43,3 @@ In Dynamics 365 Customer Insights - Journeys, you can monitor your event attenda
 > Contacts must use their personalized meeting link for a check-in to be created (forwarded emails won't work). To prevent privacy issues, the Customer Insights - Journeys app does not track attendee actions unless they use the personalized link.
 >
 > Expect up to a four-hour delay after an event ends until check-ins appear in the Customer Insights - Journeys app. Check-in creation is counted as a post-processing step after the event and takes several hours to fully reflect in the Customer Insights - Journeys app.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

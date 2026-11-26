@@ -1,7 +1,7 @@
 ---
 title: Use custom attributes to enable designer features in emails, pages, and forms
 description: How to mark up the HTML in your email and page templates to enable drag-and-drop features and style controls for the design view in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/10/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: vinayd
 ms.author: udag
@@ -330,5 +330,3 @@ If you're updating or creating links in raw HTML, you should understand the mean
     Both links above create the same link clicked interactions. The first link is visible in Outlook. The second link is visible in non-Outlook clients like Gmail.
 
 - Another important attribute is `data-msdyn-tracking`. This Boolean attribute controls link tracking. If it's set to *false*, the link isn't tracked, and you can't see whether a user clicked the link.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

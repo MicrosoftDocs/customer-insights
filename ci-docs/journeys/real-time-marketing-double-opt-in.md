@@ -1,8 +1,9 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/29/2026
+ms.date: 11/02/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 author: petrjantac
 ms.author: udag
 search.audienceType: 
@@ -79,8 +80,7 @@ Here are the steps that you need to follow to enable double opt-in for the compl
 > [!IMPORTANT]
 > After reviewing the Double Opt-In email and journey and adjusting the settings, make sure to enable the toggle in the General section of the Double Opt-In tab. The feature remains inactive until this toggle is turned on
 
-> [!div class="mx-imgBorder"]
-> ![Set up double opt-in.](media/real-time-marketing-double-opt-in-setup.png)
+:::image type="content" source="media/real-time-marketing-double-opt-in-setup.png" alt-text="Set up double opt-in.":::
 
 To ensure proper handling of the double opt-in process, each form can only include elements from one compliance profile at a time.
 
@@ -109,18 +109,43 @@ Here are the key features of this email:
 1. The email lists the content type of the confirmation message and notes it can't be changed.
 1. The email’s compliance profile is set to the compliance profile for which double opt-in setup was initiated. Its purpose is set to the transactional purpose of the compliance profile.
 1. Email follows a naming convention that incorporates the name of the compliance profile in its name to enable you to easily find it in the list of all emails in the system
-1. Email contains three key personalization attributes:
-    1. {{OptedInPurposeTopic}} – List of all the purposes or topics that the user opted into prior to submitting the form.
-    1. {{CompanyAddress}} – Company address of the compliance profile
-    1. Confirmation preferences button – a button that contains a personalized confirmation link to allow the user to confirm their preferences  
+1. The email includes the following personalization:
+    1. Consent choices: Earlier templates use `{{OptedInPurposeTopic}}` to list the purposes or topics the person opted into on the marketing form. The consent-list template uses a customizable [consent list](#customize-the-consent-list) instead.
+    2. `{{CompanyAddress}}`: Company address of the compliance profile.
+    3. **Confirm preferences** button: A button with a personalized confirmation link that lets the person confirm their preferences.
 1. Email uses the default brand profile of the system and the default sender from the brand profile.
 
     > [!IMPORTANT]
     > In cases where the default brand profile doesn’t exist for the entire org or for the specific business unit (if there are multiple business units), the email creation fails and doesn't resolve unless a default brand profile is created.
     >
-    > Don't delete the confirmation preferences button or the `{{OptedInPurposeTopic}}` token, as you must restart from the double opt-in template to get them back.
+    > Don't delete the **Confirm preferences** button. If your email uses `{{OptedInPurposeTopic}}`, keep the token unless you replace it with a [consent list](#customize-the-consent-list). To restore the confirmation button, start from a double opt-in template. To restore the legacy token, use the token-based **Double opt-in confirmation** template.
 
 1. If this email is deleted, then the double opt-in journey doesn't function properly.
+
+### Customize the consent list
+
+When the consent list is available in your environment, you can show the purposes and topics a person opted into on a marketing form. The **Double opt-in confirmation (consent list)** template shows their labels from the marketing form, in form order. Existing confirmation emails aren't automatically updated.
+
+1. Open the confirmation email in the email designer and select **Personalize** > **Lists**.
+2. Select the existing list, or select **Add list** and choose **Consent** > **Consent submission details**.
+3. Set **Columns** to **Label**, set the filter to **Status equals Opted In**, and set **Order by** to **Position**, **Ascending**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the consent list source, label column, filter, and ascending position order.](media/real-time-marketing-double-opt-in-consent-list.png "Consent list settings")
+
+4. Select **Save & copy**. For a new list, select **Copy code** and insert it into a text element. In an earlier email, replace `{{OptedInPurposeTopic}}` with the list code.
+5. Save your changes. If you're editing an email used in a live journey, select **Finish editing** to apply the update.
+
+Changing the filter can include opted-out choices. Keep **Status equals Opted In** when the email says "You have subscribed to receive:".
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the consent list filter with Status set to Equals Opted In.](media/real-time-marketing-double-opt-in-consent-list-filter.png "Filter for opted-in choices")
+
+Audience-based personalization and audience-based conditions aren't supported in double opt-in emails. You can still [personalize the email using submitted marketing-form values](real-time-marketing-form-submitted-values.md#personalize-email-using-submitted-values), rather than values from a contact or lead record.
+
+To verify the populated list, use a real submission from a published marketing form with double opt-in enabled. Use an email address eligible for confirmation under the compliance profile's settings. Don't rely on a test send to populate the list.
+
+This guidance describes product behavior and isn't legal advice. Validate your consent design with your own privacy counsel.
 
 ## Double opt-in confirmation journey
 
@@ -167,5 +192,3 @@ There could be multiple things affecting the setup of double opt-in for your com
 ***What happens when an existing contact or lead submits a double opt-in enabled form?***
 
 Unless the user confirms their preferences, by clicking on the button in the confirmation email sent to contacts, none of the entries made during form submission by contacts are reflected on their record in the system.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

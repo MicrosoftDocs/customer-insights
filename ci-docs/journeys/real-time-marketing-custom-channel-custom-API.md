@@ -1,7 +1,7 @@
 ---
 title: Define custom APIs
 description: Learn how to implement outbound, delivery report, and inbound custom APIs for a custom channel, including request contracts.
-ms.date: 08/04/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: udag
@@ -89,5 +89,3 @@ The inbound custom API calls the **msdyn_D365ChannelsInbound** API with the cont
   - **From**: string - The user's contact point.
   - **OrganizationId**: string – The organization ID.
   - **Message**: Dictionary <string, string> - Contains all the message parts for a channel.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

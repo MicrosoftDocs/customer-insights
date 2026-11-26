@@ -1,7 +1,7 @@
 ---
 title: Set up business units and compliance profiles to support multi-brand businesses
 description: Learn how to set up business units and compliance profiles to support multi-brand businesses.
-ms.date: 05/18/2026
+ms.date: 10/13/2026
 ms.topic: reference
 author: udag
 ms.author: udag
@@ -62,5 +62,3 @@ For example, Contoso Sportswear may have a division in Germany and a division in
 In addition, Contoso would create a separate business unit to support Contoso’s United States sportswear division and its workwear division with two compliance profiles, as described in the previous section.
 
 The organizational approach supports critical data isolation requirements while also enabling Contoso United States to take advantage of cross-brand marketing opportunities as appropriate.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]

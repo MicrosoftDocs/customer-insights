@@ -1,7 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Test and preview your email designs in Dynamics 365 Customer Insights - Journeys to ensure they look great across devices and email clients.
-ms.date: 03/26/2026
+ms.date: 10/13/2026
 ms.topic: article
 author: udag
 ms.author: udag
@@ -74,5 +74,3 @@ Select the **Save** button at the bottom of the flyout panel to send the message
 > [!NOTE]
 > - You can test-send draft *and* live email messages, so you don't need to go live to do a test send. In a live email message, select the three dots on the right of the command bar to see the **Test send** button.
 > - Email analytics aren't affected by the test-send feature.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
