@@ -21,9 +21,6 @@ The built-in aggregate channel analytics dashboard shows important metrics and i
 
 The aggregate channel analytics dashboard allows you to assess important delivery and engagement metrics for your customer journeys, channels, and marketing assets. You can use the date, channel, journey, and “name” filters to learn about key delivery and engagement metrics at any level of aggregation. You can also use the charts in the dashboard to study metric trends over time and investigate any anomalies or spikes. The dashboard has four sections, each of which is described below.
 
-> [!NOTE]
-> You can learn more about the insights terms (such as open rate, CTR, and click-to-open rate) mentioned below by referring to the [Insights glossary](insights-glossary.md) article.
-
 ### Positive customer engagement
 
 This section highlights the open rate, click-through rate, and click-to-open rate for the selected marketing communications. The following key performance indicators (KPIs) are displayed in the report:
