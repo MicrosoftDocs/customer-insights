@@ -17,6 +17,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## November 2026
+
+### General availability
+
+#### Copy environment configurations
+
+Copying the configuration of an existing Customer Insights - Data environment to a new environment is now generally available. Reuse supported configuration settings to streamline environment setup and application lifecycle management.
+
+- [Docs](manage-environments.md#copy-the-environment-configuration)
+
 ## September 2026
 
 ### General availability
