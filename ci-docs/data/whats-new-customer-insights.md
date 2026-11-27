@@ -56,6 +56,16 @@ Web tracking and personalization in Customer Insights - Data is now generally av
 
 - [Docs](real-time-web-personalization-overview.md)
 
+## November 2026
+
+### General availability
+
+#### Copy environment configurations
+
+Copying the configuration of an existing Customer Insights - Data environment to a new environment is now generally available. Reuse supported configuration settings to streamline environment setup and application lifecycle management.
+
+- [Docs](manage-environments.md#copy-the-environment-configuration)
+
 ## September 2026
 
 ### General availability

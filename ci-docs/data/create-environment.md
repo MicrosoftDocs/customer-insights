@@ -21,7 +21,8 @@ For subsequent environments, you can create an environment directly through Cust
 You must use Customer Insights - Data for the following scenarios:
 
 - You want the new environment to use your [own Azure Data Lake Storage Account](own-data-lake-storage.md).
-- You want to [copy the existing environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
+- You want to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse.
+- You want to [create a copy of an existing environment configuration](manage-environments.md#copy-the-environment-configuration).
 
 ## Prerequisites
 
@@ -38,7 +39,7 @@ You must use Customer Insights - Data for the following scenarios:
 
 ### Step 1: Provide basic information
 
-1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment (preview)](manage-environments.md#copy-the-environment-configuration-preview) requires extra steps.
+1. Choose whether you want to create an environment from scratch or copy data from another environment. [Copying data from another environment](manage-environments.md#copy-the-environment-configuration) requires extra steps.
 
 1. Provide the following details:
 
